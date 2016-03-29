@@ -1,7 +1,9 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\Http\Requests\StylistFormRequest;
 use App\Http\Controllers\Controller;
+use DB;
 
 use Illuminate\Http\Request;
 
@@ -14,7 +16,9 @@ class StylistController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$stylists = DB::table('stylists')->get();
+		
+		return view('recruit.stylist.index', compact('stylists'));
 	}
 
 	/**
@@ -32,9 +36,13 @@ class StylistController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(StylistFormRequest $request)
 	{
-		//
+		$input = $request->all();
+		
+		Stylist::create($input);
+
+    	return redirect()->back();
 	}
 
 	/**
@@ -45,7 +53,9 @@ class StylistController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		$stylist = DB::table('stylists')->find($id);
+		
+		return view('recruit.stylist.show', compact('stylist'));
 	}
 
 	/**

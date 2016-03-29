@@ -1,3 +1,4 @@
+{!! Form::open(['action' => 'StylistController@store']) !!}
 <div class="form">
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -13,9 +14,9 @@
 	<h2 class="reveal">1. Contact Information</h2>
 	<div class="elements">
 
-	<div class="row">
-		hidden field date
-	</div>
+		{{ Form::hidden('id', '') }}
+	
+		{{ Form::hidden('date', '') }}
 
 	<div class="row">
 		{!! Form::label('first_name', 'First Name') !!}
@@ -42,31 +43,25 @@
 	</div>
 	
 	<div class="row">
-		{!! Form::label('address3', 'Address 3') !!}
-		{!! Form::text('address3') !!}
-		{!! $errors->first('address3') !!}
-	</div>
-	
-	<div class="row">
 		{!! Form::label('postcode', 'Postcode') !!}
 		{!! Form::text('postcode') !!}
 		{!! $errors->first('postcode') !!}
 	</div>
 	
 	<div class="row">
-		{!! Form::label('email', 'Email') !!}
+		{!! Form::label('email', 'Email Address') !!}
 		{!! Form::text('email') !!}
 		{!! $errors->first('email') !!}
 	</div>
 	
 	<div class="row">
-		{!! Form::label('phone', 'Phone') !!}
+		{!! Form::label('phone', 'Phone Number') !!}
 		{!! Form::text('phone') !!}
 		{!! $errors->first('phone') !!}
 	</div>
 	
 	<div class="row">
-		{!! Form::label('mobile', 'Mobile') !!}
+		{!! Form::label('mobile', 'Mobile Number') !!}
 		{!! Form::text('mobile') !!}
 		{!! $errors->first('mobile') !!}	
 	</div>
@@ -79,27 +74,27 @@
 	<div class="row">
 		{!! Form::label('current_emp', 'What is your current employment status?') !!}
 		{!! Form::select('current_emp', array(
-			'1' => 'In Hairdressing Role',
-			'2' => 'In non-hairdressing role',
-			'3' => 'Unemployed'
-			)) !!}
+			'In hair role' => 'In Hairdressing Role',
+			'In non hair role' => 'In non-hairdressing role',
+			'Unemployed' => 'Unemployed'
+			), null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('current_emp') !!}
 	</div>
 	
 	<div class="row">
-		{!! Form::label('employment_des', 'If employed, please tell us where') !!}
-		{!! Form::text('employment_des') !!}
-		{!! $errors->first('employment_des') !!}
+		{!! Form::label('current_emp_des', 'If employed, please tell us where') !!}
+		{!! Form::text('current_emp_des') !!}
+		{!! $errors->first('current_emp_des') !!}
 	</div>
 	
 	<div class="row">
 		{!! Form::label('school_qual', 'What qualifications did you achieve at school?') !!}
 		{!! Form::select('school_qual', array(
-			'1' => 'Up to 4 GCSE\'s',
-			'2' => '4 or more GCSE\'s',
-			'3' => '1 or more A Level\'s',
-			'4' => 'Other'
-			)) !!}
+			'up to 4 GCSE' => 'Up to 4 GCSE\'s',
+			'4 or more GCSE' => '4 or more GCSE\'s',
+			'1 or more A level' => '1 or more A Level\'s',
+			'Other' => 'Other'
+			), null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('school_qual') !!}
 	</div>
 	
@@ -112,48 +107,47 @@
 	<div class="row">
 		{!! Form::label('experience', 'How many years hairdressing experience do you have? (Since qualified)') !!}
 		{!! Form::select('experience', array(
-			'1' => 'None',
-			'2' => 'Up to 12 momths',
-			'3' => '1 to 2 years',
-			'4' => '2 to 4 years',
-			'5' => '4 to 8 years',
-			'5' => '8 to 10 years',
-			'6' => '10 plus years'
-			)) !!}
+			'None' => 'None',
+			'Up to 12 month' => 'Up to 12 momths',
+			'1 to 2 years' => '1 to 2 years',
+			'2 to 4 years' => '2 to 4 years',
+			'4 to 8 years' => '4 to 8 years',
+			'8 to 10 years' => '8 to 10 years',
+			'10 years plus' => '10 plus years'
+			), null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('experience') !!}
 	</div>
 	
 	<div class="row">
-		{!! Form::label('current_position', 'Which of these best describes your current level?)') !!}
+		{!! Form::label('current_position', 'Which of these best describes your current level?') !!}
 		{!! Form::select('current_position', array(
-			'1' => 'Graduate Stylist',
-			'2' => 'Junior Stylist',
-			'3' => 'Graduate Stylist',
-			'4' => 'Stylist',
-			'5' => 'Senior Stylist',
-			'5' => 'Director'
-			)) !!}
+			'Junior' => 'Junior Stylist',
+			'Graduate' => 'Graduate Stylist',
+			'Stylist' => 'Stylist',
+			'Senior' => 'Senior Stylist',
+			'Director' => 'Director'
+			), null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('current_position') !!}
 	</div>
 	
 	<div class="row">
-		{!! Form::label('client_base', 'Do you have an existing client base?)') !!}
+		{!! Form::label('client_base', 'Do you have an existing client base?') !!}
 		{!! Form::select('client_base', array(
-			'1' => 'Yes - Local',
-			'2' => 'Yes - Other Area',
-			'3' => 'No'
-			)) !!}
+			'Local' => 'Yes - Local',
+			'Other Area' => 'Yes - Other Area',
+			'No' => 'No'
+			), null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('client_base') !!}
 	</div>
 	
 	<div class="row">
-		{!! Form::label('qualifications', 'Do you have an existing client base?)') !!}
+		{!! Form::label('qualifications', 'Do you have an existing client base?') !!}
 		{!! Form::select('qualifications', array(
-			'1' => 'NVQ Level 1',
-			'2' => 'NVQ Level 2',
-			'3' => 'NVQ Level 3',
-			'4' => 'Other'
-			)) !!}
+			'NVQ 1' => 'NVQ Level 1',
+			'NVQ 2' => 'NVQ Level 2',
+			'NVQ 3' => 'NVQ Level 3',
+			'Other' => 'Other'
+			), null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('qualifications') !!}
 	</div>
 	
@@ -212,55 +206,55 @@
 
 	<div class="row">
 		{!! Form::label('cutting_skills', 'Cutting Skills') !!}
-		{!! Form::selectRange('cutting_skills', 1, 5) !!}
+		{!! Form::selectRange('cutting_skills', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('cutting_skills') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('colour_knowledge', 'Colour Knowledge') !!}
-		{!! Form::selectRange('colour_knowledge', 1, 5) !!}
+		{!! Form::selectRange('colour_knowledge', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('colour_knowledge') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('colour_skills', 'Colouring Skills') !!}
-		{!! Form::selectRange('colour_skills', 1, 5) !!}
+		{!! Form::selectRange('colour_skills', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('colour_skills') !!}
 	</div>
 	
 	<div class="row">
 		{!! Form::label('men', 'Mens Hairdressing') !!}
-		{!! Form::selectRange('men', 1, 5) !!}
+		{!! Form::selectRange('men', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('men') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('extensions_weave', 'Extensions (weave)') !!}
-		{!! Form::selectRange('extensions_weave', 1, 5) !!}
+		{!! Form::selectRange('extensions_weave', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('extensions_weave') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('extensions_other', 'Extensions (other)') !!}
-		{!! Form::selectRange('extensions_other', 1, 5) !!}
+		{!! Form::selectRange('extensions_other', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('extensions_other') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('chem_straighten', 'Chemical Straightening') !!}
-		{!! Form::selectRange('chem_straighten', 1, 5) !!}
+		{!! Form::selectRange('chem_straighten', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('chem_straighten') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('braz_blow', 'Brazilian Blowdry') !!}
-		{!! Form::selectRange('braz_blow', 1, 5) !!}
+		{!! Form::selectRange('braz_blow', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('braz_blow') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('hair_up', 'Hair Up') !!}
-		{!! Form::selectRange('hair_up', 1, 5) !!}
+		{!! Form::selectRange('hair_up', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
 		{!! $errors->first('hair_up') !!}
 	</div>
 
@@ -299,3 +293,4 @@
 </div><!-- end accordion-->
 
 </div><!-- form -->
+{!! Form::close() !!}
