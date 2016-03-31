@@ -41,6 +41,11 @@ class PagesController extends Controller {
 		return view('pages.news');
 	}
 	
+	public function oldnews()
+	{
+		return view('pages.oldnews');
+	}
+	
 	public function offers()
 	{
 		return view('pages.offers');

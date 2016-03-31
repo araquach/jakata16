@@ -1,4 +1,11 @@
-@extends('layouts.main') @section('content') {{-- FB meta tags --}}
+@extends('layouts.main') 
+
+@section('content') 
+
+{{-- FB meta tags --}}
+
+<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('scripts/team.js') }}"></script>
 
 <div id="team_shot"></div>
 <section id="team">

@@ -3,6 +3,7 @@
 Route::get('/', 'PagesController@index');
 Route::get('/details', 'PagesController@details');
 Route::get('/news', 'PagesController@news');
+Route::get('/oldnews', 'PagesController@oldnews');
 Route::get('/recruitment', 'PagesController@recruitment');
 Route::get('/offers', 'PagesController@offers');
 Route::get('/prices', 'PagesController@prices');

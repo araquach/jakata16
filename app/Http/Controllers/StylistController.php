@@ -1,13 +1,18 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\Http\Requests\StylistFormRequest;
 use App\Http\Controllers\Controller;
-use DB;
+use App\Stylist;
+use App\Http\Requests\StylistFormRequest;
 
 use Illuminate\Http\Request;
 
 class StylistController extends Controller {
+	
+	public function __construct(Stylist $stylist)
+	{
+		$this->stylist = $stylist;
+	}
 
 	/**
 	 * Display a listing of the resource.
@@ -16,7 +21,7 @@ class StylistController extends Controller {
 	 */
 	public function index()
 	{
-		$stylists = DB::table('stylists')->get();
+		$stylists = $this->stylist->get();
 		
 		return view('recruit.stylist.index', compact('stylists'));
 	}
@@ -53,7 +58,7 @@ class StylistController extends Controller {
 	 */
 	public function show($id)
 	{
-		$stylist = DB::table('stylists')->find($id);
+		$stylist = $this->stylist->find($id);
 		
 		return view('recruit.stylist.show', compact('stylist'));
 	}

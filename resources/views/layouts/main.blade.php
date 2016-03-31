@@ -15,10 +15,11 @@
 	<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 640px), only screen and (min-device-width : 719px) and (max-device-width : 721px) and (-webkit-min-device-pixel-ratio : 2) and (orientation : portrait)" href="{{ URL::asset('css/mobile.css') }}"
 	/>
 
-	<script src="/scripts/mootools-core.js " type="text/javascript"></script>
-	<script src="/scripts/mootools-more.js " type="text/javascript"></script>
-	<script src="/scripts/modernizr.js " type="text/javascript"></script>
-	<script src="/scripts/selectivizr-min.js " type="text/javascript"></script>
+	<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('scripts/mootools-core.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('scripts/mootools-more.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('scripts/modernizr.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('scripts/selectivizr-min.js') }}"></script>
 
 	<title>Jakata</title>
 </head>
