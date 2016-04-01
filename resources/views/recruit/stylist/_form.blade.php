@@ -1,4 +1,6 @@
-{!! Form::model($stylist) !!}
+{!! Form::open(array(
+	'action' => 'StylistController@store'
+)) !!}
 <div class="form">
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
