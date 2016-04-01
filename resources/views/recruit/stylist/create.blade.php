@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
+@section('head')
+	<meta name="description" content="Join the JAKATA team, apply to be a stylist">
+	<meta name="keywords" content="Hair jobs, hairdressing jobs, hair recruitment, hairdressing recruitment">
+@stop
+
 @section('content')
 
 <script type="text/javascript">

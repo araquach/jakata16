@@ -1,5 +1,10 @@
 @extends('layouts.main') 
 
+@section('head')
+	<meta name="description" content="Meet the JAKATA team. Select from one of our talented stylists">
+	<meta name="keywords" content="Hair team, hairdressing team, Jakata team, Jakata stylists">
+@stop
+
 @section('content') 
 
 {{-- FB meta tags --}}

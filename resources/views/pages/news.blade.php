@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
+@section('head')
+	<meta name="description" content="For all the latest JAKATA hair news">
+	<meta name="keywords" content="Hair news, hairdressing news">
+@stop
+
 @section('content')
 
 <script type="text/javascript">

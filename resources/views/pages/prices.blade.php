@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
+@section('head')
+	<meta name="description" content="Up to date JAKATA prices">
+	<meta name="keywords" content="Jakata prices, hairdressing prices">
+@stop
+
 @section('content')
 
 <section id="prices">

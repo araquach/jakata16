@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <div id="home">
 <h4 class="slogan">Fashion forward, award winning hairdressing</h4>
 <section id="info">
