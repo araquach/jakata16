@@ -5,6 +5,12 @@
 	<meta name="keywords" content="Hair team, hairdressing team, Jakata team, Jakata stylists">
 @stop
 
+@section('title')
+
+	<title>Jakata Salon - Meet the Hairdressing Team</title>
+
+@stop
+
 @section('content') 
 
 {{-- FB meta tags --}}

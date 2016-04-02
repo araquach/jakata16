@@ -5,6 +5,12 @@
 	<meta name="keywords" content="Hair news, hairdressing news">
 @stop
 
+@section('title')
+
+	<title>Jakata Salon - News Archive</title>
+
+@stop
+
 @section('content')
 
 <script type="text/javascript">

@@ -23,9 +23,9 @@
 	<script type="text/javascript" src="{{ URL::asset('scripts/mootools-more.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('scripts/modernizr.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('scripts/selectivizr-min.js') }}"></script>
-
-	<title>Jakata</title>
-
+@section('title')
+	<title>Jakata Salon - Hairdressers in Warrington</title>
+@show
 </head>
 
 <body>
@@ -44,7 +44,7 @@
 					<li>{!! link_to('team', 'Team') !!}</li>
 					<li>{!! link_to('prices', 'Prices') !!}</li>
 					<li>{!! link_to('news', 'News') !!}</li>
-					<li>{!! link_to('contact', 'Contact') !!}</li>
+					<li>{!! link_to('details', 'Contact') !!}</li>
 				</ul>
 			</nav>
 		</header>

@@ -17,3 +17,4 @@ Route::post('contact',
   
 Route::resource('apprentice', 'ApprenticeController');
 Route::resource('stylist', 'StylistController');
+  

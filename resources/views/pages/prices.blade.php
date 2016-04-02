@@ -5,6 +5,12 @@
 	<meta name="keywords" content="Jakata prices, hairdressing prices">
 @stop
 
+@section('title')
+
+	<title>Jakata Salon - Hairdressing Prices</title>
+
+@stop
+
 @section('content')
 
 <section id="prices">

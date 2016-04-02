@@ -5,6 +5,12 @@
 	<meta name="keywords" content="Hair offers, hairdressing offers">
 @stop
 
+@section('title')
+
+	<title>Jakata Salon - Hairdressing Offers</title>
+
+@stop
+
 @section('content')
 
 {{-- Need FB meta --}}
