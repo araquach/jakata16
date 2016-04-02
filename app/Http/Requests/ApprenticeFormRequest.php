@@ -25,13 +25,13 @@ class ApprenticeFormRequest extends Request {
 		return [
 			'id' => 'required',
 			'date' => 'required',
-			'first_name' => 'required'
+			'first_name' => 'required',
 			'second_name' => 'required',
 			'age' => 'required',
 			'address1' => 'required',
 			'address2' => 'required',
 			'postcode' => 'required',
-			'email' => 'required';
+			'email' => 'required',
 			'phone' => 'required',
 			'mobile' => 'required',
 			'current_emp' => 'required',
@@ -53,7 +53,7 @@ class ApprenticeFormRequest extends Request {
 			'hair_up' => 'required',
 			'about_you' => 'required',
 			'why_hairdressing' => 'required',
-			'why_jakata', => 'required',
+			'why_jakata' => 'required',
 		];
 	}
 

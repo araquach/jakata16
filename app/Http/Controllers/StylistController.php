@@ -4,7 +4,6 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Stylist;
 use App\Http\Requests\StylistFormRequest;
-
 use Illuminate\Http\Request;
 
 class StylistController extends Controller {

@@ -25,7 +25,7 @@ class StylistFormRequest extends Request {
 		return [
 			'id' => '',
 			'date' => '',
-			'first_name' => '',
+			'first_name' => 'required',
 			'second_name' => '',
 			'address1' => '',
 			'address2' => '',

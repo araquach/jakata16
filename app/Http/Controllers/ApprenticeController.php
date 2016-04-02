@@ -2,14 +2,15 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\Apprentice;
+use App\Http\Requests\ApprenticeFormRequest;
 use Illuminate\Http\Request;
 
 class ApprenticeController extends Controller {
 
-	public function __construct()
+	public function __construct(Apprentice $apprentice)
 	{
-		$this->middleware('guest');
+		$this->apprentice = $apprentice;
 	}
 
 	
@@ -20,7 +21,9 @@ class ApprenticeController extends Controller {
 	 */
 	public function index()
 	{
-		return 'Apprentice';
+		$apprentices =$this->apprentice->get();
+		
+		return view('recruit.apprentice.index', compact('apprentices'));
 	}
 
 	/**
@@ -38,9 +41,13 @@ class ApprenticeController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(ApprenticeFormRequest $request)
 	{
-		//
+		$input = $request->all();
+		
+		Apprentice::create($input);
+
+    	return redirect()->back();
 	}
 
 	/**
@@ -51,7 +58,9 @@ class ApprenticeController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		$apprentice = $this->apprentice->find($id);
+		
+		return view('recruit.apprentice.show', compact('apprentice'));
 	}
 
 	/**

@@ -1,3 +1,7 @@
+{!! Form::open(array(
+	'action' => 'ApprenticeController@store', 'id' => 'apprentice-form'
+)) !!}
+
 <div class="form">
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>

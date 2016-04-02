@@ -1,15 +1,20 @@
 {!! Form::open(array(
-	'action' => 'StylistController@store'
+	'action' => 'StylistController@store', 'id' => 'stylist-form'
 )) !!}
+
 <div class="form">
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<ul>
-	    @foreach($errors->all() as $error)
+	<div id="stylist-form_es_" class="errorSummary">
+		<p>Please fix the following input errors:</p>
+		<ul>
+	   		 @foreach($errors->all() as $error)
 	        <li>{{{ $error }}}</li>
-	    @endforeach
-	</ul>
+	    	@endforeach
+		</ul>
+	</div>
+
 
 <div class="accordion">
 	
