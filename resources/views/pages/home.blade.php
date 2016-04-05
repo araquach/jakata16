@@ -2,6 +2,11 @@
 
 @section('content')
 
+@section('title')
+
+	<title>Jakata Salon - Hairdressers in Warrington</title>
+
+@stop
 
 <div id="home">
 <h4 class="slogan">Fashion forward, award winning hairdressing</h4>
@@ -13,18 +18,18 @@
 
 <div id="home_news">
 
-<a href="{{ URL::to('news') }}#JimmyLeap">	
-<aside id="news1" class="home_news">
-<h3 class="newsheader">Jimmy picked to join exclusive team</h3>
-<p class="newspara">Jakata stylist Jimmy Sharpe is now a member of the Schwarzkopf L.E.A.P team</p>
+<a href="{{ URL::to('news') }}#Fibreplex">	
+<aside id="news2" class="home_news">
+<h3 class="newsheader">Love colour but hate the damage?</h3>
+<p class="newspara">Lighten, lift, colour without compromise&hellip;</p>
 <p class="newscenter"><strong>Find out more &gt;</strong></p>
 </aside>
 </a>
 
-<a href="{{ URL::to('offers') }}#offers">
-<aside id="news2" class="home_news">
-<h3 class="newsheader">This Month's Great Offers</h3>
-<p class="newspara">Experience Jakata for the first time at a very special introductory price</p>
+<a href="{{ URL::to('news') }}#ColorMasters">
+<aside id="news1" class="home_news">
+<h3 class="newsheader">Colour Masters</h3>
+<p class="newspara">The Jakata team pushes colouring skills to next level&hellip;</p>
 <p class="newscenter"><strong>Find out more &gt;</strong></p>
 </aside>
 </a>

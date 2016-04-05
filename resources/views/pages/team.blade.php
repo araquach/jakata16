@@ -1,4 +1,22 @@
-@extends('layouts.main') @section('content') {{-- FB meta tags --}}
+@extends('layouts.main') 
+
+@section('head')
+	<meta name="description" content="Meet the JAKATA team. Select from one of our talented stylists">
+	<meta name="keywords" content="Hair team, hairdressing team, Jakata team, Jakata stylists">
+@stop
+
+@section('title')
+
+	<title>Jakata Salon - Meet the Hairdressing Team</title>
+
+@stop
+
+@section('content') 
+
+{{-- FB meta tags --}}
+
+<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('scripts/team.js') }}"></script>
 
 <div id="team_shot"></div>
 <section id="team">

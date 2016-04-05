@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
 /* CSS Document */
 
 /* @group Clear Fix */
@@ -34,19 +36,17 @@ body {
 .container {
 	width: 100%;
 	position: relative;
-	position: relative;
 	border: 1px solid #333;
 	background-color: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: NotethisRegular;
+	font-family: 'Indie Flower', cursive;
 	color: #4f516a;
 }
 
 h1 {
 	margin: 0;
-	font-size: 2em;
 }
 
 p {
@@ -116,21 +116,13 @@ nav li a {
 	transition: opacity 0.1s ease-in-out;
 }
 
-nav li a:link {
-
-}
-
-nav li a:visited {
-
-}
-
 nav li a:hover {
 	opacity: 1;
 	border-bottom: none;
 	color: #FFF;
 }
 
-li a.active {
+.active a {
 	opacity: 1;
 }
 
@@ -168,7 +160,7 @@ li a.active {
 #home {
 	width: 950px;
 	height: 100%;
-	background: url('../images/home/retro.jpg') no-repeat left top #f5f5f5;
+	background: url('../images/home/cool.jpg') no-repeat left top #f5f5f5;
 	padding-top: 280px;
 	padding-bottom: 188px;
 }
@@ -204,7 +196,6 @@ li a.active {
 }
 
 .home_news h3 {
-	font-family: NotethisRegular;
 	font-size: 1.3em;
 	color: #2f2f69;
 	margin: 0;
@@ -222,21 +213,21 @@ li a.active {
 }
 
 #news1 {
-	background: url('../images/home/jimmy_leap.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
+	background: url('../images/home/color_masters.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
 	background-size: contain;
 }
 .no-rgba #news1 {
-	background: url('../images/home/jimmy_leap_mob.jpg') no-repeat left top rgb(249, 249, 250);
+	background: url('../images/home/color_masters_small.jpg') no-repeat left top rgb(249, 249, 250);
 	
 }
 
 
 #news2 {
-	background: url('../images/home/40s_retro.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
+	background: url('../images/home/fibreplex.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
 	background-size: contain;
 }
 .no-rgba #news2 {
-	background: url('../images/home/40s_retro_small.jpg') no-repeat left top rgb(249, 249, 250);
+	background: url('../images/home/color_masters_small.jpg') no-repeat left top rgb(249, 249, 250);
 }
 
 
@@ -254,7 +245,7 @@ li a.active {
 	text-align: right;
 	position: absolute;
 	right: 40px;
-	bottom: 200px;
+	bottom: 192px;
 	display: none;
 }
 
@@ -264,11 +255,15 @@ li a.active {
 
 #feedback_feed ul li {
 	color: #FFF;
+	padding: 10px;
+	padding-right: 15px;
 	font-size: .9em;
 	list-style-type: none;
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;	
 	font-style: italic;
 	text-shadow: 0 0 20px #0a0436;
+	background-color: rgba(81, 86, 95, 0.7);
+	border-radius: 5px;
 }
 
 #feedback_feed ul li .client {
@@ -456,17 +451,6 @@ li a.active {
 	
 }
 
-#michelle {
-	background: #FFF url('../images/team/michelle.jpg') no-repeat left top;
-	transform:rotate(3deg);
-	-ms-transform:rotate(3deg); /* IE 9 */
-	-moz-transform:rotate(3deg); /* Firefox */
-	-webkit-transform:rotate(3deg); /* Safari and Chrome */
-	-o-transform:rotate(3deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-}
-
 #maisie {
 	background: #FFF url('../images/team/maisie.jpg') no-repeat left top;
 	transform:rotate(-4deg);
@@ -489,28 +473,6 @@ li a.active {
 	
 }
 
-#shell {
-	background: #FFF url('../images/team/shell.jpg') no-repeat left top;
-	transform:rotate(-3deg);
-	-ms-transform:rotate(-3deg); /* IE 9 */
-	-moz-transform:rotate(-3deg); /* Firefox */
-	-webkit-transform:rotate(-3deg); /* Safari and Chrome */
-	-o-transform:rotate(-3deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-}
-
-#mikala {
-	background: #FFF url('../images/team/mikala.jpg') no-repeat left top;
-	transform:rotate(2deg);
-	-ms-transform:rotate(2deg); /* IE 9 */
-	-moz-transform:rotate(2deg); /* Firefox */
-	-webkit-transform:rotate(2deg); /* Safari and Chrome */
-	-o-transform:rotate(2deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-}
-
 #laura {
 	background: #FFF url('../images/team/laura.jpg') no-repeat left top;
 	transform:rotate(-2deg);
@@ -522,8 +484,19 @@ li a.active {
 	
 }
 
-#dan {
-	background: #FFF url('../images/team/dan.jpg') no-repeat left top;
+#matt {
+	background: #FFF url('../images/team/matt.jpg') no-repeat left top;
+	transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg); /* IE 9 */
+	-moz-transform:rotate(-3deg); /* Firefox */
+	-webkit-transform:rotate(-3deg); /* Safari and Chrome */
+	-o-transform:rotate(-3deg); /* Opera */
+	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
+	
+}
+
+#laura_m {
+	background: #FFF url('../images/team/laura_m.jpg') no-repeat left top;
 	transform:rotate(1deg);
 	-ms-transform:rotate(1deg); /* IE 9 */
 	-moz-transform:rotate(1deg); /* Firefox */
@@ -845,6 +818,50 @@ p.reveal {
 #accordion article.article section.hidden p.big {
 	font-size: 1.4em;
 	clear: left;
+}
+
+#accordion article.article section.hidden img.news-image {
+	float: left;
+	clear: left;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+/* @end */
+
+/* @group News Extra */
+
+#news_extra {
+	width: 950px;
+	height: 1100px;
+	background: #f5f5f5 url('../images/news_extra/vikki.jpg') no-repeat 580px 240px;
+	padding-top: 270px;
+	padding-bottom: 200px;
+}
+
+
+#news_extra_copy {
+	width: 400px;
+	margin-left: 100px;
+}
+
+#news_extra_copy ul li {
+	color: #4f516a;
+}
+
+#news_extra_copy #viks_hours {
+	width: 400px;
+	height: 360px;
+	background: #FFF url('../images/news_extra/vik_dates.jpg') no-repeat left top;
+	border: 1px solid #999;
+}
+
+#news .newslink {
+	margin-left: 60px;
+	padding: 10px;
+	background-color: #FFF;
+	border: 1px solid #888;
+	border-radius: 10px;
 }
 
 /* @end */
@@ -1185,6 +1202,11 @@ div.row textarea {
 	font-weight: bold;
 }
 
+#offers #fb_like {
+	margin-left: 80px;
+	margin-top: 60px;
+}
+
 #offer_copy {
 	width: 550px;
 	margin-left: 70px;
@@ -1210,6 +1232,12 @@ div.row textarea {
 	margin-top: 0;
 }
 
+#offers p.contact {
+	margin-left: 80px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
 .no-boxshadow #offer1, #offer2, #offer3, #offer4 {
 	border-right: 1px solid #666;
 	border-bottom: 1px solid #333;
@@ -1223,7 +1251,7 @@ div.row textarea {
 
 #offer1 {
 	margin-top: 50px;
-	background: url(../images/offers/candy_lady.jpg) no-repeat #fefefe;
+	background: url(../images/offers/Alice_012.jpg) no-repeat #fefefe;
 }
 
 #offer2 {
@@ -1232,12 +1260,12 @@ div.row textarea {
 
 #offer3 {
 	margin-bottom: 30px;
-	background: url(../images/offers/kebelo_cover.jpg) no-repeat #fefefe;
+	background: url(../images/offers/alex.jpg) no-repeat #fefefe;
 }
 
 #offer4 {
 	margin-bottom: 30px;
-	background: url(../images/offers/kebel0.jpg) no-repeat #fefefe;
+	background: url(../images/offers/men.jpg) no-repeat #fefefe;
 }
 
 
@@ -1248,6 +1276,10 @@ div.row textarea {
 	padding: 0;
 	font-size: 1.5em;
 	width: 300px;
+}
+
+span.big {
+	font-size: 1.8em;
 }
 
 #offer1 p, #offer2 p, #offer3 p, #offer4 p {
@@ -1325,7 +1357,7 @@ p#book_button {
 	width: 950px;
 	height: 850px;
 	background-color: #f5f5f5;
-	background: #f5f5f5 url('../images/spec_offer/shell.jpg') no-repeat 600px 300px;
+	background: #f5f5f5 url('../images/spec_offer/laura_matthew.jpg') no-repeat 600px 250px;
 	padding-top: 210px;
 	padding-bottom: 200px;
 }
@@ -1356,7 +1388,7 @@ p#book_button {
 }
 
 #specOffer p.so_big {
-	font-size: 2.4em;
+	font-size: 3.5em;
 	margin: 0;
 }
 
@@ -1369,10 +1401,6 @@ p#book_button {
 	font-size: .8em;
 	margin: 0;
 	margin-top: 1em;
-}
-
-#specOffer p:nth-child(5) {
-	margin: 2em 0;
 }
 
 #specOffer p.specOffer_contact {
@@ -1408,8 +1436,16 @@ p#book_button {
 
 #limited {
 	width: auto;
-	background: url('../images/limitedoffer/glam_chic.jpg') no-repeat right 270px #f5f5f5;
-	height: 1000px;
+	background: url('../images/limitedoffer/Alex_2.jpg') no-repeat right 220px #f5f5f5;
+	height: 700px;
+	padding-top: 210px;
+	padding-bottom: 200px;
+}
+
+#limitedmale {
+	width: auto;
+	background: url('../images/limitedoffer/White_Hot_Male.jpg') no-repeat right 220px #f5f5f5;
+	height: 700px;
 	padding-top: 210px;
 	padding-bottom: 200px;
 }
@@ -1428,10 +1464,11 @@ p#book_button {
 }
 
 #limited_copy p.big {
-	font: 3em Georgia, "Times New Roman", Times, serif;
+	font: 1.5em Georgia, "Times New Roman", Times, serif;
+	line-height: 1.5em;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 #limited_copy p.small {
@@ -1467,11 +1504,22 @@ p#book_button {
 }
 
 #limited_copy .form .errorSummary {
-  background: none repeat scroll 0 0 rgb(255, 238, 238);
-  border: 2px solid rgb(204, 0, 0);
-  font-size: 0.9em;
+  position: absolute;
+  top: 370px;
+  left: 20px;
+  background-color: #f5f5f5;
+  width: 450px;
+  height: 120px;
+  background: none repeat scroll 0 0 #f5f5f5;
+  border: none;
+  font-size: 1.2em;
   margin: 0;
   padding: 5px;
+}
+
+#limited_copy .form .errorSummary li {
+	list-style-type: none;
+	font-weight: bold;
 }
 
 div.form .errorSummary ul li {
@@ -1483,7 +1531,7 @@ div.form .errorSummary ul li {
   display: none;
 }
 
-#limited .limitedSuccess {
+.limitedSuccess {
 	width: 400px;
 	font-size: 1.4em;
 	margin-left: 50px;
@@ -1851,16 +1899,20 @@ span.kebelo_italic {
 
 
 #advantage {
-	background: #f5f5f5 url('../images/kebelo/advantage-bikini.jpg') no-repeat right top;
+	background: #f5f5f5 url('../images/kebelo/kebelo_new.jpg') no-repeat right top;
 	padding-top: 180px;
 	padding-bottom: 200px;
+}
+
+#advantage_copy p {
+	width: 500px;
 }
 
 #advantage_copy p:first-of-type {
 	border: 0px solid #333;
 	padding: 20px;
 	font-size: .9em;
-	width: 370px;
+	width: 450px;
 	background-color: rgb(75, 35, 108);
 	color: #FFF;
 	margin-bottom: 40px;
@@ -1904,8 +1956,8 @@ span.kebelo_italic {
 }
 
 #advantage_copy {
-	width: 500px;
-	padding: 70px;
+	width: 550px;
+	padding: 50px;
 }
 
 #advantage_link {
@@ -1990,6 +2042,51 @@ span.kebelo_italic {
 	font-weight: bold;
 }
 
+#kebelo-competition {
+	width: 500px;
+	padding: 70px;
+}
+
+#kebelo-competition h3 {
+	font-size: 2em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+}
+
+#kebelo-competition p {
+	font-size: 1.3em;
+}
+
+#kebelo-competition .kebelo-offer p:nth-child(1) {
+	font-size: 3.5em;
+	margin: 0;
+}
+
+#kebelo-competition .kebelo-offer p:nth-child(2) {
+	font-size: 2em;
+	margin: 0;
+	margin-bottom: 0px;
+}
+
+#kebelo-competition .kebelo-offer small {
+	margin: 0;
+}
+
+#kebelo-competition p:nth-child(4) {
+	border: 0px solid #333;
+	padding: 20px;
+	font-size: 1.1em;
+	width: 370px;
+	background-color: rgb(75, 35, 108);
+	color: #FFF;
+	margin: 40px 0;
+}
+
+#kebelo-competition p.offer {
+	font-size: 1.5em;
+	margin: 10px 0;
+	font-weight: normal;
+}
 
 #questions {
 	background: #f5f5f5 url('../images/kebelo/red-2.jpg') no-repeat right top;
@@ -2202,12 +2299,63 @@ span.kebelo_italic {
 
 #competition {
 	width: 950px;
-	height: 800px;
-	background: #f5f5f5 url('../images/competition/kebelo.jpg') no-repeat right top;
+	height: 1700px;
+	background: #f5f5f5 url('../images/competition/christmas_raffle_15.jpg') no-repeat left -180px;
 	padding-top: 250px;
 	padding-bottom: 0px;
 	padding-bottom: 200px;
 }
+
+#competition_copy {
+	width: 650px;
+	margin-left: 80px;
+	margin-top: 1050px;
+}
+
+#prizes {
+	float: left;
+	clear: left;
+	width: 880px;
+	padding: 30px;
+}
+
+#prizes .prize {
+	float: left;
+	width: 250px;
+	height: 350px;
+	padding: 0 15px;
+	font-size: .8em;
+	border: 1px solid #333;
+	margin-left: 10px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#prizes .prize h3 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#prizes .prize p:first-of-type {
+	font-weight: bolder;
+	font-size: 1.4em;
+}
+
+#prizes .prize p:last-of-type {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+#prizes .prize ul {
+	padding: 1em;
+}
+
+#prize_entry {
+	margin-left: 80px;
+	font-size: .8em;
+}
+
 
 #overlay {
 	background: url('../images/competition/overlay.png') left top no-repeat;
@@ -2250,11 +2398,6 @@ span.kebelo_italic {
 	padding-top: 250px;
 	padding-bottom: 200px;
 	background-size: cover;
-}
-
-#competition_copy {
-	width: 400px;
-	margin-left: 50px;
 }
 
 #competition_form {
@@ -2332,6 +2475,11 @@ span.kebelo_italic {
 	top: 760px;
 	right: 200px;
 	border-radius: 20px;
+}
+
+#competition #fb_like {
+	margin-left: 80px;
+	margin-top: 20px;
 }
 
 /* @end */
@@ -2539,7 +2687,7 @@ footer {
 }
 
 #aboutus.group ul {
-	width: 700px;
+	width: 640px;
 }
 
 #aboutus.group ul li {
@@ -2589,7 +2737,7 @@ ul.tinytext {
 
 #twitter {
 	position: absolute;
-	right: 110px;
+	right: 100px;
 	bottom: 34px;
 	opacity: .7;
 }
@@ -2597,6 +2745,18 @@ ul.tinytext {
 #twitter:hover {
 	opacity: 1;
 }
+
+#google {
+	position: absolute;
+	right: 170px;
+	bottom: 34px;
+	opacity: .7;
+}
+
+#google:hover {
+	opacity: 1;
+}
+
 
 /* @end */
 

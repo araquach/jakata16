@@ -2,10 +2,16 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\Stylist;
+use App\Http\Requests\StylistFormRequest;
 use Illuminate\Http\Request;
 
 class StylistController extends Controller {
+	
+	public function __construct(Stylist $stylist)
+	{
+		$this->stylist = $stylist;
+	}
 
 	/**
 	 * Display a listing of the resource.
@@ -14,7 +20,9 @@ class StylistController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$stylists = $this->stylist->get();
+		
+		return view('recruit.stylist.index', compact('stylists'));
 	}
 
 	/**
@@ -32,9 +40,13 @@ class StylistController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(StylistFormRequest $request)
 	{
-		//
+		$input = $request->all();
+		
+		Stylist::create($input);
+
+    	return redirect()->back();
 	}
 
 	/**
@@ -45,7 +57,9 @@ class StylistController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		$stylist = $this->stylist->find($id);
+		
+		return view('recruit.stylist.show', compact('stylist'));
 	}
 
 	/**

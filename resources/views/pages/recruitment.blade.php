@@ -1,5 +1,16 @@
 @extends('layouts.main')
 
+@section('head')
+	<meta name="description" content="Join the JAKATA team, hairdressing jobs and recruitment">
+	<meta name="keywords" content="Hair jobs, hairdressing jobs, hair recruitment, hairdressing recruitment">
+@stop
+
+@section('title')
+
+	<title>Jakata Salon - Hairdressing Recruitment - Join the team</title>
+
+@stop
+
 @section('content')
 
 <section id="recruitment">
