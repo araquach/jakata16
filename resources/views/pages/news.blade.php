@@ -22,9 +22,52 @@ window.addEvent('domready', function(){
 <section id="accordion">
 	
 <article class="article">
+<a id="EliteSymposium" class="anchor"></a>	
+<section class="visible">
+{{ Html::image('images/newspics/symposium1.jpg', 'Elite Symposium') }}
+{{ Html::image('images/newspics/symposium2.jpg', 'Elite Symposium') }}
+<h2>Schwarzkopf Professional Elite Symposium</h2>
+<p><strong>Hairdressers always love the opportunity to meet up with like minded people to share ideas and see what’s happening in the industry as a whole. There are usually a few events each year put on by the major product suppliers (Tigi, Schwarzkopf GHD) geared at salons coming together to keep up to date with the latest movements in the hairdressing industry.
+</strong></p>
+<p>When we were told about the <em>Schwarzkopf Professional Elite Symposium</em> - a day of seminars, competitions, product launches, black tie(ish) meal and a night club - we knew we had to get as many of the team going for inspiration and education (plus we always love a good  party session!). We ran an incentive in the salon and 10 of the guys from across both salons won tickets to join the 300+ hairdressers invited to the event.
+</p>
+<p><strong>Matt Lane</strong> was one of the stylists from JAKATA who attended and I asked him to write an article about his experience&hellip;
+</p>
+<p class="reveal">Read more &gt;</p>
+</section> <!--end .visible-->
+<section class="hidden">
+{{ Html::image('images/newspics/symposium3.jpg', 'Elite Symposium entrance') }}
+<p>The <em>Jakata</em> and <em>Paul Kemp Hairdressing</em> team’s set off together on their drive down to Birmingham on a very sunny bright morning  - after much discussion on what we were going to wear!</p>
+<p>We arrived at the Belfry Golf club, which was venue for the <em>Schwarzkopf Professional Elite Symposium</em> - an all day hairdressing event for hairdressing professionals across the UK.</p>
+<p>When we arrived at the Belfry we were greeted by Schwarzkopf account managers who sorted us out with tea and coffee - no doubt to keep us awake! While we were waiting to go into the first session we were able to get a glimpse of the models getting their makeup done for the stylists who were entering the competition later on.
+</p>
+<p>At around 12 a gourmet lunch buffet was provided which was delicious!</p>
+<p>Shortly after that we were ushered into the <em>Essential Looks</em> event room. The stage was lit with vibrant coloured spot lights and dressed with banners and posters from the latest collections.</p>
+{{ Html::image('images/newspics/symposium4.jpg', 'Steven McDowell') }}
+{{ Html::image('images/newspics/symposium5.jpg', 'Osis') }}
+<p>We found our table and <em>Steven McDowle</em> welcomed us to the event and went on to introduce the re-launch of the <em>Schwarzkopf Osis</em> product range. We were talked through the new Osis products for prep, style, texture and finishing. <em>‘Bouncy Curls’, ‘Damped’, ‘Curl Honey’, ‘Under Coat’, ‘Hairbody’, ‘Mighty Matte’, ‘Big Blast’, ‘Play Tough’, ‘G-force’ and ‘Tame Wild’</em> completed the line-up.</p>
+<p>Following this the <em>Essential Looks</em> show started. This seasons Essential looks is called ‘Made To Create’ and comprises of 3 main Trends for spring/summer recreated by the Schwarzkopf ambassador stylists <em>Charlie Taylor, Andy Smith, Kay Brady and Kevin Caan</em>. Showcasing their interpretation of ‘Urban Sports’, ‘Freecreation’ and ‘Future Wave’. Models were brought on stage to display all 3 trends, breaking down each look and explaining the colouring/cutting/styling techniques used.</p>
+{{ Html::image('images/newspics/symposium6.jpg', 'Essential Looks') }}
+<p><strong>Urban sports</strong> focused on the sporty side of fashion with light breathable fabrics with trainers. The colour was inspired by the new <em>Igora Colourworx</em> intense colours to create bold colour effects or panels hidden to add interest.  The styling was a mixture of short texture, loose messy topknots, flicks and quiffs plus sleek, straight hair.</p>
+<p><strong>Freecreation</strong> fashion statements are layered looks with raw graphic shapes, the colour direction is blonde hues and tones, using freehand techniques. Styling is bold, statement shapes, choppy texture and long silky tamed hair.</p>
+<p>And finally <strong>Future Wave</strong> was a space-aged trend led by pure crisp whites and silver metallic’s but with modern age twist by incorporating jackets and hoodies. The colour inspiration was inspired by Igora nude tones to create effortless colour. The style direction was looking more towards volumised curls but also sleek waves, geared towards a modern and commercial look.</p>
+{{ Html::image('images/newspics/symposium7.jpg', 'Inspire UK') }}
+<p>After the presentation we watched  the <em>Inspire Live UK</em>, a competition with stylist’s from different salon’s all around from UK displaying their colours, cut’s and styling inspired by fashion and previous Essential Looks. ‘A competition that gives the next generation of Schwarzkopf’s hairdressing talent their chance to shine’. It was very exciting and inspiring  - so you never know, next year one of us might be entering!!</p>
+{{ Html::image('images/newspics/symposium_group.jpg', 'Group Shot', array('class' => 'news-image')) }}
+<p>We checked into our rooms and started to get ready with a few cheeky drinks to set the night off well. We made our way back, all suited &amp; booted. We were greeted with a glass of champagne and got the opportunity to chat and mingle with stylists from various salons from around the UK.</p>
+{{ Html::image('images/newspics/symposium8.jpg', 'Meal Time') }}
+{{ Html::image('images/newspics/symposium9.jpg', 'Team Shot') }}
+<p>A three course meal followed complete with lots and lots of wine! Once we had eaten the winners were announced for the <em>Inspire Live UK</em> final and from there we made our way to the <em>Bel Air nightclub</em> which was on the grounds of the hotel. We partied the night away&hellip; it’s safe to say there were a fair few salon’s on the dance floor along with lots of booze and good times!  &hellip;however the day after was a different story!</p>
+<p><strong>Overall it was a great experience, speaking with people from other salons, the stylists on stage and the stylist entering the competition.  I personally had so much fun and feel really inspired by this year’s Essential Looks!!! Can’t wait for next year!</strong></p>
+</section> <!--end .hidden-->
+<p class="author">Published by Matt</p>
+<time datetime="2016-04-01">1<sup>st</sup> April 2016</time>
+</article> <!--end #article-->
+
+<article class="article">
 <a id="Tweens" class="anchor"></a>
 <section class="visible">
-{{ Html::image('/images/newspics/bedhead_montage.jpg', 'Bed Head Tweens') }}
+{{ Html::image('images/newspics/bedhead_montage.jpg', 'Bed Head Tweens') }}
 <h2>Bed Head Tweens are back</h2>
 <p><strong>Its that time of year again when TIGI release 750ml shampoos and conditioners for you to have at home.
 We personally love this range, there is something for everyone.</strong></p>
@@ -46,7 +89,7 @@ at only £29.95 you get both shampoo and conditioner, an epic size with a mini p
 <article class="article">
 <a id="PantoneTrends" class="anchor"></a>
 <section class="visible">
-{{ Html::image('/images/newspics/pantone.jpg', 'Pantone Colors of the Year') }}
+{{ Html::image('images/newspics/pantone.jpg', 'Pantone Colors of the Year') }}
 <h2>Pantone &amp; Colour Trends</h2>
 <p><strong>Here at Jakata we like to keep up to date with the latest trends, and when it comes to colour we often look outside of the fashion and hair world for inspiration. A key player in the world of colour in design is ‘Pantone’ who have recently released their latest ‘Color of the Year’.
 </strong></p>
@@ -55,8 +98,8 @@ at only £29.95 you get both shampoo and conditioner, an epic size with a mini p
 <p class="reveal">Read more &gt;</p>
 </section> <!--end .visible-->
 <section class="hidden">
-{{ Html::image('/images/newspics/rose_quartz.jpg', 'Rose Quartz') }}
-{{ Html::image('/images/newspics/serenity.jpg', 'Serenity') }}
+{{ Html::image('images/newspics/rose_quartz.jpg', 'Rose Quartz') }}
+{{ Html::image('images/newspics/serenity.jpg', 'Serenity') }}
 <p>Every year Pantone declares a particular colour "Color of the Year", and this year they have decided to have 2 complimenting colours of the Year</p>
 <p>Introducing ‘Rose quartz’ and ‘Serenity’ - two beautiful pastel colours perfect for anyone looking for soft light and airy colours taking you right on trend for the summer. </p>
 <p><em>“Joined together rose quartz and serenity demonstrate an inherent balance between warmer embracing rose tone and the cooler tranquil blue, reflecting  connection and wellness as well as a soothing sense of order and peace”</em> - Leatrice Eisemen executive director, Pantone Color institute.</p>
@@ -66,11 +109,11 @@ at only £29.95 you get both shampoo and conditioner, an epic size with a mini p
 <p class="author">Published by Vikki</p>
 <time datetime="2016-03-12">12<sup>th</sup> March 2016</time>
 </article> <!--end #article-->
-	
+
 <article class="article">
 <a id="NatSenior" class="anchor"></a>
 <section class="visible">
-{{ Html::image('/images/newspics/nat_senior.jpg', 'Natalie Senior Stylist') }}
+{{ Html::image('images/newspics/nat_senior.jpg', 'Natalie Senior Stylist') }}
 <h2>Natalie Promoted to Senior Stylist</h2>
 <p><strong>We’re proud to announce that our stylist Natalie Doxey has been promoted to Senior Stylist level. Natalie has met the standards required to be given this sought after title.</strong></p>
 <p>She has been with the company for 8 years now working her way up from a 1st year apprentice all the way up to a senior stylist and has firmly embedded herself as key member of the team, playing an important part of our eduction team as well.</p>
@@ -84,11 +127,11 @@ at only £29.95 you get both shampoo and conditioner, an epic size with a mini p
 <p class="author">Published by Jimmy</p>
 <time datetime="2016-03-01">3<sup>rd</sup> March 2016</time>
 </article> <!--end #article-->
-	
+
 <article class="article">
 <a id="ColorMasters" class="anchor"></a>
 <section class="visible">
-{{ Html::image('/images/newspics/colour_masters.jpg', 'Colour Masters') }}
+{{ Html::image('images/newspics/colour_masters.jpg', 'Colour Masters') }}
 <h2>Colour Masters</h2>
 <p><strong>Last year was a big movement in our education department. Our focus was on putting our stylist through their paces. We have always had a strong focus on eduction and developing our team’s skill sets, but to further this we put all of our senior team members through a colour master class.</strong></p>
 <p>The Schwarzkopf Professional Colour Master Class represents a gold standard in colour education with an innovative delivery method. The learning units are dedicated to all aspects of colour, from the philosophy of colour, interpretation, selection and application. The focus of this course is not only on theory of colour but also a practical hands-on experience.</p>

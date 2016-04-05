@@ -50,6 +50,7 @@
 	</div>
 	
 	<div class="row">
+
 		{!! Form::label('postcode', 'Postcode') !!}
 		{!! Form::text('postcode') !!}
 		{!! $errors->first('postcode') !!}

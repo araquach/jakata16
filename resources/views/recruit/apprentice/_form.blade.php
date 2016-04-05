@@ -55,6 +55,12 @@
 	</div>
 
 	<div class="row">
+		{!! Form::label('address3', 'Address 3') !!}
+		{!! Form::text('address3') !!}
+		{!! $errors->first('address3') !!}
+	</div>
+
+	<div class="row">
 		{!! Form::label('postcode', 'Postcode') !!}
 		{!! Form::text('postcode') !!}
 		{!! $errors->first('postcode') !!}
