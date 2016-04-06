@@ -6,30 +6,15 @@
 
 <h1>Apprentices</h1>
 
+@foreach($apprentices as $apprentice)
+
 <div class="view">
-
-	<b>Apprentice ID:</b>
-	{{ $id }}
-	<br />
-	
-	<b>Date:</b>
-	{{ $date }}
-	<br />
-
-	<b>First Name:</b>
-	{{ $first_name }}
-	<br />
-	
-	<b>Second Name:</b>
-	{{ $last_name }}
-	<br />
-	
-	<b>Age:</b>
-	{{ $age }}
-	<br />
+    
+<a href="/stylist/{{ $apprentice->id }}">{{ $apprentice->first_name }}</a>
 
 </div>
 
+@endforeach
 
 </div> <!--recruitBlank-->
 

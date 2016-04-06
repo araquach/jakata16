@@ -6,11 +6,18 @@
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<ul>
-	    @foreach($errors->all() as $error)
+@if (count($errors) > 0)
+
+<div id="stylist-form_es_" class="errorSummary">
+		<p>Please fix the following input errors:</p>
+		<ul>
+	   		 @foreach($errors->all() as $error)
 	        <li>{{{ $error }}}</li>
-	    @endforeach
-	</ul>
+	    	@endforeach
+		</ul>
+</div>
+   
+@endif
 	
 <div class="accordion">
 	
@@ -20,68 +27,62 @@
 	
 	<div class="elements">
 
-		{!! Form::hidden('id', '') !!}
+		{!! Form::hidden('id') !!}
 		
-		{{ Form::hidden('date', '') }}
+		{!! Form::hidden('date') !!}
 
 	<div class="row">
 		{!! Form::label('first_name', 'First Name') !!}
 		{!! Form::text('first_name') !!}
-		{!! $errors->first('first_name') !!}
+		{!! $errors->first('first_name', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row">
 		{!! Form::label('second_name', 'Second Name') !!}
 		{!! Form::text('second_name') !!}
-		{!! $errors->first('second_name') !!}
+		{!! $errors->first('second_name', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('age', 'Age') !!}
 		{!! Form::text('age') !!}
-		{!! $errors->first('age') !!}
+		{!! $errors->first('age', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('address1', 'Address 1') !!}
 		{!! Form::text('address1') !!}
-		{!! $errors->first('address1') !!}
+		{!! $errors->first('address1', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('address2', 'Address 2') !!}
-		{!! Form::text('address 2') !!}
-		{!! $errors->first('address2') !!}
-	</div>
-
-	<div class="row">
-		{!! Form::label('address3', 'Address 3') !!}
-		{!! Form::text('address3') !!}
-		{!! $errors->first('address3') !!}
+		{!! Form::text('address2') !!}
+		{!! $errors->first('address2', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('postcode', 'Postcode') !!}
 		{!! Form::text('postcode') !!}
-		{!! $errors->first('postcode') !!}
+		{!! $errors->first('postcode', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('email', 'Email Address') !!}
 		{!! Form::text('email') !!}
-		{!! $errors->first('email') !!}
+		{!! $errors->first('email', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('phone', 'Phone Number') !!}
 		{!! Form::text('phone') !!}
-		{!! $errors->first('phone') !!}
+		{!! $errors->first('phone', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('mobile', 'Mobile Number') !!}
 		{!! Form::text('mobile') !!}
-		{!! $errors->first('mobile') !!}
+		{!! $errors->first('mobile', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	</div> <!--end elements (basic info)-->
@@ -99,7 +100,7 @@
 			'School Link' => 'School Link',
 			'Other' => 'Other'
 			), null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('current_emp') !!}
+		{!! $errors->first('current_emp', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row">
@@ -109,13 +110,13 @@
 			'Other industry' => 'Other Industry',
 			'Unemployed' => 'Not employed'
 			), null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('in_salon') !!}
+		{!! $errors->first('in_salon', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row">
 		{!! Form::label('salon_name', 'Please state your current workplace (if applicable)') !!}
-		{!! Form::text('in_salon') !!}
-		{!! $errors->first('salon_name') !!}
+		{!! Form::text('salon_name') !!}
+		{!! $errors->first('salon_name', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row">
@@ -125,7 +126,7 @@
 			'4 or more GCSE' => '4 or more GCSE\'s',
 			'1 or more A level' => '1 or more A level\'s'
 			), null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('qualification_school') !!}
+		{!! $errors->first('qualification_school', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row">
@@ -136,7 +137,7 @@
 			'Towards NVQ3' => 'Working towards NVQ level 3',
 			'Other' => 'Other'
 			), null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('qualification_hair') !!}
+		{!! $errors->first('qualification_hair', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	</div> <!--end elements (experience)-->
@@ -149,49 +150,49 @@
 	<div class="row">
 		{!! Form::label('cutting', 'Cutting Hair') !!}
 		{!! Form::selectRange('cutting', 1, 5, null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('cutting') !!}
+		{!! $errors->first('cutting', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('styling', 'Styling Hair') !!}
 		{!! Form::selectRange('styling',1, 5, null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('styling') !!}
+		{!! $errors->first('styling', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('colouring', 'Colouring Hair') !!}
 		{!! Form::SelectRange('colouring',1, 5, null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('colouring') !!}
+		{!! $errors->first('colouring', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row">
 		{!! Form::label('men', 'Men\'s Hairdressing') !!}
 		{!! Form::SelectRange('men',1, 5, null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('men') !!}
+		{!! $errors->first('men', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('extensions', 'Extensions') !!}
 		{!! Form::SelectRange('extensions',1, 5, null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('extensions') !!}
+		{!! $errors->first('extensions', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('chem_straightening', 'Chemical Straightening') !!}
 		{!! Form::SelectRange('chem_straightening',1, 5, null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('chem_straightening') !!}
+		{!! $errors->first('chem_straightening', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('brazil_blow', 'Brazilian Blowdry\'s') !!}
 		{!! Form::SelectRange('brazil_blow',1, 5, null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('brazil_blow') !!}
+		{!! $errors->first('brazil_blow', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('hair_up', 'Hair Up Styling') !!}
 		{!! Form::SelectRange('hair_up',1, 5, null, ['placeholder' => '-- Please Select --']) !!}
-		{!! $errors->first('hair_up') !!}
+		{!! $errors->first('hair_up', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	</div> <!--end elements (hairdressing skills)-->
 	
@@ -201,19 +202,19 @@
 	<div class="row">
 		{!! Form::label('about', 'Tell us a bit about yourself') !!}
 		{!! Form::textarea('about') !!}
-		{!! $errors->first('about') !!}
+		{!! $errors->first('about', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('why_hairdressing', 'Why did you choose hairdressing as a career?') !!}
 		{!! Form::textarea('why_hairdressing') !!}
-		{!! $errors->first('why_hairdressing') !!}
+		{!! $errors->first('why_hairdressing', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row">
 		{!! Form::label('why_jakata', 'What makes you want to join the Jakata Team?') !!}
 		{!! Form::textarea('why_jakata') !!}
-		{!! $errors->first('why_jakata') !!}
+		{!! $errors->first('why_jakata', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row buttons">
