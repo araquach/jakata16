@@ -10,7 +10,7 @@
 
 <div class="view">
     
-<a href="/stylist/{{ $apprentice->id }}">{{ $apprentice->first_name }}</a>
+<a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->first_name }}</a>
 
 </div>
 

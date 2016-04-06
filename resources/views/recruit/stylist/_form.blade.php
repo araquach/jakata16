@@ -49,7 +49,7 @@
 	
 	<div class="row">
 		{!! Form::label('address2', 'Address 2') !!}
-		{!! Form::text('address 2') !!}
+		{!! Form::text('address2') !!}
 		{!! $errors->first('address2', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
