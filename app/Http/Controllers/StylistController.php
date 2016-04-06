@@ -46,7 +46,7 @@ class StylistController extends Controller {
 		
 		Stylist::create($input);
 
-    	return redirect()->back();
+    	return redirect()->back()->with('message', 'Thanks for your application!');
 	}
 
 	/**

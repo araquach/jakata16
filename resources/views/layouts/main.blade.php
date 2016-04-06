@@ -44,7 +44,7 @@
 					<li>{!! link_to('team', 'Team') !!}</li>
 					<li>{!! link_to('prices', 'Prices') !!}</li>
 					<li>{!! link_to('news', 'News') !!}</li>
-					<li>{!! link_to('contact', 'Contact') !!}</li>
+					<li>{!! link_to('details', 'Contact') !!}</li>
 				</ul>
 			</nav>
 		</header>
