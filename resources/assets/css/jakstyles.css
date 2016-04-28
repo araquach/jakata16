@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
-
 /* CSS Document */
 
 /* @group Clear Fix */
@@ -30,7 +28,7 @@
 body {
 	margin: 10px auto;
 	width: 950px;
-	background: url('../images/main/titanium.jpg') repeat-x left top rgb(81, 86, 95);
+	background: url('/images/main/titanium.jpg') repeat-x left top rgb(81, 86, 95);
 }
 
 .container {
@@ -41,7 +39,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Indie Flower', cursive;
+	font-family: NotethisRegular;
 	color: #4f516a;
 }
 
@@ -84,7 +82,7 @@ header h1, header h2 {
 #logo {
 	width: 550px;
 	height: 130px;
-	background:  url('../images/main/jakata_logo.png') no-repeat center center;
+	background:  url('/images/main/jakata_logo.png') no-repeat center center;
 }
 
 nav {
@@ -140,7 +138,7 @@ nav li a:hover {
 #admin {
 	width: 950px;
 	height: 100%;
-	background: #f5f5f5 url('../images/bg.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/bg.jpg') no-repeat left top;
 	padding-top: 280px;
 	padding-bottom: 190px;
 }
@@ -160,7 +158,7 @@ nav li a:hover {
 #home {
 	width: 950px;
 	height: 100%;
-	background: url('../images/home/cool.jpg') no-repeat left top #f5f5f5;
+	background: url('/images/home/cool.jpg') no-repeat left top #f5f5f5;
 	padding-top: 280px;
 	padding-bottom: 188px;
 }
@@ -213,30 +211,30 @@ nav li a:hover {
 }
 
 #news1 {
-	background: url('../images/home/color_masters.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
+	background: url('/images/home/color_masters.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
 	background-size: contain;
 }
 .no-rgba #news1 {
-	background: url('../images/home/color_masters_small.jpg') no-repeat left top rgb(249, 249, 250);
+	background: url('/images/home/color_masters_small.jpg') no-repeat left top rgb(249, 249, 250);
 	
 }
 
 
 #news2 {
-	background: url('../images/home/fibreplex.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
+	background: url('/images/home/fibreplex.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
 	background-size: contain;
 }
 .no-rgba #news2 {
-	background: url('../images/home/color_masters_small.jpg') no-repeat left top rgb(249, 249, 250);
+	background: url('/images/home/color_masters_small.jpg') no-repeat left top rgb(249, 249, 250);
 }
 
 
 #news3 {
-	background: url('../images/home/recruit.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
+	background: url('/images/home/recruit.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
 	background-size: contain;
 }
 .no-rgba #news3 {
-	background: url('../images/home/recruit_small.jpg') no-repeat left top rgb(249, 249, 250);
+	background: url('/images/home/recruit_small.jpg') no-repeat left top rgb(249, 249, 250);
 	background-size: contain;
 }
 
@@ -277,7 +275,7 @@ nav li a:hover {
 #salon {
 	width: 950px;
 	height: 100%;
-	background: #f5f5f5 url('../images/salon/jakata_internal.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/salon/jakata_internal.jpg') no-repeat left top;
 	padding-top: 300px;
 	padding-bottom: 200px;
 }
@@ -428,7 +426,7 @@ nav li a:hover {
 	position: absolute;
 	top: 280px;
 	right: 50px;
-	background: url('../images/team/jimmy.jpg') no-repeat left top #FFF;
+	background: url('/images/team/jimmy.jpg') no-repeat left top #FFF;
 	
 	transform:rotate(2deg);
 	-ms-transform:rotate(2deg); /* IE 9 */
@@ -440,7 +438,7 @@ nav li a:hover {
 }
 
 #vicky {
-	background: #FFF url('../images/team/vicky.jpg') no-repeat left top;
+	background: #FFF url('/images/team/vicky.jpg') no-repeat left top;
 	transform:rotate(-4deg);
 	-ms-transform:rotate(-4deg); /* IE 9 */
 	-moz-transform:rotate(-4deg); /* Firefox */
@@ -452,7 +450,7 @@ nav li a:hover {
 }
 
 #maisie {
-	background: #FFF url('../images/team/maisie.jpg') no-repeat left top;
+	background: #FFF url('/images/team/maisie.jpg') no-repeat left top;
 	transform:rotate(-4deg);
 	-ms-transform:rotate(-4deg); /* IE 9 */
 	-moz-transform:rotate(-4deg); /* Firefox */
@@ -463,7 +461,7 @@ nav li a:hover {
 }
 
 #nat {
-	background: #FFF url('../images/team/nat.jpg') no-repeat left top;
+	background: #FFF url('/images/team/nat.jpg') no-repeat left top;
 	transform:rotate(3deg);
 	-ms-transform:rotate(3deg); /* IE 9 */
 	-moz-transform:rotate(3deg); /* Firefox */
@@ -474,7 +472,7 @@ nav li a:hover {
 }
 
 #laura {
-	background: #FFF url('../images/team/laura.jpg') no-repeat left top;
+	background: #FFF url('/images/team/laura.jpg') no-repeat left top;
 	transform:rotate(-2deg);
 	-ms-transform:rotate(-2deg); /* IE 9 */
 	-moz-transform:rotate(-2deg); /* Firefox */
@@ -485,7 +483,7 @@ nav li a:hover {
 }
 
 #matt {
-	background: #FFF url('../images/team/matt.jpg') no-repeat left top;
+	background: #FFF url('/images/team/matt.jpg') no-repeat left top;
 	transform:rotate(-3deg);
 	-ms-transform:rotate(-3deg); /* IE 9 */
 	-moz-transform:rotate(-3deg); /* Firefox */
@@ -496,7 +494,7 @@ nav li a:hover {
 }
 
 #laura_m {
-	background: #FFF url('../images/team/laura_m.jpg') no-repeat left top;
+	background: #FFF url('/images/team/laura_m.jpg') no-repeat left top;
 	transform:rotate(1deg);
 	-ms-transform:rotate(1deg); /* IE 9 */
 	-moz-transform:rotate(1deg); /* Firefox */
@@ -834,7 +832,7 @@ p.reveal {
 #news_extra {
 	width: 950px;
 	height: 1100px;
-	background: #f5f5f5 url('../images/news_extra/vikki.jpg') no-repeat 580px 240px;
+	background: #f5f5f5 url('/images/news_extra/vikki.jpg') no-repeat 580px 240px;
 	padding-top: 270px;
 	padding-bottom: 200px;
 }
@@ -852,7 +850,7 @@ p.reveal {
 #news_extra_copy #viks_hours {
 	width: 400px;
 	height: 360px;
-	background: #FFF url('../images/news_extra/vik_dates.jpg') no-repeat left top;
+	background: #FFF url('/images/news_extra/vik_dates.jpg') no-repeat left top;
 	border: 1px solid #999;
 }
 
@@ -873,7 +871,7 @@ p.reveal {
 
 #recruitment {
 	width: 950px;
-	background: #f5f5f5 url('../images/recruitment/recruitment.jpg') no-repeat right top;
+	background: #f5f5f5 url('/images/recruitment/recruitment.jpg') no-repeat right top;
 	background-size: cover;
 	min-height: 900px;
 	padding-top: 250px;
@@ -980,7 +978,7 @@ section#recruitment h1 {
 	width: 950px;
 	padding-top: 250px;
 	padding-bottom: 200px;
-	background: #f5f5f5 url('../images/recruitment/create.jpg') no-repeat right top;
+	background: #f5f5f5 url('/images/recruitment/create.jpg') no-repeat right top;
 	background-size: cover;
 }
 
@@ -1085,7 +1083,7 @@ div.row textarea {
 #details {
 	width: 950px;
 	height: 100%;
-	background: #f5f5f5 url('../images/contact/dark_angel.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/contact/dark_angel.jpg') no-repeat left top;
 	padding-top: 250px;
 	padding-bottom: 250px;
 }
@@ -1127,7 +1125,7 @@ div.row textarea {
 #contact {
 	width: 950px;
 	height: 100%;
-	background: #f5f5f5 url('../images/contact/dark_angel.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/contact/dark_angel.jpg') no-repeat left top;
 	padding-top: 250px;
 	padding-bottom: 200px;
 }
@@ -1251,21 +1249,21 @@ div.row textarea {
 
 #offer1 {
 	margin-top: 50px;
-	background: url(../images/offers/Alice_012.jpg) no-repeat #fefefe;
+	background: url(/images/offers/Alice_012.jpg) no-repeat #fefefe;
 }
 
 #offer2 {
-	background: url(../images/offers/candy_man.jpg) no-repeat #fefefe;
+	background: url(/images/offers/candy_man.jpg) no-repeat #fefefe;
 }
 
 #offer3 {
 	margin-bottom: 30px;
-	background: url(../images/offers/alex.jpg) no-repeat #fefefe;
+	background: url(/images/offers/alex.jpg) no-repeat #fefefe;
 }
 
 #offer4 {
 	margin-bottom: 30px;
-	background: url(../images/offers/men.jpg) no-repeat #fefefe;
+	background: url(/images/offers/men.jpg) no-repeat #fefefe;
 }
 
 
@@ -1340,7 +1338,7 @@ p#book_button {
 #no_offers {
 	width: 950px;
 	height: 400px;
-	background: url('../images/home/coolhunter.jpg') no-repeat left top #f5f5f5;
+	background: url('/images/home/coolhunter.jpg') no-repeat left top #f5f5f5;
 	padding-top: 280px;
 	padding-bottom: 190px;
 }
@@ -1357,7 +1355,7 @@ p#book_button {
 	width: 950px;
 	height: 850px;
 	background-color: #f5f5f5;
-	background: #f5f5f5 url('../images/spec_offer/laura_matthew.jpg') no-repeat 600px 250px;
+	background: #f5f5f5 url('/images/spec_offer/laura_matthew.jpg') no-repeat 600px 250px;
 	padding-top: 210px;
 	padding-bottom: 200px;
 }
@@ -1417,7 +1415,7 @@ p#book_button {
 	width: 950px;
 	height: 600px;
 	background-color: #f5f5f5;
-	background: #f5f5f5 url('../images/spec_offer/men_offer.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/spec_offer/men_offer.jpg') no-repeat left top;
 	padding-top: 210px;
 	padding-bottom: 200px;
 }
@@ -1436,7 +1434,7 @@ p#book_button {
 
 #limited {
 	width: auto;
-	background: url('../images/limitedoffer/Alex_2.jpg') no-repeat right 220px #f5f5f5;
+	background: url('/images/limitedoffer/Alex_2.jpg') no-repeat right 220px #f5f5f5;
 	height: 700px;
 	padding-top: 210px;
 	padding-bottom: 200px;
@@ -1444,7 +1442,7 @@ p#book_button {
 
 #limitedmale {
 	width: auto;
-	background: url('../images/limitedoffer/White_Hot_Male.jpg') no-repeat right 220px #f5f5f5;
+	background: url('/images/limitedoffer/White_Hot_Male.jpg') no-repeat right 220px #f5f5f5;
 	height: 700px;
 	padding-top: 210px;
 	padding-bottom: 200px;
@@ -1547,7 +1545,7 @@ div.form .errorSummary ul li {
 	width: 950px;
 	height: 700px;
 	background-color: #f5f5f5;
-	background: #f5f5f5 url('../images/catwalk/catwalk_bground.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/catwalk/catwalk_bground.jpg') no-repeat left top;
 	padding-top: 210px;
 	padding-bottom: 200px;
 }
@@ -1608,7 +1606,7 @@ div.form .errorSummary ul li {
 #collections {
 	width: 950px;
 	height: 100%;
-	background: #f5f5f5 url('../images/collections/feedback_background.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/collections/feedback_background.jpg') no-repeat left top;
 	padding-top: 250px;
 	padding-bottom: 200px;
 }
@@ -1634,7 +1632,7 @@ div.form .errorSummary ul li {
 #company {
 	width: 950px;
 	height: 100%;
-	background: #f5f5f5 url('../images/company_offer/coolhunter2.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/company_offer/coolhunter2.jpg') no-repeat left top;
 	padding-top: 250px;
 	padding-bottom: 200px;
 }
@@ -1724,7 +1722,7 @@ div.form .errorSummary ul li {
 
 #kebeloMain {
 	width: 950px;
-	background: #f5f5f5 url('../images/bg.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/bg.jpg') no-repeat left top;
 }
 
 #kebelo_top_links {
@@ -1824,14 +1822,14 @@ span.kebelo_italic {
 
 #kebelo {
 	width: 100%;
-	background: url('../images/kebelo/kebelo_cover.jpg') no-repeat left top #e9e0d7;
+	background: url('/images/kebelo/kebelo_cover.jpg') no-repeat left top #e9e0d7;
 	height: 1200px;
 	padding-top: 250px;
 	padding-bottom: 180px;
 }
 
 #silk {
-	background: #f5f5f5 url('../images/kebelo/silk-bikini.jpg') no-repeat right top;
+	background: #f5f5f5 url('/images/kebelo/silk-bikini.jpg') no-repeat right top;
 	padding-top: 180px;
 	padding-bottom: 200px;
 }
@@ -1899,7 +1897,7 @@ span.kebelo_italic {
 
 
 #advantage {
-	background: #f5f5f5 url('../images/kebelo/kebelo_new.jpg') no-repeat right top;
+	background: #f5f5f5 url('/images/kebelo/kebelo_new.jpg') no-repeat right top;
 	padding-top: 180px;
 	padding-bottom: 200px;
 }
@@ -2089,7 +2087,7 @@ span.kebelo_italic {
 }
 
 #questions {
-	background: #f5f5f5 url('../images/kebelo/red-2.jpg') no-repeat right top;
+	background: #f5f5f5 url('/images/kebelo/red-2.jpg') no-repeat right top;
 	padding-top: 160px;
 	padding-bottom: 200px;
 }
@@ -2186,7 +2184,7 @@ span.kebelo_italic {
 	width: 950px;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background: #FFF url('../images/feedback/bedhead.jpg') no-repeat 510px 260px;
+	background: #FFF url('/images/feedback/bedhead.jpg') no-repeat 510px 260px;
 }
 
 #feedback {
@@ -2290,7 +2288,7 @@ span.kebelo_italic {
 	width: 950px;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background: #f5f5f5 url('../images/bg.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/bg.jpg') no-repeat left top;
 }
 
 /* @end */
@@ -2300,7 +2298,7 @@ span.kebelo_italic {
 #competition {
 	width: 950px;
 	height: 1700px;
-	background: #f5f5f5 url('../images/competition/christmas_raffle_15.jpg') no-repeat left -180px;
+	background: #f5f5f5 url('/images/competition/christmas_raffle_15.jpg') no-repeat left -180px;
 	padding-top: 250px;
 	padding-bottom: 0px;
 	padding-bottom: 200px;
@@ -2358,7 +2356,7 @@ span.kebelo_italic {
 
 
 #overlay {
-	background: url('../images/competition/overlay.png') left top no-repeat;
+	background: url('/images/competition/overlay.png') left top no-repeat;
 	width: 950px;
 	height: 1200px;
 	position: absolute;
@@ -2394,7 +2392,7 @@ span.kebelo_italic {
 #valentine {
 	width: 950px;
 	height: 900px;
-	background: #f5f5f5 url('../images/competition/valentine2.jpg') no-repeat right top;
+	background: #f5f5f5 url('/images/competition/valentine2.jpg') no-repeat right top;
 	padding-top: 250px;
 	padding-bottom: 200px;
 	background-size: cover;
@@ -2423,7 +2421,7 @@ span.kebelo_italic {
 #competition_admin {
 	width: 950px;
 	height: 100%;
-	background: #f5f5f5 url('../images/bg.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/bg.jpg') no-repeat left top;
 	background-position-y: -5.2px;
 	padding-top: 250px;
 	padding-bottom: 200px;
@@ -2490,7 +2488,7 @@ span.kebelo_italic {
 	width: 950px;
 	height: 100%;
 	background-color: #f5f5f5;
-	background-image: url('../images/survey/autumn_survey_small.jpg'), url('../images/survey/autumn_background.jpg');
+	background-image: url('/images/survey/autumn_survey_small.jpg'), url('/images/survey/autumn_background.jpg');
 	background-repeat: repeat-y, no-repeat;
 	background-position: 630px top, left top;
 	padding-top: 250px;
@@ -2499,7 +2497,7 @@ span.kebelo_italic {
 }
 
 .no-multiplebgs #survey {
-	background: #f5f5f5 url('../images/survey/autumn_background.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/survey/autumn_background.jpg') no-repeat left top;
 }
 
 #survey_copy {
@@ -2636,7 +2634,7 @@ span.kebelo_italic {
 #exit {
 	width: 950px;
 	height: 1100px;
-	background: #f5f5f5 url('../images/exit/pk_staff.jpg') no-repeat 580px 270px;
+	background: #f5f5f5 url('/images/exit/pk_staff.jpg') no-repeat 580px 270px;
 	padding-top: 270px;
 	padding-bottom: 200px;
 }
@@ -2671,7 +2669,7 @@ p.exit-offer {
 #fendi_article {
 	width: 900px;
 	height: 1265px;
-	background: #f5f5f5 url('../images/newspics/jimmy.png') no-repeat left top;
+	background: #f5f5f5 url('/images/newspics/jimmy.png') no-repeat left top;
 }
 
 /* @end */

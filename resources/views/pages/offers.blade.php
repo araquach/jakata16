@@ -3,6 +3,11 @@
 @section('head')
 	<meta name="description" content="For all the latest JAKATA offers">
 	<meta name="keywords" content="Hair offers, hairdressing offers">
+
+	@section('ogtags')
+    @include('layouts.partials.og_tags', ['title' => 'Special Offers', 'image' => 'my-image.png'])
+	@stop
+
 @stop
 
 @section('title')

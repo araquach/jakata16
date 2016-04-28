@@ -26,7 +26,7 @@
     @endforeach
 </ul>
 
-{!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
+{!! Form::open(array('action' => 'ContactController@sendEmail', 'class' => 'form')) !!}
 
 	<div class="row">
 	{!! Form::label('first_name', 'First Name') !!}

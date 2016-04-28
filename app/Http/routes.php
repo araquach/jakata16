@@ -12,9 +12,8 @@ Route::get('/team', 'PagesController@team');
 
 Route::get('contact', 
   ['as' => 'contact', 'uses' => 'ContactController@create']);
-Route::post('contact', 
-  ['as' => 'contact_store', 'uses' => 'ContactController@store']);
+Route::post('sendEmail', 
+  ['as' => 'sendEmail', 'uses' => 'ContactController@sendEmail']);
   
 Route::resource('apprentice', 'ApprenticeController');
 Route::resource('stylist', 'StylistController');
-  

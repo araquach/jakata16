@@ -9,6 +9,7 @@ class ContactFormRequest extends Request {
 	 *
 	 * @return bool
 	 */
+	 
 	public function authorize()
 	{
 		return true;
