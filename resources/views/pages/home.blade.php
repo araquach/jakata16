@@ -1,17 +1,16 @@
 @extends('layouts.main')
 
 @section('head')
+
+@include('layouts.partials.head', [
+	'description' => '',
+	'keywords' => '',
+	'ogtitle' => '',
+	'ogdescription' => '',
+	'ogimage' => 'my-image.png',
+	'title' => 'Jakata Salon - HAirdressers in Warrington'
+	])
 	
-@include('layouts.partials.head')
-
-@stop
-
-@section('content')
-
-@section('title')
-
-	<title>Jakata Salon - Hairdressers in Warrington</title>
-
 @stop
 
 <div id="home">

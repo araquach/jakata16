@@ -1,8 +1,16 @@
 @extends('layouts.main')
 
 @section('head')
-	<meta name="description" content="Apply to be an apprentice at JAKATA">
-	<meta name="keywords" content="Hair jobs, hairdressing jobs, hair recruitment, hairdressing recruitment">
+
+@include('layouts.partials.head', [
+	'description' => '',
+	'keywords' => '',
+	'ogtitle' => '',
+	'ogdescription' => '',
+	'ogimage' => 'my-image.png',
+	'title' => 'Jakata Salon - Apprentice Application'
+	])
+	
 @stop
 
 @section('content')

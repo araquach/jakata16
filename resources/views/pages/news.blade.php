@@ -2,12 +2,15 @@
 
 @section('head')
 
-@include('layouts.partials.head', ['title' => 'Jakata News', 'image' => 'my-image.png'])
+@include('layouts.partials.head', [
+	'description' => 'All the latest JAKATA news',
+	'keywords' => 'Jakata news, Jakata stories, hairdressing news',
+	'ogtitle' => 'Jakata news',
+	'ogdescription' => 'All the latest news from the salon',
+	'ogimage' => 'my-image.png',
+	'title' => 'Jakata Salon - News'
+	])
 	
-@stop
-
-@section('title')
-	<title>Jakata Salon - Hairdressing News</title>
 @stop
 
 @section('content')

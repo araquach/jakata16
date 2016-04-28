@@ -1,15 +1,19 @@
 @extends('layouts.main')
 
-@section('content')
-
 @section('head')
-	<meta name="description" content="Contact the JAKATA Team for information and advice or to book your appointment">
-	<meta name="keywords" content="Hair bookings, hairdressing bookings, book your appointment, Jakata bookings, Jakata information, Jakata advice">
+
+@include('layouts.partials.head', [
+	'description' => 'Contact the JAKATA Team for information and advice or to book your appointment',
+	'keywords' => 'Hair bookings, hairdressing bookings, book your appointment, Jakata bookings, Jakata information, Jakata advice',
+	'ogtitle' => 'Contact Jakata',
+	'ogdescription' => 'Contact the JAKATA Team for information and advice or to book your appointment',
+	'ogimage' => 'my-image.png',
+	'title' => 'Jakata Salon - Contact Us'
+	])
+	
 @stop
 
-@section('title')
-	<title>Jakata Salon - ContactInformation</title>
-@stop
+@section('content')
 
 <section id="details">
 

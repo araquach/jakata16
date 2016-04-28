@@ -21,6 +21,6 @@
 	<script type="text/javascript" src="{{ URL::asset('scripts/modernizr.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('scripts/selectivizr-min.js') }}"></script>
 
-	<title>Jakata Salon - Hairdressers in Warrington</title>
+	<title>{{ $title or 'Jakata Salon - Hairdressers in Warrington' }}</title>
 
 </head>
