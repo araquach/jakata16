@@ -8,10 +8,12 @@
 	'ogtitle' => '',
 	'ogdescription' => '',
 	'ogimage' => 'my-image.png',
-	'title' => 'Jakata Salon - HAirdressers in Warrington'
+	'title' => 'Jakata Salon - Hairdressers in Warrington'
 	])
 	
 @stop
+
+@section('content')
 
 <div id="home">
 <h4 class="slogan">Fashion forward, award winning hairdressing</h4>
