@@ -3,12 +3,12 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'description' => '',
-	'keywords' => '',
-	'ogtitle' => '',
-	'ogdescription' => '',
+	'description' => 'Hairdressing Apprentice application',
+	'keywords' => 'Jakata, apprentice, apprenticeship, trainee, hairdressing apprentice',
+	'ogtitle' => 'Apply to be an Apprentice',
+	'ogdescription' => 'At Jakata all of our training is carried out in-house, you gain maximum exposure to observe skilled stylists whilst gaining valuable hands-on experience. Our aim is to train and develop our apprentices to the highest level, in the shortest possible time. This requires the highest level of commitment from you, so if you're expecting an easy ride then Jakata probably isn't for you but if you have the passion to do whatever it takes to be a top stylist then you've come to the right place!',
 	'ogimage' => 'my-image.png',
-	'title' => 'Jakata Salon - Apprentice Application'
+	'title' => 'Jakata Salon - Apprentice Application - Hairdressers in Warrington'
 	])
 	
 @stop

@@ -3,12 +3,12 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'description' => '',
-	'keywords' => '',
-	'ogtitle' => '',
-	'ogdescription' => '',
+	'description' => 'Jakata prices',
+	'keywords' => 'jakata prices, salon pricelist, hairdressing prices, cutting prices, colouring prices, straightening prices, kebelo prices, ',
+	'ogtitle' => 'Prices',
+	'ogdescription' => 'Cutting, colouring and technical service prices',
 	'ogimage' => 'my-image.png',
-	'title' => 'Jakata Salon - Hairdressing Prices'
+	'title' => 'Jakata Salon - Hairdressing Prices - Hairdressers in Warrington'
 	])
 	
 @stop

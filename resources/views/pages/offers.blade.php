@@ -3,12 +3,12 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'description' => '',
-	'keywords' => '',
-	'ogtitle' => '',
-	'ogdescription' => '',
+	'description' => 'Jakata Hairdressing offers',
+	'keywords' => 'hair offers, salon offers, jakata offers, hairdressing offers',
+	'ogtitle' => 'Special Offers',
+	'ogdescription' => 'The latest offers available at Jakata',
 	'ogimage' => 'my-image.png',
-	'title' => 'Jakata Salon - Latest Offers'
+	'title' => 'Jakata Salon - Latest Offers - HAirdressers in Warrington'
 	])
 	
 @stop

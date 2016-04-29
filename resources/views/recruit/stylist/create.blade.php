@@ -3,12 +3,12 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'description' => '',
-	'keywords' => '',
-	'ogtitle' => '',
-	'ogdescription' => '',
+	'description' => 'Apply to be a Jakata Stylist',
+	'keywords' => 'Jakata, stylist, hairdresser, reruitment, job',
+	'ogtitle' => 'Become a Jakata Stylist',
+	'ogdescription' => 'The Jakata team are always on the look out for new talented stylists. If you think Jakata is the salon for you apply here...',
 	'ogimage' => 'my-image.png',
-	'title' => 'Jakata Salon - Stylist Application'
+	'title' => 'Jakata Salon - Stylist Application - hairdressers in Warrington'
 	])
 	
 @stop

@@ -3,12 +3,12 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'description' => '',
-	'keywords' => '',
-	'ogtitle' => '',
-	'ogdescription' => '',
+	'description' => 'All the Jakata news archives',
+	'keywords' => 'Jakata news, Jakata stories, hairdressing news, salon news',
+	'ogtitle' => 'News Archive',
+	'ogdescription' => 'Previous News stories from the Jakata team',
 	'ogimage' => 'my-image.png',
-	'title' => 'Jakata Salon - News Archive'
+	'title' => 'Jakata Salon - News Archive - Hairdressers in Warrington'
 	])
 	
 @stop
