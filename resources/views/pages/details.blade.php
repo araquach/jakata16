@@ -7,7 +7,7 @@
 	'keywords' => 'Hair bookings, hairdressing bookings, book your appointment, Jakata bookings, Jakata information, Jakata advice',
 	'ogtitle' => 'Contact Jakata',
 	'ogdescription' => 'Contact the JAKATA Team for information and advice or to book your appointment',
-	'ogimage' => 'my-image.png',
+	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Contact Us'
 	])
 	

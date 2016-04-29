@@ -7,7 +7,7 @@
 	'keywords' => 'hair offers, salon offers, jakata offers, hairdressing offers',
 	'ogtitle' => 'Special Offers',
 	'ogdescription' => 'The latest offers available at Jakata',
-	'ogimage' => 'my-image.png',
+	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Latest Offers - HAirdressers in Warrington'
 	])
 	

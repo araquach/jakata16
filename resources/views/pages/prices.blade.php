@@ -7,7 +7,7 @@
 	'keywords' => 'jakata prices, salon pricelist, hairdressing prices, cutting prices, colouring prices, straightening prices, kebelo prices, ',
 	'ogtitle' => 'Prices',
 	'ogdescription' => 'Cutting, colouring and technical service prices',
-	'ogimage' => 'my-image.png',
+	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Hairdressing Prices - Hairdressers in Warrington'
 	])
 	
