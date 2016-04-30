@@ -1,5 +1,18 @@
 @extends('layouts.main')
 
+@section('head')
+
+@include('layouts.partials.head', [
+	'description' => 'Contact Jakata',
+	'keywords' => 'contact hairdressers, Jakata enquiries, hairdressing enquiry, salon contact',
+	'ogtitle' => 'Contact Us',
+	'ogdescription' => 'Contact the JAKATA Team for information and advice or to book your appointment',
+	'ogimage' => url('/') . '/images/myimage.png',
+	'title' => 'Jakata Salon - Contact Us - Hairdressers in Warrington'
+	])
+	
+@stop
+
 @section('content')
 
 <section id= "contact">

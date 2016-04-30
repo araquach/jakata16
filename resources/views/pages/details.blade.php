@@ -3,10 +3,10 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'description' => 'Contact the JAKATA Team for information and advice or to book your appointment',
+	'description' => 'Jakata is located in the centre of Warrington on Bridge Street. We\'re extremely close to the Warrington Market multi-storey car park and only a short walk from <em>Golden Square shopping centre',
 	'keywords' => 'Hair bookings, hairdressing bookings, book your appointment, Jakata bookings, Jakata information, Jakata advice',
 	'ogtitle' => 'Contact Jakata',
-	'ogdescription' => 'Contact the JAKATA Team for information and advice or to book your appointment',
+	'ogdescription' => 'Jakata is located in the centre of Warrington on Bridge Street. We\'re extremely close to the Warrington Market multi-storey car park and only a short walk from <em>Golden Square shopping centre',
 	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Contact Us'
 	])

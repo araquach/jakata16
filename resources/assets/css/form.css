@@ -158,3 +158,10 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	clear: left;
 	padding-left: 110px;
 }
+
+.alert.alert-info {
+    color: #343348;
+    width: 350px;
+    font-size: 1.5em;
+    margin: 40px;
+}

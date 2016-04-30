@@ -39,7 +39,7 @@ class ContactController extends Controller {
        		$message->to('adam@jakatasalon.co.uk');
    		});
 		
-		// return View::make('contact');  
+		return Redirect()->back()->with('message', 'Thanks for contacting us!');
      
 	}
 }
