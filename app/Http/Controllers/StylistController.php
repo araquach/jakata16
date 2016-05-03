@@ -12,13 +12,13 @@ class StylistController extends Controller {
 	{
 		$this->stylist = $stylist;
 	}
-
-	/**
+	
+	/** 
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
-	public function index()
+    public function index()
 	{
 		$stylists = $this->stylist->get();
 		
@@ -46,7 +46,7 @@ class StylistController extends Controller {
 		
 		Stylist::create($input);
 
-    	return redirect()->back()->with('message', 'Thanks for your application!');
+    	return redirect()->back()->with('message', 'Thanks for your application! If a position is available we will contact you soon');
 	}
 
 	/**

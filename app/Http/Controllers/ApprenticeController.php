@@ -47,7 +47,7 @@ class ApprenticeController extends Controller {
 		
 		Apprentice::create($input);
 
-    	return redirect()->back();
+    	return redirect()->back()->with('message', 'Thanks for your application! If a position is available we will contact you soon');
 	}
 
 	/**
