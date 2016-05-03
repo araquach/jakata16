@@ -20,6 +20,7 @@ class CreateApprenticesTable extends Migration
 			$table->integer('age');
 			$table->string('address1');
 			$table->string('address2');
+			$table->string('town');
 			$table->string('postcode');
 			$table->string('email');
 			$table->string('phone');

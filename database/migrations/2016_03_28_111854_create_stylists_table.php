@@ -19,6 +19,7 @@ class CreateStylistsTable extends Migration
 			$table->string('second_name');
 			$table->string('address1');
 			$table->string('address2');
+			$table->string('town');
 			$table->string('postcode');
 			$table->string('email');
 			$table->string('phone');

@@ -60,6 +60,12 @@
 		{!! Form::text('address2') !!}
 		{!! $errors->first('address2', '<div class="errorMessage">:message</div>') !!}
 	</div>
+	
+	<div class="row">
+		{!! Form::label('town', 'Town/City') !!}
+		{!! Form::text('town') !!}
+		{!! $errors->first('town', '<div class="errorMessage">:message</div>') !!}
+	</div>
 
 	<div class="row">
 		{!! Form::label('postcode', 'Postcode') !!}

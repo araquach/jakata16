@@ -10,6 +10,7 @@
     <li><strong>Age:</strong> {{ $apprentice->age }}</li>
     <li><strong>Address 1:</strong> {{ $apprentice->address1 }}</li>
     <li><strong>Address 2:</strong> {{ $apprentice->address2 }}</li>
+    <li><strong>Town/City:</strong> {{ $apprentice->town }}</li>
     <li><strong>Postcode: </strong> {{ $apprentice->postcode }}</li>
     <li><strong>Email Address:</strong> {{ $apprentice->email }}</li>
     <li><strong>Phone Number:</strong> {{ $apprentice->phone }}</li>

@@ -10,6 +10,7 @@
     <li><strong>Date:</strong> {{ $stylist->date }}</li>
     <li><strong>Address 1:</strong> {{ $stylist->address1 }}</li>
     <li><strong>Address 2:</strong> {{ $stylist->address2 }}</li>
+    <li><strong>Town/City:</strong> {{ $stylist->town }}</li>
     <li><strong>Postcode:</strong> {{ $stylist->postcode }}</li>
     <li><strong>Email Address:</strong> {{ $stylist->email }}</li>
     <li><strong>Phone Number:</strong> {{ $stylist->phone }}</li>
