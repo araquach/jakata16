@@ -6,7 +6,7 @@
 	'description' => 'Join the Jakata Salon hairdressing team',
 	'keywords' => 'recruitment, hair jobs, stylist jobs, hair apprenticeship, hairdressing apprentice, salon jobs, ',
 	'ogtitle' => 'Join the Team',
-	'ogdescription' => 'The ever evolving Jakata Salon is always looking for new talent to expand our already diverse team of hairdressers. We have positions for stylists of all levels with ongoing internal and external training to help you push the boundaries in your career. If you're looking to push your abilities to the next level, apply now!',
+	'ogdescription' => 'The ever evolving Jakata Salon is always looking for new talent to expand our already diverse team of hairdressers. We have positions for stylists of all levels with ongoing internal and external training to help you push the boundaries in your career. If you\'re looking to push your abilities to the next level, apply now!',
 	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Join the hairdressing team - Hairdressers in wrrington'
 	])

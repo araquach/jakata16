@@ -80,15 +80,15 @@
 	</div>
 
 	<div class="row">
-		{!! Form::label('phone', 'Phone Number') !!}
-		{!! Form::text('phone') !!}
-		{!! $errors->first('phone', '<div class="errorMessage">:message</div>') !!}
-	</div>
-
-	<div class="row">
 		{!! Form::label('mobile', 'Mobile Number') !!}
 		{!! Form::text('mobile') !!}
 		{!! $errors->first('mobile', '<div class="errorMessage">:message</div>') !!}
+	</div>	
+
+	<div class="row">
+		{!! Form::label('phone', 'Phone Number') !!}
+		{!! Form::text('phone') !!}
+		{!! $errors->first('phone', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	</div> <!--end elements (basic info)-->
