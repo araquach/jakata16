@@ -8,6 +8,7 @@ Route::get('/recruitment', 'PagesController@recruitment');
 Route::get('/offers', 'PagesController@offers');
 Route::get('/prices', 'PagesController@prices');
 Route::get('/team', 'PagesController@team');
+Route::get('/kebelo', 'PagesController@kebelo');
 
 
 Route::get('contact', 

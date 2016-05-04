@@ -2238,7 +2238,7 @@ div.form .errorSummary ul li {
 
 #kebeloMain {
 	width: 950px;
-	background: #f5f5f5 url('/images/bg.jpg') no-repeat left top;
+	background: #f5f5f5 url('/images/kebelo/kebelo_cover.jpg') no-repeat left top;
 }
 
 #kebelo_top_links {
@@ -2413,7 +2413,7 @@ span.kebelo_italic {
 
 
 #advantage {
-	background: #f5f5f5 url('/images/kebelo/kebelo_new.jpg') no-repeat right top;
+	background: #f5f5f5 url('/images/kebelo/kebelo_bw.jpg') no-repeat right top;
 	padding-top: 180px;
 	padding-bottom: 200px;
 }
