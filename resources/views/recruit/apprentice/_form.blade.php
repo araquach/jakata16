@@ -23,8 +23,6 @@
 	
 	<h2 class="reveal">1. Contact Information</h2>
 	
-	{!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
-	
 	<div class="elements">
 
 		{!! Form::hidden('id') !!}
@@ -110,7 +108,7 @@
 	</div>
 	
 	<div class="row">
-		{!! Form::label('in_salon', 'Currentin_salon Position') !!}
+		{!! Form::label('in_salon', 'What is your current position?') !!}
 		{!! Form::select('in_salon', array(
 			'In salon' => 'In Salon',
 			'Other industry' => 'Other Industry',
