@@ -1297,36 +1297,27 @@ span.big {
 }
 
 
-p#book_button {
+#offers .book_button {
 	margin-top: 40px;
 	margin-left: 80px;
 	width: 160px;
+	height: 70px;
 	text-align: center;
 	color: #FFF;
-	background-color: #919397;
+	background-color: #424259;
 	padding: 10px;
-	border-radius: 30px;
-	background: -moz-linear-gradient(90deg, #8f8a8a 6.8%, #3d3838 90.5%) #525564;
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.068, #8f8a8a), color-stop(0.905, #3d3838)) #525564;
-	background: -o-linear-gradient(top,rgb(100,100,100),rgb(200,200,200));
-	-moz-box-shadow: 2px 2px 6px #050505;
-	-webkit-box-shadow: 2px 2px 6px #050505;
-	box-shadow: 2px 2px 6px #050505;
-	text-shadow: 0 0 1px #302c2c;
+	border-radius: 5px;
 }
 
-.no-cssgradients p#book_button {
-	background-color: #919397;
-	border-right: 1px solid #666;
-	border-bottom: 1px solid #333;
+#offers .book_button:hover {
+	opacity: .7;
 }
 
-
-#book_button strong {
+#offers .book_button strong {
 	font-size: 1.3em;
 }
 
-#book_button a {
+#offers .book_button a {
 	text-decoration: none;
 	color: #FFF;
 }

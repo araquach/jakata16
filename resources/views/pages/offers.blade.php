@@ -42,8 +42,7 @@
 	</section>
 
 	
-	{{-- create link --}}
-	<p id="book_button">Online enquiry and booking form</p>
+	{!! link_to('contact', 'Online Booking &amp; Enquiry form', array('class' => 'book_button')) !!}
 
 </section> <!--end #offers-->
 
