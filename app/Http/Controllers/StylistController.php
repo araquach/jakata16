@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Stylist;
 use App\Http\Requests\StylistFormRequest;
 use Illuminate\Http\Request;
+use Mail;
 
 class StylistController extends Controller {
 	
@@ -45,6 +46,15 @@ class StylistController extends Controller {
 		$input = $request->all();
 		
 		Stylist::create($input);
+		
+		Mail::send('emails.recruit', $input, function($message)
+   		{
+       		$message->from('adam@jakatasalon.co.uk', 'Jakata');
+
+       		$message->to('adam@jakatasalon.co.uk');
+       		
+       		$message->subject('New Jakata Stylist Applicant');
+   		});
 
     	return redirect()->back()->with('message', 'Thanks for your application! If a position is available we will contact you soon');
 	}
