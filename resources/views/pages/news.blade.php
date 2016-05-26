@@ -26,6 +26,104 @@ window.addEvent('domready', function(){
 <section id="accordion">
 	
 <article class="article">
+<a id="InstantBlushes" class="anchor"></a>
+<section class="visible">
+{{ Html::image('images/newspics/blushes1.jpg', 'Instant Blushes') }}
+<h2>Touch of Pastel</h2>
+<p><strong>We are very excited to stock Schwarzkopf ‘Instant Blushes’ spray in pastel colours.</strong></p>
+<p>They can be used to enhance your colour during your appointment or take a bottle home with you to maintain the look.
+Schwarzkopf Instant Blushes are perfect for a party weekend,  music festivals or just trying out a new colour without the commitment.</p>
+<p class="reveal">Read more &gt;</p>
+</section> <!--end .visible-->
+<section class="hidden">
+{{ Html::image('images/newspics/blushes_colours.jpg', 'Instant Blushes', ['class' => 'news-image']) }}
+{{ Html::image('images/newspics/blushes2.jpg', 'Instant Blushes') }}
+<p>You can personalise your look by placing slices of soft pastel through blonde lengths, spray on the ends for a dip-dye effect or spray all over for a real impact.</p>
+<p>We have the full range of Strawberry, Jade, Ice and Steel Blue tones available.</p>
+<p>You can use just one or use them all to create a different look every time you go out!</p>
+<p>Each 250ml bottle is only &pound;15.95 and for a limited time <strong>receive 25% off any of the other products in the Schwarzkopf ‘Blonde Me’ range</strong>.</p>
+<p class="big">Buy 3 bottles and get the 4th free!</p>
+<p>Don’t forget to ask your stylists about your loyalty points!</p>
+</section> <!--end .hidden-->
+<p class="author">Published by Natalie</p>
+<time datetime="2016-05-26">26<sup>th</sup> May 2016</time>
+</article> <!--end #article-->
+	
+<article class="article">
+<a id="GaryTaylor" class="anchor"></a>
+<section class="visible">
+{{ Html::image('images/newspics/mens_laura.jpg', 'Laura cutting her model') }}
+<h2>Training Session with North West Hairdresser of the Year</h2>
+<p><strong>A few weeks ago <em>Gary Taylor</em>, who was awarded the British North West Hairdresser of the year 2015, came into the salon to do a men's cutting course. We had our colleagues from Paul Kemp Hairdressing join us for the training session too.</strong></p>
+<p>I asked Jakata senior stylist Laura Hall to put together a news feature about the day&hellip;</p>
+<p class="reveal">Read more &gt;</p>
+</section> <!--end .visible-->
+<section class="hidden">
+<p>Gary was a lovely guy with a great personality, we all got on really well with him. He told us that he is from Halifax, comes from a long line of hairdressers and in 2019 his hair salon will be 100 years old!</p>
+{{ Html::image('images/newspics/mens_demo.jpg', 'Gary Taylor demonstration', ['class' => 'news-image']) }}
+<p>In the morning session Gary did 3 models, one long hair and two short hair.The first model had long hair past his shoulders, Gary took it up to his shoulders, layered and shaped it so it was structured but still looking masculine. He gave lots of hints and tips on how to cut and style long hair on men and keep it masculine. For example leaving the hair slightly damp after blow drying so as it dries naturally it keeps the movement natural of their hair.</p>
+{{ Html::image('images/newspics/mens_nat.jpg', 'Nat and her model', ['class' => 'news-image']) }}
+<p>The second model was a short cut, he showed us two different techniques of cutting the back and sides but achieving the same result. First he showed us with a cut throat razor and a comb, then he cut the other side with the clippers without using any guards.</p>
+{{ Html::image('images/newspics/mens_matt.jpg', 'Matt with his model', ['class' => 'news-image']) }}
+<p>His third model was similar to the second, but on this guys hair he showed us how to do a blend from almost a bare blade to the equivalent length of a number 2 guard. He also left a weight line in his hair and told us how to soften it without completely  blending it away.</p>
+{{ Html::image('images/newspics/mens_vik.jpg', 'Vikki with her model', ['class' => 'news-image']) }}
+<p>For the afternoon session we all had models in and did at least one person each. Some people did two or three people. Gary walked around and helped everyone decide what technique of cutting to use so we could each try something new that he had demonstrated.</p>
+<p>I found the training very interesting and enjoyed trying something new. When using the clippers without a guard for the first time was nerve racking, but once I'd got the hang of it the results were really good.</p>
+<p class="big"><a href="http://www.hji.co.uk/hair/gary-taylor-north-western-hairdresser-year-finalist-collection/" target="_blank">To find out more about Gary Taylor click here &gt;</a></p>
+</section> <!--end .hidden-->
+<p class="author">Published by Laura</p>
+<time datetime="2016-05-12">12<sup>th</sup> May 2016</time>
+</article> <!--end #article-->
+	
+<article class="article">
+<a id="EssentialLooksComp" class="anchor"></a>
+<section class="visible">
+{{ Html::image('images/newspics/el/groupshot.jpg', 'Essential Looks Entries') }}
+<h2>Essential Looks Competition</h2>
+<p><strong>A couple of weeks ago we had our 3rd in-salon ‘Essential Looks’ competition - stylists from the Jakata and PK teams paired up to create a look inspired by the latest Schwarzkopf collections. In the previous competitions the stylists carried out the looks on training heads. We thought we’d mix it up a bit this time and have members of the public as models for the teams!</strong></p>
+<p>After a morning session running through the looks with Steve Ward (Schwarzkopf educator) the stylists paired off into 5 teams and came up with a look taking influence from the latest collections - plus choosing something that would suit their models lifestyle.</p>
+<p class="reveal">Read more &gt;</p>
+</section> <!--end .visible-->
+<section class="hidden">
+<p>The looks had to be completed within a certain timescale after which each team presented their model and explained the techniques they had used and where they took their inspiration from.</p>
+<h4>Leon (PK) &amp; Tash (PK)</h4>
+<p>Leon &amp; Tash took their colour inspiration from the <strong>'Urban Sport'</strong> collection, using pre-lightened diamond shaped panels, they used a variety of the new <em>Schwarzkopf 'ColorWorx'</em> colours to create a bold, high impact look.</p>
+<p>Their cut &amp; style was taken from the <strong>'FreeCreation'</strong> collection. A bold, structured fringe creates maximum impact. The look was styled and finished using <em>Schwarzkopf Osis 'Blow &amp; Go', 'Sparkler' and 'Elastic' finishing spray.</em></p>
+{{ Html::image('images/newspics/el/leon_tash.jpg', 'Leon & Tash', ['class' => 'news-image']) }}
+<h4>Nat (JAKATA) &amp; Ashley (PK)</h4>
+<p>Nat &amp; Ashley sectioned the hair into panels under a veil and pre-lightened prior to applying <em>Schwarzkopf 'ColorWorx'</em>  teal fading into blue, and pink fading into purple. The colour was inspired by a look from the <strong>'Urban Sports'</strong> collection.</p>
+<p>The cut and style was heavily influenced by the '<strong>Future Wave</strong>' trend. Triangular sections were taken to create a textured cut. A curling wand was used to create soft textured curls. <em>Schwarzkopf Osis 'Undercoat', 'Dust it' and 'Elastic'</em> were used to create the finished look.</p>
+{{ Html::image('images/newspics/el/nat_ash.jpg', 'Nat & Ashley', ['class' => 'news-image']) }}
+<h4>Kellie (PK) &amp; Maisie (JAKATA)</h4>
+<p>Kellie &amp; Maisie took their colour inspiration from the <strong>'Urban Sports'</strong> collection. Using a diamond shaped sectioning pattern they created a purple ombre with the new <em>'ColorWorx'</em> colours.</p>
+<p>Their cut and style was taken from the <strong>'FreeCreation'</strong> collection- a blunt, bold fringe sets the style off. The hair was styled smooth and shiny using <em>Osis 'Tame Wild' and 'Blow &amp; Go'.</em></p>
+{{ Html::image('images/newspics/el/maisie_kel.jpg', 'Kellie & Maisie', ['class' => 'news-image']) }}
+<h4>Caleb (PK) &amp; Laura (JAKATA)</h4>
+<p>Caleb &amp; Laura were also heavily influenced by the <strong>'Urban Sports'</strong> collection. Laura used a graduating colour technique shifting colour from green to blue to purple with the <em>'ColorWorx'</em> palette.</p>
+<p>Caleb's haircut was inspired from the <strong>'FreeCreation'</strong> collection - a bold undercut style, with the top dressed in an upward fashion with a wavy texture. <em>Schwarzkopf Osis 'Flex Wax', 'Dust It' and 'Session'</em> were applied to finish the striking look.</p>
+{{ Html::image('images/newspics/el/caleb_laura.jpg', 'Caleb & Laura', ['class' => 'news-image']) }}
+<h4>Shell (PK) &amp; Matt (JAKATA)</h4>
+<p>Shell &amp; Matt pre-lightened their models hair prior to applying shades of blue and green from the <em>'ColorWorx'</em> range for their <strong>'Urban Sport'</strong> inspired colour.</p>
+<p>The cut and style had influences from 2 different looks from within the <strong>'FreeCreation'</strong> collection. <em>Osis 'Blow &amp; Go', 'Upload', 'Dust It' and 'Mighty Matte'</em> were all used to style the hair.</p>
+{{ Html::image('images/newspics/el/matt_shell.jpg', 'Shell & Matt', ['class' => 'news-image']) }}
+<h4>The Final Looks</h4>
+{{ Html::image('images/newspics/el/groupshot_large.jpg', 'The Final Looks', ['class' => 'news-image']) }}
+<h4>The Judging</h4>
+<p>The Judges (Adam, Jimmi, Steve and Natalie) inspected each models hair style and awarded points on creativity, application, cutting &amp; styling skills and presentation skills.</p>
+<p><strong>It was a tough call as all the models looked fantastic but the top 3 were chosen…</strong></p>
+{{ Html::image('images/newspics/el/winners.jpg', 'The Winners', ['class' => 'news-image']) }}
+<p><strong>1st Place: Laura &amp; Caleb</strong></p>
+<p><strong>2rd place: Kellie &amp; Maisie</strong></p>
+<p><strong>3rd Place: Matt &amp; Shell</strong></p>
+<p>Laura said <em>"I was totally shocked that I won! I was pleased to win a free day's holiday too!"</em></p>
+<p>Caleb added <em>"It was a huge confidence boost plus it was such a fantastic day - I can't wait for the next one in November!"</em></p>
+<p class="big"><a href="http://www.schwarzkopf-professional.co.uk/skp/uk/en/home/trends/essential-looks.html" target="_blank">Check out the Schwarzkopf Essential Looks here &gt;</a></p>
+</section> <!--end .hidden-->
+<p class="author">Published by Adam</p>
+<time datetime="2016-04-15">15<sup>th</sup> April 2016</time>
+</article> <!--end #article-->
+	
+<article class="article">
 <a id="EliteSymposium" class="anchor"></a>	
 <section class="visible">
 {{ Html::image('images/newspics/symposium1.jpg', 'Elite Symposium') }}
