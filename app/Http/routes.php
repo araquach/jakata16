@@ -18,3 +18,8 @@ Route::post('sendEmail',
   
 Route::resource('apprentice', 'ApprenticeController');
 Route::resource('stylist', 'StylistController');
+
+Route::get('feedback/{client}',
+  ['as' => 'feedbackCreate', 'uses' => 'FeedbackController@create']);
+Route::post('feedback/store',
+  ['uses' => 'FeedbackController@store']);

@@ -13,37 +13,21 @@
 	
 @stop
 
+@section('head')
+
+@include('layouts.partials.head', [
+	'description' => 'All the latest JAKATA Offers',
+	'keywords' => 'Jakata Offers, Jakata offers, hairdressing Offers, salon Offers',
+	'ogtitle' => 'Jakata Offers',
+	'ogdescription' => 'All the latest Offers from the salon',
+	'ogimage' => url('/') . '/images/myimage.png',
+	'title' => 'Jakata Salon - Hairdressing Offers - Hairdressers in Warrington'
+	])
+	
+@stop
+
 @section('content')
 
-{{-- Need FB meta --}}
-
-<section id="offers">
-
-	<section id="offer1">
-	  <h2>Colour &amp; Cut Package</h2>
-	  <p>for just &pound;60<br>with any of our Stylists</p>
-	    <small><time datetime="2014-06-27">extended until 27/06/14</time><br>
-	    For New Clients - not with any other offer. Excludes Saturday<br>Skin test required 48hrs before any colour service</small>
-	</section>
-	
-	<section id="offer2">
-	  <h2>30% off Men's Cut &amp; Style</h2>
-	  <p>for new clients<br>throughout June</p>
-	    <small><time datetime="2014-06-27">extended until 27/06/14</time><br>
-	    For New Clients - not with any other offer. Excludes Saturday</small>
-	</section>
-	
-	
-	<section id="offer3">
-	  <h2>FREE Cut Dry &amp; Style <br>with every<br>Kebelo Advantage Treatment</h2>
-	  <p>Throughout the month of June</p>
-	    <small>extended until <time datetime="2014-06-27">27/06/14</time><br>
-	    Not with any other offer. Excludes Saturday<br></small>
-	</section>
-
-	
-	{!! link_to('contact', 'Online Booking &amp; Enquiry form', array('class' => 'book_button')) !!}
-
-</section> <!--end #offers-->
+@include('layouts.partials.offers.half_price_col')
 
 @stop
