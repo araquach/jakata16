@@ -1,4 +1,6 @@
 <?php namespace App\Http\Controllers;
+use App\Feedback;
+use App\FeedbackClient;
 
 class PagesController extends Controller {
 
@@ -28,7 +30,9 @@ class PagesController extends Controller {
 	 */
 	public function index()
 	{
-		return view('pages.home');
+		$feedbacks = Feedback::with('client')->where('publish', '=', '1')->orderByRaw("RAND()")->get();
+	
+		return view('pages.home', compact('feedbacks'));
 	}
 	
 	public function details()
