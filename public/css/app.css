@@ -674,7 +674,7 @@ nav li a:hover {
 #home {
 	width: 950px;
 	height: 100%;
-	background: url('/images/home/cool.jpg') no-repeat left top #f5f5f5;
+	background: url('/images/home/backdrop/boglarka.jpg') no-repeat left top #f5f5f5;
 	padding-top: 280px;
 	padding-bottom: 188px;
 }
