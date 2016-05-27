@@ -6,6 +6,9 @@
 @show
 
 <body>
+	
+	<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('scripts/mobile-nav.js') }}"></script>
 
 	<div class="container" id="page">
 
