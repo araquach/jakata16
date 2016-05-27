@@ -37,6 +37,7 @@ class ContactController extends Controller {
        		$message->from('adam@jakatasalon.co.uk', 'Jakata');
 
        		$message->to('adam@jakatasalon.co.uk');
+       		$message->to('booking@jakatasalon.co.uk');
    		});
 		
 		return Redirect()->back()->with('message', 'Thanks for contacting us!');
