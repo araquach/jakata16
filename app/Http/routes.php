@@ -23,3 +23,5 @@ Route::get('feedback/{client}',
   ['as' => 'feedbackCreate', 'uses' => 'FeedbackController@create']);
 Route::post('feedback/store',
   ['uses' => 'FeedbackController@store']);
+
+Route::auth();
