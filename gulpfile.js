@@ -18,6 +18,15 @@ elixir(function(mix) {
         'jakstyles.css',
         'form.css'
      ], 'public/css/app.css');
+     
+     mix.styles([
+        'mobile.css'
+     ], 'public/css/mob.css');
     
-    mix.version('public/css/app.css');
+    mix.version([
+        'public/css/app.css',
+        'public/css/mob.css'
+    ]);
 });
+
+
