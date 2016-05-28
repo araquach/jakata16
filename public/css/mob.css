@@ -179,6 +179,18 @@ li.active a {
 	float: none;
 }
 
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2) { 
+    
+    .home_news:first-of-type {
+    	margin-top: 100px;
+    }
+    
+}
+
 p.newscenter {
 	position: absolute;
 	top: 575px;
@@ -245,7 +257,7 @@ p.newscenter {
     and (-webkit-min-device-pixel-ratio : 2) { 
     
     #feedback_feed {
-    	top: 550px;
+    	top: 600px;
     }
     
 }
