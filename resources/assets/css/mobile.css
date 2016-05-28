@@ -238,6 +238,18 @@ p.newscenter {
 	
 }
 
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2) { 
+    
+    #feedback_feed {
+    	top: 530px;
+    }
+    
+}
+
 /* @end */
 
 /* @group Offers */
@@ -380,15 +392,17 @@ p#book_button {
 }
 
 #no_offers {
-	width: 950px;
+	width: auto;
+	margin: auto;
+	float: none;
 	height: 400px;
-	background: url('/images/home/coolhunter.jpg') no-repeat left top #f5f5f5;
-	padding-top: 280px;
-	padding-bottom: 190px;
+	padding: 0px;
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
 
 #no_offers h1, #no_offers p {
-	margin-left: 50px;
+	margin-left: 30px;
 }
 
 /* @end */
@@ -784,6 +798,11 @@ a.anchor {
 	float: left;
 	margin: 10px 10px 10px 0;
 	padding: 0;
+}
+
+#accordion article.article section.hidden img.news-image {
+	margin: 0;
+	width: 100%;
 }
 
 
