@@ -24,18 +24,18 @@
 
 <div id="home_news">
 
-<a href="{{ URL::to('news') }}#Fibreplex">	
+<a href="{{ URL::to('news') }}#InstantBlushes">	
 <aside id="news2" class="home_news">
-<h3 class="newsheader">Love colour but hate the damage?</h3>
-<p class="newspara">Lighten, lift, colour without compromise&hellip;</p>
+<h3 class="newsheader">New Schwarzkopf Instant Blushes</h3>
+<p class="newspara">Add a touch of pastel to enhance your blonde hair&hellip;</p>
 <p class="newscenter"><strong>Find out more &gt;</strong></p>
 </aside>
 </a>
 
-<a href="{{ URL::to('news') }}#ColorMasters">
+<a href="{{ URL::to('news') }}#EssentialLooksComp">
 <aside id="news1" class="home_news">
-<h3 class="newsheader">Colour Masters</h3>
-<p class="newspara">The Jakata team pushes colouring skills to next level&hellip;</p>
+<h3 class="newsheader">Essential Looks Day</h3>
+<p class="newspara">Find out about our recent in-salon competition&hellip;</p>
 <p class="newscenter"><strong>Find out more &gt;</strong></p>
 </aside>
 </a>
