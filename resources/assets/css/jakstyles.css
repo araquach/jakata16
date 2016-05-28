@@ -239,10 +239,10 @@ nav li a:hover {
 }
 
 #feedback_feed {
-	width: 310px;
+	width: 260px;
 	text-align: right;
 	position: absolute;
-	right: 40px;
+	right: 30px;
 	bottom: 192px;
 	display: none;
 }
@@ -260,8 +260,6 @@ nav li a:hover {
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;	
 	font-style: italic;
 	text-shadow: 0 0 20px #0a0436;
-	background-color: rgba(81, 86, 95, 0.7);
-	border-radius: 5px;
 }
 
 #feedback_feed ul li .client {
