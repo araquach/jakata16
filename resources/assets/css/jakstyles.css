@@ -230,11 +230,11 @@ nav li a:hover {
 
 
 #news3 {
-	background: url('/images/home/recruit.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
+	background: url('/images/home/vlada.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
 	background-size: contain;
 }
 .no-rgba #news3 {
-	background: url('/images/home/recruit_small.jpg') no-repeat left top rgb(249, 249, 250);
+	background: url('/images/home/vlada_small.jpg') no-repeat left top rgb(249, 249, 250);
 	background-size: contain;
 }
 
@@ -869,7 +869,7 @@ p.reveal {
 
 #recruitment {
 	width: 950px;
-	background: #f5f5f5 url('/images/recruitment/recruitment.jpg') no-repeat right top;
+	background: #f5f5f5 url('/images/recruitment/vlada.jpg') no-repeat right top;
 	background-size: cover;
 	min-height: 900px;
 	padding-top: 250px;
