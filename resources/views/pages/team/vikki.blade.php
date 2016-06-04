@@ -15,6 +15,8 @@
 
 @section('content')
 
+@include('layouts.partials.fb_like')
+
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
 
@@ -28,11 +30,16 @@
 		<p><strong>Favourite Product: </strong>Catwalk Weightless Shine Spray</p>
 		<p class="price">Average Cut &amp; Colour <br>with Vikki: &pound;90</p>
 		
+		<a href="{{ URL::to('team') }}#vikki" >Back to the full team</a>
+		
 		<div id="fb-like">
 			<div class="fb-like" data-href="http://www.jakatasalon.co.uk/vikki" data-width="250" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 		
-		<a href="{{ URL::to('team') }}#vikki" >Back to the full team</a>
+		<div id="fb-like">
+			<div class="fb-like" data-href="http://www.jakatasalon.co.uk/vikki" data-width="250" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+		</div>
+		
 	</section> <!--team_member_copy -->
 	
 	<div id="feedback_feed_ind">
