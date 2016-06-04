@@ -362,40 +362,13 @@ nav li a:hover {
 }
 
 .team_member_copy {
-	width: 290px;
-	height: 280px;
+	width: 400px;
 	padding: 15px;
-	padding-top: 45px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: rgb(255, 255, 255);
-	background-color: rgba(255, 255, 255, 0.85);
-	cursor: pointer;
-	cursor: hand;
-}
-
-.team_button {
-	width: 65px;
-	height: 30px;
-	background-color: rgb(14, 6, 32);
-	background-color: rgba(14, 6, 32, 0.5);
-	border-radius: 10px;
-	text-align: center;
-	padding: 3px 0;
-}
-
-.team_button p {
-	color: #f7f0f8;
-	margin: 0;
-	padding: 0;
-	font-size: .7em;
+	margin-left: 500px;
 }
 
 .team_member_copy p {
-	font-size: .8em;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	font-size: 1.2em;
 }
 
 .team_member_copy p.price {
@@ -435,7 +408,7 @@ nav li a:hover {
 
 }
 
-#vicky {
+#vikki {
 	background: #FFF url('/images/team/vicky.jpg') no-repeat left top;
 	transform:rotate(-4deg);
 	-ms-transform:rotate(-4deg); /* IE 9 */

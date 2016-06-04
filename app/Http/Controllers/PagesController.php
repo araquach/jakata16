@@ -94,7 +94,7 @@ class PagesController extends Controller {
 		return view('pages.team.maisie', compact('feedbacks'));
 	}
 	
-	public function nat()
+	public function natalie()
 	{
 		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Natalie Doxey')
 			->whereHas('feedback', function($query)
@@ -103,7 +103,7 @@ class PagesController extends Controller {
 			}
 			)->orderByRaw("RAND()")->get();
 		
-		return view('pages.team.nat', compact('feedbacks'));
+		return view('pages.team.natalie', compact('feedbacks'));
 	}
 	
 	public function vikki()
