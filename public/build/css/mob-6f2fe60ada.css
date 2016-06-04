@@ -431,6 +431,10 @@ p#book_button {
 	padding-top: 10px;
 	padding-bottom: 50px;
 }
+
+#team #fb-like {
+	margin: auto;
+}
 	
 #team_overview {
 	width: auto;
@@ -447,6 +451,47 @@ p#book_button {
 	margin-left: 0;
 	float: none;
 	padding: 10px;
+}
+
+#team #feedback_feed_ind {
+	width: auto;
+	text-align: left;
+	position: relative;
+	display: none;
+}
+
+#feedback_feed_ind ul li {
+	color: #333;
+	padding: 0;
+	padding-right: 0;
+}
+
+.jimmy {
+	background: url('/images/team/jimmy.jpg') no-repeat top left #f5f5f5;
+}
+
+.maisie {
+	background: url('/images/team/maisie.jpg') no-repeat top left #f5f5f5;
+}
+
+.laura_c {
+	background: url('/images/team/laura.jpg') no-repeat top left #f5f5f5;
+}
+
+.natalie {
+	background: url('/images/team/nat.jpg') no-repeat top left #f5f5f5;
+}
+
+.vikki {
+	background: url('/images/team/vicky.jpg') no-repeat top left #f5f5f5;
+}
+
+.matt {
+	background: url('/images/team/matt.jpg') no-repeat top left #f5f5f5;
+}
+
+.laura_m {
+	background: url('/images/team/laura_m.jpg') no-repeat top left #f5f5f5;
 }
 
 .team_member {
@@ -473,33 +518,9 @@ p#book_button {
 
 .team_member_copy {
 	width: auto;
-	height: 270px;
-	padding: 10px;
-	padding-top: 10px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: rgb(255, 255, 255);
-	background-color: rgba(255, 255, 255, 0.85);
-	cursor: pointer;
-	cursor: hand;
-}
-
-.team_button {
-	width: 65px;
-	height: 30px;
-	background-color: rgb(14, 6, 32);
-	background-color: rgba(14, 6, 32, 0.5);
-	border-radius: 10px;
-	text-align: center;
-	padding: 3px 0;
-}
-
-.team_button p {
-	color: #f7f0f8;
 	margin: 0;
 	padding: 0;
-	font-size: .7em;
+	padding-top: 0;
 }
 
 .team_member_copy p {
