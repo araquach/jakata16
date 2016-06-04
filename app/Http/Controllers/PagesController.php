@@ -70,6 +70,90 @@ class PagesController extends Controller {
 		return view('pages.team');
 	}
 	
+	public function jimmy()
+	{
+		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Jimi Sharpe')
+			->whereHas('feedback', function($query)
+			{
+				$query->where('publish', '=', '1');
+			}
+			)->orderByRaw("RAND()")->get();
+		
+		return view('pages.team.jimmy', compact('feedbacks'));
+	}
+	
+	public function maisie()
+	{
+		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Maisie Thompson')
+			->whereHas('feedback', function($query)
+			{
+				$query->where('publish', '=', '1');
+			}
+			)->orderByRaw("RAND()")->get();
+		
+		return view('pages.team.maisie', compact('feedbacks'));
+	}
+	
+	public function nat()
+	{
+		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Natalie Doxey')
+			->whereHas('feedback', function($query)
+			{
+				$query->where('publish', '=', '1');
+			}
+			)->orderByRaw("RAND()")->get();
+		
+		return view('pages.team.nat', compact('feedbacks'));
+	}
+	
+	public function vikki()
+	{
+		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Vicky Rowland')
+			->whereHas('feedback', function($query)
+			{
+				$query->where('publish', '=', '1');
+			}
+			)->orderByRaw("RAND()")->get();
+		
+		return view('pages.team.vikki', compact('feedbacks'));
+	}
+	
+	public function lauraC()
+	{
+		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Laura Crumplin')
+			->whereHas('feedback', function($query)
+			{
+				$query->where('publish', '=', '1');
+			}
+			)->orderByRaw("RAND()")->get();
+		
+		return view('pages.team.lauraC', compact('feedbacks'));
+	}
+	
+	public function lauraM()
+	{
+		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Laura Minett')
+			->whereHas('feedback', function($query)
+			{
+				$query->where('publish', '=', '1');
+			}
+			)->orderByRaw("RAND()")->get();
+		
+		return view('pages.team.lauraM', compact('feedbacks'));
+	}
+	
+	public function matt()
+	{
+		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Matthew Lane')
+			->whereHas('feedback', function($query)
+			{
+				$query->where('publish', '=', '1');
+			}
+			)->orderByRaw("RAND()")->get();
+		
+		return view('pages.team.matt', compact('feedbacks'));
+	}
+	
 	public function kebelo()
 	{
 		return view('pages.kebelo');

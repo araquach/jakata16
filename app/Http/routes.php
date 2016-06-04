@@ -8,6 +8,14 @@ Route::get('/recruitment', 'PagesController@recruitment');
 Route::get('/offers', 'PagesController@offers');
 Route::get('/prices', 'PagesController@prices');
 Route::get('/team', 'PagesController@team');
+Route::get('/jimmy', 'PagesController@jimmy');
+Route::get('/maisie', 'PagesController@maisie');
+Route::get('/natalie', 'PagesController@natalie');
+Route::get('/vikki', 'PagesController@vikki');
+Route::get('/matt', 'PagesController@matt');
+Route::get('/lauraC', 'PagesController@lauraC');
+Route::get('/lauraM', 'PagesController@lauraM');
+
 Route::get('/kebelo', 'PagesController@kebelo');
 
 
