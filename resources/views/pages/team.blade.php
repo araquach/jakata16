@@ -13,9 +13,7 @@
 	
 @stop
 
-@section('content') 
-
-{{-- FB meta tags --}}
+@section('content')
 
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/team.js') }}"></script>
