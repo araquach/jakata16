@@ -29,7 +29,7 @@ class FeedbackClientsTableSeeder extends Seeder
         
         DB::table('feedback_clients')->insert([
             'iris_id' => '3',
-            'stylist' => 'Natalie Doxey',
+            'stylist' => 'Vicky Rowland',
             'first_name' => 'Helen',
             'last_name' => 'Jones',
             'mobile' => '079846764673682',

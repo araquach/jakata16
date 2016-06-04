@@ -18,7 +18,7 @@
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
 
-<div id="team">
+<div id="team" class="matt">
 	<section class="team_member_copy">
 		<h2>Matthew Lane</h2>
 		<p><strong>Matthew Lane joined the team in 2014 after previously studying art.</strong></p>
@@ -28,7 +28,7 @@
 		<p><strong>Favourite Product: </strong>Tigi Small Talk</p>
 		<p class="price">Average Cut &amp; Colour <br>with Matt: &pound;90</p>
 		
-		<a href="{{ URL::to('team') }}" >Back to the full team</a>
+		<a href="{{ URL::to('team') }}#matt" >Back to the full team</a>
 	</section> <!--team_member_copy -->
 </div>
 

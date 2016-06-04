@@ -18,7 +18,7 @@
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
 
-<div id="team">
+<div id="team" class="laura_c">
 	<section class="team_member_copy">
 		<h2>Laura Hall</h2>
 		<p><strong>Laura has been hairdressing for 8 years and joined Jakata in 2005. That makes her the longest serving team member (apart from Adam).</strong></p>
@@ -29,7 +29,7 @@
 		<p class="price">Average Cut &amp; Colour
 		<br>with Laura: &pound;100</p>
 		
-		<a href="{{ URL::to('team') }}" >Back to the full team</a>
+		<a href="{{ URL::to('team') }}#laura" >Back to the full team</a>
 	</section><!--team_member_copy -->
 </div>		
 

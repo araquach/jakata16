@@ -18,7 +18,7 @@
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
 
-<div id="team">
+<div id="team" class="jimmy">
     <section class="team_member_copy">
 		<h2>Jimmy Sharpe</h2>
 		<p><strong>Salon manager Jimmy joined Jakata in October 2007 as an apprentice and quickly worked his way up through the ranks.</strong></p>
@@ -28,7 +28,7 @@
 	    <p><strong>Favourite Product: </strong>Schwarzkopf Flex Wax</p>
 	    <p class="price">Average Cut &amp; Colour <br>with Jimmy: &pound;110</p>
 	    
-	    <a href="{{ URL::to('team') }}" >Back to the full team</a>
+	    <a href="{{ URL::to('team') }}#jimmy" >Back to the full team</a>
 	 </section> <!--team_member_copy -->
 </div>
 

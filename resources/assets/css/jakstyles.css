@@ -339,6 +339,70 @@ nav li a:hover {
 	float: left;
 }
 
+#team {
+	width: 950px;
+	height: 100%;
+	padding-top: 250px;
+	padding-bottom: 200px;
+	float: left;
+}
+
+#team #feedback_feed_ind {
+	width: 280px;
+	text-align: left;
+	position: absolute;
+	left: 100px;
+	top: 650px;
+	display: none;
+}
+
+#feedback_feed_ind ul {
+	padding: 0;
+}
+
+#feedback_feed_ind ul li {
+	color: #333;
+	padding: 10px;
+	padding-right: 15px;
+	font-size: 1.2em;
+	list-style-type: none;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;	
+	font-style: italic;
+}
+
+#feedback_feed_ind ul li .client {
+	font: .8em Georgia, "Times New Roman", Times, serif;
+}
+}
+
+.jimmy {
+	background: url('/images/team/jimmy.jpg') no-repeat 100px 300px #f5f5f5;
+}
+
+.maisie {
+	background: url('/images/team/maisie.jpg') no-repeat 100px 300px #f5f5f5;
+}
+
+.laura_c {
+	background: url('/images/team/laura.jpg') no-repeat 100px 300px #f5f5f5;
+}
+
+.natalie {
+	background: url('/images/team/nat.jpg') no-repeat 100px 300px #f5f5f5;
+}
+
+.vikki {
+	background: url('/images/team/vicky.jpg') no-repeat 100px 300px #f5f5f5;
+}
+
+.matt {
+	background: url('/images/team/matt.jpg') no-repeat 100px 300px #f5f5f5;
+}
+
+.laura_m {
+	background: url('/images/team/laura_m.jpg') no-repeat 100px 300px #f5f5f5;
+}
+
 .team_member {
 	width: 300px;
 	height: 310px;
@@ -363,12 +427,16 @@ nav li a:hover {
 
 .team_member_copy {
 	width: 400px;
-	padding: 15px;
-	margin-left: 500px;
+	padding: 30px;
+	margin-left: 450px;
 }
 
 .team_member_copy p {
-	font-size: 1.2em;
+	font-size: 1.1em;
+}
+
+.team_member_copy h2 {
+	font-size: 2em;
 }
 
 .team_member_copy p.price {
@@ -382,6 +450,10 @@ nav li a:hover {
 	position: absolute;
 	top: 10px;
 	right: 10px;
+}
+
+.team_member_copy a {
+	font-size: 1.5em;
 }
 
 .team_member h2 {
