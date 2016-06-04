@@ -434,6 +434,7 @@ p#book_button {
 
 #team #fb-like {
 	margin: auto;
+	margin-top: 40px;
 }
 	
 #team_overview {
@@ -518,8 +519,9 @@ p#book_button {
 
 .team_member_copy {
 	width: auto;
+	padding: 20px;
 	margin: 0;
-	padding: 0;
+	margin-top: 350px;
 	padding-top: 0;
 }
 

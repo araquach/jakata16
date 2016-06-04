@@ -36,10 +36,6 @@
 			<div class="fb-like" data-href="http://www.jakatasalon.co.uk/vikki" data-width="250" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 		
-		<div id="fb-like">
-			<div class="fb-like" data-href="http://www.jakatasalon.co.uk/vikki" data-width="250" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-		</div>
-		
 	</section> <!--team_member_copy -->
 	
 	<div id="feedback_feed_ind">
