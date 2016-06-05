@@ -23,6 +23,13 @@
 <div id="team" class="matt">
 	<section class="team_member_copy">
 		<h2>Matthew Lane</h2>
+		<div id="feedback_feed_ind">
+		  	<ul>
+		  	@foreach($feedbacks as $feed)
+		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
+		  	@endforeach
+		  	</ul>
+		</div> <!--#feedback_feed-->
 		<p><strong>Matthew Lane joined the team in 2014 after previously studying art.</strong></p>
 		<p>He’s quickly establishing himself in the salon thanks to his passion for hairdressing and his friendly personality.</p>
 		<p>His love of art shines through with his bold, expressive colour and cuts.</p>
@@ -37,15 +44,6 @@
 		</div>
 		
 	</section> <!--team_member_copy -->
-	
-	<div id="feedback_feed_ind">
-		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
-		  	@endforeach
-		  	</ul>
-	</div> <!--#feedback_feed-->
-	
 </div>
 
 @stop

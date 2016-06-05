@@ -23,6 +23,13 @@
 <div id="team" class="maisie">
 	<section class="team_member_copy">
 		<h2>Maisie Thompson</h2>
+		<div id="feedback_feed_ind">
+		  	<ul>
+		  	@foreach($feedbacks as $feed)
+		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
+		  	@endforeach
+		  	</ul>
+		</div> <!--#feedback_feed-->
 		<p><strong>Maisie is a well established Jakata team member. She's a senior stylist and has over 9 years experience.</strong></p>
 		<p>She loves big, messy, tousled styles with loads of bounce and attitude.</p> 
 		<p>Precision, creativity and a strong understanding of an individuals hair are Maisie's focus.</p>
@@ -38,14 +45,6 @@
 		</div>
 		
 	</section> <!--team_member_copy -->
-	
-	<div id="feedback_feed_ind">
-		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
-		  	@endforeach
-		  	</ul>
-	</div> <!--#feedback_feed-->
 </div>
 
 @stop

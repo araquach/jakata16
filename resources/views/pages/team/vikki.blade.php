@@ -18,11 +18,18 @@
 @include('layouts.partials.fb_like')
 
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
+{{-- <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script> --}}
 
-<div id="team" class="vikki">			
+<div id="team" class="vikki">	
 	<section class="team_member_copy">
 		<h2>Vikki Rowland</h2>
+		<div id="feedback_feed_ind">
+		  	<ul>
+		  	@foreach($feedbacks as $feed)
+		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
+		  	@endforeach
+		  	</ul>
+		</div> <!--#feedback_feed-->
 		<p><strong>Vikki is a highly experienced stylist with a passion for all things vintage.</strong></p>
 		<p>Her time with the Hair Cuttery gave her a strong customer service focus. She's an expert in cutting &amp; colouring and loves vintage up-do's</p>
 		<p>Vikki's unique personal style definitely reflects in her innovative creations in the salon. </p>
@@ -37,15 +44,6 @@
 		</div>
 		
 	</section> <!--team_member_copy -->
-	
-	<div id="feedback_feed_ind">
-		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
-		  	@endforeach
-		  	</ul>
-	</div> <!--#feedback_feed-->
-	
 </div>
 
 

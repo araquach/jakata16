@@ -23,6 +23,13 @@
 <div id="team" class="jimmy">
     <section class="team_member_copy">
 		<h2>Jimmy Sharpe</h2>
+		<div id="feedback_feed_ind">
+		  	<ul>
+		  	@foreach($feedbacks as $feed)
+		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
+		  	@endforeach
+		  	</ul>
+		</div> <!--#feedback_feed-->
 		<p><strong>Salon manager Jimmy joined Jakata in October 2007 as an apprentice and quickly worked his way up through the ranks.</strong></p>
 	    <p>His passion for hairdressing is infectious. His experimental approach ensures he's always pushing the boundaries in cutting, colouring &amp; styling hair.</p>
 	    <p>Jimmy was member of the Schwarzkopf L.E.A.P Team</p>
@@ -37,14 +44,6 @@
 		</div>
 		
 	 </section> <!--team_member_copy -->
-	 
-	 <div id="feedback_feed_ind">
-		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
-		  	@endforeach
-		  	</ul>
-	</div> <!--#feedback_feed-->
 </div>
 
 @stop
