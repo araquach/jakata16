@@ -454,19 +454,19 @@ p#book_button {
 	padding: 10px;
 }
 
-#team #feedback_feed_ind {
+#feedback_feed_ind {
 	width: auto;
 	text-align: left;
-	position: relative;
+	position: absolute;
 	display: block;
-	float: left;
-	clear: left;
 	left: 0;
-	top: 0;
+	top: 350px;
+	padding: 0 20px;
+	background-color: #424259;
 }
 
 #feedback_feed_ind ul li {
-	color: #333;
+	color: #FFF;
 	padding: 0;
 	padding-right: 0;
 }
