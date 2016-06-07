@@ -6,8 +6,9 @@
 	'description' => 'Meet the Team - Natalie Doxey',
 	'keywords' => 'Natalie Doxey, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Natalie Doxey',
-	'ogdescription' => '',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogdescription' => 'Natalie has been with Jakata since 2007. She has recently been promoted to Senior Stylist. She exhibits some incredible creative skills. 
+	A key player in the winning team at the Redken NYC Awards, Natalie picked up the Style Innovator Trophy. She loves all aspects of creative colour and keeping on trend with the latest styles.',
+	'ogimage' => url('/') . '/images/team/nat.jpg',
 	'title' => 'Jakata Salon - Natalie Doxey - Hairdressers in Warrington'
 	])
 	

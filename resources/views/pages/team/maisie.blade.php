@@ -6,8 +6,9 @@
 	'description' => 'Meet the Team - Maisie Thompson',
 	'keywords' => 'Maisie Thompson, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Maisie Thompson',
-	'ogdescription' => '',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogdescription' => 'Maisie is a well established Jakata team member. She\'s a senior stylist and has over 9 years experience. 
+	She loves big, messy, tousled styles with loads of bounce and attitude. Precision, creativity and a strong understanding of an individuals hair are Maisie\'s focus.',
+	'ogimage' => url('/') . '/images/team/maisie.jpg',
 	'title' => 'Jakata Salon - Maisie Thompson - Hairdressers in Warrington'
 	])
 	

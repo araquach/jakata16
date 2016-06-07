@@ -6,8 +6,9 @@
 	'description' => 'Meet the Team - Jimmy Sharpe',
 	'keywords' => 'Jimmy Sharpe, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Jimmy Sharpe',
-	'ogdescription' => '',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogdescription' => 'Salon manager Jimmy joined Jakata in October 2007 as an apprentice and quickly worked his way up through the ranks. His passion for hairdressing is infectious. 
+	His experimental approach ensures he\'s always pushing the boundaries in cutting, colouring & styling hair. Jimmy was member of the Schwarzkopf L.E.A.P Team',
+	'ogimage' => url('/') . '/images/team/jimmy.jpg',
 	'title' => 'Jakata Salon - Jimmy Sharpe - Hairdressers in Warrington'
 	])
 	

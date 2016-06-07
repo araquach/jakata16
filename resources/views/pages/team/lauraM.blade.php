@@ -6,8 +6,9 @@
 	'description' => 'Meet the Team - Laura Minett',
 	'keywords' => 'Laura Minett, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Laura Minett',
-	'ogdescription' => '',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogdescription' => 'Laura has recently been promoted to stylist position. She has quickly settled into the team and exhibits loads of natural flair for hairdressing. 
+	Her warm, friendly personality makes every visit to the salon a relaxing experience. She particularly enjoys creative colouring & styling whilst adding her own personal touch.',
+	'ogimage' => url('/') . '/images/team/laura_m.jpg',
 	'title' => 'Jakata Salon - Laura Minett - Hairdressers in Warrington'
 	])
 	

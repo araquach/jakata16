@@ -6,8 +6,9 @@
 	'description' => 'Meet the Team - Matthew Lane',
 	'keywords' => 'Matthew Lane, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Matthew Lane',
-	'ogdescription' => '',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogdescription' => 'Matthew Lane joined the team in 2014 after previously studying art. 
+	He’s quickly establishing himself in the salon thanks to his passion for hairdressing and his friendly personality. His love of art shines through with his bold, expressive colour and cuts.',
+	'ogimage' => url('/') . '/images/team/matt.jpg',
 	'title' => 'Jakata Salon - Matthew Lane - Hairdressers in Warrington'
 	])
 	

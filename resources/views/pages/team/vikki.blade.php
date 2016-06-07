@@ -6,8 +6,10 @@
 	'description' => 'Meet the Team - Vikki Rowland',
 	'keywords' => 'Vikki Rowland, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Vikki Rowland',
-	'ogdescription' => '',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogdescription' => 'Vikki is a highly experienced stylist with a passion for all things vintage. 
+	Her time with the Hair Cuttery gave her a strong customer service focus. She\'s an expert in cutting & colouring and loves vintage up-do\'s. 
+	Vikki\'s unique personal style definitely reflects in her innovative creations in the salon.',
+	'ogimage' => url('/') . '/images/team/vicky.jpg',
 	'title' => 'Jakata Salon - Vikki Rowland - Hairdressers in Warrington'
 	])
 	

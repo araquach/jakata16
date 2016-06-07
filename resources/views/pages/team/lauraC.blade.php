@@ -4,10 +4,11 @@
 
 @include('layouts.partials.head', [
 	'description' => 'Meet the Team - Laura Hall',
-	'keywords' => 'LAura Hall, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
+	'keywords' => 'Laura Hall, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Laura Hall',
-	'ogdescription' => '',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogdescription' => 'Laura has been hairdressing for 8 years and joined Jakata in 2005. That makes her the longest serving team member (apart from Adam).
+	Laura loves classic styling plus technical services like Opti-Smooth and Kebelo. Laura strongly believes using the right products is the key to maintaining a new hairstyle.',
+	'ogimage' => url('/') . '/images/team/laura.jpg',
 	'title' => 'Jakata Salon - Laura Hall - Hairdressers in Warrington'
 	])
 	
