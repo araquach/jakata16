@@ -22,5 +22,7 @@
 	</section>
 	
 	{!! link_to('contact', "Book now", array('class'=>'book_button')) !!}
+	
+	
 
 </section> <!--end #offers-->
