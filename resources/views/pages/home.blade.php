@@ -32,10 +32,10 @@
 </aside>
 </a>
 
-<a href="{{ URL::to('news') }}#EssentialLooksComp">
+<a href="{{ URL::to('offers') }}">
 <aside id="news1" class="home_news">
-<h3 class="newsheader">Essential Looks Day</h3>
-<p class="newspara">Find out about our recent in-salon competition&hellip;</p>
+<h3 class="newsheader">Summer Offers</h3>
+<p class="newspara">Experience Jakata for the first time at a special price&hellip;</p>
 <p class="newscenter"><strong>Find out more &gt;</strong></p>
 </aside>
 </a>
