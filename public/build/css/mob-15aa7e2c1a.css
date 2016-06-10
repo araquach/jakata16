@@ -479,6 +479,18 @@ p#book_button {
 	background-color: #424259;
 }
 
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2) { 
+    
+    #feedback_feed_ind {
+    	top: 500px;
+    }
+    
+}
+
 #feedback_feed_ind ul li {
 	color: #FFF;
 	padding: 0;

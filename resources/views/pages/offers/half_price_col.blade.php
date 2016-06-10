@@ -11,8 +11,8 @@
 	
 	<section id="offer2">
 	  <h2><span class="big">30% off</span><br>Mens Cut &amp; Style<br>For New Clients</h2>
-	  <p>Throughout September</p>
-	    <small>until <time datetime="2016-07-29">until 29/07/16</time><br>
+	  <p>Throughout June/July</p>
+	    <small>until <time datetime="2016-07-29">29/07/16</time><br>
 	    Not with any other offer. Excludes Saturday<br></small>
 	</section>
 	
