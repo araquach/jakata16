@@ -286,6 +286,15 @@ p.newscenter {
 	font-weight: bold;
 }
 
+#offers #fb-like {
+	margin-top: 50px;
+}
+
+#offers .fb-like {
+	margin: 20px;
+	
+}
+
 #offer_copy {
 	width: auto;
 	margin: 0;

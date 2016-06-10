@@ -20,5 +20,7 @@
 	    <small><time datetime="2015-01-31">until 31/01/15</time><br>
 	    For New Clients - not with any other offer. Excludes Saturday</small>
 	</section>
+	
+	{!! link_to('contact', "Book now", array('class'=>'book_button')) !!}
 
 </section> <!--end #offers-->

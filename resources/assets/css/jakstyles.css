@@ -1239,7 +1239,7 @@ div.row textarea {
 	font-weight: bold;
 }
 
-#offers #fb_like {
+#offers .fb-like {
 	margin-left: 80px;
 	margin-top: 60px;
 }
