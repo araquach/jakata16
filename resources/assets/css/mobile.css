@@ -328,6 +328,7 @@ p.newscenter {
 
 #offer2 {
 	background-size: contain;
+	margin-bottom: 40px;
 }
 
 #offer3 {
@@ -387,6 +388,10 @@ p#book_button {
 	background-color: #919397;
 	border-right: 1px solid #666;
 	border-bottom: 1px solid #333;
+}
+
+.book_button {
+	margin-left: 20px;
 }
 
 

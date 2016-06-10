@@ -3,11 +3,11 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'description' => 'All the latest JAKATA Offers',
-	'keywords' => 'Jakata Offers, Jakata offers, hairdressing Offers, salon Offers',
-	'ogtitle' => 'Jakata Offers',
-	'ogdescription' => 'All the latest Offers from the salon',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'description' => 'Half price colour with every cut, dry and style for new clients this summer. Plus 30% off men\'s cuts for new clients.',
+	'keywords' => 'Jakata Offers, Jakata offers, hairdressing Offers, salon Offers, summer offers',
+	'ogtitle' => 'Summer Offers',
+	'ogdescription' => 'Half price colour with every cut, dry and style for new clients this summer. Plus 30% off men\'s cuts for new clients. ',
+	'ogimage' => url('/') . '/images/offers/offers_0616_meta.jpg',
 	'title' => 'Jakata Salon - Hairdressing Offers - Hairdressers in Warrington'
 	])
 	

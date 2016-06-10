@@ -1804,11 +1804,14 @@ div.row textarea {
 
 #offer1 {
 	margin-top: 50px;
-	background: url(/images/offers/Alice_012.jpg) no-repeat #fefefe;
+	background: url(/images/offers/vlada.jpg) no-repeat #fefefe;
+	background-size: contain;
 }
 
 #offer2 {
-	background: url(/images/offers/candy_man.jpg) no-repeat #fefefe;
+	background: url(/images/offers/guillame.jpg) no-repeat #fefefe;
+	background-size: contain;
+	margin-bottom: 60px
 }
 
 #offer3 {
@@ -1852,11 +1855,10 @@ span.big {
 }
 
 
-#offers .book_button {
-	margin-top: 40px;
+.book_button {
 	margin-left: 80px;
-	width: 160px;
-	height: 70px;
+	width: 200px;
+	height: 130px;
 	text-align: center;
 	color: #FFF;
 	background-color: #424259;
@@ -1864,15 +1866,15 @@ span.big {
 	border-radius: 5px;
 }
 
-#offers .book_button:hover {
+.book_button:hover {
 	opacity: .7;
 }
 
-#offers .book_button strong {
-	font-size: 1.3em;
+.book_button strong {
+	font-size: 1.6em;
 }
 
-#offers .book_button a {
+.book_button a {
 	text-decoration: none;
 	color: #FFF;
 }
