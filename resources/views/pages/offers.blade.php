@@ -15,6 +15,6 @@
 
 @section('content')
 
-@include('layouts.partials.offers.no_offer')
+@include('pages.offers.half_price_col')
 
 @stop
