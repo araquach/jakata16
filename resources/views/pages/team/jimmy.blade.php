@@ -21,16 +21,27 @@
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
 
-<div id="team" class="jimmy">
-    <section class="team_member_copy">
-		<h2>Jimmy Sharpe</h2>
+
+<div id="team">
+	
+	<div class="proportional">
+		<div id="team_image" class="jimmy"></div>
+	</div>
+	
+	<div id="feedback-container">
 		<div id="feedback_feed_ind">
 		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
-		  	@endforeach
+		  		@foreach($feedbacks as $feed)
+		  	    	<li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
+		  		@endforeach
 		  	</ul>
 		</div> <!--#feedback_feed-->
+	</div> <!--#feedback_container-->
+	
+	
+	<section class="team_member_copy">
+    	
+		<h2>Jimmy Sharpe</h2>
 		<p><strong>Salon manager Jimmy joined Jakata in October 2007 as an apprentice and quickly worked his way up through the ranks.</strong></p>
 	    <p>His passion for hairdressing is infectious. His experimental approach ensures he's always pushing the boundaries in cutting, colouring &amp; styling hair.</p>
 	    <p>Jimmy was member of the Schwarzkopf L.E.A.P Team</p>

@@ -21,16 +21,25 @@
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
 
-<div id="team" class="laura_c">
-	<section class="team_member_copy">
-		<h2>Laura Hall</h2>
+<div id="team">
+	
+	<div class="proportional">
+		<div id="team_image" class="laura_c"></div>
+	</div>
+	
+	<div id="feedback-container">
 		<div id="feedback_feed_ind">
 		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
-		  	@endforeach
+		  		@foreach($feedbacks as $feed)
+		  	    	<li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
+		  		@endforeach
 		  	</ul>
 		</div> <!--#feedback_feed-->
+	</div> <!--#feedback_container-->
+	
+	<section class="team_member_copy">
+		<h2>Laura Hall</h2>
+		
 		<p><strong>Laura has been hairdressing for 8 years and joined Jakata in 2005. That makes her the longest serving team member (apart from Adam).</strong></p>
 		<p>Laura loves classic styling plus technical services like Opti-Smooth and Kebelo.</p>
 		<p>Laura strongly believes using the right products is the key to maintaining a new hairstyle.</p>

@@ -21,16 +21,24 @@
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
 
-<div id="team" class="matt">
-	<section class="team_member_copy">
-		<h2>Matthew Lane</h2>
+<div id="team">
+	
+	<div class="proportional">
+		<div id="team_image" class="matt"></div>
+	</div>
+	
+	<div id="feedback-container">
 		<div id="feedback_feed_ind">
 		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
-		  	@endforeach
+		  		@foreach($feedbacks as $feed)
+		  	    	<li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
+		  		@endforeach
 		  	</ul>
 		</div> <!--#feedback_feed-->
+	</div> <!--#feedback_container-->
+	<section class="team_member_copy">
+		<h2>Matthew Lane</h2>
+		
 		<p><strong>Matthew Lane joined the team in 2014 after previously studying art.</strong></p>
 		<p>He’s quickly establishing himself in the salon thanks to his passion for hairdressing and his friendly personality.</p>
 		<p>His love of art shines through with his bold, expressive colour and cuts.</p>

@@ -21,16 +21,24 @@
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('scripts/feedback-feed-ind.js') }}"></script>
 
-<div id="team" class="natalie">
-	<section class="team_member_copy">
-		<h2>Natalie Doxey</h2>
+<div id="team">
+	
+	<div class="proportional">
+		<div id="team_image" class="natalie"></div>
+	</div>
+	
+	<div id="feedback-container">
 		<div id="feedback_feed_ind">
 		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
-		  	@endforeach
+		  		@foreach($feedbacks as $feed)
+		  	    	<li>&quot;{{ $feed->feedback->extra_edit }}&quot;<br><span class="client">{{ $feed->first_name }} {{ $feed->last_name }} - hair by {{ $feed->stylist }} </span></li>
+		  		@endforeach
 		  	</ul>
 		</div> <!--#feedback_feed-->
+	</div> <!--#feedback_container-->
+	<section class="team_member_copy">
+		<h2>Natalie Doxey</h2>
+		
 		<p><strong>Natalie has been with Jakata since 2007. She has recently been promoted to Senior Stylist. She exhibits some incredible creative skills.</strong></p>
 		<p>A key player in the winning team at the Redken NYC Awards, Natalie picked up the Style Innovator Trophy.</p> 
 		<p>She loves all aspects of creative colour and keeping on trend with the latest styles.</p>

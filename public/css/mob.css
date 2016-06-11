@@ -18,6 +18,25 @@ body {
 	margin: auto;
 }
 
+.proportional {
+	width: 100%;
+	padding-bottom: 100%;
+    position: relative;
+}
+
+.aspect1 {
+	padding-bottom: 80%;
+}
+
+.aspect2 {
+	padding-bottom: 60%;
+}
+
+.aspect3 {
+	padding-bottom: 40%;
+}
+
+
 /* @end */
 
 /* @group header */
@@ -438,12 +457,18 @@ p#book_button {
 #team {
 	width: auto;
 	margin: auto;
-	float: none;
+	float: left;
 	height: 100%;
 	padding: 0;
 	background-color: #f5f5f5;
-	padding-top: 10px;
 	padding-bottom: 50px;
+}
+
+#team_image {
+	float: none;
+	margin: 0;
+	width: auto;
+	height: auto;
 }
 
 #team #fb-like {
@@ -468,68 +493,68 @@ p#book_button {
 	padding: 10px;
 }
 
-#feedback_feed_ind {
+#feedback-container {
 	width: auto;
-	text-align: left;
-	position: absolute;
-	display: block;
-	left: 0;
-	top: 350px;
-	padding: 0 20px;
+	height: 120px;
 	background-color: #424259;
 }
 
-@media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px) 
-    and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 2) { 
-    
-    #feedback_feed_ind {
-    	top: 500px;
-    }
-    
+#feedback_feed_ind {
+	width: auto;
+	text-align: left;
+	position: relative;
+	float: left;
+	clear: left;
+	padding: 0 20px;
+	left: 0;
+	top: 0;
 }
 
 #feedback_feed_ind ul li {
 	color: #FFF;
 	padding: 0;
 	padding-right: 0;
+	font-size: .9em;
+}
+
+#team .proportional > #team_image {
+	position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
 }
 
 .jimmy {
 	background: url('/images/team/jimmy.jpg') no-repeat top left #f5f5f5;
-	background-size: contain;
+	background-size: cover;
 }
 
 .maisie {
 	background: url('/images/team/maisie.jpg') no-repeat top left #f5f5f5;
-	background-size: contain;
+	background-size: cover;
 }
 
 .laura_c {
 	background: url('/images/team/laura.jpg') no-repeat top left #f5f5f5;
-	background-size: contain;
+	background-size: cover;
 }
 
 .natalie {
 	background: url('/images/team/nat.jpg') no-repeat top left #f5f5f5;
-	background-size: contain;
+	background-size: cover;
 }
 
 .vikki {
 	background: url('/images/team/vicky.jpg') no-repeat top left #f5f5f5;
-	background-size: contain;
+	background-size: cover;
 }
 
 .matt {
 	background: url('/images/team/matt.jpg') no-repeat top left #f5f5f5;
-	background-size: contain;
+	background-size: cover;
 }
 
 .laura_m {
 	background: url('/images/team/laura_m.jpg') no-repeat top left #f5f5f5;
-	background-size: contain;
+	background-size: cover;
 }
 
 .team_member {
@@ -556,32 +581,22 @@ p#book_button {
 
 .team_member_copy {
 	width: auto;
+	float: left;
 	padding: 20px;
 	margin: 0;
-	margin-top: 400px;
+	margin-top: 0;
 	padding-top: 0;
 }
 
-@media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px) 
-    and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 2) { 
-    
-    .team_member_copy {
-    	margin-top: 550px
-    }
-    
+.team_member_copy p {
+	font-size: 1.1em;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 .team_member_copy h2 {
 	margin: 0;
-}
-
-.team_member_copy p {
-	font-size: .7em;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	margin-top: 30px;
 }
 
 .team_member_copy p.price {
