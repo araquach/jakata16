@@ -439,7 +439,7 @@ p#book_button {
 
 /* @end */
 
-/* @group Team */
+/* Team */
 
 #team {
 	width: auto;
@@ -482,8 +482,9 @@ p#book_button {
 
 #feedback-container {
 	width: auto;
-	height: 130px;
+	height: 120px;
 	background-color: #424259;
+	padding: 10px;
 }
 
 #feedback_feed_ind {
