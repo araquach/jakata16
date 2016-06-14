@@ -254,11 +254,12 @@ p.newscenter {
 	left: 0;
 	display: none;
 	vertical-align: top;
+	margin: 0;
 }
 
 #feedback_feed ul {
 	padding: 0;
-	margin-left: 30px;
+	margin: 0;
 }
 
 #feedback_feed ul li {
@@ -482,9 +483,9 @@ p#book_button {
 
 #feedback-container {
 	width: auto;
-	height: 120px;
+	height: 110px;
 	background-color: #424259;
-	padding: 10px;
+	padding: 20px;
 }
 
 #feedback_feed_ind {
