@@ -11,9 +11,10 @@ use App\Http\Requests;
 
 class FeedbackController extends Controller
 {
-    
-    public function __construct(Feedback $feedback)
+	public function __construct(Feedback $feedback)
 	{
+		$this->middleware('auth', ['except' => ['create','store']]);
+		
 		$this->feedback = $feedback;
 	}
 
