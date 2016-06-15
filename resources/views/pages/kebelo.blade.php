@@ -7,7 +7,7 @@
 	'keywords' => 'kebelo, straightening, smoothing, frizz free hair',
 	'ogtitle' => 'Kebelo - Goodbye frizz, hello smooth',
 	'ogdescription' => 'With Kebelo ADVANTAGE smoothing system you will get 100 days of frizz-free, easy to manage, healthy, shiny, smooth hair. We know how bad hair days can be stressful. We know years of styling and colouring can leave hair damaged and prone to frizzing. We know how much time and effort it takes to keep it looking beautiful. Those days are now over. With this revolutionary smoothing treatment you will get amazingly smooth, frizz-free, glossy, easy to manage hair. If you are one of the 86% that suffers from either dry, damaged, frizzy or unruly hair, then ADVANTAGE is the solution.',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogimage' => url('/') . '/images/fbmeta/kebelo.jpg',
 	'title' => 'Jakata Salon - Kebelo Smoothing System - Hairdressers in Warrington'
 	])
 	

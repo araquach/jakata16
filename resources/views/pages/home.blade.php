@@ -3,7 +3,6 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Hairdressers in Warrington'
 	])
 	

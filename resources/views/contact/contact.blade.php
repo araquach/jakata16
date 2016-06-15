@@ -7,7 +7,6 @@
 	'keywords' => 'contact hairdressers, Jakata enquiries, hairdressing enquiry, salon contact',
 	'ogtitle' => 'Contact Us',
 	'ogdescription' => 'Contact the JAKATA Team for information and advice or to book your appointment',
-	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Contact Us - Hairdressers in Warrington'
 	])
 	

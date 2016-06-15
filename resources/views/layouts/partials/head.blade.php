@@ -9,7 +9,7 @@
     
     <meta property="og:title" content="{{ $ogtitle or 'Jakata Salon' }}">
     <meta property="og:description" content="{{ $ogdescription or 'Jakata is a fashion forward, award winning salon in Warrington' }}">
-	<meta property="og:image" content="{{ $ogimage or url('/') . '/images/standard_image.png' }}">
+	<meta property="og:image" content="{{ $ogimage or url('/') . '/images/fbmeta/main.jpg' }}">
 	<meta property="og:url" content="{{ url()->current() }}">
 
 	{{-- Google Analytics --}}

@@ -7,7 +7,6 @@
 	'keywords' => 'hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Meet the Team',
 	'ogdescription' => 'The Jakata team comprises of ten skilled stylists, all from different hairdressing backgrounds, all displaying a diverse range of skills.Over the years Jakata has trained and developed a number of people to exceptional standards, whilst taking on already established stylists. This mix of talent creates a dynamic team with stylists well suited to anyone with a desire for a fashion forward look.',
-	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Meet the team - Hairdressers in Warrington'
 	])
 	

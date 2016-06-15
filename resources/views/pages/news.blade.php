@@ -7,7 +7,7 @@
 	'keywords' => 'Jakata news, Jakata stories, hairdressing news, salon news',
 	'ogtitle' => 'Jakata news',
 	'ogdescription' => 'All the latest news from the salon',
-	'ogimage' => url('/') . '/images/myimage.png',
+	'ogimage' => url('/') . '/images/',
 	'title' => 'Jakata Salon - Hairdressing News - Hairdressers in Warrington'
 	])
 	

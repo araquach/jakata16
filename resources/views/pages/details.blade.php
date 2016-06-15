@@ -7,7 +7,6 @@
 	'keywords' => 'Hair bookings, hairdressing bookings, book your appointment, Jakata bookings, Jakata information, Jakata advice',
 	'ogtitle' => 'Contact Jakata',
 	'ogdescription' => 'Jakata is located in the centre of Warrington on Bridge Street. We\'re extremely close to the Warrington Market multi-storey car park and only a short walk from <em>Golden Square shopping centre',
-	'ogimage' => url('/') . '/images/myimage.png',
 	'title' => 'Jakata Salon - Contact Us'
 	])
 	
