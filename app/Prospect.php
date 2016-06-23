@@ -3,9 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Carbon\Carbon;
 
-class Stylist extends Model
+class Prospect extends Model
 {
     protected $guarded = ['id'];
     
