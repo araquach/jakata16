@@ -2,7 +2,7 @@
 
 @section('head')
 
-@include('layouts.partials.head', [
+@include('layouts.partials.pros_head', [
 	'title' => 'Free Products'
 	])
 	

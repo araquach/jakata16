@@ -26,6 +26,7 @@ Route::post('sendEmail',
   
 Route::resource('apprentice', 'ApprenticeController');
 Route::resource('stylist', 'StylistController');
+Route::resource('prospect', 'ProspectController');
 
 Route::get('feedback/{client}',
   ['as' => 'feedbackCreate', 'uses' => 'FeedbackController@create']);

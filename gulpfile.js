@@ -22,10 +22,23 @@ elixir(function(mix) {
      mix.styles([
         'mobile.css'
      ], 'public/css/mob.css');
+     
+     mix.styles([
+        'fonts/fonts.css',
+        'normalize.css',
+        'prospect.css',
+        'form.css'
+     ], 'public/css/prospect.css');
+     
+     mix.styles([
+        'prosmob.css'
+     ], 'public/css/prosmob.css');
     
     mix.version([
         'public/css/app.css',
-        'public/css/mob.css'
+        'public/css/mob.css',
+        'public/css/prospect.css',
+        'public/css/prosmob.css'
     ]);
 });
 
