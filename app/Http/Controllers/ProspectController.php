@@ -2,12 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use Illuminate\Http\Requests\ProspectFormRequest;
+use Mail;
+use Carbon\Carbon;
 
 class ProspectController extends Controller
 {
+    public function __construct(Prospect $prospect)
+	{
+		$this->middleware('auth', ['except' => ['freeproducts', 'create', 'store']]);
+		
+		$this->prospect = $prospect;
+	}
+    
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +23,9 @@ class ProspectController extends Controller
      */
     public function index()
     {
-        //
+        $prospects = $this->prospect->get();
+		
+		return view('prospect.index', compact('prospects'));
     }
 
     
@@ -47,9 +57,13 @@ class ProspectController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProspectFormRequest $request)
     {
-        //
+        $inpue =$request->all();
+        
+        Prospect::create($input);
+        
+        return redirect()->back()->with('message', 'Thanks for applying - you will recieve your products soon!');
     }
 
     /**
