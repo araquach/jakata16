@@ -116,6 +116,7 @@ header h2 {
 	width: 380px;
 	height: 200px;
 	background: #f5f5f5 url('/images/prospect/bc.jpg') no-repeat left top;
+	margin-bottom: 40px;
 }
 
 #prospect-entry h2 {

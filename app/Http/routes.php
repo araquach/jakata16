@@ -27,7 +27,8 @@ Route::post('sendEmail',
 Route::resource('apprentice', 'ApprenticeController');
 Route::resource('stylist', 'StylistController');
 
-Route::get('/freeproducts', 'ProspectController@create');
+Route::get('/freeproducts', 'ProspectController@freeproducts');
+Route::get('/freeproducts/create', 'ProspectController@create');
 Route::post('prospect/store', 'ProspectController@store');
 
 
