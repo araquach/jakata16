@@ -10,6 +10,9 @@
 
 @section('content')
 
+<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
+
 <section id="prospect">
 
 <section id="prospect-entry">
