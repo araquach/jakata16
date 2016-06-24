@@ -70,8 +70,8 @@ header h1 {
 }
 
 header h2 {
-	margin-left: 60px;
-	font-size: 1.7em;
+	margin-left: 40px;
+	font-size: 2em;
 	margin-top: 0;
 }
 
@@ -185,6 +185,19 @@ header h2 {
 	margin-bottom: 8px;
 	margin-top: 10px;
 }
+
+.row .regular label {
+	width: 80%;
+	float: left;
+}
+
+input#regular {
+	float: right;
+	width: 20px;
+	margin-top: -20px;
+	margin-right: 30px;
+}
+
 
 
 

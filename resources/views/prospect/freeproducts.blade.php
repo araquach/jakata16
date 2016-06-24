@@ -11,7 +11,6 @@
 @section('content')
 
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 
 <section id="prospect">
 
@@ -26,8 +25,7 @@
 A selection of shampoo’s, conditioners and styling products could be yours - plus a secret surprise gift!</em></p>
 
 
-{{-- link to get the form displayed --}}
-<a>Click here to claim yours!</a>
+{!! link_to('freeproducts/create', 'Click here to claim yours!') !!}
 
 </section>  <!--prospect-entry-->
 

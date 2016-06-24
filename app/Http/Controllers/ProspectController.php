@@ -18,11 +18,24 @@ class ProspectController extends Controller
         //
     }
 
+    
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
+    
+    public function freeproducts()
+    {
+        return view('prospect.freeproducts');
+    }
+    
+    /**
+     * Show the form for creating a new prospect.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
     public function create()
     {
         return view('prospect.create');
