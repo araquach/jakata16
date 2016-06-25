@@ -545,8 +545,6 @@ table {
 
 /* @end */
 
-
-
 /* @group Main styling Group */
 
 body {
@@ -646,7 +644,7 @@ header h2 {
 	margin: 40px 0;
 }
 
-#prospect-entry a {
+a.link {
 	background-color: rgb(81, 86, 95);
 	border-radius: 10px;
 	padding: 15px;
@@ -656,7 +654,7 @@ header h2 {
 	opacity: 1;
 }
 
-#prospect-entry a:hover {
+a.link:hover {
 	opacity: .7;
 }
 
@@ -720,9 +718,13 @@ input#regular {
 	margin-right: 30px;
 }
 
+.ProspectSuccess {
+	font-size: 1.4em;
+}
 
-
-
+.ProspectSuccess a {
+	
+}
 
 /* @end */
 /**

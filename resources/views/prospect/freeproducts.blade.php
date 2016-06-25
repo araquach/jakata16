@@ -25,7 +25,7 @@
 A selection of shampoo’s, conditioners and styling products could be yours - plus a secret surprise gift!</em></p>
 
 
-{!! link_to('freeproducts/create', 'Click here to claim yours!') !!}
+{!! link_to('freeproducts/create', 'Click here to claim yours!', ['class' => 'link']) !!}
 
 </section>  <!--prospect-entry-->
 
