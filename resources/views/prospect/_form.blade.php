@@ -78,9 +78,9 @@
     
     <div class="row">
     	<div class="row">
-    	{!! Form::label('Post Code', 'Post Code') !!}
-    	{!! Form::text('Post Code', old('Post Code')) !!}
-    	{!! $errors->first('Post Code', '<div class="errorMessage">:message</div>') !!}
+    	{!! Form::label('postcode', 'Post Code') !!}
+    	{!! Form::text('postcode', old('postcode')) !!}
+    	{!! $errors->first('postcode', '<div class="errorMessage">:message</div>') !!}
     	</div>
     </div>
     

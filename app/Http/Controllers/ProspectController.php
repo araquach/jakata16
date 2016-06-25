@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use Illuminate\Http\Requests\ProspectFormRequest;
+use App\Http\Controllers\Controller;
+use App\Prospect;
+use Illuminate\Http\Request;
+use App\Http\Requests\ProspectFormRequest;
 use Mail;
 use Carbon\Carbon;
 
@@ -59,7 +62,7 @@ class ProspectController extends Controller
      */
     public function store(ProspectFormRequest $request)
     {
-        $inpue =$request->all();
+        $input = $request->all();
         
         Prospect::create($input);
         
