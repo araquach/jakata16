@@ -40,4 +40,19 @@ class FeedbackFormRequest extends Request
             'extra_edit' => '',
         ];
     }
+    
+    public function messages()
+    {
+        return [
+            'intro.required' => 'Please rate the introduction to your stylist',
+            'consultation.required' => 'Please rate your consultation',
+            'styling_area.required' => 'Please rate the cleanliness of styling area',
+            'stylist_appearance.required' => 'Please rate your stylists appearence',
+            'prod_advice.required' => 'Please rate the product advice given',
+            'styling_advice.required' => 'Please rate the styling advice given',
+            'value_for_money.required' => 'Please rate value for money',
+            'whole_experience.required' => 'Please rate your whole experience',
+            'end_result.required' => 'Please rate the end result'
+        ];
+    }
 }
