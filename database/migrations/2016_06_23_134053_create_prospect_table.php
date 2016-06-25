@@ -23,10 +23,10 @@ class CreateProspectTable extends Migration
             $table->string('town');
             $table->string('postcode');
             $table->boolean('regular');
-            $table->integer('texture');
-            $table->integer('condition');
-            $table->integer('cut_spend');
-            $table->integer('colour_spend');
+            $table->string('texture');
+            $table->string('condition');
+            $table->string('cut_spend');
+            $table->string('colour_spend');
             $table->timestamps();
         });
     }
