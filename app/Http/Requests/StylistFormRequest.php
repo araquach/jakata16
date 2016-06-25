@@ -63,5 +63,38 @@ class StylistFormRequest extends Request {
 			'why_jakata' => 'required',
 		];
 	}
+	
+	public function messages()
+	{
+	    return [
+	        'first_name.required' => 'First Name is required',
+	        'second_name.required'  => 'Second Name is required',
+	        'address1.required' => 'Address 1 is required',
+	        'address2.required' => 'Address 2 is required',
+	        'town.required' => 'Town is required',
+	        'postcode.required' => 'Postcode is required',
+	        'email.required' => 'Your email address is required',
+	        'email.email' => 'Please provide a valid email address',
+	        'mobile.required' => 'Your mobile number is required',
+	        'current_emp.required' => 'Your current employment status is required',
+	        'school_qual.required' => 'Your school qualifications are required',
+	        'experience.required' => 'Your experience is required',
+	        'current_position.required' => 'Your current position is required',
+	        'client_base.required' => 'Your client base is required',
+	        'qualifications.required' => 'Your qualifications are required',
+	        'cutting_skills.required' => 'Please provide your cutting skills',
+	        'colour_knowledge.required' => 'Please provide your colour knowledge',
+	        'colour_skills.required' => 'Please provide your colour skills',
+	        'men.required' => 'Please provide your mens hairdressing skills',
+	        'extensions_weave.required' => 'Please provide your woven extension skills',
+	        'extensions_other.required' => 'Please provide your extensions (other) skills',
+	        'chem_straighten.required' => 'Please provide your chemical straightening skills',
+	        'braz_blow.required' => 'Please provide your brazilian blowdrying skills',
+	        'hair_up.required' => 'Please provide your hair up skills',
+	        'about_you.required' => 'The about you section can\'t be blank',
+	        'why_hairdressing.required' => '\'Why Hairdressing\' can\'t be blank',
+	        'why_jakata.required' => '\'Why Jakata\' can\'t be blank',
+		];
+	}
 
 }
