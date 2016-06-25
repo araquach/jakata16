@@ -16,6 +16,13 @@
 <section id="prospect">
 
 <section id="prospect-entry">
+	
+@if(Session::has('message'))
+	<div class="ProspectSuccess">
+	{{{ Session::get('message') }}}
+	{!! link_to('/', 'Visit our website to find out more about us!') !!}
+	</div>
+@endif
 
 <h2>Claim Your <span class="red">FREE</span> Products</h2>
 

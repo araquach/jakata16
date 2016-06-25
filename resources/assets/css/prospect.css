@@ -23,8 +23,6 @@
 
 /* @end */
 
-
-
 /* @group Main styling Group */
 
 body {
@@ -198,8 +196,12 @@ input#regular {
 	margin-right: 30px;
 }
 
+.ProspectSuccess {
+	font-size: 1.4em;
+}
 
-
-
+.ProspectSuccess a {
+	
+}
 
 /* @end */
