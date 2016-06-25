@@ -40,4 +40,22 @@ class ProspectFormRequest extends Request
             'colour_spend' => 'required'
         ];
     }
+    
+    public function messages()
+    {
+        return [
+            'first_name.required' => 'Your first name is required',
+            'last_name' => 'Your last name is required',
+            'email.required' => 'Your email address is required',
+            'email.email' => 'You must enter a valid email address',
+            'mobile.required' => 'Please enter your mobile phone number',
+            'address1.required' => 'The first line of your address is required',
+            'town.required' => 'Your town is required',
+            'postcode.required' => 'Please enter your postcode',
+            'texture.required' => 'Please tell us your hair texture',
+            'condition.required' => 'Please tell us the condition of your hair',
+            'cut_spend.required' => 'Please tell us your average cut spend',
+            'colour_spend.required' => 'Please tell us your average colour spend'
+        ];
+    }
 }
