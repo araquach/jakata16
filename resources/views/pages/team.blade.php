@@ -14,9 +14,6 @@
 
 @section('content')
 
-<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('scripts/team.js') }}"></script>
-
 <div id="team_shot"></div>
 <section id="team">
 	<section id="team_overview">

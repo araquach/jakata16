@@ -15,9 +15,7 @@ Route::get('/vikki', 'PagesController@vikki');
 Route::get('/matt', 'PagesController@matt');
 Route::get('/lauraC', 'PagesController@lauraC');
 Route::get('/lauraM', 'PagesController@lauraM');
-
 Route::get('/kebelo', 'PagesController@kebelo');
-
 
 Route::get('contact', 
   ['as' => 'contact', 'uses' => 'ContactController@create']);
@@ -26,6 +24,11 @@ Route::post('sendEmail',
   
 Route::resource('apprentice', 'ApprenticeController');
 Route::resource('stylist', 'StylistController');
+
+Route::get('/freeproducts', 'ProspectController@freeproducts');
+Route::get('/freeproducts/create', 'ProspectController@create');
+Route::post('prospect/store', 'ProspectController@store');
+
 
 Route::get('feedback/{client}',
   ['as' => 'feedbackCreate', 'uses' => 'FeedbackController@create']);

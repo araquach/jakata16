@@ -1,11 +1,12 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Stylist;
 use App\Http\Requests\StylistFormRequest;
-use Illuminate\Http\Request;
 use Mail;
+use Carbon\Carbon;
 
 class StylistController extends Controller {
 	
