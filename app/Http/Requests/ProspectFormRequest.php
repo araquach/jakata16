@@ -45,7 +45,7 @@ class ProspectFormRequest extends Request
     {
         return [
             'first_name.required' => 'Your first name is required',
-            'last_name' => 'Your last name is required',
+            'last_name.required' => 'Your last name is required',
             'email.required' => 'Your email address is required',
             'email.email' => 'You must enter a valid email address',
             'mobile.required' => 'Please enter your mobile phone number',

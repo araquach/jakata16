@@ -36,7 +36,7 @@
 		</div> <!--#feedback_feed-->
 	</div> <!--#feedback_container-->
 	<section class="team_member_copy">
-		<h2>Maisie Thompson</h2>
+		<h2>Maisie Thompson<br><span class="small">(Maisie is currently on maternity leave)</span></h2>
 		
 		<p><strong>Maisie is a well established Jakata team member. She's a senior stylist and has over 9 years experience.</strong></p>
 		<p>She loves big, messy, tousled styles with loads of bounce and attitude.</p> 
