@@ -2,7 +2,7 @@
 	'action' => 'ProspectController@store', 'id' => 'prospect-form'
 )) !!}
 
-<div class="form">
+<div class="form prospect-form">
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 	

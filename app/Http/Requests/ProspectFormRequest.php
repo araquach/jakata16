@@ -15,6 +15,12 @@ class ProspectFormRequest extends Request
     {
         return true;
     }
+    
+    protected function getRedirectUrl()
+    {
+        $url = $this->redirector->getUrlGenerator();
+        return $url->previous() . '#prospect-form';
+    }
 
     /**
      * Get the validation rules that apply to the request.

@@ -24,8 +24,7 @@
 <p><em>How would you like to get some products tailored to your hair needs sent out to you absolutely <span class="red">FREE?</span><br>
 A selection of shampoo’s, conditioners and styling products could be yours - plus a secret surprise gift!</em></p>
 
-
-{!! link_to('freeproducts/create', 'Click here to claim yours!', ['class' => 'link']) !!}
+<a href="{{ URL::to('freeproducts/create') }}#prospect-form" class="link">Click here to claim yours!</a>
 
 </section>  <!--prospect-entry-->
 
