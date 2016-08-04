@@ -51,7 +51,7 @@ header h2 {
 	width: auto;
 	height: 100px;
 	margin: auto;
-	background:  url('../images/main/jakata_logo.png') no-repeat center center;
+	background:  url('/images/main/jakata_logo.png') no-repeat center center;
 	background-size: 80%;
 }
 
@@ -70,7 +70,7 @@ header h2 {
 #prospect-image {
 	width: auto;
 	height: 250px;
-	background: #FFF url('../images/prospect/prospect_main.jpg') no-repeat center center;
+	background: #FFF url('/images/prospect/prospect_main.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -86,7 +86,7 @@ header h2 {
 #prospect-offer-image {
 	width: auto;
 	height: 200px;
-	background: #f5f5f5 url('../images/prospect/bc.jpg') no-repeat center center;
+	background: #f5f5f5 url('/images/prospect/bc.jpg') no-repeat center center;
 	margin-bottom: 30px;
 }
 
@@ -119,16 +119,16 @@ header h2 {
 }
 
 #prospect-entry p:last-of-type {
-	margin-bottom: 50px;
+	margin-bottom: 0;
 }
 
-#form h2 {
+.form h2 {
 	font-size: 1.8em;
 }
 
-#prospect-form {
+.prospect-form {
 	padding-top: 20px;
-	margin-top: -820px;
+	margin-top: 0;
 	background-color: #FFF;
 }
 
@@ -138,6 +138,14 @@ header h2 {
 	padding: 5px;
 	font-size: 1em;
 	width: 90%;
+	background-color: #FFF;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.row select {
+	border-width: 1px;
+    border-style: solid;
+    border-color: initial;
 }
 
 .row.buttons input {
@@ -155,6 +163,10 @@ header h2 {
 	color: #424259;
 	margin-bottom: 8px;
 	margin-top: 10px;
+}
+
+input#regular {
+	margin-right: 0;
 }
 
 
