@@ -680,7 +680,7 @@ nav li a:hover {
 }
 
 #admin .form {
-	padding: 50px;
+	padding: 0;
     padding-top: 0;
     padding-bottom: 100px;
 }
