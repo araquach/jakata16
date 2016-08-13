@@ -10,7 +10,7 @@
 
 @section('content')
 
-<div id="application">
+<div id="admin">
 
 <h1>Stylist Name: {{ $stylist->first_name }} {{ $stylist->second_name }}</h1>
 
