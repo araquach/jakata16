@@ -17,6 +17,8 @@ Route::get('/lauraC', 'PagesController@lauraC');
 Route::get('/lauraM', 'PagesController@lauraM');
 Route::get('/kebelo', 'PagesController@kebelo');
 
+Route::get('/admin', 'AdminController@index');
+
 Route::get('contact', 
   ['as' => 'contact', 'uses' => 'ContactController@create']);
 Route::post('sendEmail', 

@@ -1,5 +1,13 @@
 @extends('layouts.main')
 
+@section('head')
+
+@include('layouts.partials.head', [
+	'title' => 'Jakata Salon - Stylist Applicant'
+	])
+	
+@stop
+
 @section('content')
 
 <div id="application">
@@ -42,11 +50,13 @@
     <li><strong>Brazilian Blowdrys:</strong> {{ $stylist->braz_blow }}</li>
     <li><strong>Hair Up Styling:</strong> {{ $stylist->hair_up }}</li>
     <br>
-    <li><strong>Any Hair awards?</strong><br> {{ $stylist->awards }}</li>
-    <li><strong>About You</strong> {{ $stylist->about_you }}</li>
-    <li><strong>Why did you choose hairdressing?</strong><br> {{ $stylist->why_hairdressing }}</li>
-    <li><strong>Why did you choose Jakata?</strong><br> {{ $stylist->why_jakata }}</li>
+    <li><strong>Any Hair awards?:</strong><br> {{ $stylist->awards }}</li>
+    <li><strong>About You:</strong> {{ $stylist->about_you }}</li>
+    <li><strong>Why did you choose hairdressing?:</strong><br> {{ $stylist->why_hairdressing }}</li>
+    <li><strong>Why did you choose Jakata?:</strong><br> {{ $stylist->why_jakata }}</li>
 </ul>
+
+{!! link_to('stylist', 'Back to all the Stylist applicants') !!}
 
 </div>
 

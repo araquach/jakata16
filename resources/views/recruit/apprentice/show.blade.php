@@ -1,5 +1,13 @@
 @extends('layouts.main')
 
+@section('head')
+
+@include('layouts.partials.head', [
+	'title' => 'Jakata Salon - Apprentice Applicant'
+	])
+	
+@stop
+
 @section('content')
 
 <div id="application">
@@ -34,6 +42,8 @@
     <li><strong>Why did you choose hairdressing?:</strong><br>{{ $apprentice->why_hairdressing }}</li>
     <li><strong>Why Jakata?:</strong><br>{{ $apprentice->why_jakata }}</li>
 </ul>
+
+{!! link_to('apprentice', 'Back to all the Apprentice applicants') !!}
 
 </div>
 
