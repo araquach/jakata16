@@ -17,6 +17,20 @@
 			<h1>Jakata Salon</h1>
 			<h2>Hairdressers in Warrington</h2>
 
+			
+			@if(Auth::user())
+			
+			<nav class="group">
+				<ul>
+					<li>{!! link_to('/admin', 'Menu') !!}</li>
+					<li>{!! link_to('/stylist', 'Stylists') !!}</li>
+					<li>{!! link_to('/apprentice', 'Apprentices') !!}</li>
+					<li>{!! link_to('/logout', 'Logout') !!}</li>
+				</ul>
+			</nav>
+			
+			@else
+			
 			<nav class="group">
 				<ul>
 					<li>{!! link_to('/', 'Home') !!}</li>
@@ -27,6 +41,9 @@
 					<li>{!! link_to('details', 'Contact') !!}</li>
 				</ul>
 			</nav>
+			
+			@endif
+			
 		</header>
 
 		<div id="content">

@@ -12,8 +12,12 @@
 
 <div id="admin">
 
-<h1>Admin Menu</h1>
-
+	<h1>Admin Menu</h1>
+	
+	<ul>
+		<li>{!! link_to('stylist', 'Stylist Applicants') !!}</li>
+		<li>{!! link_to('apprentice', 'Apprentice Applicants') !!}</li>
+	</ul>
 
 </div> <!--admin-->
 
