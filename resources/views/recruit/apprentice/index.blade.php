@@ -1,5 +1,13 @@
 @extends('layouts.main')
 
+@section('head')
+
+@include('layouts.partials.head', [
+	'title' => 'Jakata Salon - Recruitment Admin'
+	])
+	
+@stop
+
 @section('content')
 
 <div id="recruitBlank">
@@ -10,7 +18,7 @@
 
 <div class="view">
     
-<a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->first_name }}</a>
+<a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->id }}. {{ $apprentice->first_name }} {{ $apprentice->second_name }}</a>
 
 </div>
 

@@ -3,7 +3,7 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'title' => 'Jakata Salon - Recruitment Admin'
+	'title' => 'Jakata Salon - Stylist Applicants'
 	])
 	
 @stop
