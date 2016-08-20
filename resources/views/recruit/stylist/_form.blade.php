@@ -26,8 +26,8 @@
 	<div class="elements">
 
 		{{ Form::hidden('id', '') }}
-	
-		{{ Form::hidden('date', '') }}
+		
+		{{ Form::hidden('salon_id', '1') }}
 
 	<div class="row">
 		{!! Form::label('first_name', 'First Name') !!}
