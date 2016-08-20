@@ -24,7 +24,7 @@ class StylistController extends Controller {
 	 */
     public function index()
 	{
-		$stylists = $this->stylist->get();
+		$stylists = $this->stylist->where('salon_id', '=', '1')->get();
 		
 		return view('recruit.stylist.index', compact('stylists'));
 	}
@@ -57,7 +57,7 @@ class StylistController extends Controller {
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
 			$message->to('adam@jakatasalon.co.uk');
        		$message->to('jimmy@jakatasalon.co.uk');
-       		$message->subject('New Jakata Stylist Applicant');
+       		$message->subject('New Stylist Applicant');
    		});
 
     	return redirect()->back()->with('message', 'Thanks for your application! If a position is available we will contact you soon');
