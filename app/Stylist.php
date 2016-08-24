@@ -11,5 +11,18 @@ class Stylist extends Model
     
     protected $dates = ['created_at', 'updated_at'];
     
-    // protected $connection = 'mysqlpk';
+    public function getSalonIdAttribute($value)
+    {
+        if ($value == 1) {
+            return 'Jakata';
+        }
+        
+        else if ($value == 2) { 
+            return 'Paul Kemp';
+        }
+        
+        else {
+            return 'Undefined';
+        }
+    }
 }

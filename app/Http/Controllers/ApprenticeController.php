@@ -24,7 +24,7 @@ class ApprenticeController extends Controller {
 	 */
 	public function index()
 	{
-		$apprentices =$this->apprentice->where('salon_id', '=', '1')->get();
+		$apprentices = $this->apprentice->get();
 		
 		return view('recruit.apprentice.index', compact('apprentices'));
 	}

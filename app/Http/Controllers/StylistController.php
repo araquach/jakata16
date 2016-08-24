@@ -26,7 +26,9 @@ class StylistController extends Controller {
 	{
 		$stylists = $this->stylist->where('salon_id', '=', '1')->get();
 		
-		return view('recruit.stylist.index', compact('stylists'));
+		$salon = 'Jakata';
+		
+		return view('recruit.stylist.index', compact('stylists', 'salon'));
 	}
 
 	/**

@@ -18,7 +18,7 @@
 
 <div class="view">
     
-<a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->id }}. {{ $apprentice->first_name }} {{ $apprentice->second_name }}</a>
+<a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->salon_id }}. {{ $apprentice->id }}. {{ $apprentice->first_name }} {{ $apprentice->second_name }}</a>
 
 </div>
 
