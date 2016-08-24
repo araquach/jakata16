@@ -18,7 +18,7 @@
 
 <div class="view">
     
-<a href="/stylist/{{ $stylist->id }}">{{$stylist->salon_id}} {{ $stylist->id }}. {{ $stylist->first_name }} {{ $stylist->second_name }}</a>
+<a href="/stylist/{{ $stylist->id }}">{{ $stylist->id }}. {{ $stylist->first_name }} {{ $stylist->second_name }} ({{$stylist->salon_id}})</a>
 </div>
 
 @endforeach
