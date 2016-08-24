@@ -52,7 +52,7 @@ class ApprenticeController extends Controller {
 		
 		$applicant = $this->apprentice->get()->last();
 		
-		Mail::send('emails.recruit.apprentice', compact('applicant'), function($message)
+		Mail::send('emails.recruitment.apprentice', compact('applicant'), function($message)
    		{
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
        		$message->to('adam@jakatasalon.co.uk');
