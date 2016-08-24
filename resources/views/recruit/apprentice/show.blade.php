@@ -40,7 +40,7 @@
     <br>
     <li><strong>About You:</strong><br>{{ $apprentice->about }}</li>
     <li><strong>Why did you choose hairdressing?:</strong><br>{{ $apprentice->why_hairdressing }}</li>
-    <li><strong>Why did you choose the salon?:</strong><br>{{ $apprentice->why_jakata }}</li>
+    <li><strong>Why did you choose the salon?:</strong><br>{{ $apprentice->why_us }}</li>
 </ul>
 
 {!! link_to('apprentice', 'Back to all the Apprentice applicants') !!}

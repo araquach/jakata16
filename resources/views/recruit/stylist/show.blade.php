@@ -53,7 +53,7 @@
     <li><strong>Any Hair awards?:</strong><br> {{ $stylist->awards }}</li>
     <li><strong>About You:</strong> {{ $stylist->about_you }}</li>
     <li><strong>Why did you choose hairdressing?:</strong><br> {{ $stylist->why_hairdressing }}</li>
-    <li><strong>Why did you choose the salon?:</strong><br> {{ $stylist->why_jakata }}</li>
+    <li><strong>Why did you choose the salon?:</strong><br> {{ $stylist->why_us }}</li>
 </ul>
 
 {!! link_to('stylist', 'Back to all the Stylist applicants') !!}

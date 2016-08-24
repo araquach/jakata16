@@ -216,9 +216,9 @@
 	</div>
 
 	<div class="row">
-		{!! Form::label('why_jakata', 'What makes you want to join the Jakata Team?') !!}
-		{!! Form::textarea('why_jakata', old('why_jakata')) !!}
-		{!! $errors->first('why_jakata', '<div class="errorMessage">:message</div>') !!}
+		{!! Form::label('why_us', 'What makes you want to join the Jakata Team?') !!}
+		{!! Form::textarea('why_us', old('why_us')) !!}
+		{!! $errors->first('why_us', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row buttons">
