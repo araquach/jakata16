@@ -13,6 +13,7 @@
 <div id="admin">
 
 <h1>Stylist Name: {{ $stylist->first_name }} {{ $stylist->second_name }}</h1>
+<h2>Applied to: {{ $apprentice->salon_id }}</h2>
 
 <ul>
     <li><strong>Date:</strong> {{ $stylist->date }}</li>

@@ -13,6 +13,7 @@
 <div id="admin">
 
 <h1>Apprentice Name: {{ $apprentice->first_name }} {{ $apprentice->second_name }}</h1>
+<h2>Applied to: {{ $apprentice->salon_id }}</h2>
 
 <ul>
     <li><strong>Age:</strong> {{ $apprentice->age }}</li>
