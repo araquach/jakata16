@@ -16,7 +16,7 @@
 <h2>Applied to: {{ $apprentice->salon_id }}</h2>
 
 <ul>
-    <li><strong>Date:</strong> {{ $apprentice->created_at }}</li>
+    <li><strong>Application date:</strong> {{ $apprentice->created_at->format('d/m/Y') }}</li>
     <li><strong>Age:</strong> {{ $apprentice->age }}</li>
     <li><strong>Address 1:</strong> {{ $apprentice->address1 }}</li>
     <li><strong>Address 2:</strong> {{ $apprentice->address2 }}</li>

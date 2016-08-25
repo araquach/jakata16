@@ -47,6 +47,8 @@ class StylistsTableSeeder extends Seeder
             'about_you' => 'I love hairdressing. I\'m a very bubbly individual',
             'why_hairdressing' => 'Hairdressing is well suited to me',
             'why_jakata' => 'Jakata is undoubtably the best salon in Warrington',
+            'salon_id' => '1',
+            'created_at' => Carbon\Carbon::now(),
         ]);
         
         DB::table('stylists')->insert([
@@ -85,6 +87,8 @@ class StylistsTableSeeder extends Seeder
             'about_you' => 'I\'m pretty dull to be honest with you',
             'why_hairdressing' => 'I chose hairdressing as a carreer because it makes me happy inside',
             'why_jakata' => 'Jakata never ceases to amaze me with it\'s innovatiove approach to everything!',
+            'salon_id' => '2',
+            'created_at' => Carbon\Carbon::now();
         ]);
         
     }
