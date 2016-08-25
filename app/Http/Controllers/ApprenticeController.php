@@ -6,6 +6,7 @@ use App\Apprentice;
 use App\Http\Requests\ApprenticeFormRequest;
 use Illuminate\Http\Request;
 use Mail;
+use Carbon\Carbon;
 
 class ApprenticeController extends Controller {
 

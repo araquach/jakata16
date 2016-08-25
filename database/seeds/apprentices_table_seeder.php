@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 
 class ApprenticesTableSeeder extends Seeder
 {
@@ -37,9 +38,9 @@ class ApprenticesTableSeeder extends Seeder
             'hair_up' => '5',
             'about' => 'I\'m an all round great guy',
             'why_hairdressing' => 'I just fell into it',
-            'why_jakata' => 'I\'ve heard it\'s a fantastic salon',
+            'why_us' => 'I\'ve heard it\'s a fantastic salon',
             'salon_id' => '1',
-            'created_at' => Carbon\Carbon::now(),
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
         DB::table('apprentices')->insert([
@@ -68,9 +69,9 @@ class ApprenticesTableSeeder extends Seeder
             'hair_up' => '2',
             'about' => 'I was married to the late Paul Daniels and was his assistant for many years. I\'m looking for a change of carrer since his death',
             'why_hairdressing' => 'It\'s similar to magic',
-            'why_jakata' => 'I decided to move up north and Jakata looks like the best salon in the North West',
+            'why_us' => 'I decided to move up north and us looks like the best salon in the North West',
             'salon_id' => '1',
-            'created_at' => Carbon\Carbon::now(),
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
         DB::table('apprentices')->insert([
@@ -99,9 +100,9 @@ class ApprenticesTableSeeder extends Seeder
             'hair_up' => '4',
             'about' => 'I\'m a chatty girl that likes to spend 3 hours a day doiung my own hair',
             'why_hairdressing' => 'Hairdressing seems like a good laugh',
-            'why_jakata' => 'I\'ve applied at every single salon in the country and Jakata is my last hope',
+            'why_us' => 'I\'ve applied at every single salon in the country and us is my last hope',
             'salon_id' => '2',
-            'created_at' => Carbon\Carbon::now(),
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
         DB::table('apprentices')->insert([
@@ -130,9 +131,9 @@ class ApprenticesTableSeeder extends Seeder
             'hair_up' => '0',
             'about' => 'I\'m pretty much useless at everything. I\'ve spent 80 years of my life doing absolutely nothing',
             'why_hairdressing' => 'I don\'t want to be a hairdresser',
-            'why_jakata' => 'Stop putting me under so much pressure!',
+            'why_us' => 'Stop putting me under so much pressure!',
             'salon_id' => '2',
-            'created_at' => Carbon\Carbon::now(),
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
     }
 }
