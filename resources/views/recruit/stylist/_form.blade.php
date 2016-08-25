@@ -26,8 +26,8 @@
 	<div class="elements">
 
 		{{ Form::hidden('id', '') }}
-	
-		{{ Form::hidden('date', '') }}
+		
+		{{ Form::hidden('salon_id', '1') }}
 
 	<div class="row">
 		{!! Form::label('first_name', 'First Name') !!}
@@ -298,9 +298,9 @@
 	</div>
 
 	<div class="row">
-		{!! Form::label('why_jakata', 'Why do you want to join the Jakata Team?') !!}
-		{!! Form::textarea('why_jakata', old('why_jakata')) !!}
-		{!! $errors->first('why_jakata', '<div class="errorMessage">:message</div>') !!}
+		{!! Form::label('why_us', 'Why do you want to join the Jakata Team?') !!}
+		{!! Form::textarea('why_us', old('why_us')) !!}
+		{!! $errors->first('why_us', '<div class="errorMessage">:message</div>') !!}
 	</div>
 
 	<div class="row buttons">

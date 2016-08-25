@@ -60,7 +60,7 @@ class StylistFormRequest extends Request {
 			'awards' => '',
 			'about_you' => 'required',
 			'why_hairdressing' => 'required',
-			'why_jakata' => 'required',
+			'why_us' => 'required',
 		];
 	}
 	
@@ -93,7 +93,7 @@ class StylistFormRequest extends Request {
 	        'hair_up.required' => 'Please provide your hair up skills',
 	        'about_you.required' => 'The about you section can\'t be blank',
 	        'why_hairdressing.required' => '\'Why Hairdressing\' can\'t be blank',
-	        'why_jakata.required' => '\'Why Jakata\' can\'t be blank',
+	        'why_us.required' => '\'Why Jakata\' can\'t be blank',
 		];
 	}
 

@@ -13,9 +13,10 @@
 <div id="admin">
 
 <h1>Stylist Name: {{ $stylist->first_name }} {{ $stylist->second_name }}</h1>
+<h2>Applied to: {{ $stylist->salon_id }}</h2>
 
 <ul>
-    <li><strong>Date:</strong> {{ $stylist->date }}</li>
+    <li><strong>Date:</strong> {{ $stylist->created_at->format('d/m/Y') }}</li>
     <li><strong>Address 1:</strong> {{ $stylist->address1 }}</li>
     <li><strong>Address 2:</strong> {{ $stylist->address2 }}</li>
     <li><strong>Town/City:</strong> {{ $stylist->town }}</li>
@@ -53,7 +54,7 @@
     <li><strong>Any Hair awards?:</strong><br> {{ $stylist->awards }}</li>
     <li><strong>About You:</strong> {{ $stylist->about_you }}</li>
     <li><strong>Why did you choose hairdressing?:</strong><br> {{ $stylist->why_hairdressing }}</li>
-    <li><strong>Why did you choose Jakata?:</strong><br> {{ $stylist->why_jakata }}</li>
+    <li><strong>Why did you choose the salon?:</strong><br> {{ $stylist->why_us }}</li>
 </ul>
 
 {!! link_to('stylist', 'Back to all the Stylist applicants') !!}

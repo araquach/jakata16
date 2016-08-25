@@ -13,8 +13,10 @@
 <div id="admin">
 
 <h1>Apprentice Name: {{ $apprentice->first_name }} {{ $apprentice->second_name }}</h1>
+<h2>Applied to: {{ $apprentice->salon_id }}</h2>
 
 <ul>
+    <li><strong>Application date:</strong> {{ $apprentice->created_at->format('d/m/Y') }}</li>
     <li><strong>Age:</strong> {{ $apprentice->age }}</li>
     <li><strong>Address 1:</strong> {{ $apprentice->address1 }}</li>
     <li><strong>Address 2:</strong> {{ $apprentice->address2 }}</li>
@@ -40,7 +42,7 @@
     <br>
     <li><strong>About You:</strong><br>{{ $apprentice->about }}</li>
     <li><strong>Why did you choose hairdressing?:</strong><br>{{ $apprentice->why_hairdressing }}</li>
-    <li><strong>Why Jakata?:</strong><br>{{ $apprentice->why_jakata }}</li>
+    <li><strong>Why did you choose the salon?:</strong><br>{{ $apprentice->why_us }}</li>
 </ul>
 
 {!! link_to('apprentice', 'Back to all the Apprentice applicants') !!}

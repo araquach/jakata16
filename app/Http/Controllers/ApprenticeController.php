@@ -6,6 +6,7 @@ use App\Apprentice;
 use App\Http\Requests\ApprenticeFormRequest;
 use Illuminate\Http\Request;
 use Mail;
+use Carbon\Carbon;
 
 class ApprenticeController extends Controller {
 
@@ -24,7 +25,7 @@ class ApprenticeController extends Controller {
 	 */
 	public function index()
 	{
-		$apprentices =$this->apprentice->get();
+		$apprentices = $this->apprentice->get();
 		
 		return view('recruit.apprentice.index', compact('apprentices'));
 	}
