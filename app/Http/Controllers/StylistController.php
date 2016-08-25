@@ -24,7 +24,7 @@ class StylistController extends Controller {
 	 */
     public function index()
 	{
-		$stylists = $this->stylist->where('salon_id', '=', '1')->get();
+		$stylists = $this->stylist->get();
 		
 		$salon = 'Jakata';
 		
