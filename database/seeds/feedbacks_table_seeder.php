@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 
 class FeedbacksTableSeeder extends Seeder
 {
@@ -29,6 +30,8 @@ class FeedbacksTableSeeder extends Seeder
             'client_id' => '1',
             'allow' => '1',
             'publish' => '1',
+            'salon_id' => '1',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
         DB::table('feedbacks')->insert([
@@ -49,6 +52,8 @@ class FeedbacksTableSeeder extends Seeder
             'client_id' => '2',
             'allow' => '1',
             'publish' => '1',
+            'salon_id' => '2',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
         DB::table('feedbacks')->insert([
@@ -69,6 +74,8 @@ class FeedbacksTableSeeder extends Seeder
             'client_id' => '3',
             'allow' => '1',
             'publish' => '1',
+            'salon_id' => '1',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
         DB::table('feedbacks')->insert([
@@ -89,6 +96,8 @@ class FeedbacksTableSeeder extends Seeder
             'client_id' => '1456',
             'allow' => '1',
             'publish' => '1',
+            'salon_id' => '2',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
     }
 }
