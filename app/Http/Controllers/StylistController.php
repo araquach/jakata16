@@ -52,7 +52,7 @@ class StylistController extends Controller {
 		
 		$applicant = $this->stylist->get()->last();
 		
-		Mail::send('emails.recruit.stylist', compact('applicant'), function($message)
+		Mail::send('emails.recruitment.stylist', compact('applicant'), function($message)
    		{
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
 			$message->to('adam@jakatasalon.co.uk');
