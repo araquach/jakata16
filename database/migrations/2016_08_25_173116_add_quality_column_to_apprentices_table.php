@@ -13,7 +13,7 @@ class AddQualityColumnToApprenticesTable extends Migration
     public function up()
     {
         Schema::table('apprentices', function ($table) {
-            $table->integer('quality');
+            $table->integer('quality')->nullable();
         });
     }
 

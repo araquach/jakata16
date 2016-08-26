@@ -13,7 +13,7 @@ class AddContactSatatusColumnToStylistsTable extends Migration
     public function up()
     {
         Schema::table('stylists', function ($table) {
-            $table->integer('contact_status');
+            $table->integer('contact_status')->nullable();
         });
     }
 

@@ -6,7 +6,6 @@ use App\Apprentice;
 use App\Http\Requests\ApprenticeFormRequest;
 use Illuminate\Http\Request;
 use Mail;
-use Carbon\Carbon;
 
 class ApprenticeController extends Controller {
 
@@ -70,10 +69,8 @@ class ApprenticeController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show(Apprentice $apprentice)
 	{
-		$apprentice = $this->apprentice->find($id);
-		
 		return view('recruit.apprentice.show', compact('apprentice'));
 	}
 
@@ -83,9 +80,9 @@ class ApprenticeController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit(Apprentice $apprentice)
 	{
-		//
+		return view('recruit.apprentice.edit', compact('apprentice'));
 	}
 
 	/**
@@ -94,9 +91,9 @@ class ApprenticeController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Apprentice $apprentice)
 	{
-		//
+		$apprentice->second_name = $request->get('second_name');
 	}
 
 	/**

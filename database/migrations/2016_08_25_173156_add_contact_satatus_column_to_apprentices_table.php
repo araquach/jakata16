@@ -13,7 +13,7 @@ class AddContactSatatusColumnToApprenticesTable extends Migration
     public function up()
     {
         Schema::table('apprentices', function ($table) {
-            $table->integer('contact_status');
+            $table->integer('contact_status')->nullable();
         });
     }
 

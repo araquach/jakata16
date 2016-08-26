@@ -45,6 +45,8 @@
     <li><strong>Why did you choose the salon?:</strong><br>{{ $apprentice->why_us }}</li>
 </ul>
 
+<a href="/apprentice/{{ $apprentice->id }}/edit">Admin notes here</a>
+
 {!! link_to('apprentice', 'Back to all the Apprentice applicants') !!}
 
 </div>
