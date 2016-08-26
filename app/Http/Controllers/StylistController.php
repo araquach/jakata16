@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Stylist;
 use App\Http\Requests\StylistFormRequest;
+use App\Http\Requests\StylistAdminFormRequest;
 use Mail;
 use Carbon\Carbon;
 
@@ -71,10 +72,8 @@ class StylistController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show(Stylist $stylist)
 	{
-		$stylist = $this->stylist->find($id);
-		
 		return view('recruit.stylist.show', compact('stylist'));
 	}
 
@@ -84,9 +83,9 @@ class StylistController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit(Stylist $stylist)
 	{
-		//
+		return view('recruit.stylist.edit', compact('stylist'));
 	}
 
 	/**
@@ -95,9 +94,11 @@ class StylistController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(StylistAdminFormRequest $request, Stylist $stylist)
 	{
-		//
+		$stylist->update($request->all());
+		
+		return redirect()->back()->with('message', 'The info has been updated');
 	}
 
 	/**
