@@ -57,6 +57,18 @@
     <li><strong>Why did you choose the salon?:</strong><br> {{ $stylist->why_us }}</li>
 </ul>
 
+<ul>
+    @if( $stylist->quality)
+    <li><strong>Quality of candidate:</strong> {{ $stylist->quality }}</li>
+    @endif
+    
+    @if( $stylist->contact_status)
+    <li><strong>Contact Status:</strong> {{ $stylist->contact_status }}</li>
+    @endif
+</ul>
+
+<a href="/stylist/{{ $stylist->id }}/edit">Admin notes here</a><br>
+
 {!! link_to('stylist', 'Back to all the Stylist applicants') !!}
 
 </div>

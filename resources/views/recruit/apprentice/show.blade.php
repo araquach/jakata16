@@ -45,7 +45,17 @@
     <li><strong>Why did you choose the salon?:</strong><br>{{ $apprentice->why_us }}</li>
 </ul>
 
-<a href="/apprentice/{{ $apprentice->id }}/edit">Admin notes here</a>
+<ul>
+    @if( $apprentice->quality)
+    <li><strong>Quality of candidate:</strong> {{ $apprentice->quality }}</li>
+    @endif
+    
+    @if( $apprentice->contact_status)
+    <li><strong>Contact Status:</strong> {{ $apprentice->contact_status }}</li>
+    @endif
+</ul>
+
+<a href="/apprentice/{{ $apprentice->id }}/edit">Admin notes here</a><br>
 
 {!! link_to('apprentice', 'Back to all the Apprentice applicants') !!}
 

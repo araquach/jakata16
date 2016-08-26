@@ -15,6 +15,12 @@
 
 <div id="admin">
 	
+	@if(Session::has('message'))
+    <div>
+    {{{ Session::get('message') }}}
+    </div>
+	@endif
+	
 	<h1>Stylist Name: {{ $stylist->first_name }} {{ $stylist->second_name }}</h1>
 	<h2>Applied to: {{ $stylist->salon_id }}</h2>
 	<ul>
@@ -25,6 +31,10 @@
 </ul>
 	
 	@include('recruit.stylist._admin_form')
+	
+	<a href="/stylist/{{ $stylist->id }}">Back to the details</a><br>
+	
+	{!! link_to('stylist', 'Back to all the Stylist applicants') !!}
 	
 </div>
 

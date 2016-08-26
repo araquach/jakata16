@@ -17,6 +17,12 @@
 
 <div id="admin">
 	
+	@if(Session::has('message'))
+    <div>
+    {{{ Session::get('message') }}}
+    </div>
+	@endif
+	
 	<h1>Apprentice Name: {{ $apprentice->first_name }} {{ $apprentice->second_name }}</h1>
 	<h2>Applied to: {{ $apprentice->salon_id }}</h2>
 	<ul>
@@ -27,6 +33,10 @@
 </ul>
 	
 	@include('recruit.apprentice._admin_form')
+	
+	<a href="/apprentice/{{ $apprentice->id }}">Back to the details</a><br>
+	
+	{!! link_to('apprentice', 'Back to all the Apprentice applicants') !!}
 	
 </div>
 
