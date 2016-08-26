@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Apprentice;
 use App\Http\Requests\ApprenticeFormRequest;
+use App\Http\Requests\ApprenticeAdminFormRequest;
 use Illuminate\Http\Request;
 use Mail;
 
@@ -91,9 +92,11 @@ class ApprenticeController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update(Apprentice $apprentice)
+	public function update(ApprenticeAdminFormRequest $request, Apprentice $apprentice)
 	{
-		$apprentice->second_name = $request->get('second_name');
+		$apprentice->update($request->all());
+		
+		return redirect()->back()->with('message', 'The info has been updated');
 	}
 
 	/**

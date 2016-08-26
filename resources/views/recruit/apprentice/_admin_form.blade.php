@@ -2,8 +2,6 @@
     'method' => 'PATCH',
     'route' => ['apprentice.update', $apprentice->id]
 ]) !!}
-
-	
 	
 	<div class="row">
 		{!! Form::label('quality', 'Rate the applicant') !!}
