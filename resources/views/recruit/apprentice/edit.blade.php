@@ -34,9 +34,9 @@
 	
 	@include('recruit.apprentice._admin_form')
 	
-	<a href="/apprentice/{{ $apprentice->id }}">Back to the details</a><br>
+	<a href="/apprentice/{{ $apprentice->id }}" class="link-button">Back to the details</a><br>
 	
-	{!! link_to('apprentice', 'Back to all the Apprentice applicants') !!}
+	{!! link_to('apprentice', 'Back to all the Apprentice applicants', ['class' => 'link-button']) !!}
 	
 </div>
 

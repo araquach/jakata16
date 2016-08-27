@@ -25,4 +25,41 @@ class Apprentice extends Model
         }
     }
     
+    public function getContactStatusAttribute($value)
+    {
+        switch($value) {
+            case "1":
+                return "Not Contacted";
+                break;
+            case "2":
+                return "Left Message";
+                break;
+            case "3":
+                return "Spoke Direct";
+                break;
+            default:
+                return NULL;
+        }
+    }
+    
+    public function getQualityAttribute($value)
+    {
+        switch($value) {
+            case "1":
+                return "Discard";
+                break;
+            case "2":
+                return "Put on backburner";
+                break;
+            case "3":
+                return "Has Potential";
+                break;
+            case "4":
+                return "We need them!";
+                break;
+            default:
+                return NULL;
+        }
+    }
+    
 }

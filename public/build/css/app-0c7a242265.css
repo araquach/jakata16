@@ -577,6 +577,34 @@ a:hover {
 	color: #2e2b60;
 }
 
+.link-button {
+	float: left;
+	clear: left;
+	margin-left: 0;
+	margin-bottom: 30px;
+	width: 200px;
+	height: auto;
+	text-align: center;
+	color: #FFF;
+	background-color: #424259;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.link-button a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.link-button a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.link-button:hover {
+	opacity: .7;
+}
+
 /* @end */
 
 /* @group Header */
@@ -654,6 +682,7 @@ nav li a:hover {
 #admin {
 	width: 700px;
 	height: 100%;
+	min-height: 500px;
 	background: #f5f5f5 url('/images/bg.jpg') no-repeat left top;
 	padding: 280px 190px 300px 60px;
 }
@@ -1462,6 +1491,7 @@ p.reveal {
 	padding-bottom: 200px;
 	padding-left: 50px;
 	padding-right: 50px;
+	min-height: 500px;
 }
 
 #recruitBlank h1 {

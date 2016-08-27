@@ -55,9 +55,9 @@
     @endif
 </ul>
 
-<a href="/apprentice/{{ $apprentice->id }}/edit">Admin notes here</a><br>
+<a href="/apprentice/{{ $apprentice->id }}/edit" class="link-button">Admin notes</a><br>
 
-{!! link_to('apprentice', 'Back to all the Apprentice applicants') !!}
+{!! link_to('apprentice', 'Back to all the applicants', ['class' => 'link-button']) !!}
 
 </div>
 

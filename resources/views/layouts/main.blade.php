@@ -60,7 +60,7 @@
 						<a href="http://www.schwarzkopf-professional.com"><img src={{ asset( 'images/footer/footer-01.png') }} alt="One"></a>
 					</li>
 					<li>
-						<a href="http://www.schwarzkopf-professional.com"><img src={{ asset( 'images/footer/footer-02.png') }} alt="jkhhk"></a>
+						<a href="http://www.schwarzkopf-professional.com"><img src={{ asset( 'images/footer/footer-02.png') }} alt="Schwarzkopf"></a>
 					</li>
 					<li>
 						<a href="http://www.schwarzkopf-professional.com"><img src={{ asset( 'images/footer/footer-03.png') }} alt="Schwarzkopf Osis"></a>

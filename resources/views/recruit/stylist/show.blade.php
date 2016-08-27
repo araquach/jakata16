@@ -16,7 +16,7 @@
 <h2>Applied to: {{ $stylist->salon_id }}</h2>
 
 <ul>
-    <li><strong>Date:</strong> {{ $stylist->created_at->format('d/m/Y') }}</li>
+    <li><strong>Application Date:</strong> {{ $stylist->created_at->format('d/m/Y') }}</li>
     <li><strong>Address 1:</strong> {{ $stylist->address1 }}</li>
     <li><strong>Address 2:</strong> {{ $stylist->address2 }}</li>
     <li><strong>Town/City:</strong> {{ $stylist->town }}</li>
@@ -67,9 +67,9 @@
     @endif
 </ul>
 
-<a href="/stylist/{{ $stylist->id }}/edit">Admin notes here</a><br>
+<a href="/stylist/{{ $stylist->id }}/edit" class="link-button">Admin notes</a><br>
 
-{!! link_to('stylist', 'Back to all the Stylist applicants') !!}
+{!! link_to('stylist', 'Back to all the applicants', ['class' => 'link-button']) !!}
 
 </div>
 
