@@ -16,7 +16,7 @@
 <div id="admin">
 	
 	@if(Session::has('message'))
-    <div>
+    <div class="message">
     {{{ Session::get('message') }}}
     </div>
 	@endif
