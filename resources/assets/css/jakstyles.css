@@ -954,7 +954,7 @@ p.reveal {
 
 /* @end */
 
-/* @group Recruitment */
+/* @group Blankment */
 
 /*---- general ----*/
 
@@ -984,6 +984,22 @@ p.reveal {
 
 #recruitBlank .view {
 	padding-bottom: 10px;
+}
+
+#recruitBlank .view table {
+	width: 80%;
+}
+
+#recruitBlank .view table td,
+#recruitBlank .view table th {
+	padding: 5px;
+}
+
+#recruitBlank .view table,
+#recruitBlank .view table th,
+#recruitBlank .view table tr,
+#recruitBlank .view table td {
+	border: 1px solid #888;
 }
 
 #recruitAdmin {

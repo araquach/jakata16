@@ -18,7 +18,7 @@
     
 <table>
 		<tr>
-			<th>Application Date</th>
+			<th>Date</th>
 			<th>Applicant Name</th>
 			<th>Quality Rating</th>
 			<th>Contact Status</th>
