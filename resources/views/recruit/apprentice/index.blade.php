@@ -14,15 +14,26 @@
 
 <h1>Apprentices</h1>
 
-@foreach($apprentices as $apprentice)
-
 <div class="view">
     
-<a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->id }}. {{ $apprentice->first_name }} {{ $apprentice->second_name }} ({{ $apprentice->salon_id }}) - Rating: {{ $apprentice->quality }}</a>
+<table>
+		<tr>
+			<th>Application Date</th>
+			<th>Applicant Name</th>
+			<th>Quality Rating</th>
+			<th>Contact Status</th>
+		</tr>
+		<tr>
+		@foreach($apprentices as $apprentice)
+			<td>{{ $apprentice->created_at->format('d/m/Y') }}</td>
+			<td><a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->first_name }} {{ $apprentice->second_name }}</a></td>
+			<td>{{ $apprentice->quality }}</td>
+			<td>{{ $apprentice->contact_status }}</td>
+		</tr>
+		@endforeach
+	</table>
 
 </div>
-
-@endforeach
 
 </div> <!--recruitBlank-->
 

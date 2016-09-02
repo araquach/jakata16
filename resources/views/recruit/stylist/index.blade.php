@@ -14,14 +14,30 @@
 
 <h1>Stylist Applicants</h1>
 
-@foreach($stylists as $stylist)
+
 
 <div class="view">
-    
-<a href="/stylist/{{ $stylist->id }}">{{ $stylist->id }}. {{ $stylist->first_name }} {{ $stylist->second_name }} ({{$stylist->salon_id}})</a>
+	
+	<table>
+		@foreach($stylists as $stylist)
+		<tr>
+			<th>Application Date</th>
+			<th>Applicant Name</th>
+			<th>Quality Rating</th>
+			<th>Contact Status</th>
+		</tr>
+		<tr>
+			<td>{{ $stylist->created_at->format('d/m/Y') }}</td>
+			<td><a href="/stylist/{{ $stylist->id }}">{{ $stylist->first_name }} {{ $stylist->second_name }}</a></td>
+			<td>{{ $stylist->quality }}</td>
+			<td>{{ $stylist->contact_status }}</td>
+		</tr>
+		@endforeach
+	</table>
+
 </div>
 
-@endforeach
+
 
 </div> <!--recruitBlank-->
 

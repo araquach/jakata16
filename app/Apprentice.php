@@ -38,7 +38,7 @@ class Apprentice extends Model
                 return "Spoke Direct";
                 break;
             default:
-                return NULL;
+                return "Needs sorting";
         }
     }
     

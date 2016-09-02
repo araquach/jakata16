@@ -39,7 +39,7 @@ class Stylist extends Model
                 return "Spoke Direct";
                 break;
             default:
-                return "Not Contacted";
+                return "Needs Sorting";
         }
     }
     
