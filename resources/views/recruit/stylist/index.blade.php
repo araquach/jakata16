@@ -22,6 +22,7 @@
 		<tr>
 			<th>Date</th>
 			<th>Applicant Name</th>
+			<th>Salon</th>
 			<th>Quality Rating</th>
 			<th>Contact Status</th>
 		</tr>
@@ -29,6 +30,7 @@
 		@foreach($stylists as $stylist)
 			<td>{{ $stylist->created_at->format('d/m/Y') }}</td>
 			<td><a href="/stylist/{{ $stylist->id }}">{{ $stylist->first_name }} {{ $stylist->second_name }}</a></td>
+			<td>{{ $stylist->salon_id }}</td>
 			<td>{{ $stylist->quality }}</td>
 			<td>{{ $stylist->contact_status }}</td>
 		</tr>
