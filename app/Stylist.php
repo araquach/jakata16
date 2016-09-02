@@ -39,7 +39,7 @@ class Stylist extends Model
                 return "Spoke Direct";
                 break;
             default:
-                return NULL;
+                return "Not Contacted";
         }
     }
     
@@ -47,19 +47,19 @@ class Stylist extends Model
     {
         switch($value) {
             case "1":
-                return "Discard";
-                break;
-            case "2":
-                return "Put on backburner";
-                break;
-            case "3":
-                return "Has Potential";
-                break;
-            case "4":
                 return "We need them!";
                 break;
+            case "2":
+                return "Has Potential";
+                break;
+            case "3":
+                return "Put on backburner";
+                break;
+            case "4":
+                return "Discard";
+                break;
             default:
-                return NULL;
+                return "Not Rated";
         }
     }
 }

@@ -7,10 +7,10 @@
 		<div class="row">
 			{!! Form::label('quality', 'Rate the applicant') !!}
 			{!! Form::select('quality', array(
-				'1' => 'Discard',
-				'2' => 'Put on backburner',
-				'3' => 'Has Potential',
-				'5' => 'We need them',
+				'1' => 'We need them',
+				'2' => 'Has Potential',
+				'3' => 'Put on backburner',
+				'4' => 'Discard',
 				), old('quality'), ['placeholder' => '-- Please Select --']) !!}
 			{!! $errors->first('quality', '<div class="errorMessage">:message</div>') !!}
 		</div>

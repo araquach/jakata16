@@ -25,7 +25,7 @@ class ApprenticeController extends Controller {
 	 */
 	public function index()
 	{
-		$apprentices = $this->apprentice->get();
+		$apprentices = $this->apprentice->orderByRaw('quality')->get();
 		
 		return view('recruit.apprentice.index', compact('apprentices'));
 	}

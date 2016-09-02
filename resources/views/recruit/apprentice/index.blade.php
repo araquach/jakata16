@@ -18,7 +18,7 @@
 
 <div class="view">
     
-<a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->id }}. {{ $apprentice->first_name }} {{ $apprentice->second_name }} ({{ $apprentice->salon_id }})</a>
+<a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->id }}. {{ $apprentice->first_name }} {{ $apprentice->second_name }} ({{ $apprentice->salon_id }}) - Rating: {{ $apprentice->quality }}</a>
 
 </div>
 
