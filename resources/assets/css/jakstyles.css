@@ -75,18 +75,26 @@ a:hover {
 	border-radius: 5px;
 }
 
-.link-button a {
-	text-decoration: none;
-	color: #FFF;
-}
-
-.link-button a:hover {
+a.link-button {
 	text-decoration: none;
 	color: #FFF;
 }
 
 .link-button:hover {
 	opacity: .7;
+}
+
+a.link-button:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.message {
+	width: 350px;
+	padding: 10px;
+	background-color: #424259;
+	color: #FFF;
+	margin-bottom: 60px;
 }
 
 /* @end */
@@ -193,7 +201,7 @@ nav li a:hover {
 #admin .form {
 	padding: 0;
     padding-top: 0;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 /* @group Home */
