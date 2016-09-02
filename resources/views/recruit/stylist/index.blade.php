@@ -19,7 +19,6 @@
 <div class="view">
 	
 	<table>
-		@foreach($stylists as $stylist)
 		<tr>
 			<th>Application Date</th>
 			<th>Applicant Name</th>
@@ -27,6 +26,7 @@
 			<th>Contact Status</th>
 		</tr>
 		<tr>
+		@foreach($stylists as $stylist)
 			<td>{{ $stylist->created_at->format('d/m/Y') }}</td>
 			<td><a href="/stylist/{{ $stylist->id }}">{{ $stylist->first_name }} {{ $stylist->second_name }}</a></td>
 			<td>{{ $stylist->quality }}</td>

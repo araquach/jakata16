@@ -25,7 +25,7 @@ class StylistController extends Controller {
 	 */
     public function index()
 	{
-		$stylists = $this->stylist->where('quality', '!=', '1' )->get();
+		$stylists = $this->stylist->orderBy('quality')->get();
 		
 		return view('recruit.stylist.index', compact('stylists'));
 	}

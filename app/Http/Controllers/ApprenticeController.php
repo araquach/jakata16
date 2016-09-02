@@ -14,7 +14,7 @@ class ApprenticeController extends Controller {
 	{
 		$this->middleware('auth', ['except' => ['create','store']]);
 		
-		$this->apprentice = $apprentice;
+	    $this->apprentice = $apprentice;
 	}
 
 	
@@ -25,7 +25,7 @@ class ApprenticeController extends Controller {
 	 */
 	public function index()
 	{
-		$apprentices = $this->apprentice->orderByRaw('quality')->get();
+		$apprentices = $this->apprentice->orderBy('quality')->get();
 		
 		return view('recruit.apprentice.index', compact('apprentices'));
 	}
