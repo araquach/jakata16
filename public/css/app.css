@@ -778,11 +778,11 @@ nav li a:hover {
 }
 
 #news1 {
-	background: url('/images/home/vlada_news.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
+	background: url('/images/home/groupshot_large.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
 	background-size: contain;
 }
 .no-rgba #news1 {
-	background: url('/images/home/vlada_news_small.jpg') no-repeat left top rgb(249, 249, 250);
+	background: url('/images/home/groupshot_large_small.jpg') no-repeat left top rgb(249, 249, 250);
 	
 }
 
