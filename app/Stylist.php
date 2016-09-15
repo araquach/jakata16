@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+
 use Carbon\Carbon;
 
 class Stylist extends Model
@@ -10,6 +11,13 @@ class Stylist extends Model
     protected $guarded = ['id'];
     
     protected $dates = ['created_at', 'updated_at'];
+    
+    protected $with = ['notes'];
+    
+    public function notes()
+    {
+        return $this->hasMany('App\StylistNote');
+    }
     
     public function getSalonIdAttribute($value)
     {

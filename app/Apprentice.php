@@ -10,6 +10,11 @@ class Apprentice extends Model
     
     protected $dates = ['created_at', 'updated_at'];
     
+    public function apprenticeNotes()
+    {
+        return $this->hasMany('ApprenticeNote');
+    }
+    
     public function getSalonIdAttribute($value)
     {
         if ($value == 1) {

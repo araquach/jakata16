@@ -58,14 +58,24 @@
 </ul>
 
 <ul>
-    @if( $stylist->quality)
+    @if($stylist->quality)
     <li><strong>Quality of candidate:</strong> {{ $stylist->quality }}</li>
     @endif
     
-    @if( $stylist->contact_status)
+    @if($stylist->contact_status)
     <li><strong>Contact Status:</strong> {{ $stylist->contact_status }}</li>
     @endif
 </ul>
+    
+    <h3>Manager Notes:</h3>
+    
+    <ul>
+         @foreach($stylist->notes as $note)
+         
+        <li>{{ $note->note }}</li>
+        
+        @endforeach
+    </ul>
 
 <a href="/stylist/{{ $stylist->id }}/edit" class="link-button">Admin notes</a><br>
 

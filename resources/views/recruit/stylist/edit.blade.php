@@ -24,11 +24,19 @@
 	<h1>Stylist Name: {{ $stylist->first_name }} {{ $stylist->second_name }}</h1>
 	<h2>Applied to: {{ $stylist->salon_id }}</h2>
 	<ul>
-    <li><strong>Application date:</strong> {{ $stylist->created_at->format('d/m/Y') }}</li>
-    <li><strong>Age:</strong> {{ $stylist->age }}</li>
-    <li><strong>Email Address:</strong> {{ $stylist->email }}</li>
-    <li><strong>Mobile Number:</strong> {{ $stylist->mobile }}</li>
-</ul>
+	    <li><strong>Application date:</strong> {{ $stylist->created_at->format('d/m/Y') }}</li>
+	    <li><strong>Age:</strong> {{ $stylist->age }}</li>
+	    <li><strong>Email Address:</strong> {{ $stylist->email }}</li>
+	    <li><strong>Mobile Number:</strong> {{ $stylist->mobile }}</li>
+	</ul>
+
+	<ul>
+         @foreach($stylist->notes as $note)
+         
+        <li>{{ $note->note }}</li>
+        
+        @endforeach
+    </ul>
 	
 	@include('recruit.stylist._admin_form')
 	

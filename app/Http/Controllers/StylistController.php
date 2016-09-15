@@ -4,6 +4,7 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Stylist;
+use App\StylistNote;
 use App\Http\Requests\StylistFormRequest;
 use App\Http\Requests\StylistAdminFormRequest;
 use Mail;
@@ -73,6 +74,8 @@ class StylistController extends Controller {
 	public function show(Stylist $stylist)
 	{
 		return view('recruit.stylist.show', compact('stylist'));
+		
+		// return dd($stylist);
 	}
 
 	/**
