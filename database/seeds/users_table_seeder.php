@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class StylistNotesTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,9 +11,11 @@ class StylistNotesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('stylist_notes')->insert([
-            'stylist_id' => '1',
-            'note' => 'Abdolutely terrible in every way possible',
+        DB::table('users')->insert([
+            'name' => 'Adam Carter',
+            'email' => 'adam@jakatasalon.co.uk',
+            'password' => Hash::make('blonde123'),
+            'remember_token' => null,
         ]);
     }
 }

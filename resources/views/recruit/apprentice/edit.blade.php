@@ -26,11 +26,17 @@
 	<h1>Apprentice Name: {{ $apprentice->first_name }} {{ $apprentice->second_name }}</h1>
 	<h2>Applied to: {{ $apprentice->salon_id }}</h2>
 	<ul>
-    <li><strong>Application date:</strong> {{ $apprentice->created_at->format('d/m/Y') }}</li>
-    <li><strong>Age:</strong> {{ $apprentice->age }}</li>
-    <li><strong>Email Address:</strong> {{ $apprentice->email }}</li>
-    <li><strong>Mobile Number:</strong> {{ $apprentice->mobile }}</li>
-</ul>
+	    <li><strong>Application date:</strong> {{ $apprentice->created_at->format('d/m/Y') }}</li>
+	    <li><strong>Age:</strong> {{ $apprentice->age }}</li>
+	    <li><strong>Email Address:</strong> {{ $apprentice->email }}</li>
+	    <li><strong>Mobile Number:</strong> {{ $apprentice->mobile }}</li>
+	</ul>
+	
+	<ul>
+		@foreach($apprentice->notes as $note)
+		<li>{{ $note->note }}</li>
+		@endforeach
+	</ul>
 	
 	@include('recruit.apprentice._admin_form')
 	

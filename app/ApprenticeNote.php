@@ -8,6 +8,6 @@ class ApprenticeNote extends Model
 {
     public function apprentice()
     {
-        return $this->belongsTo('Apprentice');
+        return $this->belongsTo('App\Apprentice');
     }
 }

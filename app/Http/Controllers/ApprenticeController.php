@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Apprentice;
+use App\ApprenticeNote;
 use App\Http\Requests\ApprenticeFormRequest;
 use App\Http\Requests\ApprenticeAdminFormRequest;
 use Illuminate\Http\Request;

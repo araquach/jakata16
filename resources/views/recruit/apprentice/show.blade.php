@@ -55,6 +55,16 @@
     @endif
 </ul>
 
+<h3>Manager Notes:</h3>
+    
+<ul>
+     @foreach($apprentice->notes as $note)
+     
+    <li>{{ $note->note }}</li>
+    
+    @endforeach
+</ul>
+
 <a href="/apprentice/{{ $apprentice->id }}/edit" class="link-button">Admin notes</a><br>
 
 {!! link_to('apprentice', 'Back to all the applicants', ['class' => 'link-button']) !!}

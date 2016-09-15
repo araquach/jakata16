@@ -10,9 +10,11 @@ class Apprentice extends Model
     
     protected $dates = ['created_at', 'updated_at'];
     
-    public function apprenticeNotes()
+    protected $with = ['notes'];
+    
+    public function notes()
     {
-        return $this->hasMany('ApprenticeNote');
+        return $this->hasMany('App\ApprenticeNote');
     }
     
     public function getSalonIdAttribute($value)
