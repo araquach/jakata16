@@ -7,6 +7,7 @@ use App\Stylist;
 use App\StylistNote;
 use App\Http\Requests\StylistFormRequest;
 use App\Http\Requests\StylistAdminFormRequest;
+use App\Http\Requests\StylistNoteFormRequest;
 use Mail;
 use Carbon\Carbon;
 
@@ -87,6 +88,20 @@ class StylistController extends Controller {
 	public function edit(Stylist $stylist)
 	{
 		return view('recruit.stylist.edit', compact('stylist'));
+	}
+	
+	public function createNote(Stylist $stylist) 
+	{
+		return view('recruit.stylist.notecreate', compact('stylist'));
+	}
+	
+	public function storeNote(StylistNoteFormRequest $request)
+	{
+		$input = $request->all();
+		
+		StylistNote::create($input);
+		
+		return redirect()->back()->with('message', 'Thanks for your application! If a position is available we will contact you soon');
 	}
 
 	/**

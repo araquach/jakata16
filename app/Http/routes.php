@@ -36,5 +36,11 @@ Route::get('feedback/{client}',
   ['as' => 'feedbackCreate', 'uses' => 'FeedbackController@create']);
 Route::post('feedback/store',
   ['uses' => 'FeedbackController@store']);
+  
+Route::get('stylist/{stylist}/note',
+  ['as' => 'stylistNoteCreate', 'uses' => 'StylistController@createNote']);
+  
+Route::post('stylist/{stylist}/note',
+  ['uses' => 'StylistController@storeNote']);
 
 Route::auth();

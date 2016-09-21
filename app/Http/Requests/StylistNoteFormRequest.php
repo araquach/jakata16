@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class StylistAdminFormRequest extends Request
+class StylistNoteFormRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,7 @@ class StylistAdminFormRequest extends Request
     public function rules()
     {
         return [
-            'id' => '',
-            'quality' => '',
-            'contact_status' => '',
-            'note' => '',
+            
         ];
     }
 }

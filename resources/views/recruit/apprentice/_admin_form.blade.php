@@ -24,6 +24,12 @@
 				), ['placeholder' => '-- Please Select --']) !!}
 			{!! $errors->first('contact_status', '<div class="errorMessage">:message</div>') !!}
 		</div>
+			
+		<div class="row">
+			{!! Form::label('note', 'Notes') !!}
+			{!! Form::textarea('note') !!}
+			{!! $errors->first('note', '<div class="errorMessage">:message</div>') !!}
+		</div>
 		
 		<div class="row buttons">
 		{!! Form::submit('Submit') !!}

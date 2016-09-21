@@ -99,6 +99,18 @@ class ApprenticeController extends Controller {
 		
 		return redirect()->back()->with('message', 'The info has been updated');
 	}
+	
+	
+	
+	public function notestore(ApprenticeNote $apprenticeNote, ApprenticeNoteFormRequest $request, Apprentice $apprentice)
+	{
+		$note = new ApprenticeNote;
+		$note->request->all();
+		$note->apprentice()->associate($apprentice);
+		$note->save();
+		
+		return view('recruit.apprentice.edit', compact('apprentice'));
+	}
 
 	/**
 	 * Remove the specified resource from storage.
