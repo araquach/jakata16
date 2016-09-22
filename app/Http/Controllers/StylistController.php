@@ -90,11 +90,23 @@ class StylistController extends Controller {
 		return view('recruit.stylist.edit', compact('stylist'));
 	}
 	
+	
+	/**
+	 * 
+	 * Display the note form
+	 * 
+	 * @return Response
+	 */
 	public function createNote(Stylist $stylist, StylistNote $note) 
 	{
 		return view('recruit.stylist.notecreate', compact('stylist', 'note'));
 	}
 	
+	/**
+	 * Store a newly created note.
+	 *
+	 * @return Response
+	 */
 	public function storeNote(StylistNoteFormRequest $request, Stylist $stylist, StylistNote $note)
 	{
 		

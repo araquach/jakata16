@@ -38,11 +38,11 @@
         @endforeach
     </ul>
     
-    <a href="/stylist/{{ $stylist->id }}/note">Make a note</a><br>
+    <a href="/stylist/{{ $stylist->id }}/note" class="link-button">Make a note</a><br>
 	
-	<a href="/stylist/{{ $stylist->id }}">Back to the details</a><br>
+	<a href="/stylist/{{ $stylist->id }}" class="link-button">Back to the details</a><br>
 	
-	{!! link_to('stylist', 'Back to all the Stylist applicants') !!}
+	{!! link_to('stylist', 'Back to all the Stylist applicants', ['class' => 'link-button']) !!}
 	
 </div>
 

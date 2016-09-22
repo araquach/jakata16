@@ -1,21 +1,25 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Apprentice;
 use App\ApprenticeNote;
 use App\Http\Requests\ApprenticeFormRequest;
+use App\Http\Requests\ApprenticeNoteFormRequest;
 use App\Http\Requests\ApprenticeAdminFormRequest;
-use Illuminate\Http\Request;
 use Mail;
+use Carbon\Carbon;
 
 class ApprenticeController extends Controller {
 
-	public function __construct(Apprentice $apprentice)
+	public function __construct(Apprentice $apprentice, ApprenticeNote $note)
 	{
 		$this->middleware('auth', ['except' => ['create','store']]);
 		
 	    $this->apprentice = $apprentice;
+	    
+	    $this->note = $note;
 	}
 
 	
@@ -26,7 +30,7 @@ class ApprenticeController extends Controller {
 	 */
 	public function index()
 	{
-		$apprentices = $this->apprentice->orderBy('quality')->get();
+		$apprentices = $this->apprentice->get();
 		
 		return view('recruit.apprentice.index', compact('apprentices'));
 	}
@@ -86,7 +90,33 @@ class ApprenticeController extends Controller {
 	{
 		return view('recruit.apprentice.edit', compact('apprentice'));
 	}
-
+	
+	/**
+	 * 
+	 * Display the note form
+	 * 
+	 * @return Response
+	 */
+	public function createNote(Apprentice $apprentice, ApprenticeNote $note) 
+	{
+		return view('recruit.apprentice.notecreate', compact('apprentice', 'note'));
+	}
+	
+	/**
+	 * Store a newly created note.
+	 *
+	 * @return Response
+	 */
+	public function storeNote(ApprenticeNoteFormRequest $request, Apprentice $apprentice, ApprenticeNote $note)
+	{
+		
+		$input = $request->all();
+		
+		ApprenticeNote::create($input);
+		
+		return redirect()->back()->with('message', 'Note added');
+	}
+	
 	/**
 	 * Update the specified resource in storage.
 	 *
@@ -98,18 +128,6 @@ class ApprenticeController extends Controller {
 		$apprentice->update($request->all());
 		
 		return redirect()->back()->with('message', 'The info has been updated');
-	}
-	
-	
-	
-	public function notestore(ApprenticeNote $apprenticeNote, ApprenticeNoteFormRequest $request, Apprentice $apprentice)
-	{
-		$note = new ApprenticeNote;
-		$note->request->all();
-		$note->apprentice()->associate($apprentice);
-		$note->save();
-		
-		return view('recruit.apprentice.edit', compact('apprentice'));
 	}
 
 	/**

@@ -40,6 +40,8 @@
 	
 	@include('recruit.apprentice._admin_form')
 	
+	<a href="/apprentice/{{ $apprentice->id }}/note" class="link-button">Make a note</a><br>
+	
 	<a href="/apprentice/{{ $apprentice->id }}" class="link-button">Back to the details</a><br>
 	
 	{!! link_to('apprentice', 'Back to all the Apprentice applicants', ['class' => 'link-button']) !!}
