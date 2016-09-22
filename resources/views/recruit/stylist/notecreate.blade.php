@@ -16,6 +16,7 @@
 @section('content')
 
 <div id="admin">
+	
 	@if(Session::has('message'))
 		<div class="message">
 		{{{ Session::get('message') }}}
@@ -25,7 +26,7 @@
 	<div id="form">
 		<h1>Applicant Note</h1>
 	
-		@include('recruit.stylist.note_form')
+		@include('recruit.stylist._note_form')
 	
 	</div> 
 </div> 

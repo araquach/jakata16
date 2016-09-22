@@ -40,7 +40,7 @@ Route::post('feedback/store',
 Route::get('stylist/{stylist}/note',
   ['as' => 'stylistNoteCreate', 'uses' => 'StylistController@createNote']);
   
-Route::post('stylist/{stylist}/note',
+Route::post('stylist/note',
   ['uses' => 'StylistController@storeNote']);
 
 Route::auth();

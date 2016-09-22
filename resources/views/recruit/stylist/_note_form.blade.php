@@ -1,15 +1,14 @@
-{!! Form::model($stylistNote, [
-    'method' => 'POST',
-    'route' => ['stylist.note', $stylistNote->id]
-]) !!}
+{!! Form::open(array(
+	'action' => 'StylistController@storeNote'
+)) !!}
 	
 	<div class="form">
 		
-			{!! Form::hidden('stylist_id) !!}
+			{!! Form::hidden('stylist_id') !!}
 		
 		<div class="row">
 			{!! Form::label('note', 'Create Note') !!}
-			{!! Form::textarea('note') !!}
+			{!! Form::textArea('note') !!}
 			{!! $errors->first('note', '<div class="errorMessage">:message</div>') !!}
 		</div>
 		

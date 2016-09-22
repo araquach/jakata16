@@ -24,7 +24,7 @@ class StylistNoteFormRequest extends Request
     public function rules()
     {
         return [
-            
+            'note' => 'required',
         ];
     }
 }

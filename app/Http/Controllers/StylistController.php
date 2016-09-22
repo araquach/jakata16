@@ -13,11 +13,13 @@ use Carbon\Carbon;
 
 class StylistController extends Controller {
 	
-	public function __construct(Stylist $stylist)
+	public function __construct(Stylist $stylist, StylistNote $note)
 	{
 		$this->middleware('auth', ['except' => ['create','store']]);
 		
 		$this->stylist = $stylist;
+		
+		$this->note = $note;
 	}
 	
 	/** 
@@ -75,8 +77,6 @@ class StylistController extends Controller {
 	public function show(Stylist $stylist)
 	{
 		return view('recruit.stylist.show', compact('stylist'));
-		
-		// return dd($stylist);
 	}
 
 	/**
@@ -90,18 +90,20 @@ class StylistController extends Controller {
 		return view('recruit.stylist.edit', compact('stylist'));
 	}
 	
-	public function createNote(Stylist $stylist) 
+	public function createNote(Stylist $stylist, StylistNote $note) 
 	{
-		return view('recruit.stylist.notecreate', compact('stylist'));
+		return view('recruit.stylist.notecreate', compact('stylist', 'note'));
 	}
 	
-	public function storeNote(StylistNoteFormRequest $request)
+	public function storeNote(StylistNoteFormRequest $request, Stylist $stylist, StylistNote $note)
 	{
 		$input = $request->all();
 		
+		
+		
 		StylistNote::create($input);
 		
-		return redirect()->back()->with('message', 'Thanks for your application! If a position is available we will contact you soon');
+		return redirect()->back()->with('message', 'Note added');
 	}
 
 	/**
