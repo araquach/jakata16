@@ -97,9 +97,8 @@ class StylistController extends Controller {
 	
 	public function storeNote(StylistNoteFormRequest $request, Stylist $stylist, StylistNote $note)
 	{
+		
 		$input = $request->all();
-		
-		
 		
 		StylistNote::create($input);
 		

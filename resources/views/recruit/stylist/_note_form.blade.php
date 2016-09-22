@@ -4,7 +4,7 @@
 	
 	<div class="form">
 		
-			{!! Form::hidden('stylist_id') !!}
+			{!! Form::hidden('stylist_id', $stylist->id) !!}
 		
 		<div class="row">
 			{!! Form::label('note', 'Create Note') !!}
