@@ -29,6 +29,9 @@
 		@include('recruit.stylist._note_form')
 	
 	</div> 
+	
+	<a href="/stylist/{{ $stylist->id }}">Back to the details</a>
+
 </div> 
 
 @stop
