@@ -37,13 +37,13 @@ class Stylist extends Model
     public function getContactStatusAttribute($value)
     {
         switch($value) {
-            case "1":
+            case 1:
                 return "Not Contacted";
                 break;
-            case "2":
+            case 2:
                 return "Left Message";
                 break;
-            case "3":
+            case 3:
                 return "Spoke Direct";
                 break;
             default:
@@ -54,16 +54,16 @@ class Stylist extends Model
     public function getQualityAttribute($value)
     {
         switch($value) {
-            case "1":
+            case 1:
                 return "We need them!";
                 break;
-            case "2":
+            case 2:
                 return "Has Potential";
                 break;
-            case "3":
+            case 3:
                 return "Put on backburner";
                 break;
-            case "4":
+            case 4:
                 return "Discard";
                 break;
             default:
