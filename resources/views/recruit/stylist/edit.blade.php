@@ -33,7 +33,7 @@
 	<ul>
          @foreach($stylist->notes as $note)
          
-        <li>{{ $note->note }}</li>
+        <li class="note">{{ $note->created_at->format('d/m/Y' }} - {{ $note->note }}</li>
         
         @endforeach
     </ul>

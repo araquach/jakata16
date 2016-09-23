@@ -32,9 +32,11 @@
 	    <li><strong>Mobile Number:</strong> {{ $apprentice->mobile }}</li>
 	</ul>
 	
+	
+	<h2>Notes</h2>
 	<ul>
 		@foreach($apprentice->notes as $note)
-		<li>{{ $note->note }}</li>
+		<li class="note">{{ $note->created_at->format('d/m/Y') }} - {{ $note->note }}</li>
 		@endforeach
 	</ul>
 	
