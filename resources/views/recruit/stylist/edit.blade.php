@@ -38,6 +38,8 @@
         @endforeach
     </ul>
     
+    @include('recruit.stylist._admin_form')
+    
     <a href="/stylist/{{ $stylist->id }}/note" class="link-button">Make a note</a><br>
 	
 	<a href="/stylist/{{ $stylist->id }}" class="link-button">Back to the details</a><br>

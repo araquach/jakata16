@@ -10,8 +10,6 @@ class ApprenticeNote extends Model
     
     protected $dates = ['created_at', 'updated_at'];
     
-    protected $with = ['apprentice'];
-    
     public function apprentice()
     {
         return $this->belongsTo('App\Apprentice');
