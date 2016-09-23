@@ -1033,6 +1033,13 @@ p.reveal {
 	margin-bottom: 20px;
 }
 
+li.note {
+	width: auto;
+	padding: 15px;
+	border: 1px solid #555;
+	margin-bottom: 10px;
+}
+
 #recruitBlank #yw0 div.items div.view {
 	margin-bottom: 30px;
 }

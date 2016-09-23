@@ -55,9 +55,8 @@
     @endif
 </ul>
 
-<h3></h3>Notes:</h3>
-    
-<ul>
+<h2>Notes:</h2>
+    <ul>
      @foreach($apprentice->notes as $note)
      
     <li class="note">{{ $note->created_at->format('d/m/Y') }} - {{ $note->note }}</li>

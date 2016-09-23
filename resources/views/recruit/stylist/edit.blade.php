@@ -30,6 +30,8 @@
 	    <li><strong>Mobile Number:</strong> {{ $stylist->mobile }}</li>
 	</ul>
 
+	
+	<h2>Notes:</h2>
 	<ul>
          @foreach($stylist->notes as $note)
          

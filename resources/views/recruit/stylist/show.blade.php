@@ -67,7 +67,7 @@
     @endif
 </ul>
     
-    <h3>Manager Notes:</h3>
+    <h2>Notes:</h2>
     
     <ul>
          @foreach($stylist->notes as $note)
