@@ -25,7 +25,6 @@
 	<h2>Applied to: {{ $stylist->salon_id }}</h2>
 	<ul>
 	    <li><strong>Application date:</strong> {{ $stylist->created_at->format('d/m/Y') }}</li>
-	    <li><strong>Age:</strong> {{ $stylist->age }}</li>
 	    <li><strong>Email Address:</strong> {{ $stylist->email }}</li>
 	    <li><strong>Mobile Number:</strong> {{ $stylist->mobile }}</li>
 	</ul>
