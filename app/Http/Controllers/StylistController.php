@@ -32,6 +32,8 @@ class StylistController extends Controller {
 		$stylists = $this->stylist->where('quality', '!=', '4')->orderBy('quality')->get();
 		
 		return view('recruit.stylist.index', compact('stylists'));
+		
+		// return dd($stylists);
 	}
 
 	/**

@@ -15,6 +15,15 @@
 <h1>Stylist Name: {{ $stylist->first_name }} {{ $stylist->second_name }}</h1>
 <h2>Applied to: {{ $stylist->salon_id }}</h2>
 
+<h2>Notes:</h2>
+<ul>
+     @foreach($stylist->notes as $note)
+     
+    <li class="note">{{ $note->created_at->format('d/m/Y') }} - {{ $note->note }}</li>
+    
+    @endforeach
+</ul>
+
 <ul>
     <li><strong>Application Date:</strong> {{ $stylist->created_at->format('d/m/Y') }}</li>
     <li><strong>Address 1:</strong> {{ $stylist->address1 }}</li>
@@ -66,16 +75,6 @@
     <li><strong>Contact Status:</strong> {{ $stylist->contact_status }}</li>
     @endif
 </ul>
-    
-    <h2>Notes:</h2>
-    
-    <ul>
-         @foreach($stylist->notes as $note)
-         
-        <li class="note">{{ $note->created_at->format('d/m/Y') }} - {{ $note->note }}</li>
-        
-        @endforeach
-    </ul>
 
 <a href="/stylist/{{ $stylist->id }}/edit" class="link-button">Admin notes</a><br>
 

@@ -29,6 +29,16 @@
 	    <li><strong>Email Address:</strong> {{ $stylist->email }}</li>
 	    <li><strong>Mobile Number:</strong> {{ $stylist->mobile }}</li>
 	</ul>
+	
+	<ul>
+    @if($stylist->quality)
+    <li><strong>Quality of candidate:</strong> {{ $stylist->quality }}</li>
+    @endif
+    
+    @if($stylist->contact_status)
+    <li><strong>Contact Status:</strong> {{ $stylist->contact_status }}</li>
+    @endif
+	</ul>
 
 	
 	<h2>Notes:</h2>

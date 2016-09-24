@@ -32,6 +32,16 @@
 	    <li><strong>Mobile Number:</strong> {{ $apprentice->mobile }}</li>
 	</ul>
 	
+	<ul>
+    @if($apprentice->quality)
+    <li><strong>Quality of candidate:</strong> {{ $apprentice->quality }}</li>
+    @endif
+    
+    @if($apprentice->contact_status)
+    <li><strong>Contact Status:</strong> {{ $apprentice->contact_status }}</li>
+    @endif
+</ul>
+	
 	
 	<h2>Notes:</h2>
 	<ul>

@@ -15,6 +15,15 @@
 <h1>Apprentice Name: {{ $apprentice->first_name }} {{ $apprentice->second_name }}</h1>
 <h2>Applied to: {{ $apprentice->salon_id }}</h2>
 
+<h2>Notes:</h2>
+<ul>
+     @foreach($apprentice->notes as $note)
+     
+    <li class="note">{{ $note->created_at->format('d/m/Y') }} - {{ $note->note }}</li>
+    
+    @endforeach
+</ul>
+
 <ul>
     <li><strong>Application date:</strong> {{ $apprentice->created_at->format('d/m/Y') }}</li>
     <li><strong>Age:</strong> {{ $apprentice->age }}</li>
@@ -53,15 +62,6 @@
     @if( $apprentice->contact_status)
     <li><strong>Contact Status:</strong> {{ $apprentice->contact_status }}</li>
     @endif
-</ul>
-
-<h2>Notes:</h2>
-    <ul>
-     @foreach($apprentice->notes as $note)
-     
-    <li class="note">{{ $note->created_at->format('d/m/Y') }} - {{ $note->note }}</li>
-    
-    @endforeach
 </ul>
 
 <a href="/apprentice/{{ $apprentice->id }}/edit" class="link-button">Admin notes</a><br>
