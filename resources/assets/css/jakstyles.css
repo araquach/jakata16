@@ -457,6 +457,10 @@ nav li a:hover {
 	background: url('/images/team/laura_m.jpg') no-repeat top left #f5f5f5;
 }
 
+.caleb {
+	background: url('/images/team/caleb.jpg') no-repeat top left #f5f5f5;
+}
+
 .team_member {
 	width: 300px;
 	height: 310px;
@@ -580,8 +584,8 @@ nav li a:hover {
 	
 }
 
-#matt {
-	background: #FFF url('/images/team/matt.jpg') no-repeat left top;
+#caleb {
+	background: #FFF url('/images/team/caleb.jpg') no-repeat left top;
 	transform:rotate(-3deg);
 	-ms-transform:rotate(-3deg); /* IE 9 */
 	-moz-transform:rotate(-3deg); /* Firefox */
@@ -601,6 +605,19 @@ nav li a:hover {
 	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
 	
 }
+
+#matt {
+	background: #FFF url('/images/team/matt.jpg') no-repeat left top;
+	transform:rotate(-2deg);
+	-ms-transform:rotate(-2deg); /* IE 9 */
+	-moz-transform:rotate(-2deg); /* Firefox */
+	-webkit-transform:rotate(-2deg); /* Safari and Chrome */
+	-o-transform:rotate(-2deg); /* Opera */
+	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
+	
+}
+
+
 
 /* @end */
 
