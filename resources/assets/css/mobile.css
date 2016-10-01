@@ -568,6 +568,11 @@ p#book_button {
 	background-size: cover;
 }
 
+.caleb {
+	background: url('/images/team/caleb.jpg') no-repeat top left #f5f5f5;
+	background-size: cover;
+}
+
 .matt {
 	background: url('/images/team/matt.jpg') no-repeat top left #f5f5f5;
 	background-size: cover;
