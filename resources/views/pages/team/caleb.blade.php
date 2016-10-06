@@ -44,8 +44,8 @@
 		<p>He joined us after moving on a busy Frodsham salon.</p>
 	    <p>He’s highly skilled in all aspects of hairdressing but loves high-fashion colouring and big, bouncy blow dry’s.</p>
 	    <p></p>
-	    <p><strong>Favourite Style: </strong>Short hair cuts</p>
-	    <p><strong>Favourite Product: </strong>Schwarzkopf Flex Wax</p>
+	    <p><strong>Favourite Style: </strong>Sexy beach waves and braids</p>
+	    <p><strong>Favourite Product: </strong>Schwarzkopf Soft Glam Smooth Polish</p>
 	    <p class="price">Average Cut &amp; Colour <br>with Caleb: &pound;90</p>
 	    
 	    <a href="{{ URL::to('team') }}#caleb" >Back to the full team</a>
