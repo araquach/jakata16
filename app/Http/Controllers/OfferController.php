@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Offer;
+use App\Http\Requests\OfferFormRequest;
 use Mail;
 use Carbon\Carbon;
 
@@ -13,6 +14,8 @@ class OfferController extends Controller
     public function __construct(Offer $offer)
     {
         $this->middleware('guest');
+        
+        $this->offer = $offer;
     }
     
     public function create($client)
@@ -24,7 +27,7 @@ class OfferController extends Controller
         // return dd($client);
     }
     
-    public function update(Offer $offer)
+    public function update(OfferFormRequest $request, Offer $offer)
     {
         $offer->update($request->all());
         

@@ -12,7 +12,7 @@
 
 @section('content')
 
-@if($client->gender = 'f')
+@if($client->gender == 'f')
 
 <div id="special_offer">
 
@@ -21,6 +21,12 @@
 <div id="special_offer_male">
 
 @endif
+
+    @if(Session::has('message'))
+    <div class="applicationSuccess">
+    {{{ Session::get('message') }}}
+    </div>
+    @endif
     
     <div id="special_offer_copy">
         
