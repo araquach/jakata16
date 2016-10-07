@@ -12,7 +12,7 @@
 
 @section('content')
 
-@if($offer->gender = 'f')
+@if($client->gender = 'f')
 
 <div id="special_offer">
 
@@ -24,17 +24,17 @@
     
     <div id="special_offer_copy">
         
-        <h1><strong>Special Offer for<br> {{ $offer->first_name }} {{ $offer->last_name }}</strong></h1>
+        <h1><strong>Special Offer for<br> {{ $client->first_name }} {{ $client->last_name }}</strong></h1>
 
-        <p>We've not seen you in the salon<br> for a while {{ $offer->first_name }}, so we'd like to offer you</p> 
+        <p>We've not seen you in the salon<br> for a while {{ $client->first_name }}, so we'd like to offer you</p> 
         <p class="big"><strong>30% off</strong><br>the total bill</p> 
         <p>on your next visit (including products)</p>
         
-        <p>Just quote: <strong>{{ $offer->offerCodeText() }}</strong> when booking</p>
+        <p>Just quote: <strong>{{-- $client->offerCodeText() --}}</strong> when booking</p>
         
         @include('offer._form')
         
-        <p>Offer Ends: <?php echo $model->getDateText(); ?></p> 
+        <p>Offer Ends: {{-- date --}}</p> 
         
         <small>Not with any other offer. Not transferable. Weekdays only</small>
         
