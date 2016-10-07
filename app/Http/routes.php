@@ -48,4 +48,9 @@ Route::get('apprentice/{apprentice}/note',
 Route::post('apprentice/note',
   ['uses' => 'ApprenticeController@storeNote']);
 
+Route::get('offer/{offer}',
+  ['as' => 'offerCreate', 'uses' => 'OfferController@create']);
+Route::post('offer/store',
+  ['uses' => 'OfferController@store']);
+
 Route::auth();
