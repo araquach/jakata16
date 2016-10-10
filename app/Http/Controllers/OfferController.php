@@ -20,17 +20,15 @@ class OfferController extends Controller
     
     public function create($client)
     {
-        $client = Offer::where('client_id', $client)->firstOrFail();
+        $client = Offer::where('salon_id', 1)->where('client_id', $client)->firstOrFail();
         
         return view('offer.create', compact('client'));
-        
-        // return dd($client);
     }
     
     public function update(OfferFormRequest $request, Offer $offer)
     {
         $offer->update($request->all());
         
-        return redirect()->back()->with('message', 'You will no longer text recieve offers from us - thank you');
+        return redirect()->back()->with('message', 'You will no longer text receive offers from us - thank you');
     }
 }

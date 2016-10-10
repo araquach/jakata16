@@ -21,4 +21,14 @@ class Offer extends Model
     {
         return ucfirst($value);
     }
+    
+    public function getStylistLevelAttribute($value)
+    {
+        return strtoupper($value);
+    }
+    
+    public function getGenderAttribute($value)
+    {
+        return strtoupper($value);
+    }
 }

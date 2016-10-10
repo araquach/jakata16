@@ -1584,7 +1584,7 @@ span.big {
 #special_offer {
 	width: auto;
 	background: url('/images/spec_offer/offer_female.jpg') no-repeat right top #f5f5f5;
-	height: 700px;
+	min-height: 700px;
 	padding-top: 210px;
 	padding-bottom: 200px;
 }
@@ -1592,9 +1592,20 @@ span.big {
 #special_offer_male {
 	width: auto;
 	background: url('/images/spec_offer/offer_male.jpg') no-repeat right top #f5f5f5;
-	height: 700px;
+	min-height: 700px;
 	padding-top: 210px;
 	padding-bottom: 200px;
+}
+
+#special_offer .applicationSuccess,
+#special_offer_male .applicationSuccess {
+	height: 60px;
+	margin: 0;
+	margin-top: 70px;
+	margin-left: 30px;
+	border: 1px solid #666;
+	border-radius: 5px;
+	text-align: center;
 }
 
 #special_offer_copy {
@@ -1604,18 +1615,18 @@ span.big {
 }
 
 #special_offer_copy h1 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 	margin-left: 0;
 	line-height: 1.5em;
 	margin-top: 0;
 }
 
 #special_offer_copy p.big {
-	font: 1.5em Georgia, "Times New Roman", Times, serif;
-	line-height: 1.5em;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	font-weight: normal;
+	font: 2.2em Georgia, "Times New Roman", Times, serif;
+	line-height: 1em;
+	margin-bottom: .6em;
+	margin-top: .6em;
+	font-weight: bold;
 }
 
 #special_offer_copy p.small {
