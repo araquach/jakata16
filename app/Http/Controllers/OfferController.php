@@ -20,7 +20,7 @@ class OfferController extends Controller
     
     public function create($client)
     {
-        $client = Offer::where('salon_id', 1)->where('client_id', $client)->firstOrFail();
+        $client = Offer::where('salon_id', '>', 0)->where('client_id', $client)->firstOrFail();
         
         return view('offer.create', compact('client'));
     }

@@ -7,12 +7,12 @@
     {!! Form::hidden('id') !!}
     
     <div class="row">
-		{!! Form::label('opt_out', 'If you no longer wish to receive offers check the box then click \'GO\'') !!}
+		{!! Form::label('opt_out', 'If you no longer wish to receive offers check the box then click \'Opt Out\'') !!}
 		{!! Form::checkbox('opt_out', old('opt_out')) !!}
 	</div>
 	
 	<div class="row buttons">
-	{!! Form::submit('Go') !!}
+	{!! Form::submit('Opt Out') !!}
 	</div>
     
     {!! Form::close() !!}
