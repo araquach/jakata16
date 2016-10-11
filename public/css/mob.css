@@ -2332,7 +2332,8 @@ span.kebelo_italic {
 	background-color: rgba(255,255,255,.75);
 	width: auto;
 	padding: 20px;
-	font-size: 1.4em;
+	font-size: 1.2em;
+	line-height: 1em;
 	padding-bottom: 50px;
 	margin: 0;
 }
@@ -2344,8 +2345,9 @@ span.kebelo_italic {
 	margin-top: 20px;
 }
 
-#special_offer_copy p.big {
-	font-size: 2em;
+#special_offer_copy p span.big {
+	font-size: 3em;
+	line-height: 1.8em;
 }
 
 #special_offer_copy p.small {

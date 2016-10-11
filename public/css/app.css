@@ -2135,7 +2135,8 @@ span.big {
 #special_offer_copy {
 	width: 430px;
 	padding: 50px;
-	font-size: 1.2em;
+	font-size: 1.4em;
+	line-height: 1em;
 }
 
 #special_offer_copy h1 {
@@ -2145,12 +2146,13 @@ span.big {
 	margin-top: 0;
 }
 
-#special_offer_copy p.big {
-	font: 2.2em Georgia, "Times New Roman", Times, serif;
-	line-height: 1em;
+#special_offer_copy p span.big {
+	font: 3em Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4em;
 	margin-bottom: .6em;
 	margin-top: .6em;
 	font-weight: bold;
+	
 }
 
 #special_offer_copy p.small {
@@ -2168,6 +2170,10 @@ span.big {
 #special_offer_copy small {
 	font-size: .6em;
 	margin: 0;
+}
+
+#special_offer_copy input {
+	font-size: 1em;
 }
 
 #special_offer_copy .form label {

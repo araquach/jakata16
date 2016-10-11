@@ -36,7 +36,7 @@
         
         <h1><strong>Special Offer for<br> {{ $client->first_name }} {{ $client->last_name }}</strong></h1>
 
-        <p>We've not seen you in the salon<br> for a while {{ $client->first_name }}, so we'd like to offer you</p> 
+        <p>We've not seen you in the salon<br> for a while {{ $client->first_name }}, so we'd like to give you this special offer:</p> 
         @if($client->stylist_level == 'G' & $client->gender == 'F')
         <p><strong><span class="big">&pound;50<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
         
@@ -58,8 +58,7 @@
         @else
         <p><strong><span class="big">&pound;30% off<br></span>your next visit</strong></p>
         @endif
-        
-        <p><strong>your next visit</strong></p>
+    
         <small>weekdays only - not with any other offer - offer not transferable</small>
         
         <p>Just quote: <strong>1116{{ $client->stylist_level }}{{ $client->gender }}</strong> when booking</p>
