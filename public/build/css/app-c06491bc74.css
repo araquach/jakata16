@@ -2113,6 +2113,14 @@ span.big {
 	padding-bottom: 200px;
 }
 
+#special_offer_generic {
+	width: auto;
+	background: url('/images/spec_offer/offer_generic.jpg') no-repeat right top #f5f5f5;
+	min-height: 700px;
+	padding-top: 210px;
+	padding-bottom: 200px;
+}
+
 #special_offer .applicationSuccess,
 #special_offer_male .applicationSuccess {
 	height: 60px;

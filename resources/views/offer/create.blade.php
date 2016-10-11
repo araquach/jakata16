@@ -16,9 +16,13 @@
 
 <div id="special_offer">
 
-@else()
+@elseif($client->gender == 'M')
 
 <div id="special_offer_male">
+    
+@else()
+
+<div id="special_offer_generic">
 
 @endif
 
@@ -33,13 +37,28 @@
         <h1><strong>Special Offer for<br> {{ $client->first_name }} {{ $client->last_name }}</strong></h1>
 
         <p>We've not seen you in the salon<br> for a while {{ $client->first_name }}, so we'd like to offer you</p> 
-        @if($client->stylist_level == 'SS')
-        <p class="big"><strong>30% off</strong></p>
-        @elseif($client->stylist_level == 'S')
-        <p class="big"><strong>20% off</strong></p>
+        @if($client->stylist_level == 'G' & $client->gender == 'F')
+        <p><strong><span class="big">&pound;50<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        
+        @elseif($client->stylist_level == 'S' & $client->gender == 'F')
+        <p><strong><span class="big">&pound;60<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        
+        @elseif($client->stylist_level == 'SS' & $client->gender == 'F')
+        <p><strong><span class="big">&pound;70<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        
+        @elseif($client->stylist_level == 'G' & $client->gender == 'M')
+        <p><strong><span class="big">&pound;10<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        
+        @elseif($client->stylist_level == 'S' & $client->gender == 'M')
+        <p><strong><span class="big">&pound;15<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        
+        @elseif($client->stylist_level == 'SS' & $client->gender == 'M')
+        <p><strong><span class="big">&pound;20<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        
         @else
-        <p class="big"><strong>10% off</strong></p>
+        <p><strong><span class="big">&pound;30% off<br></span>your next visit</strong></p>
         @endif
+        
         <p><strong>your next visit</strong></p>
         <small>weekdays only - not with any other offer - offer not transferable</small>
         

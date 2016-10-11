@@ -2319,14 +2319,9 @@ span.kebelo_italic {
 
 /* @group special offer */
 
-#special_offer {
-	width: auto;
-	height: 100%;
-	padding: 0;
-	padding-bottom: 0;
-}
-
-#special_offer_male {
+#special_offer,
+#special_offer_male,
+#special_offer_generic {
 	width: auto;
 	height: 100%;
 	padding: 0;
