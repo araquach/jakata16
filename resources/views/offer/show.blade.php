@@ -47,13 +47,13 @@
         <p><strong><span class="big">&pound;70<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
         
         @elseif($offer->stylist_level == 'G' & $offer->gender == 'M')
-        <p><strong><span class="big">&pound;10<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        <p><strong><span class="big">&pound;10<br></span>Men's Cut &amp; Style<br>on your next visit</strong></p>
         
         @elseif($offer->stylist_level == 'S' & $offer->gender == 'M')
-        <p><strong><span class="big">&pound;15<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        <p><strong><span class="big">&pound;15<br></span>Men's Cut &amp; Style<br>on your next visit</strong></p>
         
         @elseif($offer->stylist_level == 'SS' & $offer->gender == 'M')
-        <p><strong><span class="big">&pound;20<br></span>Colour &amp; Cut package<br>on your next visit</strong></p>
+        <p><strong><span class="big">&pound;20<br></span>Men's Cut &amp; Style<br>on your next visit</strong></p>
         
         @else
         <p><strong><span class="big">&pound;30% off<br></span>your next visit</strong></p>
