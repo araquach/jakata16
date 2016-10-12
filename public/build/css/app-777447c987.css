@@ -2120,18 +2120,6 @@ span.big {
 	padding-top: 210px;
 	padding-bottom: 200px;
 }
-
-#special_offer .applicationSuccess,
-#special_offer_male .applicationSuccess {
-	height: 60px;
-	margin: 0;
-	margin-top: 70px;
-	margin-left: 30px;
-	border: 1px solid #666;
-	border-radius: 5px;
-	text-align: center;
-}
-
 #special_offer_copy {
 	width: 430px;
 	padding: 50px;
@@ -2219,10 +2207,16 @@ div.form .errorSummary ul li {
 #special_offer_male .applicationSuccess,
 #special_offer_generic .applicationSuccess {
 	width: 400px;
+	height: 60px;
+	margin: 0;
 	font-size: 1.4em;
+	text-align: center;
 	margin-left: 50px;
+	margin-top: 70px;
 	padding: 20px 0;
 	line-height: 1.5em;
+	border: 1px solid #666;
+	border-radius: 5px;
 }
 
 .limitedSuccess {
