@@ -18,17 +18,24 @@ class OfferController extends Controller
         $this->offer = $offer;
     }
     
-    public function create($client)
+    public function show($client)
     {
-        $client = Offer::where('salon_id', 1)->where('client_id', $client)->firstOrFail();
+        $offer = $this->offer->where('salon_id', 1)->where('client_id', $client)->firstOrFail();
         
-        return view('offer.create', compact('client'));
+        return view('offer.show', compact('offer'));
     }
     
-    public function update(OfferFormRequest $request, Offer $offer)
+    public function update(OfferFormRequest $request, $client)
     {
-        $offer->update($request->all());
+        $offer = $this->offer->where('salon_id', 1)->where('client_id', $client)->firstOrFail();
         
-        return redirect()->back()->with('message', 'You will no longer text receive offers from us - thank you');
-    }
+        $offer->opt_out = $request->get('opt_out');
+        
+        $offer->save();
+		
+		return redirect()->back()->with('message', 'You will no longer receive text offers - thank you');
+		
+		// return dd($offer);
+    }    
+        
 }

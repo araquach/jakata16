@@ -8,7 +8,7 @@ use Carbon\Carbon;
 
 class Offer extends Model
 {
-    protected $guarded = ['id'];
+    protected $fillable = ['opt_out'];
     
     protected $dates = ['created_at', 'updated_at'];
     

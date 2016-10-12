@@ -49,8 +49,8 @@ Route::post('apprentice/note',
   ['uses' => 'ApprenticeController@storeNote']);
 
 Route::get('offer/{client}',
-  ['as' => 'offerCreate', 'uses' => 'OfferController@create']);
-Route::post('offer/update',
-  ['uses' => 'OfferController@update']);
+  ['uses' => 'OfferController@show']);
+Route::patch('offer/{client}',
+  ['as' => 'offerUpdate', 'uses' => 'OfferController@update']);
 
 Route::auth();

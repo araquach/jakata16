@@ -24,7 +24,7 @@ class OfferFormRequest extends Request
     public function rules()
     {
         return [
-            
+            'opt_out' => 'boolean',
         ];
     }
 }

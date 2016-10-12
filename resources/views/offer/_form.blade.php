@@ -1,6 +1,6 @@
-{!! Form::open(array(
-	'action' => 'OfferController@update', 'id' => 'offer-form'
-)) !!}
+{!! Form::model($offer, ['action' => ['OfferController@update', $offer->client_id], 'method' => 'PATCH']) !!}
+
+<!--'method' => 'PATCH',-->
 
 <div class="form">
     
@@ -8,7 +8,8 @@
     
     <div class="row">
 		{!! Form::label('opt_out', 'If you no longer wish to receive offers check the box then click \'Opt Out\'') !!}
-		{!! Form::checkbox('opt_out', old('opt_out')) !!}
+		{!! Form::checkbox('opt_out') !!}
+		{!! $errors->first('opt_out', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row buttons">
