@@ -2383,13 +2383,17 @@ span.kebelo_italic {
   *overflow: hidden;
 }
 
-#special_offer .limitedSuccess {
+#special_offer .applicationSuccess,
+#special_offer_male .applicationSuccess,
+#special_offer_generic .applicationSuccess {
 	width: auto;
 	font-size: 1.4em;
-	margin-left: 0;
+	margin: 50px 20px 100px 20px;
 	padding-top: 0;
-	padding: 20px;
-	height: 500px;
+	padding: 10px;
+	height: auto;
+	background-color: inherit;
+	float: left;
 }
 
 /* @end */

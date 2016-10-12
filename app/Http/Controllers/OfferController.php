@@ -34,8 +34,6 @@ class OfferController extends Controller
         $offer->save();
 		
 		return redirect()->back()->with('message', 'You will no longer receive text offers - thank you');
-		
-		// return dd($offer);
     }    
         
 }

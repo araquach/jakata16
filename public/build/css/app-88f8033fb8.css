@@ -2215,8 +2215,14 @@ div.form .errorSummary ul li {
   padding: 0;
 }
 
-#special_offer_copy .form .errorSummary p {
-  display: none;
+#special_offer .applicationSuccess,
+#special_offer_male .applicationSuccess,
+#special_offer_generic .applicationSuccess {
+	width: 400px;
+	font-size: 1.4em;
+	margin-left: 50px;
+	padding: 20px 0;
+	line-height: 1.5em;
 }
 
 .limitedSuccess {
