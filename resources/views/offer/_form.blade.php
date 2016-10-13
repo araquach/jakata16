@@ -1,4 +1,8 @@
-{!! Form::model($offer, ['action' => ['OfferController@update', $offer->client_id], 'method' => 'PATCH', 'id' => 'offer-form']) !!}
+{!! Form::model($offer, [
+'action' => ['OfferController@update', $offer->client_id],
+'method' => 'PATCH',
+'id' => 'offer-form'
+]) !!}
 
 <!--'method' => 'PATCH',-->
 

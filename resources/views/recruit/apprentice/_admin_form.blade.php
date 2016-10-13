@@ -1,6 +1,6 @@
 {!! Form::model($apprentice, [
     'method' => 'PATCH',
-    'route' => ['apprentice.update', $apprentice->id]
+    'action' => ['ApprenticeController@update', $apprentice->id]
 ]) !!}
 	
 	<div class="form">

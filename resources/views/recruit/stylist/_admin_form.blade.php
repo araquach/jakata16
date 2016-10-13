@@ -1,6 +1,6 @@
 {!! Form::model($stylist, [
     'method' => 'PATCH',
-    'route' => ['stylist.update', $stylist->id]
+    'action' => ['StylistController@update', $stylist->id],
 ]) !!}
 	
 	<div class="form">
