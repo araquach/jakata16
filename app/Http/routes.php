@@ -26,6 +26,7 @@ Route::post('sendEmail',
   ['as' => 'sendEmail', 'uses' => 'ContactController@sendEmail']);
   
 Route::resource('apprentice', 'ApprenticeController');
+
 Route::resource('stylist', 'StylistController');
 
 Route::get('/freeproducts', 'ProspectController@freeproducts');
