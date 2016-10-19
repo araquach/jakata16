@@ -6,6 +6,7 @@
   "dependencies": {
     "laravel-elixir": "^4.0.0",
     "bootstrap-css-only": "^3.3.6",
-    "vue-strap": "^1.0.11"
+    "vue-strap": "^1.0.11",
+    "vue": "2.0.*"
   }
 }

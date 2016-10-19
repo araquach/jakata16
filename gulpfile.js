@@ -17,6 +17,10 @@ elixir(function(mix) {
         'resources/assets/css'
     );
     
+    mix.copy(
+        'node_modules/vue/dist/vue.min.js',
+        'resources/assets/js'
+    );
     
     mix.styles([
         'fonts/fonts.css',
@@ -56,7 +60,11 @@ elixir(function(mix) {
      .scripts([
         'modernizr.js',
         'selectivizr-min.js'
-     ], 'public/scripts/modernizr.js');
+     ], 'public/scripts/modernizr.js')
+     
+     .scripts([
+         'vue.min.js',
+     ], 'public/scripts/vue.js');
     
     mix.version([
         'public/css/app.css',
