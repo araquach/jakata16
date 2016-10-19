@@ -29,8 +29,8 @@
 			<td>{{ $apprentice->created_at->format('d/m/Y') }}</td>
 			<td><a href="/apprentice/{{ $apprentice->id }}">{{ $apprentice->first_name }} {{ $apprentice->second_name }}</a></td>
 			<td>{{ $apprentice->salon_id }}</td>
-			<td>{{ $apprentice->quality }}</td>
-			<td>{{ $apprentice->contact_status }}</td>
+			<td>{{ getQuality($apprentice->quality) }}</td>
+			<td>{{ getContactStatus($apprentice->contact_status) }}</td>
 		</tr>
 		@endforeach
 	</table>

@@ -12,7 +12,7 @@
 				'2' => 'Has Potential',
 				'3' => 'Put on backburner',
 				'4' => 'Discard',
-				), ['placeholder' => '-- Please Select --']) !!}
+				)) !!}
 			{!! $errors->first('quality', '<div class="errorMessage">:message</div>') !!}
 		</div>
 		
@@ -23,7 +23,7 @@
 				'1' => 'Not Contacted',
 				'2' => 'Left Message',
 				'3' => 'Spoke Direct',
-				), ['placeholder' => '-- Please Select --']) !!}
+				)) !!}
 			{!! $errors->first('contact_status', '<div class="errorMessage">:message</div>') !!}
 		</div>
 		

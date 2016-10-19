@@ -1,5 +1,13 @@
 <?php
 
+
+/**
+ * Display the offers in the special offers
+ *
+ * @param  OfferFormRequest  $request
+ * @return 
+ */
+
 function getOffer($level, $gender)
 {
     switch([$level, $gender]) {
@@ -23,5 +31,56 @@ function getOffer($level, $gender)
             break;
         default:
             return '<span class="big">&pound;30% off</span>';
+    }
+}
+
+/**
+ * Display the contact status in recruitment
+ *
+ * @param
+ * @return
+ */
+ 
+function getContactStatus($value)
+{
+    switch($value) {
+        case 1:
+            return "Not Contacted";
+            break;
+        case 2:
+            return "Left Message";
+            break;
+        case 3:
+            return "Spoke Direct";
+            break;
+        default:
+            return "Needs Sorting";
+    }
+}
+    
+/**
+ * Display the quality of candidate in recruitment
+ *
+ * @param
+ * @return
+ */
+    
+function getQuality($value)
+{
+    switch($value) {
+        case 1:
+            return "We need them!";
+            break;
+        case 2:
+            return "Has Potential";
+            break;
+        case 3:
+            return "Put on backburner";
+            break;
+        case 4:
+            return "Discard";
+            break;
+        default:
+            return "Not Rated";
     }
 }

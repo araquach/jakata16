@@ -31,8 +31,8 @@
 			<td>{{ $stylist->created_at->format('d/m/Y') }}</td>
 			<td><a href="/stylist/{{ $stylist->id }}">{{ $stylist->first_name }} {{ $stylist->second_name }}</a></td>
 			<td>{{ $stylist->salon_id }}</td>
-			<td>{{ $stylist->quality }}</td>
-			<td>{{ $stylist->contact_status }}</td>
+			<td>{{ getQuality($stylist->quality) }}</td>
+			<td>{{ getContactStatus($stylist->contact_status) }}</td>
 		</tr>
 		@endforeach
 	</table>

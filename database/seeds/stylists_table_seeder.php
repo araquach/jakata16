@@ -50,6 +50,8 @@ class StylistsTableSeeder extends Seeder
             'why_hairdressing' => 'Hairdressing is well suited to me',
             'why_us' => 'us is undoubtably the best salon in Warrington',
             'salon_id' => '1',
+            'quality' => '0',
+            'contact_status' => '0',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
@@ -90,6 +92,8 @@ class StylistsTableSeeder extends Seeder
             'why_hairdressing' => 'I chose hairdressing as a carreer because it makes me happy inside',
             'why_us' => 'Jakata never ceases to amaze me with it\'s innovatiove approach to everything!',
             'salon_id' => '2',
+            'quality' => '0',
+            'contact_status' => '0',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         

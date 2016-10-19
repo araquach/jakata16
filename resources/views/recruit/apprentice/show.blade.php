@@ -56,11 +56,11 @@
 
 <ul>
     @if( $apprentice->quality)
-    <li><strong>Quality of candidate:</strong> {{ $apprentice->quality }}</li>
+    <li><strong>Quality of candidate:</strong> {{ getQuality($apprentice->quality) }}</li>
     @endif
     
     @if( $apprentice->contact_status)
-    <li><strong>Contact Status:</strong> {{ $apprentice->contact_status }}</li>
+    <li><strong>Contact Status:</strong> {{ getContactStatus($apprentice->contact_status) }}</li>
     @endif
 </ul>
 

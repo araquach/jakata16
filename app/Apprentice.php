@@ -31,42 +31,4 @@ class Apprentice extends Model
             return 'Undefined';
         }
     }
-    
-    public function getContactStatusAttribute($value)
-    {
-        switch($value) {
-            case 1:
-                return "Not Contacted";
-                break;
-            case 2:
-                return "Left Message";
-                break;
-            case 3:
-                return "Spoke Direct";
-                break;
-            default:
-                return "Needs sorting";
-        }
-    }
-    
-    public function getQualityAttribute($value)
-    {
-        switch($value) {
-            case 1:
-                return "We need them!";
-                break;
-            case 2:
-                return "Has Potential";
-                break;
-            case 3:
-                return "Put on backburner";
-                break;
-            case 4:
-                return "Discard";
-                break;
-            default:
-                return "Not Rated";
-        }
-    }
-    
 }

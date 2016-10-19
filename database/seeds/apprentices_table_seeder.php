@@ -40,6 +40,8 @@ class ApprenticesTableSeeder extends Seeder
             'why_hairdressing' => 'I just fell into it',
             'why_us' => 'I\'ve heard it\'s a fantastic salon',
             'salon_id' => '1',
+            'quality' => '0',
+            'contact_status' => '0',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
@@ -71,6 +73,8 @@ class ApprenticesTableSeeder extends Seeder
             'why_hairdressing' => 'It\'s similar to magic',
             'why_us' => 'I decided to move up north and us looks like the best salon in the North West',
             'salon_id' => '1',
+            'quality' => '0',
+            'contact_status' => '0',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
@@ -102,6 +106,8 @@ class ApprenticesTableSeeder extends Seeder
             'why_hairdressing' => 'Hairdressing seems like a good laugh',
             'why_us' => 'I\'ve applied at every single salon in the country and us is my last hope',
             'salon_id' => '2',
+            'quality' => '0',
+            'contact_status' => '0',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
         
@@ -133,6 +139,8 @@ class ApprenticesTableSeeder extends Seeder
             'why_hairdressing' => 'I don\'t want to be a hairdresser',
             'why_us' => 'Stop putting me under so much pressure!',
             'salon_id' => '2',
+            'quality' => '0',
+            'contact_status' => '0',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
     }

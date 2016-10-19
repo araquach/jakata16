@@ -68,11 +68,11 @@
 
 <ul>
     @if($stylist->quality)
-    <li><strong>Quality of candidate:</strong> {{ $stylist->quality }}</li>
+    <li><strong>Quality of candidate:</strong> {{ getQuality($stylist->quality) }}</li>
     @endif
     
     @if($stylist->contact_status)
-    <li><strong>Contact Status:</strong> {{ $stylist->contact_status }}</li>
+    <li><strong>Contact Status:</strong> {{ getContactStatus($stylist->contact_status) }}</li>
     @endif
 </ul>
 
