@@ -32,18 +32,9 @@
 	    <li><strong>Mobile Number:</strong> {{ $apprentice->mobile }}</li>
 	</ul>
 	
-	<ul>
-    @if($apprentice->quality)
-    <li><strong>Quality of candidate:</strong> {{ getQuality($apprentice->quality) }}</li>
-    @endif
-    
-    @if($apprentice->contact_status)
-    <li><strong>Contact Status:</strong> {{ getContactStatus($apprentice->contact_status) }}</li>
-    @endif
-</ul>
-	
-	
+	@if(count($apprentice->notes) > 0)
 	<h2>Notes:</h2>
+	@endif
 	<ul>
 		@foreach($apprentice->notes as $note)
 		<li class="note">{{ $note->created_at->format('d/m/Y') }} - {{ $note->note }}</li>

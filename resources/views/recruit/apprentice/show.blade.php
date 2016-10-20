@@ -15,7 +15,9 @@
 <h1>Apprentice Name: {{ $apprentice->first_name }} {{ $apprentice->second_name }}</h1>
 <h2>Applied to: {{ $apprentice->salon_id }}</h2>
 
+@if(count($apprentice->notes) > 0)
 <h2>Notes:</h2>
+@endif
 <ul>
      @foreach($apprentice->notes as $note)
      

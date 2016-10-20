@@ -30,7 +30,7 @@
 	
 	</div> 
 	
-	<a href="/apprentice/{{ $apprentice->id }}">Back to the details</a>
+	<a href="/apprentice/{{ $apprentice->id }}" class="link-button">Back to the details</a>
 
 </div> 
 

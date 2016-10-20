@@ -39,8 +39,9 @@
     @endif
 	</ul>
 
-	
+	@if(count($stylist->notes) > 0)
 	<h2>Notes:</h2>
+	@endif
 	<ul>
          @foreach($stylist->notes as $note)
          

@@ -30,7 +30,7 @@
 	
 	</div> 
 	
-	<a href="/stylist/{{ $stylist->id }}">Back to the details</a>
+	<a href="/stylist/{{ $stylist->id }}" class='link-button'>Back to the details</a>
 
 </div> 
 
