@@ -23,6 +23,8 @@
 				'1' => 'Not Contacted',
 				'2' => 'Left Message',
 				'3' => 'Spoke Direct',
+				'4' => 'Interviewed - Good',
+				'5' => 'Interviewed -Bad',
 				)) !!}
 			{!! $errors->first('contact_status', '<div class="errorMessage">:message</div>') !!}
 		</div>

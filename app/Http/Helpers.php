@@ -53,6 +53,12 @@ function getContactStatus($value)
         case 3:
             return "Spoke Direct";
             break;
+        case 4:
+            return "Interviewed - good";
+            break;
+        case 5:
+            return "Interviewed - bad";
+            break;
         default:
             return "Needs Sorting";
     }
