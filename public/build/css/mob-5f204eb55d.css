@@ -2321,7 +2321,10 @@ span.kebelo_italic {
 
 #special_offer,
 #special_offer_male,
-#special_offer_generic {
+#special_offer_generic,
+#special_offer2,
+#special_offer2_male,
+#special_offer2_generic {
 	width: auto;
 	height: 100%;
 	padding: 0;
