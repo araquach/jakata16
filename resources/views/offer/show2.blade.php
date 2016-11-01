@@ -34,9 +34,9 @@
     
     <div id="special_offer_copy">
         
-        <h1><strong>An even better offer for<br>{{ $offer->first_name }} {{ $offer->last_name }}</strong></h1>
+        <h1><strong>An even better offer for {{ $offer->first_name }} {{ $offer->last_name }}</strong></h1>
 
-        <p>We recently sent you an offer {{ $offer->first_name }}, and beacause we value your custom so much<br> we'd like to give you this amazing offer:</p> 
+        <p>We recently sent you an offer {{ $offer->first_name }}, and because we value your custom so much<br> we'd like to give you an even better one!</p> 
         
         <p><strong>{!! getOffer2($offer->stylist_level, $offer->gender) !!}<br>on your next visit</strong></p>
     

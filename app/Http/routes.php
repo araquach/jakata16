@@ -52,7 +52,7 @@ Route::post('apprentice/note',
 Route::get('offer/{client}',
   ['uses' => 'OfferController@show']);
 Route::get('offer2/{client}',
-  ['uses' => 'OfferController@show']);
+  ['uses' => 'OfferController@show2']);
 Route::patch('offer/{client}',
   ['as' => 'offerUpdate', 'uses' => 'OfferController@update']);
 
