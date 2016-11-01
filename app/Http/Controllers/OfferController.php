@@ -25,6 +25,13 @@ class OfferController extends Controller
         return view('offer.show', compact('offer'));
     }
     
+    public function show2($client)
+    {
+        $offer = $this->offer->where('salon_id', 1)->where('client_id', $client)->firstOrFail();
+        
+        return view('offer.show2', compact('offer'));
+    }
+    
     public function update(OfferFormRequest $request, $client)
     {
         $offer = $this->offer->where('salon_id', 1)->where('client_id', $client)->firstOrFail();
