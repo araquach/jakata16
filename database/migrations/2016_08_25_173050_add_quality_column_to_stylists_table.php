@@ -13,7 +13,7 @@ class AddQualityColumnToStylistsTable extends Migration
     public function up()
     {
         Schema::table('stylists', function ($table) {
-            $table->integer('quality')->nullable();
+            $table->integer('quality');
         });
     }
 

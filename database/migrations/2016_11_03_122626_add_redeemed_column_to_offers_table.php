@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ChangeColumnTypeOnStylistNotesTable extends Migration
+class AddRedeemedColumnToOffersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,8 @@ class ChangeColumnTypeOnStylistNotesTable extends Migration
      */
     public function up()
     {
-        Schema::table('stylist_notes', function (Blueprint $table) {
-            $table->text('note')->change();
+        Schema::table('offers', function ($table) {
+            $table->boolean('redeemed')->after("opt_out")->default(0);
         });
     }
 
@@ -24,8 +24,8 @@ class ChangeColumnTypeOnStylistNotesTable extends Migration
      */
     public function down()
     {
-        Schema::table('stylist_notes', function (Blueprint $table) {
-            $table->string('note')->change();
+        Schema::table('offers', function ($table) {
+            $table->dropColumn('redeemed');
         });
     }
 }
