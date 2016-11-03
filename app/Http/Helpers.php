@@ -56,7 +56,7 @@ function getOffer2($level, $gender)
             return '<span class="big">&pound;20<br></span>Men\'s Cut &amp; Style<br><em>PLUS:</em><br>a FREE product';
             break;
         default:
-            return '<span class="big">&pound;30% off</span><br> a Colour & Cut<br><em>PLUS:</em><br>a FREE product';
+            return '<span class="big">&pound;30% off</span><br> your next appointment<br><em>PLUS:</em><br>a FREE product with each service you have';
     }
 }
 
