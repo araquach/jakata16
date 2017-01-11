@@ -1921,19 +1921,22 @@ div.row textarea {
 
 #offer1 {
 	margin-top: 50px;
-	background: url(/images/offers/vlada.jpg) no-repeat #fefefe;
+	background: url(/images/offers/white_angles.jpg) no-repeat #fefefe;
+	margin-bottom: 30px;
 	background-size: contain;
 }
 
 #offer2 {
-	background: url(/images/offers/white_angles.jpg) no-repeat #fefefe;
+	background: url(/images/offers/men.jpg) no-repeat #fefefe;
+	margin-bottom: 30px;
 	background-size: contain;
-	margin-bottom: 60px
+	
 }
 
 #offer3 {
+	background: url(/images/offers/kebelo.jpg) no-repeat #fefefe;
 	margin-bottom: 30px;
-	background: url(/images/offers/alex.jpg) no-repeat #fefefe;
+	background-size: contain;
 }
 
 #offer4 {
