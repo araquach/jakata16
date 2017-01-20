@@ -21,7 +21,7 @@
 	
 	<h1>Models Required for our latest apprentice Layla</h1>
 	<p>Here at Jakata we pride ourselves in the highest level training of our stylists. We are extremely selective of who we choose as our apprentices as we know what a gruelling process it is, with only the most dedicated people able to complete the training.</p>
-	<p>We recruited Layla Relf a few months back who has started her apprentiship. She has completed all the preliminary training and is now at a stage where she's ready to start building a client base.</p>
+	<p>We recruited Layla Relf back in June few months back when she started her apprentiship. She has completed all the preliminary training and is now at a stage where she's ready to start building a client base.</p>
 	<p>Our goal now is to have Layla complete as much training as possible and gain as much experience doing a variety of peoples hair.</p>
 	<p>Layla is fully adept at most colouring techniques and basic level cutting. Her blow drying skills are above standard.</p>
 	<p><strong>If you would like the opportunity to experience Jakata at a much reduced rate, give us a call to book in with Layla. Her hours are restricted to Tuesdays and Wednesdays and appointments are subject to availability</strong></p>
