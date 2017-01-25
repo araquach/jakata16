@@ -2295,12 +2295,12 @@ span.kebelo_italic {
 }
 
 #specOffer .so_big {
-	font-size: 2.4em;
-	margin: 0;
+	font-size: 1.5em;
+	margin-top: 1em;
 }
 
 #specOffer .so_med {
-	font-size: 1em;
+	font-size: 1.5em;
 	margin: 0;
 }
 
