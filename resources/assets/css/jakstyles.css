@@ -1505,7 +1505,7 @@ span.big {
 
 #specOffer_bground {
 	width: 950px;
-	height: 850px;
+	height: auto;
 	background-color: #f5f5f5;
 	background: #f5f5f5 url('/images/spec_offer/laura_matthew.jpg') no-repeat 600px 250px;
 	padding-top: 210px;
@@ -1537,23 +1537,24 @@ span.big {
 	margin-left: -5px;
 }
 
-#specOffer p.so_big {
-	font-size: 3.5em;
-	margin: 0;
-}
-
-#specOffer p.so_med {
-	font-size: 1.5em;
-	margin: 0;
-}
-
-#specOffer p.so_small {
-	font-size: .8em;
+#specOffer .so_big {
+	font-size: 2em;
 	margin: 0;
 	margin-top: 1em;
 }
 
-#specOffer p.specOffer_contact {
+#specOffer .so_med {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+#specOffer .so_small {
+	font-size: .8em;
+	margin: 0;
+	margin-top: .5em;
+}
+
+#specOffer .specOffer_contact {
 	margin: 20px 0;
 	font-size: 1.5em;
 }
