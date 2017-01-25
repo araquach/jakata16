@@ -2285,7 +2285,7 @@ span.kebelo_italic {
 	margin: 1em 0;
 }
 
-#specOffer p.link {
+#specOffer .link {
 	font-size: 1em;
 	margin-top: 20px;
 }
@@ -2294,23 +2294,23 @@ span.kebelo_italic {
 	margin-left: -5px;
 }
 
-#specOffer p.so_big {
+#specOffer .so_big {
 	font-size: 2.4em;
 	margin: 0;
 }
 
-#specOffer p.so_med {
-	font-size: 1.5em;
+#specOffer .so_med {
+	font-size: 1em;
 	margin: 0;
 }
 
-#specOffer p.so_small {
+#specOffer .so_small {
 	font-size: .8em;
 	margin: 0;
 	margin-top: 1em;
 }
 
-#specOffer p.specOffer_contact {
+#specOffer .specOffer_contact {
 	margin: 20px 0;
 	font-size: 1.5em;
 }
