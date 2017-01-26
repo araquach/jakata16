@@ -5,7 +5,7 @@
 @include('layouts.partials.head', [
 	'description' => 'Our apprentice Layla needs models!',
 	'keywords' => 'Jakata Offers, trainee prices, hairdressing Offers, salon Offers, junior offers, junior prices, trainee prices',
-	'ogtitle' => 'Models Required for Trainee',
+	'ogtitle' => 'Models Required for Apprentice',
 	'ogdescription' => 'Our apprentice Layla is looking for models for colour, cuts and blowdrys',
 	'ogimage' => url('/') . '/images/spec_offer/layla_meta.jpg',
 	'title' => 'Jakata Salon - New Trainee - Hairdressers in Warrington'
