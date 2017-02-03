@@ -40,6 +40,8 @@
 	<p class="so_small">Please note: a skin test required 48 hours prior to any colour service</p>
 	<p>We look forward to seeing you in the salon soon</p>
 	
+	@include('offer._form')
+	
 
 	</section> <!--#specOffer-->
 
