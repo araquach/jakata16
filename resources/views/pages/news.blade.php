@@ -6,7 +6,7 @@
 	'description' => 'All the latest JAKATA news',
 	'keywords' => 'Jakata news, Jakata stories, hairdressing news, salon news',
 	'ogtitle' => 'New Bombshell for Blondes',
-	'ogdescription' => 'The revamp of the iconic Schwarzkopf \'BlondMe\' range has finally launched with some dramatic changes that is sure to make you stand out from the crowd!
+	'ogdescription' => 'The revamp of the iconic Schwarzkopf \'BlondMe\' range has finally launched with some dramatic changes that are sure to make you stand out from the crowd!
 	Powered by a brand new advanced bonding system built into the colouring products, lightening and lifting hair has never been easier or less damaging.',
 	'ogimage' => url('/') . '/images/newspics/new_blonde_me_meta.jpg',
 	'title' => 'Jakata Salon - Hairdressing News - Hairdressers in Warrington'
@@ -31,7 +31,7 @@ window.addEvent('domready', function(){
 <section class="visible">
 {{ Html::image('images/newspics/new_blonde_me_1.jpg', 'New BlondeMe') }}
 <h2>New Bombshell for Blondes</h2>
-<p><strong>The revamp of the iconic Schwarzkopf 'BlondMe' range has finally launched with some dramatic changes that is sure to make you stand out from the crowd!</strong></p>
+<p><strong>The revamp of the iconic Schwarzkopf 'BlondMe' range has finally launched with some dramatic changes that are sure to make you stand out from the crowd!</strong></p>
 <p>Powered by a brand new advanced bonding system built into the colouring products, lightening and lifting hair has never been easier or less damaging.</p>
 <p class="reveal">Read more &gt;</p>
 </section> <!--end .visible-->
