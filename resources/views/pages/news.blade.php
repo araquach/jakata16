@@ -5,9 +5,10 @@
 @include('layouts.partials.head', [
 	'description' => 'All the latest JAKATA news',
 	'keywords' => 'Jakata news, Jakata stories, hairdressing news, salon news',
-	'ogtitle' => 'Jakata news',
-	'ogdescription' => 'All the latest news from the salon',
-	'ogimage' => url('/') . '/images/',
+	'ogtitle' => 'New Bombshell for Blondes',
+	'ogdescription' => 'The revamp of the iconic Schwarzkopf \'BlondMe\' range has finally launched with some dramatic changes that is sure to make you stand out from the crowd!
+	Powered by a brand new advanced bonding system built into the colouring products, lightening and lifting hair has never been easier or less damaging.',
+	'ogimage' => url('/') . '/images/newspics/new_blonde_me_meta.jpg',
 	'title' => 'Jakata Salon - Hairdressing News - Hairdressers in Warrington'
 	])
 	
@@ -24,6 +25,28 @@ window.addEvent('domready', function(){
 <section id="news">
 
 <section id="accordion">
+	
+	<article class="article">
+<a id="NewBlondeMe" class="anchor"></a>
+<section class="visible">
+{{ Html::image('images/newspics/new_blonde_me_1.jpg', 'New BlondeMe') }}
+<h2>New Bombshell for Blondes</h2>
+<p><strong>The revamp of the iconic Schwarzkopf 'BlondMe' range has finally launched with some dramatic changes that is sure to make you stand out from the crowd!</strong></p>
+<p>Powered by a brand new advanced bonding system built into the colouring products, lightening and lifting hair has never been easier or less damaging.</p>
+<p class="reveal">Read more &gt;</p>
+</section> <!--end .visible-->
+<section class="hidden">
+{{ Html::image('images/newspics/new_blonde_me_all.jpg', 'New BlondeMe Collection', ['class' => 'news-image']) }}
+{{ Html::image('images/newspics/new_blonde_me_2.jpg', 'Instant Blushes') }}
+<p>The bonding system works by protecting and interlinking with the fibres within hair creating stronger bonds and minimising hair breakage.</p>
+<p>Integrating the bonding technology into the shampoo and conditioners means new bonds will also be created in the hair shaft, leaving you with the soft, supple, blonde hair that defines perfection.</p>
+<p>The intermixable pastel toners allow for even more creativity and diversity than ever before. Ideal for anyone feeling like being blonde just isn't enough.</p>
+<p>We can create strong intense toning for the more adventurous or pastelizing these tones even further can achieve soft subtle hues, catering for everybody.</p>
+<p class="big">Ask your stylist about the new 'BlondMe' range on your next visit</p>
+</section> <!--end .hidden-->
+<p class="author">Published by Caleb</p>
+<time datetime="2017-02-10">10<sup>th</sup> Februaury 2017</time>
+</article> <!--end #article-->
 	
 <article class="article">
 <a id="InstantBlushes" class="anchor"></a>
