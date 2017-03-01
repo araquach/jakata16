@@ -19,8 +19,8 @@
 <div id="feedback">
 
 <div id="feedback_copy">
-	<h1>Super Stylist of the month</h1>
-	<h2>Rate your colleagues</h2>
+	<h1>Hey {{ explode(' ',trim(Auth::user()->name))[0] }}</h1>
+	<h2>vote for your Super Stylist of the month</h2>
 	<p></p>
 	<p class="small"></p>
 </div> <!--feedback_copy-->

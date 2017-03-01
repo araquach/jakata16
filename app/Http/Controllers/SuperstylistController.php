@@ -7,6 +7,7 @@ use App\User;
 use App\Superstylist;
 use App\Http\Requests\SuperstylistFormRequest;
 use Carbon\Carbon;
+use Auth;
 
 class SuperstylistController extends Controller {
 	
