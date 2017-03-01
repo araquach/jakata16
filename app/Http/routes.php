@@ -57,4 +57,8 @@ Route::get('offer2/{client}',
 Route::patch('offer/{client}',
   ['as' => 'offerUpdate', 'uses' => 'OfferController@update']);
 
+Route::get('/superstylist', 'SuperstylistController@index');
+Route::get('/superstylist/create', 'SuperstylistController@create');
+Route::post('/superstylist/create', 'SuperstylistController@store');
+
 Route::auth();

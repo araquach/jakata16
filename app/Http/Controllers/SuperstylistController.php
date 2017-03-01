@@ -36,9 +36,9 @@ class SuperstylistController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create(User $user)
 	{
-		return view('suoerstylist.create');
+		return view('superstylist.create', compact('user'));
 	}
 
 	/**

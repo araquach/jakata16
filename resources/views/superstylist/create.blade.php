@@ -2,9 +2,7 @@
 
 @section('head')
 
-@include('layouts.partials.head', [
-	
-	])
+@include('layouts.partials.head')
 	
 @stop
 
@@ -21,14 +19,14 @@
 <div id="feedback">
 
 <div id="feedback_copy">
-	<h1>Hi {{ $user->first_name }}</h1>
-	<h2>We want your feedback</h2>
+	<h1>Super Stylist of the month</h1>
+	<h2>Rate your colleagues</h2>
 	<p></p>
 	<p class="small"></p>
 </div> <!--feedback_copy-->
 
 <div class="form">
-@include('feedback._form')
+@include('superstylist._form')
 </div>
 
 </div> <!--feedback-->
