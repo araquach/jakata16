@@ -16,6 +16,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'adam@jakatasalon.co.uk',
             'password' => Hash::make('blonde123'),
             'role' => '1',
+            'salon_id' => '1',
             'remember_token' => null,
         ]);
         
@@ -24,6 +25,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'jimmy@jakatasalon.co.uk',
             'password' => Hash::make('jim123'),
             'role' => '1',
+            'salon_id' => '1',
             'remember_token' => null,
         ]);
         
@@ -32,6 +34,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'izzy@jakatasalon.co.uk',
             'password' => Hash::make('iz123'),
             'role' => '2',
+            'salon_id' => '2',
             'remember_token' => null,
         ]);
     }
