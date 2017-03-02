@@ -17,9 +17,9 @@
    
 @endif
         
-{{ Form::hidden('user_id', Auth::user()->id) }}
+{{ Form::hidden('user_id', $user->id) }}
 
-{{ Form::hidden('salon_id', 'Auth::user()->salon_id') }}
+{{ Form::hidden('salon_id', $user->salon_id) }}
 	
 <div class="row question">
         {!! Form::label('client_care_own', '1. Client care own') !!}

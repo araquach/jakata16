@@ -2390,6 +2390,12 @@ span.kebelo_italic {
 	background: #FFF url('/images/feedback/bedhead.jpg') no-repeat 510px 260px;
 }
 
+#superstylist {
+	width: 950px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
 #feedback {
 	padding: 60px;
 	width: 650px;
