@@ -14,11 +14,18 @@
 
 	<h1>Admin Menu</h1>
 	
+	<h2>Welcome {{ Auth::user()->name }}</h2>
+	
+	
+	
 	<ul>
-		<li>{!! link_to('stylist', 'Stylist Applicants', ['class' => 'link-button']) !!}</li>
-		<li>{!! link_to('apprentice', 'Apprentice Applicants', ['class' => 'link-button']) !!}</li>
+		@if(Auth::user()->role == 1)
+			<li>{!! link_to('stylist', 'Stylist Applicants', ['class' => 'link-button']) !!}</li>
+			<li>{!! link_to('apprentice', 'Apprentice Applicants', ['class' => 'link-button']) !!}</li>
+		@endif
+		<li>{!! link_to('superstylist', 'Super Stylist Vote', ['class' => 'link-button']) !!}</li>
 	</ul>
 
-</div> <!--admin-->
+</div>
 
 @stop

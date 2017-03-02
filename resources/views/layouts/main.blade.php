@@ -23,8 +23,10 @@
 			<nav class="group">
 				<ul>
 					<li>{!! link_to('/admin', 'Menu') !!}</li>
+					@if(Auth::user()->role == 1)
 					<li>{!! link_to('/stylist', 'Stylists') !!}</li>
 					<li>{!! link_to('/apprentice', 'Apprentices') !!}</li>
+					@endif
 					<li>{!! link_to('/logout', 'Logout') !!}</li>
 				</ul>
 			</nav>
