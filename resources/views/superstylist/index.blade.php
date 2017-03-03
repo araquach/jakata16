@@ -11,16 +11,15 @@
 <div id="admin">
     
 	<h1>Hey {{ explode(' ',trim(Auth::user()->name))[0] }}</h1>
-	<h2>vote for your Super Stylist of the month!</h2>
+	<h2>Vote for your Super Stylist of the month!</h2>
+	
+	
 	<p>Select a stylist below to fill in their questionaire</p>
 	<p><em>you must complete all stylists questionaires before the end of the week!</em></p>
 	
-    
         <ul>
-            @foreach($users as $user)
-                @if(count($user->superstylists) == 0)
+            @foreach($ as $user)
                     <li><a href="/superstylist/{{ $user->id }}/create">{{ $user->name }}</a></li>
-                @endif
             @endforeach
         </ul>
 

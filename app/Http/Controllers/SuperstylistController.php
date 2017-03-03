@@ -31,11 +31,16 @@ class SuperstylistController extends Controller {
 		
 		// $records = $this->superstylist->get();
 		
-		$users = User::with('superstylists')->where('id', '!=', Auth::user()->id)->get();
-					
-		// dd($users);
+		// $users = User::with('superstylists')->where('id', '!=', Auth::user()->id)->get();
 		
-		// $superstylists = $this->superstylist->where('user_id', $user)->get();
+		$users = User::with('superstylists')->where('id', '!=', Auth::user()->id)
+					->where('salon_id', Auth::user()->salon_id)
+					->whereDoesntHave('superstylists', function($query)
+					{
+						$query->where('created_at', '>', Carbon::now()->startOfWeek());
+					})->get();
+					
+		// dd($records);
 		
 		return view('superstylist.index', compact('users'));
 	}
