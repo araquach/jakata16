@@ -18,7 +18,7 @@
 	<p><em>you must complete all stylists questionaires before the end of the week!</em></p>
 	
         <ul>
-            @foreach($ as $user)
+            @foreach($users as $user)
                     <li><a href="/superstylist/{{ $user->id }}/create">{{ $user->name }}</a></li>
             @endforeach
         </ul>
