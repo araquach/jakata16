@@ -27,11 +27,17 @@ class SuperstylistController extends Controller {
 	{
 		$user = Auth::user();
 		
-		$users = User::where('id', '!=', Auth::id())->get();
+		$weekend = Carbon::now()->startOfWeek();
 		
-		$superstylists = $this->superstylist->where('user_id', $user)->get();
+		// $records = $this->superstylist->get();
 		
-		return view('superstylist.index', compact('superstylists', 'users'));
+		$users = User::with('superstylists')->where('id', '!=', Auth::user()->id)->get();
+					
+		// dd($users);
+		
+		// $superstylists = $this->superstylist->where('user_id', $user)->get();
+		
+		return view('superstylist.index', compact('users'));
 	}
 
 	/**

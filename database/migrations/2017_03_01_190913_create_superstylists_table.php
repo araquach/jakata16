@@ -16,6 +16,7 @@ class CreateSuperstylistsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('salon_id')->unsigned();
+            $table->integer('voter_id')->unsigned();
             $table->integer('client_care_own')->unsigned();
             $table->integer('client_care_others')->unsigned();
             $table->integer('help_availability')->unsigned();
