@@ -16,6 +16,8 @@
 	
 	{{ Form::open(array('url' => '/register')) }}
 
+    {{ form::hidden('role', 2) }}
+
     <p>
     	{!! Form::label('name', 'Full Name') !!}
     	{!! Form::text('name', old('name')) !!}
@@ -26,16 +28,11 @@
     	{!! Form::label('email', 'Email') !!}
     	{!! Form::email('email', old('email')) !!}
     	{!! $errors->first('email', '<div class="errorMessage">:message</div>') !!}
-   
-    </p>
-        {!! Form::label('salon_id', 'Salon') !!}
-    	{!! Form::select('salon_id', array(
-			'1' => 'Jakata',
-			'2' => 'Paul Kemp Hairdressing'
-			), old('salon_id'), ['placeholder' => '-- Please Select --']) !!}
-    	{!! $errors->first('salon_id', '<div class="errorMessage">:message</div>') !!}
+    
     <p>
-        
+    	{!! Form::label('salon_id', 'Salon Id') !!}
+    	{!! Form::text('salon_id', old('salon_id')) !!}
+    	{!! $errors->first('salon_id', '<div class="errorMessage">:message</div>') !!}
     </p>
     
     <p>
