@@ -1314,6 +1314,10 @@ div.row textarea {
 	margin: 0;
 }
 
+.row {
+	width: 95%;
+}
+
 .row input,
 .row textarea {
 	line-height: 1.2em;
