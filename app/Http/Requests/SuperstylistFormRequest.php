@@ -34,7 +34,6 @@ class SuperstylistFormRequest extends Request
             'educate_clients' => 'required | integer',
             'convers_on_client' => 'required | integer',
             'overall_rating' => 'required | integer',
-            'extra' => '',
         ];
     }
 }
