@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Validator::extend('something', 'App\Http\CustomValidator@validateSomething');
+        // Validator::extend('something', 'App\Http\CustomValidator@validateSomething');
     }
 
     /**
