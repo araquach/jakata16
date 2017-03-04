@@ -18,38 +18,42 @@
 
     {{ form::hidden('role', 2) }}
 
-    <p>
+    <div class="row">
     	{!! Form::label('name', 'Full Name') !!}
     	{!! Form::text('name', old('name')) !!}
     	{!! $errors->first('name', '<div class="errorMessage">:message</div>') !!}
-    </p>
+    </div>
     
-    <p>
+    <div class="row">
     	{!! Form::label('email', 'Email') !!}
     	{!! Form::email('email', old('email')) !!}
     	{!! $errors->first('email', '<div class="errorMessage">:message</div>') !!}
+    </div>
     
-    <p>
-    	{!! Form::label('salon_id', 'Salon Id') !!}
-    	{!! Form::text('salon_id', old('salon_id')) !!}
-    	{!! $errors->first('salon_id', '<div class="errorMessage">:message</div>') !!}
-    </p>
+    <div class="row">
+		{!! Form::label('salon_id', 'Salon') !!}
+		{!! Form::select('salon_id', array(
+			'1' => 'Jakata',
+			'2' => 'Paul Kemp Hairdressing'
+			), old('salon_id'), ['placeholder' => '-- Please Select --']) !!}
+		{!! $errors->first('salon_id', '<div class="errorMessage">:message</div>') !!}
+	</div>
     
-    <p>
+    <div class="row">
     	{!! Form::label('password', 'Password') !!}
     	{!! Form::text('password', old('password')) !!}
     	{!! $errors->first('password', '<div class="errorMessage">:message</div>') !!}
-    </p>
+    </div>
     
-    <p>
+    <div class="row">
     	{!! Form::label('password_confirmation', 'Confirm Password') !!}
     	{!! Form::text('password_confirmation', old('password_confirmation')) !!}
     	{!! $errors->first('password_confirmation', '<div class="errorMessage">:message</div>') !!}
-    </p>
+    </div>
     
-    <p>
+    <div class="row buttons">
     	{!! Form::submit('Register') !!}
-	</p>
+	</div>
 
 {{ Form::close() }}
 	

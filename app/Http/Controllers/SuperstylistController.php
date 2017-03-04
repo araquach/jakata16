@@ -37,7 +37,8 @@ class SuperstylistController extends Controller {
 					->where('salon_id', Auth::user()->salon_id)
 					->whereDoesntHave('superstylists', function($query)
 					{
-						$query->where('created_at', '>', Carbon::now()->startOfWeek());
+						$query->where('voter_id', Auth::user()->id)
+							->where('created_at', '>', Carbon::now()->startOfWeek());
 					})->get();
 					
 		// dd($records);
