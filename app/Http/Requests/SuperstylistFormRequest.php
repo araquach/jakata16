@@ -34,6 +34,14 @@ class SuperstylistFormRequest extends Request
             'educate_clients' => 'required | integer',
             'convers_on_client' => 'required | integer',
             'overall_rating' => 'required | integer',
+            'extra' => 'one_or_five:client_care_own'
         ];
     }
+    
+    public function messages()
+	{
+	    return [
+	        'extra.one_or_five' => 'You must leave a reason if you voted 1 or 5 on any question',
+		];
+	}
 }

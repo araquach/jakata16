@@ -2,8 +2,6 @@
 	'action' => 'SuperstylistController@store', 'id' => 'feedback-form'
 )) !!}
 
-<p class="note">Fields with <span class="required">*</span> are required.</p>
-
 @if (count($errors) > 0)
 
 <div id="feedback-form_es_" class="errorSummary">

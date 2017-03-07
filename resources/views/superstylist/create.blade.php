@@ -21,9 +21,8 @@
         <div id="feedback_copy">
         	<h1>Hey {{ explode(' ',trim(Auth::user()->name))[0] }}</h1>
         	<h2>Vote for {{ $user->name }}</h2>
-        	<p>Rank {{ explode(' ',trim($user->name))[0] }} 1 - 5 in each catagory (5 being Super Stylist to 1 being BAD!)</p>
+        	<p>Rank {{ explode(' ',trim($user->name))[0] }} in each catagory.</p>
         	<p>The ranking is all about <b>Super Stylist</b> mentality.</p>
-        	<p>If you vote either 1 or 5 on any catagory you must put a description as to why.</p>
         	<p class="small">Your vote is completely anonymous</p>
         </div> <!--feedback_copy-->
     
