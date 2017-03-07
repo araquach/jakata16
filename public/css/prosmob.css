@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* @group Main styling Group */
+
+body {
+	width: auto;
+	min-width: 300px;
+	background: none;
+	margin: auto;
+	padding: 0;
+	background-color: black;
+}
+
+.container {
+	width: auto;
+	margin: auto;
+}
+
+.red {
+	color: #7b1d1d;
+}
+
+.big {
+	font-size: 2.2em;
+	letter-spacing: .16em;
+}
+
+header {
+	width: auto;
+	margin-top: 0;
+}
+
+header h1 {
+	position: relative;
+	background-color: #424259;
+	width: 100%;
+	margin: auto;
+	top: 0;
+}
+
+header h2 {
+	margin-left: 0;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#logo {
+	width: auto;
+	height: 100px;
+	margin: auto;
+	background:  url('/images/main/jakata_logo.png') no-repeat center center;
+	background-size: 80%;
+}
+
+#prospect {
+	width: auto;
+	margin: auto;
+	height: 100%;
+	background: url('') 0 0px no-repeat #fff;
+	background-size: contain;
+	padding-top: 0;
+	padding-bottom: 50px;
+	float: none;
+	margin-top: 0;
+}
+
+#prospect-image {
+	width: auto;
+	height: 250px;
+	background: #FFF url('/images/prospect/prospect_main.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+#prospect-info {
+	float: none;
+	width: auto;
+	height: auto;
+	padding: 20px;
+	margin-top: 0;
+	margin-right: 0;
+}
+
+#prospect-offer-image {
+	width: auto;
+	height: 200px;
+	background: #f5f5f5 url('/images/prospect/bc.jpg') no-repeat center center;
+	margin-bottom: 30px;
+}
+
+#prospect-entry {
+	float: none;
+	position: relative;
+	width: auto;
+	padding: 20px;
+	border-left: none;
+	min-height: 0;
+}
+
+#prospect-entry h2 {
+	font: 3.3em Georgia, "Times New Roman", Times, serif;
+	margin: 40px 0;
+}
+
+#prospect-entry a {
+	background-color: rgb(81, 86, 95);
+	border-radius: 10px;
+	padding: 15px;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 1.3em;
+	opacity: 1;
+}
+
+#prospect-entry a:hover {
+	opacity: .7;
+}
+
+#prospect-entry p:last-of-type {
+	margin-bottom: 0;
+}
+
+.form h2 {
+	font-size: 1.8em;
+}
+
+.prospect-form {
+	padding-top: 20px;
+	margin-top: 0;
+	background-color: #FFF;
+}
+
+.row input,
+.row textarea {
+	line-height: 1em;
+	padding: 5px;
+	font-size: 1em;
+	width: 90%;
+	background-color: #FFF;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.row select {
+	border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+}
+
+.row.buttons input {
+	width: 100px;
+}
+
+.row label{
+	font-size: .8em;
+	color: #424259;
+	margin-bottom: 8px;
+	margin-top: 10px;
+}
+.row label.required {
+	font-size: .8em;
+	color: #424259;
+	margin-bottom: 8px;
+	margin-top: 10px;
+}
+
+input#regular {
+	margin-right: 0;
+}
+
+
+
+
+/* @end */
+/*# sourceMappingURL=prosmob.css.map */
