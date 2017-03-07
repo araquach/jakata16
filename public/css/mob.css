@@ -1899,6 +1899,12 @@ span.kebelo_italic {
 	margin-left: 0;
 }
 
+#feedback .errorMessage {
+	padding-left: 0;
+	margin-left: 0;
+	float: left;
+}
+
 #feedback input {
 	margin-right: 20px;
 }
