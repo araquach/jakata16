@@ -45,10 +45,10 @@
 </aside>
 </a>
 
-<a href="{{ URL::to('offers') }}">
+<a href="{{ URL::to('news') }}#InstantBlushes">
 <aside id="news1" class="home_news">
-<h3 class="newsheader">New Year Offers</h3>
-<p class="newspara">Check out some fantastic new client offers&hellip;</p>
+<h3 class="newsheader">Touch of Pastel</h3>
+<p class="newspara">New spray in pastel colours from Schwarzkopf&hellip;</p>
 <p class="newscenter"><strong>Find out more &gt;</strong></p>
 </aside>
 </a>

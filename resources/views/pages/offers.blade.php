@@ -17,6 +17,6 @@
 
 @include('layouts.partials.fb_like')
 
-@include('pages.offers.half_price_col')
+@include('pages.offers.no_offer')
 
 @stop
