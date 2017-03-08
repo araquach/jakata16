@@ -36,7 +36,8 @@
 			<nav class="group">
 				<ul>
 					<li>{!! link_to('/', 'Home') !!}</li>
-					<li>{!! link_to('offers', 'Offers') !!}</li>
+					<!--<li>{!! link_to('offers', 'Offers') !!}</li>-->
+					<li>{!! link_to('recruitment', 'Recruitment') !!}</li>
 					<li>{!! link_to('team', 'Team') !!}</li>
 					<li>{!! link_to('prices', 'Prices') !!}</li>
 					<li>{!! link_to('news', 'News') !!}</li>

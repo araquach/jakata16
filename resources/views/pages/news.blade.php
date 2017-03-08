@@ -26,7 +26,7 @@ window.addEvent('domready', function(){
 
 <section id="accordion">
 	
-	<article class="article">
+<article class="article">
 <a id="NewBlondMe" class="anchor"></a>
 <section class="visible">
 {{ Html::image('images/newspics/new_blonde_me_1.jpg', 'New BlondeMe') }}
