@@ -10,15 +10,22 @@
 
 <div id="admin">
     
-	<h1>Voters</h1>
-	
-	<p>These people still need to complete their votes:</p>
+	<h1>Votes</h1>
 	
 	<h2>Jakata</h2>
+	<ul>
+	    @foreach($jakVotes as $jakVote)
+	        <li>{{ $jakVote->name }} {{ count($jakVote->superstylists) }} / {{ $jakStaffCount }}</li>
+	    @endforeach
+	</ul>
 	
 	
 	<h2>PK</h2>
-	
+	<ul>
+	    @foreach($pkVotes as $pkVote)
+	        <li>{{ $pkVote->name }} {{ count($pkVote->superstylists) }} / {{ $pkStaffCount }}</li>
+	    @endforeach
+	</ul>
 
 </div>
 

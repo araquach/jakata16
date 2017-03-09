@@ -61,4 +61,6 @@ Route::get('/superstylist', 'SuperstylistController@index');
 Route::get('/superstylist/{user}/create', 'SuperstylistController@create');
 Route::post('/superstylist/create', 'SuperstylistController@store');
 
+Route::get('/superstylist/admin', 'SuperstylistAdminController@index');
+
 Route::auth();
