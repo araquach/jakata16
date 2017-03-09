@@ -26,6 +26,6 @@ class User extends Authenticatable
     
     public function superstylists()
     {
-        return $this->hasMany('App\Superstylist');
+        return $this->hasMany('App\Superstylist', 'voter_id');
     }
 }
