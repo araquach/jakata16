@@ -15,7 +15,7 @@
 	<h2>Jakata</h2>
 	<ul>
 	    @foreach($jakStaffs as $jakStaff)
-	        <li>{{ $jakStaff->name }} {{ count($jakStaff->superstylists) }} / {{ count($jakStaffs) }}</li>
+	        <li>{{ $jakStaff->name }} {{ count($jakStaff->superstylists) }} / {{ count($jakStaffs) -1 }}</li>
 	    @endforeach
 	</ul>
 	
@@ -23,7 +23,7 @@
 	<h2>PK</h2>
 	<ul>
 	    @foreach($pkStaffs as $pkStaff)
-	        <li>{{ $pkStaff->name }} {{ count($pkStaff->superstylists) }} / {{ count($pkStaffs) }}</li>
+	        <li>{{ $pkStaff->name }} {{ count($pkStaff->superstylists) }} / {{ count($pkStaffs) -1 }}</li>
 	    @endforeach
 	</ul>
 
