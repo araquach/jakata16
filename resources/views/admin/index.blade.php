@@ -22,6 +22,7 @@
 		@if(Auth::user()->role == 1)
 			<li>{!! link_to('stylist', 'Stylist Applicants', ['class' => 'link-button']) !!}</li>
 			<li>{!! link_to('apprentice', 'Apprentice Applicants', ['class' => 'link-button']) !!}</li>
+			<li>{!! link_to('superstylist/admin', 'Super Stylist Admin', ['class' => 'link-button']) !!}</li>
 		@endif
 		<li>{!! link_to('superstylist', 'Super Stylist Vote', ['class' => 'link-button']) !!}</li>
 	</ul>

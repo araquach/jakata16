@@ -26,6 +26,7 @@
 					@if(Auth::user()->role == 1)
 					<li>{!! link_to('/stylist', 'Stylists') !!}</li>
 					<li>{!! link_to('/apprentice', 'Apprentices') !!}</li>
+					<li>{!! link_to('/superstylist/admin', 'SS Admin') !!}</li>
 					@endif
 					<li>{!! link_to('/logout', 'Logout') !!}</li>
 				</ul>
