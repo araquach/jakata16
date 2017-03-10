@@ -24,10 +24,10 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     
-    // public function superstylists()
-    // {
-    //     return $this->hasMany('App\Superstylist', 'voter_id');
-    // }
+    public function votes()
+    {
+        return $this->hasMany('App\Superstylist', 'voter_id');
+    }
     
     public function superstylists()
     {

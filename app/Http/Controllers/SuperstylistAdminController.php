@@ -25,9 +25,9 @@ class SuperstylistAdminController extends Controller {
 	 */
     public function index()
 	{
-		$jakStaffs = User::with('superstylists')->where('salon_id', 1)->get();
+		$jakStaffs = User::with('votes')->where('salon_id', 1)->get();
 		
-		$pkStaffs = User::where('salon_id', 2)->get();
+		$pkStaffs = User::with('votes')->where('salon_id', 2)->get();
 					
 		// dd($jakStaffs);
 		
