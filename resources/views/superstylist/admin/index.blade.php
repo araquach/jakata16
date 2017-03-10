@@ -13,19 +13,26 @@
 	<h1>Votes</h1>
 	
 	<h2>Jakata</h2>
-	<ul>
-	    @foreach($jakStaffs as $jakStaff)
-	        <li>{{ $jakStaff->name }} {{ count($jakStaff->votes) }} / {{ count($jakStaffs) -1 }}</li>
-	    @endforeach
-	</ul>
 	
+	<table>
+		@foreach($jakStaffs as $jakStaff)
+		<tr>
+			<td>{{ $jakStaff->name }}</td>
+			<td>{{ count($jakStaff->votes) }} / {{ count($jakStaffs) -1 }}</td>
+		</tr>
+		@endforeach
+	</table>
 	
 	<h2>PK</h2>
-	<ul>
-	    @foreach($pkStaffs as $pkStaff)
-	        <li>{{ $pkStaff->name }} {{ count($pkStaff->votes) }} / {{ count($pkStaffs) -1 }}</li>
-	    @endforeach
-	</ul>
+	
+	<table>
+		@foreach($pkStaffs as $pkStaff)
+		<tr>
+			<td>{{ $pkStaff->name }}</td>
+			<td>{{ count($pkStaff->votes) }} / {{ count($pkStaffs) -1 }}</td>
+		</tr>
+		@endforeach
+	</table>
 
 </div>
 

@@ -13,13 +13,20 @@ class CustomValidator {
         $data = collect($validator->getData());
          
         $data = $data->slice(4);
+        
+        $extra = $data->last();
+        
           
-        if($data->contains(1) or $data->contains(5))
+        if($extra != NULL)
+        
+        return true;
+        
+        elseif($data->contains(1) or $data->contains(5))
         {
         return false;
         }
         
         return true;
-     }
+    }
 
 }
