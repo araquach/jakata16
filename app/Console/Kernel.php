@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
+        Commands\VoteStart::class,
         Commands\VoteReminder::class,
     ];
 
@@ -24,6 +25,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $schedule->command('voteStart')
+                 ->weekly()->thursdays()->at('10:00');
+        
         $schedule->command('voteReminder')
                  ->weekly()->fridays()->at('16:30');
     }
