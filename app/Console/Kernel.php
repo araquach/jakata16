@@ -25,6 +25,6 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('voteReminder')
-                 ->hourly();
+                 ->weekly()->saturdays()->at('16:30');
     }
 }

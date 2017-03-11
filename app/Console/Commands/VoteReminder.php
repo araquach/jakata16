@@ -35,7 +35,7 @@ class VoteReminder extends Command
     {
         Mail::send('emails.superstylist.reminder', compact('users'), function($message)
    		{
-       		$recipients = User::with('votesCount')->get();
+       		$recipients = User::with('votes')->get();
        		
        		$jakStaffCount = User::where('salon_id', 1);
        		
@@ -43,19 +43,20 @@ class VoteReminder extends Command
        		
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
 			
-			foreach ($recipients as $recipient) {
+			foreach ($recipients as $recipient) 
+			{
 			    
-			    if($recipient->salon_id == 1 and $recipient->votesCount() > $jakStaffCount)
+			    if($recipient->salon_id == 1 && $recipient->votes->count() < $jakStaffCount->count() -1)
 			    {
 			    
-                    $message->to($recipient->name);
+                    $message->to($recipient->email);
                 
 			    }
 			    
-			    elseif($recipient->salon_id == 2 and $recipient->votesCount() > $pkStaffCount)
+			    elseif($recipient->salon_id == 2 && $recipient->votes->count() < $pkStaffCount->count() -1)
 			    {
 			        
-			        $message->to($recipient->name);
+			        $message->to($recipient->email);
 			        
 			    }
             }
