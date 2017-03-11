@@ -27,12 +27,6 @@ class SuperstylistController extends Controller {
 	{
 		$user = Auth::user();
 		
-		$weekend = Carbon::now()->startOfWeek();
-		
-		// $records = $this->superstylist->get();
-		
-		// $users = User::with('superstylists')->where('id', '!=', Auth::user()->id)->get();
-		
 		$users = User::with('superstylists')->where('id', '!=', Auth::user()->id)
 					->where('salon_id', Auth::user()->salon_id)
 					->whereDoesntHave('superstylists', function($query)
@@ -40,8 +34,7 @@ class SuperstylistController extends Controller {
 						$query->where('voter_id', Auth::user()->id)
 							->where('created_at', '>', Carbon::now()->startOfWeek());
 					})->get();
-					
-		// dd($records);
+		
 		
 		return view('superstylist.index', compact('users'));
 	}

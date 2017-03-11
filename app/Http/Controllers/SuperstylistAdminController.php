@@ -25,15 +25,24 @@ class SuperstylistAdminController extends Controller {
 	 */
     public function index()
 	{
+		
 		$jakStaffs = User::with('votes')->where('salon_id', 1)->get();
 		
 		$pkStaffs = User::with('votes')->where('salon_id', 2)->get();
 					
-		// dd($jakStaffs);
-		
 		return view('superstylist.admin.index', compact('jakStaffs', 'pkStaffs'));
 		
+	}
+	
+	public function test()
+	{
+		$recipients = User::with('votes')->get();
+       		
+   		$jakStaffCount = User::where('salon_id', 1);
+   		
+   		$pkStaffCount = User::where('salon_id', 2);
 		
+		return view('superstylist.admin.test', compact('recipients', 'jakStaffCount', 'pkStaffCount'));
 	}
 
 }
