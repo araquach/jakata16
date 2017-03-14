@@ -36,7 +36,11 @@ class SuperstylistAdminController extends Controller {
 	
 	public function test()
 	{
-		$recipients = User::with('votes')->get();
+		$recipients = User::with('votes')
+       		        ->whereDoesntHave('votes', function($query)
+					{
+						$query->where('created_at', '>', Carbon::now()->startOfWeek());
+					})->get();
        		
    		$jakStaffCount = User::where('salon_id', 1);
    		
