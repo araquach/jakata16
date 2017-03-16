@@ -16,10 +16,10 @@
 	
 	<table>
 		@foreach($jakStaffs as $jakStaff)
-		<tr>
-			<td>{{ $jakStaff->name }}</td>
-			<td>{{ count($jakStaff->votes) }} / {{ count($jakStaffs) -1 }}</td>
-		</tr>
+			<tr>
+				<td>{{ $jakStaff->name }}</td>
+				<td>{{ $jakStaff->votes }} / {{ count($jakStaffs) -1 }}</td>
+			</tr>
 		@endforeach
 	</table>
 	
@@ -29,7 +29,7 @@
 		@foreach($pkStaffs as $pkStaff)
 		<tr>
 			<td>{{ $pkStaff->name }}</td>
-			<td>{{ count($pkStaff->votes) }} / {{ count($pkStaffs) -1 }}</td>
+			<td>{{ $pkStaff->votes }} / {{ count($pkStaffs) -1 }}</td>
 		</tr>
 		@endforeach
 	</table>
@@ -38,3 +38,4 @@
 </div>
 
 @stop
+

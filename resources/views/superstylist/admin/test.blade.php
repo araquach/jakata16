@@ -14,17 +14,17 @@
 	
 	<h2>Jakata</h2>
 	
-	@foreach($recipients as $recipient)
-		@if($recipient->salon_id == 1 && $recipient->votes->count() < $jakStaffCount->count() -1)
-			<p>{{ $recipient->name }} : {{ $recipient->votes->count() }} : {{ $jakStaffCount->count() -1 }}</p>
+	<h3>With Votes</h3>
+	
+	@foreach($withVotes as $withVote)
+		@if($withVote->salon_id == 1 && $withVote->vote_count < $jakStaffCount)
+			<p>{{ $withVote->name }}</p>
 		@endif
 	@endforeach
 	
-	<h2>PK</h2>
-	
-	@foreach($recipients as $recipient)
-		@if($recipient->salon_id == 2 && $recipient->votes->count() < $pkStaffCount->count() -1)
-			<p>{{ $recipient->name }} : {{ $recipient->votes->count() }} : {{ $pkStaffCount->count() -1 }}</p>
+	@foreach($noVotes as $noVote)
+		@if($noVote->salon_id == 1)
+			<p>{{ $noVote->name }}</p>
 		@endif
 	@endforeach
 		

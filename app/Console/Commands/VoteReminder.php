@@ -35,11 +35,17 @@ class VoteReminder extends Command
     {
         Mail::send('emails.superstylist.reminder', compact('users'), function($message)
    		{
-       		$recipients = User::with('votes')
-       		        ->whereDoesntHave('votes', function($query)
-					{
-						$query->where('created_at', '>', Carbon::now()->startOfWeek());
-					})->get();
+       		$noVotes = User::with('votes')
+				->whereDoesntHave('votes', function($query)
+				{
+					$query->where('created_at', '>', Carbon::now()->startOfWeek());
+				})->get();
+       		
+       		$withVotes = DB::table('users')->select('name', 'users.salon_id', DB::raw('count(superstylists.id) as vote_count'))
+					->join('superstylists', function($join) {
+						$join->on('users.id', '=', 'superstylists.voter_id')
+						->where('superstylists.created_at', '>', Carbon::now()->startOfWeek());
+					})->groupBy('users.id')->get()->toArray();
        		
        		$jakStaffCount = User::where('salon_id', 1);
        		
@@ -47,22 +53,18 @@ class VoteReminder extends Command
        		
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
 			
-			foreach ($recipients as $recipient) 
+			foreach ($withVotes as $withVote) 
 			{
-			    
-			    if($recipient->salon_id == 1 && $recipient->votes->count() < $jakStaffCount->count() -1)
+                if($withVote->salon_id == 1 && $withVote->vote_count < $jakStaffCount)
 			    {
-			    
-                    $message->to($recipient->email);
-                
+			        $message->to($withVote->email);
+			    }
+			    elseif($withVote->salon_id == 2 && $withVote->vote_count < $pkStaffCount)
+			    {
+			        $message->to($withVote->email);
 			    }
 			    
-			    elseif($recipient->salon_id == 2 && $recipient->votes->count() < $pkStaffCount->count() -1)
-			    {
-			        
-			        $message->to($recipient->email);
-			        
-			    }
+			    $message->to($noVote->email);
             }
        		
        		$message->subject('Super Stylist Vote Reminder');
