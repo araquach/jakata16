@@ -720,6 +720,10 @@ nav li a:hover {
     padding-bottom: 30px;
 }
 
+#admin td {
+	padding: 5px;
+}
+
 /* @group Home */
 
 #home {
