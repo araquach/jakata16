@@ -35,31 +35,35 @@ class VoteStart extends Command
     {
         Mail::send('emails.superstylist.start', compact('users'), function($message)
    		{
-       		$recipients = User::with('votes')->get();
-       		
-       		$jakStaffCount = User::where('salon_id', 1);
-       		
-       		$pkStaffCount = User::where('salon_id', 2);
+       		$jakRecipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(superstylists.id) as votes'))
+					->where('users.salon_id', '=', '1')
+					->leftJoin('superstylists', function($join) {
+						$join->on('users.id', '=', 'superstylists.voter_id')
+						->where('superstylists.created_at', '>', Carbon::now()->startOfWeek());
+					})->groupBy('users.id')->get();
+					
+			$pkRecipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(superstylists.id) as votes'))
+					->where('users.salon_id', '=', '2')
+					->leftJoin('superstylists', function($join) {
+						$join->on('users.id', '=', 'superstylists.voter_id')
+						->where('superstylists.created_at', '>', Carbon::now()->startOfWeek());
+					})->groupBy('users.id')->get();
        		
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
 			
-			foreach ($recipients as $recipient) 
-			{
-			    
-			    if($recipient->salon_id == 1 && $recipient->votes->count() < $jakStaffCount->count() -1)
-			    {
-			    
-                    $message->to($recipient->email);
-                
-			    }
-			    
-			    elseif($recipient->salon_id == 2 && $recipient->votes->count() < $pkStaffCount->count() -1)
-			    {
-			        
-			        $message->to($recipient->email);
-			        
-			    }
-            }
+			foreach($jakRecipients as $jakRecipient) {
+				if($jakRecipient->votes < count($jakRecipients) -1) {
+				    
+				    $message->to($jakRecipient->email);
+				}
+			}
+			
+			foreach($pkRecipients as $pkRecipient) {
+				if($pkRecipient->votes < count($pkRecipients) -1) {
+				    
+				    $message->to($pkRecipient->email);
+				}
+			}
        		
        		$message->subject('Super Stylist - time to vote!');
    		});
