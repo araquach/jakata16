@@ -48,32 +48,15 @@ class SuperstylistAdminController extends Controller {
 	{
 		$weekStart = Carbon::now()->startOfWeek();
 		
-		$noVotes = User::with('votes')
-				->whereDoesntHave('votes', function($query)
-				{
-					$query->where('created_at', '>', Carbon::now()->startOfWeek());
-				})->get();
-		
-		
-		$withVotes = DB::table('users')->select('name', 'users.salon_id', DB::raw('count(superstylists.id) as vote_count'))
-					->join('superstylists', function($join) {
+		$recipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(superstylists.id) as votes'))
+					->leftJoin('superstylists', function($join) {
 						$join->on('users.id', '=', 'superstylists.voter_id')
 						->where('superstylists.created_at', '>', Carbon::now()->startOfWeek());
 					})->groupBy('users.id')->get();
-		
-	
-       		
-   		$jakStaff = User::where('salon_id', 1);
-   		
-   		$jakStaffCount = $jakStaff->count() -1;
-   		
-   		$pkStaff = User::where('salon_id', 2);
-   		
-   		$pkStaffCount = $pkStaff->count() -1;
    		
    		
    		
-   		// dd($withVotes, $noVotes, $jakStaffCount, $pkStaffCount, $weekStart);
+   		dd($recipients);
 		
 		return view('superstylist.admin.test', compact('noVotes', 'withVotes', 'jakStaffCount', 'pkStaffCount', 'weekStart'));
 	}
