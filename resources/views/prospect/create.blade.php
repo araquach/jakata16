@@ -11,7 +11,6 @@
 @section('content')
 
 <script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('scripts/jquery.js') }}"></script>
 
 <section id="prospect">
 
@@ -24,11 +23,12 @@
 	{{{ Session::get('message') }}}<br>
 	{!! link_to('/', 'Visit our website to find out more about us!') !!}
 	</div>
-
 @else
 
-@include('prospect._form')
-
+@if(url()->current() === url('freeproducts/man'))
+	@include('prospect._form_male')
+@else
+	@include('prospect._form')
 @endif
 
 </section>  <!--prospect-entry-->
