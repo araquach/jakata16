@@ -3,10 +3,7 @@
 )) !!}
 
 <div class="form">
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
 	
-
     @if (count($errors) > 0)
     
     <div id="prospect-form_es_" class="errorSummary">
