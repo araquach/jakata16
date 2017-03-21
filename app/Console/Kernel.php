@@ -15,6 +15,9 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         Commands\VoteStart::class,
         Commands\VoteReminder::class,
+        Commands\Prospect\FollowUp1::class,
+        Commands\Prospect\FollowUp2::class,
+        Commands\Prospect\FollowUp3::class,
     ];
 
     /**

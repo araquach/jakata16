@@ -175,5 +175,10 @@ class PagesController extends Controller {
 	{
 		return view('pages.kebelo');
 	}
+	
+	public function test()
+	{
+		return view('pages.test');
+	}
 
 }
