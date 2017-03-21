@@ -20,6 +20,8 @@
        
     @endif
     
+    {!! Form::hidden('gender', 'M') !!}
+    
     <div class="row">
     	<div class="row">
     	{!! Form::label('first_name', 'First Name') !!}
@@ -97,7 +99,6 @@
     <div class="row">
     	{!! Form::label('condition', 'How would you describe your hair condition?') !!}
     	{!! Form::select('condition', array(
-    		'overprocessed' => 'Overprocessed',
     		'dry' => 'Dry',
     		'normal' => 'Normal',
     		'oily' => 'Oily'
@@ -108,29 +109,17 @@
     <div class="row">
     	{!! Form::label('cut_spend', 'How much do you spend on average for a cut and blow?') !!}
     	{!! Form::select('cut_spend', array(
-    		'0 - 10' => 'Less than &pound;10',
-    		'10 - 20' => '&pound;10 to &pound;20',
-    		'20 - 30' => '&pound;20 to &pound;30',
-    		'30 - 40' => '&pound;30 to &pound;40',
-    		'40 - 50' => '&pound;40 to &pound;50',
-    		'50 plus' => 'More than &pound;50'
+    		'0 - 5' => 'Less than &pound;5',
+    		'5 - 10' => '&pound;5 to &pound;10',
+    		'10 - 15' => '&pound;10 to &pound;15',
+    		'15 - 20' => '&pound;15 to &pound;20',
+    		'20 - 25' => '&pound;20 to &pound;25',
+    		'25 plus' => 'More than &pound;25'
     		), old('cut_spend'), ['placeholder' => '-- Please Select --']) !!}
     	{!! $errors->first('cut_spend', '<div class="errorMessage">:message</div>') !!}
     </div>
     
-    <div class="row">
-    	{!! Form::label('colour_spend', 'What is your average spend on colour services?') !!}
-    	{!! Form::select('colour_spend', array(
-    		'0 - 10' => 'Less than &pound;10',
-    		'10 - 20' => '&pound;10 to &pound;20',
-    		'20 - 30' => '&pound;20 to &pound;30',
-    		'30 - 40' => '&pound;30 to &pound;40',
-    		'40 - 50' => '&pound;40 to &pound;50',
-    		'50 plus' => 'More than &pound;50',
-    		'No Colour' => 'I dont have colour'
-    		), old('colour_spend'), ['placeholder' => '-- Please Select --']) !!}
-    	{!! $errors->first('colour_spend', '<div class="errorMessage">:message</div>') !!}
-    </div>
+    {!! Form::hidden('colour_spend', 'NA') !!}
     
     <div class="row regular">
         {!! Form::label('regular', 'Click here if you have been to Jakata before') !!}

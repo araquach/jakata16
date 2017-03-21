@@ -20,6 +20,8 @@
        
     @endif
     
+    {!! Form::hidden('gender', 'F') !!}
+    
     <div class="row">
     	<div class="row">
     	{!! Form::label('first_name', 'First Name') !!}

@@ -25,10 +25,12 @@
 	</div>
 @else
 
-@if(url()->current() === url('freeproducts/man'))
-	@include('prospect._form_male')
-@else
-	@include('prospect._form')
+	@if(url()->current() === url('freeproducts/man/create'))
+		@include('prospect._form_male')
+	@else
+		@include('prospect._form')
+	@endif
+
 @endif
 
 </section>  <!--prospect-entry-->

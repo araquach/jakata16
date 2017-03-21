@@ -32,6 +32,7 @@ Route::resource('stylist', 'StylistController');
 Route::get('/freeproducts', 'ProspectController@freeproducts');
 Route::get('/freeproducts/man', 'ProspectController@freeproducts');
 Route::get('/freeproducts/create', 'ProspectController@create');
+Route::get('/freeproducts/man/create', 'ProspectController@create');
 Route::post('prospect/store', 'ProspectController@store');
 
 
