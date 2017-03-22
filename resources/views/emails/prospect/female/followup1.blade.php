@@ -1,12 +1,17 @@
 @extends('emails.prospect.template.template')
 
+
+@section('background_colour')
+    background: #dce1e9;
+@stop
+
 @section('optional')
     Your products are on their way!
 @stop
     
 <!--Image 1200px x 400px-->
 @section('hero_image')
-    http://placehold.it/1200x500
+   {{ asset('images/prospect/email/email_header.jpg') }}
 @stop
 
 @section('section1')
@@ -38,5 +43,9 @@
 <!--bottom panel text-->
 @section('section5')
     Section 5 Text
+@stop
+
+@section('footer_colour')
+    color: #999999;" bgcolor="#3f4960
 @stop
 

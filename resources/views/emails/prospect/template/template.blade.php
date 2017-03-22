@@ -112,7 +112,7 @@
 
 </head>
 <body width="100%" bgcolor="#777777" style="margin: 0; mso-line-height-rule: exactly;">
-    <center style="width: 100%; background: #777777; text-align: left;">
+    <center style="width: 100%; @yield('background_colour') text-align: left;">
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
@@ -244,7 +244,7 @@
             <!-- Email Footer : BEGIN -->
             <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
                 <tr>
-                    <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; line-height:18px; text-align: center; color: #666666;" bgcolor="#222222" class="x-gmail-data-detectors">
+                    <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; line-height:18px; text-align: center; @yield('footer_colour')" class="x-gmail-data-detectors">
                         <webversion style="color:#cccccc; text-decoration:underline; font-weight: bold;">View as a Web Page</webversion>
                         <br><br>
                         JakataSalon<br>90/92 Bridge Street, Warrington<br>01925 242960

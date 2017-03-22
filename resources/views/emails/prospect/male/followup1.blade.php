@@ -2,7 +2,7 @@
 
 
 @section('background_colour')
-    background: #dce1e9;
+    background: #333333;
 @stop
 
 @section('optional')
@@ -11,7 +11,7 @@
     
 <!--Image 1200px x 400px-->
 @section('hero_image')
-   {{ asset('images/prospect/email/email_header.jpg') }}
+   {{ asset('images/prospect/email/email_header_man.jpg') }}
 @stop
 
 @section('section1')
@@ -44,8 +44,3 @@
 @section('section5')
     Section 5 Text
 @stop
-
-@section('footer_colour')
-    color: #999999;" bgcolor="#3f4960
-@stop
-
