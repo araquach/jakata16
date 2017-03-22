@@ -6,7 +6,7 @@
 @stop
 
 @section('optional')
-    Your products are on their way!
+    Thanks for applying for your FREE products
 @stop
     
 <!--Image 1200px x 400px-->
