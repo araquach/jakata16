@@ -9,7 +9,7 @@ use DB;
 use Carbon\Carbon;
 use Mail;
 
-class FollowUp1 extends Command
+class FollowUp2 extends Command
 {
     /**
      * The name and signature of the console command.
