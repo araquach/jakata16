@@ -113,4 +113,14 @@ class ProspectController extends Controller
     {
         //
     }
+    
+    public function emailFemale()
+    {
+        return view('emails.prospect.female.followup1');
+    }
+    
+    public function emailMale()
+    {
+        return view('emails.prospect.male.followup1');
+    }
 }

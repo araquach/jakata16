@@ -2,7 +2,7 @@
 
 
 @section('background_colour')
-    background: #dce1e9;
+    #dce1e9
 @stop
 
 @section('optional')

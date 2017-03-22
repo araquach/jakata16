@@ -2,7 +2,7 @@
 
 
 @section('background_colour')
-    background: #333333;
+    #333333
 @stop
 
 @section('optional')
@@ -43,4 +43,8 @@
 <!--bottom panel text-->
 @section('section5')
     Section 5 Text
+@stop
+
+@section('footer_colour')
+    color: #999999;" bgcolor="#666666
 @stop

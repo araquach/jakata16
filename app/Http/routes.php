@@ -19,7 +19,8 @@ Route::get('/lauraM', 'PagesController@lauraM');
 Route::get('/caleb', 'PagesController@caleb');
 Route::get('/kebelo', 'PagesController@kebelo');
 
-Route::get('/test', 'PagesController@test');
+Route::get('/prospect/emailmale', 'ProspectController@emailMale');
+Route::get('/prospect/emailfemale', 'ProspectController@emailFemale');
 
 Route::get('/admin', 'AdminController@index');
 

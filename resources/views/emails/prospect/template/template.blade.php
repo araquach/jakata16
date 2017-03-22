@@ -111,8 +111,8 @@
     </style>
 
 </head>
-<body width="100%" bgcolor="#777777" style="margin: 0; mso-line-height-rule: exactly;">
-    <center style="width: 100%; @yield('background_colour') text-align: left;">
+<body width="100%" bgcolor="@yield('background_colour')" style="margin: 0; mso-line-height-rule: exactly;">
+    <center style="width: 100%; background: @yield('background_colour'); text-align: left;">
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
