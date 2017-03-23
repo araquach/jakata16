@@ -20,7 +20,11 @@ Route::get('/caleb', 'PagesController@caleb');
 Route::get('/kebelo', 'PagesController@kebelo');
 
 Route::get('/prospect/emailmale', 'ProspectController@emailMale');
+Route::get('/prospect/emailmale2', 'ProspectController@emailMale2');
 Route::get('/prospect/emailfemale', 'ProspectController@emailFemale');
+Route::get('/prospect/emailfemale2', 'ProspectController@emailFemale2');
+Route::get('/prospect/test', 'ProspectController@test');
+
 
 Route::get('/admin', 'AdminController@index');
 

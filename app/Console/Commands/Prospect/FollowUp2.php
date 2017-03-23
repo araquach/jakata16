@@ -30,15 +30,9 @@ class FollowUp2 extends Command
      *
      * @return mixed
      */
+    
     public function handle()
     {
-        Mail::send('emails.prospect.followup2', compact('prospects'), function($message)
-   		{
-       		$message->from('booking@jakatasalon.co.uk', 'Jakata');
-       		
-       		$message->subject('How are your products?');
-   		});
         
-        $this->info('Follow up 2 emails have been successfully sent');
     }
 }

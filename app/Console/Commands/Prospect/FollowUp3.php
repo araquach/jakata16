@@ -23,7 +23,7 @@ class FollowUp3 extends Command
      *
      * @var string
      */
-    protected $description = 'Third email to prospect client';
+    protected $description = 'Third email to Female prospect client';
 
     /**
      * Execute the console command.
@@ -32,13 +32,6 @@ class FollowUp3 extends Command
      */
     public function handle()
     {
-        Mail::send('emails.prospect.followup3', compact('prospects'), function($message)
-   		{
-       		$message->from('booking@jakatasalon.co.uk', 'Jakata');
-       		
-       		$message->subject('Third Email');
-   		});
         
-        $this->info('Follow up 3 Emails have been successfully sent');
     }
 }

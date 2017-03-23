@@ -34,7 +34,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('voteReminder')
                  ->weekly()->fridays()->at('16:30');
                  
-        $schedule->command('followUp1')
-                 ->weekly()->wednesdays()->at('16:30');
+        // $schedule->command('followUp1')
+        //          ->weekly()->wednesdays()->at('16:30');
     }
 }
