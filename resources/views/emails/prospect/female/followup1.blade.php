@@ -15,7 +15,7 @@
 @stop
 
 @section('section1')
-    <span style="font-size: 20px;">Hi Adam,</span>
+    <span style="font-size: 20px;">Hi {{ $first_name }},</span>
     <br><br>
     <strong>Thanks for applying for your FREE products</strong>
     <br><br>

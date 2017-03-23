@@ -33,6 +33,9 @@ class FollowUp2 extends Command
     
     public function handle()
     {
+        // Send to Female Clients
         
+        
+        // Send to male clients
     }
 }
