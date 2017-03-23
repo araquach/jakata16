@@ -15,7 +15,7 @@
 @stop
 
 @section('section1')
-    <span style="font-size: 20px;">Hi {{ $message->first_name }},</span>
+    <span style="font-size: 20px;">Hi {{ $first_name }},</span>
     <br><br>
     <strong>Thanks for applying for your FREE products,</strong>
     we've selected a range that's ideal for your hair texture and condition. We'll let you know when they're on the way to you.

@@ -32,19 +32,23 @@ class FollowUp1 extends Command
      */
     public function handle()
     {
-        Mail::send('emails.prospect.female.followup1', compact('message'), function($message)
-   		{
-       		$recipients = Prospect::get();
-       		
-       		$message->from('offers@jakatasalon.co.uk', 'Jakata');
-       		
-       		foreach($recipients as $recipient) {
-       		    $message->to($recipient->email);
-       		}
-       		
-       		$message->subject('Thanks for applying for your FREE products!');
-   		});
+        $data = Prospect::get();
         
+        $datas = $data->toArray();
+        
+        foreach($datas as $data) {
+            
+            Mail::send('emails.prospect.female.followup1', $data, function($message) use ($data)
+       		{
+           		$message->from('offers@jakatasalon.co.uk', 'Jakata');
+           		
+           		$message->to($data['email']);
+           		
+           		$message->subject('Thanks for applying for your FREE products!');
+       		});
+       		    
+       	}
+    
         $this->info('FirstFollow up emails have been successfully sent');
     }
 }
