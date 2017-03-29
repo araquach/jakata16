@@ -107,12 +107,12 @@
     <div class="row">
     	{!! Form::label('cut_spend', 'How much do you spend on average for a cut and blow?') !!}
     	{!! Form::select('cut_spend', array(
-    		'0 - 10' => 'Less than &pound;10',
-    		'10 - 20' => '&pound;10 to &pound;20',
-    		'20 - 30' => '&pound;20 to &pound;30',
-    		'30 - 40' => '&pound;30 to &pound;40',
-    		'40 - 50' => '&pound;40 to &pound;50',
-    		'50 plus' => 'More than &pound;50'
+    		'1' => 'Less than &pound;10',
+    		'2' => '&pound;10 to &pound;20',
+    		'3' => '&pound;20 to &pound;30',
+    		'4' => '&pound;30 to &pound;40',
+    		'5' => '&pound;40 to &pound;50',
+    		'6' => 'More than &pound;50'
     		), old('cut_spend'), ['placeholder' => '-- Please Select --']) !!}
     	{!! $errors->first('cut_spend', '<div class="errorMessage">:message</div>') !!}
     </div>
@@ -120,13 +120,13 @@
     <div class="row">
     	{!! Form::label('colour_spend', 'What is your average spend on colour services?') !!}
     	{!! Form::select('colour_spend', array(
-    		'0 - 10' => 'Less than &pound;10',
-    		'10 - 20' => '&pound;10 to &pound;20',
-    		'20 - 30' => '&pound;20 to &pound;30',
-    		'30 - 40' => '&pound;30 to &pound;40',
-    		'40 - 50' => '&pound;40 to &pound;50',
-    		'50 plus' => 'More than &pound;50',
-    		'No Colour' => 'I dont have colour'
+    		'1' => 'Less than &pound;10',
+    		'2' => '&pound;10 to &pound;20',
+    		'3' => '&pound;20 to &pound;30',
+    		'4' => '&pound;30 to &pound;40',
+    		'5' => '&pound;40 to &pound;50',
+    		'6' => 'More than &pound;50',
+    		'0' => 'I dont have colour'
     		), old('colour_spend'), ['placeholder' => '-- Please Select --']) !!}
     	{!! $errors->first('colour_spend', '<div class="errorMessage">:message</div>') !!}
     </div>

@@ -11,7 +11,7 @@
     
 <!--Image 1200px x 400px-->
 @section('hero_image')
-   {{ asset('images/prospect/email/email_header_man.jpg') }}
+   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header_man.jpg
 @stop
 
 @section('section1')

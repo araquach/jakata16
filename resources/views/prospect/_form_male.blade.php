@@ -106,12 +106,12 @@
     <div class="row">
     	{!! Form::label('cut_spend', 'How much do you spend on average for a cut and blow?') !!}
     	{!! Form::select('cut_spend', array(
-    		'0 - 5' => 'Less than &pound;5',
-    		'5 - 10' => '&pound;5 to &pound;10',
-    		'10 - 15' => '&pound;10 to &pound;15',
-    		'15 - 20' => '&pound;15 to &pound;20',
-    		'20 - 25' => '&pound;20 to &pound;25',
-    		'25 plus' => 'More than &pound;25'
+    		'1' => 'Less than &pound;5',
+    		'2' => '&pound;5 to &pound;10',
+    		'3' => '&pound;10 to &pound;15',
+    		'4' => '&pound;15 to &pound;20',
+    		'5' => '&pound;20 to &pound;25',
+    		'6' => 'More than &pound;25'
     		), old('cut_spend'), ['placeholder' => '-- Please Select --']) !!}
     	{!! $errors->first('cut_spend', '<div class="errorMessage">:message</div>') !!}
     </div>
