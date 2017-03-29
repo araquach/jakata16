@@ -116,7 +116,9 @@ class ProspectController extends Controller
     
     public function emailFemale()
     {
-        return view('emails.prospect.female.followup1');
+        $prospect = Prospect::find(2);
+        
+        return view('emails.prospect.female.followup1', compact('prospect'));
     }
     
     public function emailFemale2()
@@ -136,12 +138,4 @@ class ProspectController extends Controller
     
     // test function
     
-    public function test()
-    {
-        $prospects = Prospect::where('gender', 'M')
-                ->('message_sent' )
-                ->where('regular', 0)->get();
-        
-        dd($prospects);
-    }
 }

@@ -15,7 +15,7 @@
 @stop
 
 @section('section1')
-    <span style="font-size: 20px;">Hi {{ $first_name }},</span>
+    <span style="font-size: 20px;">Hi {{ $prospect->first_name }},</span>
     <br><br>
     <strong>Thanks for applying for your FREE products</strong>
     <br><br>
@@ -41,7 +41,7 @@
 @stop
 
 @section('section3')
-    Based on the information you gave, we think Matt Lane & Laura Minnett would be great stylists for you to try. 
+    Based on the information you gave, we think {!! getStylists(1) !!} would be great for you to try. 
     We're sending out a voucher along with your products so you can  experience a FREE Blow Dry and Smoothing treatment with either of them. 
     <br><br>
     <strong>I'm sure once you've experienced Jakata you won't want to go anywhere else!</strong>

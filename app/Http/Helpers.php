@@ -115,26 +115,28 @@ function getQuality($value)
         default:
             return "Not Rated";
     }
-    
- function getStylists($cut, $colour, $gender)
- {
-    if($gender = "F")
-    {
+}
+
+function getStylists($cut)
+{
         switch($cut) {
-            case "0 - 10":
-                return 1;
+            case 1:
+                return "Adam";
+                break;
             case "10 - 20":
-                return 2;
+                return "Jeff";
+                break;
             case "20 - 30":
-                return 3;
+                return "Pete";
+                break;
             case "30 - 40":
-                return 4;
+                return "Luke";
+                break;
+            case "40 - 50":
+                return "Trevor";
+                break;
+            case "50 plus":
+                return "Helen";
+                break;
         }
-    }
-    
-    elseif ($gender = "M") {
-        
-    }
- }
-    
 }

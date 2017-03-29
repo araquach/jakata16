@@ -23,7 +23,7 @@ class FollowUp3 extends Command
      *
      * @var string
      */
-    protected $description = 'Third email to Female prospect client';
+    protected $description = 'Third email to prospect clients';
 
     /**
      * Execute the console command.
@@ -32,6 +32,9 @@ class FollowUp3 extends Command
      */
     public function handle()
     {
+        // Send to Female Clients
         
+        
+        // Send to male clients
     }
 }
