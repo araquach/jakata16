@@ -116,26 +116,44 @@ class ProspectController extends Controller
     
     public function emailFemale()
     {
-        $prospect = Prospect::findOrFail(1);
+        $prospect = Prospect::where('gender', 'F')->where('first_name', 'FineDry')->firstOrFail();
         
         return view('emails.prospect.female.followup1', compact('prospect'));
     }
     
     public function emailFemale2()
     {
-        return view('emails.prospect.female.followup2');
+        $prospect = Prospect::where('gender', 'F')->where('first_name', 'ThickDamaged')->firstOrFail();
+        
+        return view('emails.prospect.female.followup2', compact('prospect'));
+    }
+    
+    public function emailFemale3()
+    {
+        $prospect = Prospect::where('gender', 'F')->where('first_name', 'NormalNormal')->firstOrFail();
+        
+        return view('emails.prospect.female.followup3', compact('prospect'));
     }
     
     public function emailMale()
     {
-        $prospect = Prospect::findOrFail(1);
+        $prospect = Prospect::where('gender', 'M')->where('first_name', 'James')->firstOrFail();
         
         return view('emails.prospect.male.followup1', compact('prospect'));
     }
     
     public function emailMale2()
     {
-        return view('emails.prospect.male.followup2');
+        $prospect = Prospect::where('gender', 'M')->where('first_name', 'Fine')->firstOrFail();
+        
+        return view('emails.prospect.male.followup2', compact('prospect'));
+    }
+    
+    public function emailMale3()
+    {
+        $prospect = Prospect::where('gender', 'M')->where('first_name', 'Fine')->firstOrFail();
+        
+        return view('emails.prospect.male.followup3', compact('prospect'));
     }
     
 }

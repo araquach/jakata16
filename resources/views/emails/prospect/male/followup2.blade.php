@@ -12,12 +12,12 @@
     
 <!--Image 600px x 300px-->
 @section('hero_image')
-   {{ asset('images/prospect/email/email_header_man.jpg') }}
+   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header_man_2.jpg
 @stop
 
 @section('section1')
     <span style="font-size: 20px;">@if(App::isLocal())
-                                        Hi Adam, 
+                                        Hi {{ $prospect->first_name }},
                                     @else 
                                         Hi {{ $prospect->first_name }}, 
                                     @endif</span>
@@ -26,7 +26,12 @@
 @stop
 
 @section('section2')
-    We've included a voucher for <strong>50% off</strong> with either -- Matt Lane or Laura Minnett -- that you can take advantage of over the coming months. 
+    We've included a voucher for <strong>50% off</strong> with either <strong>@if(App::isLocal())
+                                        {!! getStylists($prospect->cut_spend, $prospect->colour_spend, $prospect->gender) !!}
+                                    @else 
+                                        {!! getStylists($cut_spend, $colour_spend, $gender) !!}
+                                    @endif 
+    </strong> that you can take advantage of over the coming months. 
     <br><br>
     Just call <strong>01925 242960</strong> to book in.
     <br><br>

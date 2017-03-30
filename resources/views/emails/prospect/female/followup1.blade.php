@@ -22,9 +22,9 @@
                                         Hi {{ $first_name }},
                                     @endif</span>
     <br><br>
-    <strong>Thanks for applying for your FREE products</strong>
+    <strong>Thanks for applying for your FREE products.</strong>
     <br><br>
-    we've selected a range that's ideal for your hair texture and condition. We'll let you know when they're on the way to you.
+    We've selected a range that's ideal for your hair texture and condition. We'll let you know when they're on the way to you.
 @stop
 
 <!--Image 200px wide-->

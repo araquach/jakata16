@@ -12,12 +12,12 @@
     
 <!--Image 600px x 300px-->
 @section('hero_image')
-   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header.jpg
+   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header_3.jpg
 @stop
 
 @section('section1')
     <span style="font-size: 20px;">@if(App::isLocal())
-                                        Hi Adam, 
+                                        Hi {{ $prospect->first_name }}, 
                                     @else 
                                         Hi {{ $prospect->first_name }}, 
                                     @endif</span>
