@@ -17,9 +17,9 @@
 
 @section('section1')
     <span style="font-size: 20px;">@if(App::isLocal())
-                                        Hi Adam, 
-                                    @else 
                                         Hi {{ $prospect->first_name }}, 
+                                    @else 
+                                        Hi {{ $first_name }}, 
                                     @endif</span>
     <br><br>
     <strong>Thanks for applying for your FREE products.</strong>
@@ -46,12 +46,12 @@
 @stop
 
 @section('section3')
-    Based on the information you gave, we think @if(App::isLocal())
-                                        {!! getStylists($prospect->cut_price, $prospect->colour_price, $prospect->gender) !!}, 
+    Based on the information you gave, we think <strong>@if(App::isLocal())
+                                        {!! getStylists($prospect->cut_spend, $prospect->colour_spend, $prospect->gender) !!}
                                     @else 
-                                        {!! getStylists($cut_price, $colour_price, $gender) !!}, 
-                                    @endif 
-    would be great stylists for you to try. <br>
+                                        {!! getStylists($cut_spend, $colour_spend, $gender) !!}
+                                    @endif </strong>
+    would be great for you to try. <br>
     We're sending out a voucher along with your products to give you<br> <strong>50% off a Cut & Style</strong> with them. 
     <br><br>
     <strong>I'm sure once you've experienced Jakata you won't want to go anywhere else!</strong>

@@ -161,29 +161,35 @@ function getStylists($cut, $colour, $gender)
         
         elseif($gender == 'M')
         {
-            if($cut <= 1)
+            
+            if($cut < 3)
             {
-                return "Layla Relf - m";
+                return "Layla Relf";
             }
             
-            elseif($cut > 1 && $cut <= 3)
+            if($cut >= 3 && $cut < 4)
             {
-                return "Laura Minett &amp; Matt Lane - m";
+                return "Laura Minett &amp; Matt Lane";
             }
             
-            elseif($cut > 3 && $cut <= 5)
+            if($cut >= 4 && $cut < 5)
             {
-                return "Laura Minett &amp; Matt Lane - m";
+                return "Caleb Barrie &amp; Vikki Rowland";
             }
             
-            elseif($cut > 5 && $cut <= 6)
+            if($cut >= 5 && $cut < 6)
             {
-                return "Laura Hall &amp; Natalie Doxey - m";
+                return "Natalie Doxey &amp; Laura Hall";
+            }
+            
+            if($cut >= 6)
+            {
+                return "Jimmy Sharpe";
             }
             
             else
             {
-                return "Caleb Barrie - m";
+                return "Caleb Barrie";
             }
         }
 }
