@@ -1,5 +1,6 @@
-@extends('emails.prospect.template.2column')
+{{-- female follow up 3 --}}
 
+@extends('emails.prospect.template.2column')
 
 @section('background_colour')
     #dce1e9
@@ -9,13 +10,17 @@
     
 @stop
     
-<!--Image 1200px x 400px-->
+<!--Image 600px x 300px-->
 @section('hero_image')
-   {{ asset('images/prospect/email/email_header.jpg') }}
+   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header.jpg
 @stop
 
 @section('section1')
-    <span style="font-size: 20px;">Hi {{ $first_name }},</span>
+    <span style="font-size: 20px;">@if(App::isLocal())
+                                        Hi Adam, 
+                                    @else 
+                                        Hi {{ $prospect->first_name }}, 
+                                    @endif</span>
     <br><br>
     <strong>Thanks for applying for your FREE products,</strong>
     we've selected a range that's ideal for your hair texture and condition. We'll let you know when they're on the way to you.

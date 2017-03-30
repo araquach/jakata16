@@ -117,26 +117,117 @@ function getQuality($value)
     }
 }
 
-function getStylists($cut)
+function getStylists($cut, $colour, $gender)
 {
-        switch($cut) {
-            case 1:
-                return "Adam";
-                break;
-            case "10 - 20":
-                return "Jeff";
-                break;
-            case "20 - 30":
-                return "Pete";
-                break;
-            case "30 - 40":
-                return "Luke";
-                break;
-            case "40 - 50":
-                return "Trevor";
-                break;
-            case "50 plus":
-                return "Helen";
-                break;
+        if($gender == 'F')
+        {
+            if($colour == 0)
+            {
+                $colour = $cut;
+            }
+            
+            $total = ($cut + $colour) / 2;
+        
+            if($total < 3)
+            {
+                return "Layla Relf";
+            }
+            
+            if($total >= 3 && $total < 4)
+            {
+                return "Laura Minett &amp; Matt Lane";
+            }
+            
+            if($total >= 4 && $total < 5)
+            {
+                return "Caleb Barrie &amp; Vikki Rowland";
+            }
+            
+            if($total >= 5  && $total < 6)
+            {
+                return "Natalie Doxey &amp; Laura Hall";
+            }
+            
+            if($total >= 6)
+            {
+                return "Jimmy Sharpe";
+            }
+            
+            else
+            {
+                return "Caleb Barrie";
+            }
         }
+        
+        elseif($gender == 'M')
+        {
+            if($cut <= 1)
+            {
+                return "Layla Relf - m";
+            }
+            
+            elseif($cut > 1 && $cut <= 3)
+            {
+                return "Laura Minett &amp; Matt Lane - m";
+            }
+            
+            elseif($cut > 3 && $cut <= 5)
+            {
+                return "Laura Minett &amp; Matt Lane - m";
+            }
+            
+            elseif($cut > 5 && $cut <= 6)
+            {
+                return "Laura Hall &amp; Natalie Doxey - m";
+            }
+            
+            else
+            {
+                return "Caleb Barrie - m";
+            }
+        }
+}
+
+function getTreatment($texture, $condition)
+{
+    switch([$texture, $condition]) {
+        case ['fine', 'dry']:
+            return "Moisture";
+            break;
+        case ['fine', 'normal']:
+            return "Volumising";
+            break;
+        case ['fine', 'oily']:
+            return "Deep Cleansing";
+            break;
+        case ['fine', 'overprocessed']:
+            return "Repair Rescue";
+            break;
+        case ['normal', 'dry']:
+            return "Moisture";
+            break;
+        case ['normal', 'normal']:
+            return "Relaxing";
+            break;
+        case ['normal', 'oily']:
+            return "Deep cleansing";
+            break;
+        case ['normal', 'overprocessed']:
+            return "Fibre Force";
+            break;
+        case ['coarse', 'dry']:
+            return "Intense Moisture";
+            break;
+        case ['coarse', 'normal']:
+            return "Smoothing";
+            break;
+        case ['coarse', 'oily']:
+            return "Deep cleansing";
+            break;
+        case ['coarse', 'overprocessed']:
+            return "Fibre Force";
+            break;
+        default:
+            return "";
+    }
 }

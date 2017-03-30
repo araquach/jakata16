@@ -1,5 +1,6 @@
-@extends('emails.prospect.template.minimal')
+{{-- male follow up 2 --}}
 
+@extends('emails.prospect.template.minimal')
 
 @section('background_colour')
     #333333
@@ -9,13 +10,17 @@
     
 @stop
     
-<!--Image 1200px x 400px-->
+<!--Image 600px x 300px-->
 @section('hero_image')
    {{ asset('images/prospect/email/email_header_man.jpg') }}
 @stop
 
 @section('section1')
-    <span style="font-size: 20px;">Hi Adam,</span>
+    <span style="font-size: 20px;">@if(App::isLocal())
+                                        Hi Adam, 
+                                    @else 
+                                        Hi {{ $prospect->first_name }}, 
+                                    @endif</span>
     <br><br>
     <span style ="font-size: 20px; line-height: 30px;">Just to let you know, your products have been sent in the post to you. They should be with you soon.</span>
 @stop

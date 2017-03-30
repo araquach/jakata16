@@ -9,13 +9,17 @@
     
 @stop
     
-<!--Image 1200px x 400px-->
+<!--Image 600px x 300px-->
 @section('hero_image')
-   {{ asset('images/prospect/email/email_header.jpg') }}
+   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header.jpg
 @stop
 
 @section('section1')
-    <span style="font-size: 20px;">Hi {{-- $first_name --}},</span>
+    <span style="font-size: 20px;">@if(App::isLocal())
+                                        Hi Adam, 
+                                    @else 
+                                        Hi {{ $prospect->first_name }}, 
+                                    @endif</span>
     <br><br>
     <br><span style ="font-size: 20px; line-height: 30px;">Just to let you know, your products have been sent in the post to you. They should be with you soon!</span><br>
     <strong></strong>
