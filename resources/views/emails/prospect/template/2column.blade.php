@@ -242,7 +242,7 @@
                     <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; line-height:18px; text-align: center; color: #888888;" class="x-gmail-data-detectors">
                         <webversion style="color:#cccccc; text-decoration:underline; font-weight: bold;">View as a Web Page</webversion>
                         <br><br>
-                        JakataSalon<br>90/92 Bridge Street, Warrington<br>01925 242960
+                        Jakata Salon<br>90/92 Bridge Street, Warrington<br>01925 242960
                         <br><br>
                         <unsubscribe style="color:#888888; text-decoration:underline;">unsubscribe</unsubscribe>
                     </td>
