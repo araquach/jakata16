@@ -2,7 +2,7 @@
 
 
 @section('background_colour')
-    #dce1e9
+    #2d2d31
 @stop
 
 @section('optional')
@@ -39,6 +39,6 @@
 @stop
 
 @section('footer_colour')
-    color: #999999;" bgcolor="#3f4960
+    color: #FFFFFF;" bgcolor="#3f4960
 @stop
 

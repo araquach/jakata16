@@ -3,7 +3,7 @@
 @extends('emails.prospect.template.large_2image')
 
 @section('background_colour')
-    #dce1e9
+    #2d2d31
 @stop
 
 @section('optional')
@@ -12,7 +12,7 @@
     
 <!--Image 600px x 300px-->
 @section('hero_image')
-   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header.jpg
+   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header_4.jpg
 @stop
 
 @section('section1')
@@ -70,6 +70,6 @@
 
 
 @section('footer_colour')
-    color: #999999;" bgcolor="#3f4960
+    color: #888888;" bgcolor="#d7e8f7
 @stop
 

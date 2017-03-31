@@ -3,7 +3,7 @@
 @extends('emails.prospect.template.2column')
 
 @section('background_colour')
-    #dce1e9
+    #2d2d31
 @stop
 
 @section('optional')
@@ -19,20 +19,28 @@
     <span style="font-size: 20px;">@if(App::isLocal())
                                         Hi {{ $prospect->first_name }}, 
                                     @else 
-                                        Hi {{ $prospect->first_name }}, 
+                                        Hi {{ $first_name }}, 
                                     @endif</span>
     <br><br>
-    <strong>Thanks for applying for your FREE products,</strong>
-    we've selected a range that's ideal for your hair texture and condition. We'll let you know when they're on the way to you.
+    <strong>Just checking that you received your products and that you're happy with them.</strong>
+    <br>
+    We have a huge range of professional products and treatments in the salon, we hope we selected ones that suit your hair.
 @stop
 
 @section('section2')
-    As you've never been to Jakata before we'd love you to experience the salon for yourself. We have a team of ten talented, friendly staff ready to look after you. 
-    We've won numerous hairdressing awards and you only have to look at our customer testimonials and Facebook reviews to see how highly rated we are.
+    If your products haven't arrived yet or if you are unhappy with them, let us know on 01925 242960.
     <br><br>
-    Based on the information you gave, we think Matt Lane & Laura Minnett would be great stylists for you to try. 
-    We're sending out a voucher along with your products so you can  experience a FREE Blow Dry and Smoothing treatment with either of them. 
-    <strong>I'm sure once you've experienced Jakata you won't want to go anywhere else!</strong>
+    Don't forget to take advantage of your <strong>FREE blow dry and @if(App::isLocal())
+                                        {!! getTreatment($prospect->texture, $prospect->condition) !!} 
+                                    @else 
+                                        {!! getTreatment($texture, $condition) !!}
+                                    @endif
+    treatment. </strong>
+    <br>If you've misplaced your voucher, don't worry just show this message with your unique offer ID:
+    <br><br>
+    <span style="font-size: 20px;">OFFER: -- offer id --</span>
+    <br><br>
+    <strong>To book in just call 01925 242960</strong>
 @stop
 
 <!--Image 200px wide-->
@@ -55,12 +63,12 @@
 
 <!--bottom panel text-->
 @section('section5')
-    Thanks again and we look forward to seeing you soon!
+    We look forward to seeing you soon!
     <br><br>
     <span style="font-size: 20px;">The JAKATA team</span>
 @stop
 
 @section('footer_colour')
-    color: #999999;" bgcolor="#3f4960
+    color: #FFFFFF;" bgcolor="#c1cbe8
 @stop
 
