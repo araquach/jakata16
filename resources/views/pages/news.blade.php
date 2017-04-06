@@ -5,10 +5,10 @@
 @include('layouts.partials.head', [
 	'description' => 'All the latest JAKATA news',
 	'keywords' => 'Jakata news, Jakata stories, hairdressing news, salon news',
-	'ogtitle' => 'Photoshoot for Jimmy',
-	'ogdescription' => 'Jimmy recently received an invitation to work alongside some of the UK\'s top session stylists to create a photographic collection for national trade magazines. The shoot would also be used for major exposure across the internet.
-	The brief was to create an interpretation of Schwarzkopf\'s latest \'Essential Looks\' - a trend report magazine created from a collaboration of the catwalk shows from Milan, Paris, New York and London. This is broadcast over all of Europe and America.',
-	'ogimage' => url('/') . '/images/newspics/jimmy_pic_meta.jpg',
+	'ogtitle' => 'Maisie Returns after Maternity leave',
+	'ogdescription' => 'After taking 9 months out for maternity leave, we\'re happy to announce the return of Maisie.
+	She\'ll be re-joining the team on a part time basis. Her initial hours are outlined below.',
+	'ogimage' => url('/') . '/images/newspics/maisie_parker_meta.jpg',
 	'title' => 'Jakata Salon - Hairdressing News - Hairdressers in Warrington'
 	])
 	
