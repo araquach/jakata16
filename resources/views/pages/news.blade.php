@@ -27,6 +27,25 @@ window.addEvent('domready', function(){
 <section id="accordion">
 	
 <article class="article">
+<a id="MaisieBack" class="anchor"></a>
+<section class="visible">
+{{ Html::image('images/newspics/maisie_back.jpg', 'Maisie') }}
+<h2>Maisie Returns after Maternity leave</h2>
+<p><strong>After taking 9 months out for maternity leave, we're happy to announce the return of Maisie.</strong></p>
+<p>She'll be re-joining the team on a part time basis. Her initial hours are outlined below.</p>
+<p class="reveal">Read more &gt;</p>
+</section> <!--end .visible-->
+<section class="hidden">
+{{ Html::image('images/newspics/maisie_hours_april.jpg', 'April Hours', ['class' => 'news-image']) }}
+{{ Html::image('images/newspics/maisie_hours_june.jpg', 'May Hours', ['class' => 'news-image']) }}
+<p>If you need any more information or would like to book in, just call the salon on 01925 242960</p>
+<p>Or contact us here: <a href="http://www.jakatasalon.co.uk/contact">Jakata Contact Page</a></p>
+</section> <!--end .hidden-->
+<p class="author">Published by Adam</p>
+<time datetime="2017-04-6">6<sup>th</sup> April 2017</time>
+</article> <!--end #article-->
+	
+<article class="article">
 <a id="JimmyPhotoShoot" class="anchor"></a>
 <section class="visible">
 {{ Html::image('images/newspics/jim_pic_2.jpg', 'Jimmy at work') }}
