@@ -5,10 +5,10 @@
 @include('layouts.partials.head', [
 	'description' => 'All the latest JAKATA news',
 	'keywords' => 'Jakata news, Jakata stories, hairdressing news, salon news',
-	'ogtitle' => 'New Bombshell for Blondes',
-	'ogdescription' => 'The revamp of the iconic Schwarzkopf \'BlondMe\' range has finally launched with some dramatic changes that are sure to make you stand out from the crowd!
-	Powered by a brand new advanced bonding system built into the colouring products, lightening and lifting hair has never been easier or less damaging.',
-	'ogimage' => url('/') . '/images/newspics/new_blonde_me_meta.jpg',
+	'ogtitle' => 'Photocall for Jimmy',
+	'ogdescription' => 'Jimmy recently received an invitation to work alongside some of the UK\'s top session stylists to create a photographic collection for national trade magazines. The shoot would also be used for major exposure across the internet.
+	The brief was to create an interpretation of Schwarzkopf\'s latest \'Essential Looks\' - a trend report magazine created from a collaboration of the catwalk shows from Milan, Paris, New York and London. This is broadcast over all of Europe and America.',
+	'ogimage' => url('/') . '/images/newspics/jimmy_pic_meta.jpg',
 	'title' => 'Jakata Salon - Hairdressing News - Hairdressers in Warrington'
 	])
 	
@@ -26,6 +26,30 @@ window.addEvent('domready', function(){
 
 <section id="accordion">
 	
+<article class="article">
+<a id="JimmyPhotoCall" class="anchor"></a>
+<section class="visible">
+{{ Html::image('images/newspics/jim_pic_2.jpg', 'Jimmy at work') }}
+<h2>Photocall for Jimmy</h2>
+<p><strong>Jimmy recently received an invitation to work alongside some of the UK's top session stylists to create a photographic collection for national trade magazines. The shoot would also be used for major exposure across the internet.</strong></p>
+<p>The brief was to create an interpretation of Schwarzkopf's latest 'Essential Looks' - a trend report magazine created from a collaboration of the catwalk shows from Milan, Paris, New York and London. This is broadcast over all of Europe and America.</p>
+<p class="reveal">Read more &gt;</p>
+</section> <!--end .visible-->
+<section class="hidden">
+{{ Html::image('images/newspics/jim_montage_1.jpg', 'The day', ['class' => 'news-image']) }}
+<p>Jimmy said <em>"Yet another great opportunity has been put my way! There's no way I could decline this offer! I have worked with a few of the guys in the past and know how skilled they are. The days went smoothly and the team were really passionate and influential. A high end shoot like this one is something I have always aspired to do. Now I have had a taste of this I definitely want to do more"</em></p>
+{{ Html::image('images/newspics/jim_montage_2.jpg', 'The day', ['class' => 'news-image']) }}
+<p>The photoshoot spanned over four days planning, prepping, styling and shooting. Through the whole time everyone was picking up new skills and ideas. 
+Tyler Johnson headed up the team. Tyler is an international session stylists who works with many editorial companies such as Vogue, Elle and Esstetica, as well as working on fashion weeks all over the world. He is the main stylist who creates our 'Essential Look' trend report.</p>
+{{ Html::image('images/newspics/jim_montage_3.jpg', 'The day', ['class' => 'news-image']) }}
+<p><em>"To have another opportunity to work with Tyler was awesome. He is a stylist that I look up to and always admire the work he does, on this shoot he really let us take the reigns and make it our own, but he was always there with little pointers, tips and ideas. He supported our decisions and made the shoot the most relaxed shoot I've ever done. The end images were exactly what we wanted thanks to Tyler, His team and Colin Roy (the talented photographer)"</em></p>
+<p class="big"><a href="https://www.youtube.com/watch?v=2rYhDCTufCM&feature=youtu.be" target="_blank">Click here to check out a video featuring Jimmy at work on the shoot, along with the other team members</a></p>
+<p>(thanks to Austen Thomson for the video link)</p>
+</section> <!--end .hidden-->
+<p class="author">Published by Jimmy</p>
+<time datetime="2017-04-5">6<sup>th</sup> April 2017</time>
+</article> <!--end #article-->
+
 <article class="article">
 <a id="NewBlondMe" class="anchor"></a>
 <section class="visible">
