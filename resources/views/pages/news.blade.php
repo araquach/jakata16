@@ -5,7 +5,7 @@
 @include('layouts.partials.head', [
 	'description' => 'All the latest JAKATA news',
 	'keywords' => 'Jakata news, Jakata stories, hairdressing news, salon news',
-	'ogtitle' => 'Photocall for Jimmy',
+	'ogtitle' => 'Photoshoot for Jimmy',
 	'ogdescription' => 'Jimmy recently received an invitation to work alongside some of the UK\'s top session stylists to create a photographic collection for national trade magazines. The shoot would also be used for major exposure across the internet.
 	The brief was to create an interpretation of Schwarzkopf\'s latest \'Essential Looks\' - a trend report magazine created from a collaboration of the catwalk shows from Milan, Paris, New York and London. This is broadcast over all of Europe and America.',
 	'ogimage' => url('/') . '/images/newspics/jimmy_pic_meta.jpg',
@@ -27,10 +27,10 @@ window.addEvent('domready', function(){
 <section id="accordion">
 	
 <article class="article">
-<a id="JimmyPhotoCall" class="anchor"></a>
+<a id="JimmyPhotoShoot" class="anchor"></a>
 <section class="visible">
 {{ Html::image('images/newspics/jim_pic_2.jpg', 'Jimmy at work') }}
-<h2>Photocall for Jimmy</h2>
+<h2>Photoshoot for Jimmy</h2>
 <p><strong>Jimmy recently received an invitation to work alongside some of the UK's top session stylists to create a photographic collection for national trade magazines. The shoot would also be used for major exposure across the internet.</strong></p>
 <p>The brief was to create an interpretation of Schwarzkopf's latest 'Essential Looks' - a trend report magazine created from a collaboration of the catwalk shows from Milan, Paris, New York and London. This is broadcast over all of Europe and America.</p>
 <p class="reveal">Read more &gt;</p>
