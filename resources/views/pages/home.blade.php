@@ -19,15 +19,15 @@
 		<h4 class="slogan">Fashion forward, award winning hairdressing</h4>
 	</div>
 
-<!--<div id="feedback-container">-->
-<!--	<div id="feedback_feed">-->
-<!--	  	<ul>-->
-<!--	  	@foreach($feedbacks as $feed)-->
-<!--	  	    <li>&quot;{{ $feed->extra_edit }}&quot;<br><span class="client">{{ $feed->client->first_name }} {{ $feed->client->last_name }} - hair by {{ $feed->client->stylist }} </span></li>-->
-<!--	  	@endforeach-->
-<!--	  	</ul>-->
-<!--	</div> <!--#feedback_feed-->-->
-<!--</div>-->
+{{-- <div id="feedback-container">
+	<div id="feedback_feed">
+	  	<ul>
+	  	@foreach($feedbacks as $feed)
+	  	    <li>&quot;{{ $feed->extra_edit }}&quot;<br><span class="client">{{ $feed->client->first_name }} {{ $feed->client->last_name }} - hair by {{ $feed->client->stylist }} </span></li>
+	  	@endforeach
+	  	</ul>
+	</div> <!--#feedback_feed-->
+</div> --}}
 
 <section id="info">
 <p>Jakata is a fashion forward, award winning hairdressing salon in Warrington, Cheshire. With a team of twelve talented hairdressers looking after you, you know you're in good hands.</p>
