@@ -30,9 +30,9 @@ class PagesController extends Controller {
 	 */
 	public function index()
 	{
-		// $feedbacks = Feedback::where('salon_id', '=', '1')->where('publish', '=', '1')->orderByRaw("RAND()")->get();
+		$feedbacks = Feedback::where('publish', '=', '1')->orderByRaw("RAND()")->get();
 	
-		return view('pages.home');
+		return view('pages.home', compact('feedbacks'));
 	}
 	
 	public function details()

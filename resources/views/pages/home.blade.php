@@ -19,7 +19,7 @@
 		<h4 class="slogan">Fashion forward, award winning hairdressing</h4>
 	</div>
 
-{{-- <div id="feedback-container">
+<div id="feedback-container">
 	<div id="feedback_feed">
 	  	<ul>
 	  	@foreach($feedbacks as $feed)
@@ -27,7 +27,7 @@
 	  	@endforeach
 	  	</ul>
 	</div> <!--#feedback_feed-->
-</div> --}}
+</div>
 
 <section id="info">
 <p>Jakata is a fashion forward, award winning hairdressing salon in Warrington, Cheshire. With a team of twelve talented hairdressers looking after you, you know you're in good hands.</p>
