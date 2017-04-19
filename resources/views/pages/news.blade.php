@@ -30,7 +30,6 @@ window.addEvent('domready', function(){
 <a id="EL17" class="anchor"></a>
 <section class="visible">
 {{ Html::image('images/newspics/group-shot.jpg', 'Essential Looks') }}
-{{ Html::image('images/newspics/the_teams.jpg', 'The Stylists') }}
 <h2>Essential Looks 2017</h2>
 <p><strong>Every season Schwarzkopf launches their latest 'Essential Looks' collections. Three sets of looks that are inspired by the upcoming trends in Paris, Milan, New York and London.</strong></p>
 <p>We run an internal competition to coincide with the launch of the collections, to get our team members to interpret their favourite Essential Look.</p>
