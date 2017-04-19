@@ -792,11 +792,11 @@ nav li a:hover {
 
 
 #news2 {
-	background: url('/images/home/new_blonde_me.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
+	background: url('/images/home/el_2017.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
 	background-size: contain;
 }
 .no-rgba #news2 {
-	background: url('/images/home/new_blonde_me_small.jpg') no-repeat left top rgb(249, 249, 250);
+	background: url('/images/home/el_2017_small.jpg') no-repeat left top rgb(249, 249, 250);
 }
 
 
