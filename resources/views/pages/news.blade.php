@@ -65,9 +65,9 @@ window.addEvent('domready', function(){
 {{ Html::image('images/newspics/lel_aura_m.jpg', 'Laura\'s entry', ['class' => 'news-image']) }}
 <h3>The Finished Looks</h3>
 {{ Html::image('images/newspics/el_group_shot_big.jpg', 'The finished looks', ['class' => 'news-image']) }}
-<p>The standard of the work for this years competition wa the highest yet! It made judging extremely difficult!</p>
+<p>The standard of the work for this years competition was the highest yet! It made judging extremely difficult!</p>
 <p>After much deliberation the judges decided that <strong>Laura Hall</strong> was the winner with <strong>Natalie Doxey</strong> coming second and <strong>Michelle Railton</strong> third.</p>
-<p>They win the chance to take part in a photoshoot to recreate their looks with proffessional models, plus a session styling course.</p>
+<p>They win the chance to take part in a photoshoot to recreate their looks with professional models, plus a session styling course.</p>
 <p><a href="http://www.schwarzkopf-professional.co.uk/skp/uk/en/home/trends/the-collection.html" target="_blank">See the Schwarzkopf Essential Looks collections that inspired our stylists here ></a></p>
 
 </section> <!--end .hidden-->
