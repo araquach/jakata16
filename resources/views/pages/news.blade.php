@@ -5,10 +5,10 @@
 @include('layouts.partials.head', [
 	'description' => 'All the latest JAKATA news',
 	'keywords' => 'Jakata news, Jakata stories, hairdressing news, salon news',
-	'ogtitle' => 'Maisie Returns after Maternity leave',
-	'ogdescription' => 'After taking 9 months out for maternity leave, we\'re happy to announce the return of Maisie.
-	She\'ll be re-joining the team on a part time basis. Her initial hours are outlined below.',
-	'ogimage' => url('/') . '/images/newspics/maisie_parker_meta.jpg',
+	'ogtitle' => 'Essential Looks 2017 - in-salon competition',
+	'ogdescription' => 'Every season Schwarzkopf launches their latest \'Essential Looks\' collections. Three sets of looks that are inspired by the upcoming trends in Paris, Milan, New York and London.
+	We run an internal competition to coincide with the launch of the collections, to get our team members to interpret their favourite Essential Look.',
+	'ogimage' => url('/') . '/images/newspics/el_group_shot_meta.jpg',
 	'title' => 'Jakata Salon - Hairdressing News - Hairdressers in Warrington'
 	])
 	
@@ -25,6 +25,55 @@ window.addEvent('domready', function(){
 <section id="news">
 
 <section id="accordion">
+
+<article class="article">
+<a id="EL17" class="anchor"></a>
+<section class="visible">
+{{ Html::image('images/newspics/group-shot.jpg', 'Essential Looks') }}
+<h2>Essential Looks 2017</h2>
+<p><strong>Every season Schwarzkopf launches their latest 'Essential Looks' collections. Three sets of looks that are inspired by the upcoming trends in Paris, Milan, New York and London.</strong></p>
+<p>We run an internal competition to coincide with the launch of the collections, to get our team members to interpret their favourite Essential Look.</p>
+<p class="reveal">Read more &gt;</p>
+</section> <!--end .visible-->
+<section class="hidden">
+<h3>The Competitors</h3>
+<p>Stylists from both <strong>Jakata</strong> and sister salon <strong>Paul Kemp Hairdressing</strong> took part in the challenge, all coming up with their own unique take on their favourite look from this season.</p>
+{{ Html::image('images/newspics/el_the_teams_big.jpg', 'The Stylists', ['class' => 'news-image']) }}
+<h3>Abbi Clarke (PK)</h3>
+{{ Html::image('images/newspics/el_abbi.jpg', 'Abbi\'s entry', ['class' => 'news-image']) }}
+<h3>Caleb Barrie (Jakata)</h3>
+{{ Html::image('images/newspics/el_caleb.jpg', 'Caleb\'s entry', ['class' => 'news-image']) }}
+<h3>Jo Mahoney (PK)</h3>
+{{ Html::image('images/newspics/el_jo.jpg', 'Jo\'s entry', ['class' => 'news-image']) }}
+<h3>Kate O'Halleran (PK)</h3>
+{{ Html::image('images/newspics/el_kate.jpg', 'Kate\'s entry', ['class' => 'news-image']) }}
+<h3>Laura Hall (Jakata)</h3>
+{{ Html::image('images/newspics/el_laura__h.jpg', 'Laura\'s entry', ['class' => 'news-image']) }}
+<h3>Layla Relf (Jakata)</h3>
+{{ Html::image('images/newspics/el_layla.jpg', 'Layla\'s entry', ['class' => 'news-image']) }}
+<h3>Louise Bailey (PK)</h3>
+{{ Html::image('images/newspics/el_louise.jpg', 'Louise\'s entry', ['class' => 'news-image']) }}
+<h3>Matt Lane (Jakata)</h3>
+{{ Html::image('images/newspics/el_matt.jpg', 'Matt\'s entry', ['class' => 'news-image']) }}
+<h3>Natalie Doxey (Jakata)</h3>
+{{ Html::image('images/newspics/el_nat.jpg', 'Nat\'s entry', ['class' => 'news-image']) }}
+<h3>Shell Railton (PK)</h3>
+{{ Html::image('images/newspics/el_shell.jpg', 'Shell\'s entry', ['class' => 'news-image']) }}
+<h3>Tash Bailey (PK)</h3>
+{{ Html::image('images/newspics/el_tash.jpg', 'Tash\'s entry', ['class' => 'news-image']) }}
+<h3>Laura Minnett (Jakata)</h3>
+{{ Html::image('images/newspics/lel_aura_m.jpg', 'Laura\'s entry', ['class' => 'news-image']) }}
+<h3>The Finished Looks</h3>
+{{ Html::image('images/newspics/el_group_shot_big.jpg', 'The finished looks', ['class' => 'news-image']) }}
+<p>The standard of the work for this years competition was the highest yet! It made judging extremely difficult!</p>
+<p>After much deliberation the judges decided that <strong>Laura Hall</strong> was the winner with <strong>Natalie Doxey</strong> coming second and <strong>Michelle Railton</strong> third.</p>
+<p>They win the chance to take part in a photoshoot to recreate their looks with professional models, plus a session styling course.</p>
+<p><a href="http://www.schwarzkopf-professional.co.uk/skp/uk/en/home/trends/the-collection.html" target="_blank">See the Schwarzkopf Essential Looks collections that inspired our stylists here ></a></p>
+
+</section> <!--end .hidden-->
+<p class="author">Published by Adam</p>
+<time datetime="2017-04-18">18<sup>th</sup> April 2017</time>
+</article> <!--end #article-->
 	
 <article class="article">
 <a id="MaisieBack" class="anchor"></a>

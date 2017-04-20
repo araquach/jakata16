@@ -37,10 +37,10 @@
 
 <div id="home_news">
 
-<a href="{{ URL::to('news') }}#NewBlondMe">	
+<a href="{{ URL::to('news') }}#EL17">	
 <aside id="news2" class="home_news">
-<h3 class="newsheader">New Bombshell for Blondes</h3>
-<p class="newspara">The revamped BlondMe range is finally here&hellip;</p>
+<h3 class="newsheader">Essential Looks 2017 Competition</h3>
+<p class="newspara">Our stylists interpret the latest Schwarzkopf looks&hellip;</p>
 <p class="newscenter"><strong>Find out more &gt;</strong></p>
 </aside>
 </a>
