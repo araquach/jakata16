@@ -68,6 +68,7 @@ window.addEvent('domready', function(){
 <p>The standard of the work for this years competition was the highest yet! It made judging extremely difficult!</p>
 <p>After much deliberation the judges decided that <strong>Laura Hall</strong> was the winner with <strong>Natalie Doxey</strong> coming second and <strong>Michelle Railton</strong> third.</p>
 <p>They win the chance to take part in a photoshoot to recreate their looks with professional models, plus a session styling course.</p>
+<p>Our apprentice Layla won her catagory with the beautiful cut and colour she did - the standards of which were up there with the senior stylists!</p>
 <p><a href="http://www.schwarzkopf-professional.co.uk/skp/uk/en/home/trends/the-collection.html" target="_blank">See the Schwarzkopf Essential Looks collections that inspired our stylists here ></a></p>
 
 </section> <!--end .hidden-->
