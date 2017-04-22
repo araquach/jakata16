@@ -30,14 +30,12 @@ class FeedbackFormRequest extends Request
             'stylist_appearance' => 'required',
             'prod_advice' => 'required',
             'styling_advice' => 'required',
-            'mkt1' => 'required',
-            'mkt2' => 'required',
-            'mkt3' => 'required',
             'value_for_money' => 'required',
             'whole_experience' => 'required',
             'end_result' => 'required',
             'extra' => '',
             'extra_edit' => '',
+            'client_id' => 'unique:feedbacks,client_id'
         ];
     }
     
@@ -52,7 +50,8 @@ class FeedbackFormRequest extends Request
             'styling_advice.required' => 'Please rate the styling advice given',
             'value_for_money.required' => 'Please rate value for money',
             'whole_experience.required' => 'Please rate your whole experience',
-            'end_result.required' => 'Please rate the end result'
+            'end_result.required' => 'Please rate the end result',
+            'client_id.unique' => 'Sorry - you can only enter once'
         ];
     }
 }

@@ -18,8 +18,6 @@
 @endif
         
 {{ Form::hidden('client_id', $client->id) }}
-
-{{ Form::hidden('salon_id', '1') }}
 	
 <div class="row question">
         {!! Form::label('intro', '1. How was the introduction to your stylist? Did they make you feel welcome and comfortable?') !!}

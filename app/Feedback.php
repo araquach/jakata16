@@ -14,19 +14,4 @@ class Feedback extends Model
     {
         return $this->belongsTo('App\FeedbackClient');
     }
-    
-    public function getSalonIdAttribute($value)
-    {
-        if ($value == 1) {
-            return 'Jakata';
-        }
-        
-        else if ($value == 2) { 
-            return 'Paul Kemp';
-        }
-        
-        else {
-            return 'Undefined';
-        }
-    }
 }
