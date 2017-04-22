@@ -40,7 +40,7 @@ class FollowUp1 extends Command
         
         foreach($women as $woman) {
             
-            Mail::send('emails.prospect.female.followup1', $woman, function($message) use ($woman)
+            Mail::send('emails.prospect.new.female.followup1', $woman, function($message) use ($woman)
        		{
           		$message->from('offers@jakatasalon.co.uk', 'Jakata');
            		
@@ -59,7 +59,7 @@ class FollowUp1 extends Command
         
         foreach($men as $man) {
             
-            Mail::send('emails.prospect.male.followup1', $man, function($message) use ($man)
+            Mail::send('emails.prospect.new.male.followup1', $man, function($message) use ($man)
        		{
           		$message->from('offers@jakatasalon.co.uk', 'Jakata');
            		
