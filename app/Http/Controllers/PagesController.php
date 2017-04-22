@@ -125,7 +125,7 @@ class PagesController extends Controller {
 	
 	public function lauraC()
 	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Laura Crumplin')->orWhere('stylist', '=', 'Laura Hall')
+		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Laura Hall')
 			->whereHas('feedback', function($query)
 			{
 				$query->where('publish', '=', '1');
