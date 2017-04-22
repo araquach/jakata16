@@ -43,5 +43,14 @@ class FeedbackClientsTableSeeder extends Seeder
             'last_name' => 'Peters',
             'mobile' => '0733337373682',
         ]);
+        
+        DB::table('feedback_clients')->insert([
+            'id' => '1456',
+            'iris_id' => '4',
+            'stylist' => 'Laura Crumplin',
+            'first_name' => 'Trevor',
+            'last_name' => 'Smith',
+            'mobile' => '0733337373682',
+        ]);
     }
 }
