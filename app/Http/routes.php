@@ -44,10 +44,8 @@ Route::get('/freeproducts/man/create', 'ProspectController@create');
 Route::post('prospect/store', 'ProspectController@store');
 
 Route::get('/consultation', 'ProspectController@consultation');
-Route::get('/consultation/man', 'ProspectController@freeproducts');
 Route::get('/consultation/create', 'ProspectController@consultationCreate');
-Route::get('/consultation/man/create', 'ProspectController@consultationCreate');
-Route::post('consultation/store', 'ProspectController@consultationStore');
+Route::post('/consultation/store', 'ProspectController@consultationStore');
 
 
 Route::get('feedback/{client}',
