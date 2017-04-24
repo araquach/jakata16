@@ -1,5 +1,5 @@
 {!! Form::open(array(
-	'action' => 'ProspectController@store', 'id' => 'prospect-form'
+	'action' => 'ProspectController@consultationStore', 'id' => 'prospect-form'
 )) !!}
 
 <div class="form">
@@ -19,7 +19,7 @@
     
     {!! Form::hidden('gender', 'F') !!}
     
-    {!! Form::hidden('prospect_type', 1) !!}
+    {!! Form::hidden('prospect_type', 2) !!}
     
     <div class="row">
     	<div class="row">
@@ -51,59 +51,6 @@
     	{!! Form::text('mobile', old('mobile')) !!}
     	{!! $errors->first('mobile', '<div class="errorMessage">:message</div>') !!}
     	</div>
-    </div>
-    
-    <div class="row">
-    	<div class="row">
-    	{!! Form::label('address1', 'Address 1') !!}
-    	{!! Form::text('address1', old('address1')) !!}
-    	{!! $errors->first('address1', '<div class="errorMessage">:message</div>') !!}
-    	</div>
-    </div>
-    
-    <div class="row">
-    	<div class="row">
-    	{!! Form::label('address2', 'Address 2') !!}
-    	{!! Form::text('address2', old('address2')) !!}
-    	{!! $errors->first('address2', '<div class="errorMessage">:message</div>') !!}
-    	</div>
-    </div>
-    
-    <div class="row">
-    	<div class="row">
-    	{!! Form::label('town', 'Town') !!}
-    	{!! Form::text('town', old('town')) !!}
-    	{!! $errors->first('town', '<div class="errorMessage">:message</div>') !!}
-    	</div>
-    </div>
-    
-    <div class="row">
-    	<div class="row">
-    	{!! Form::label('postcode', 'Post Code') !!}
-    	{!! Form::text('postcode', old('postcode')) !!}
-    	{!! $errors->first('postcode', '<div class="errorMessage">:message</div>') !!}
-    	</div>
-    </div>
-    
-    <div class="row">
-    	{!! Form::label('texture', 'How would you describe your hair texture?') !!}
-    	{!! Form::select('texture', array(
-    		'fine' => 'Fine',
-    		'normal' => 'Normal',
-    		'coarse' => 'Coarse'
-    		), old('texture'), ['placeholder' => '-- Please Select --']) !!}
-    	{!! $errors->first('texture', '<div class="errorMessage">:message</div>') !!}
-    </div>
-    
-    <div class="row">
-    	{!! Form::label('condition', 'How would you describe your hair condition?') !!}
-    	{!! Form::select('condition', array(
-    		'overprocessed' => 'Overprocessed',
-    		'dry' => 'Dry',
-    		'normal' => 'Normal',
-    		'oily' => 'Oily'
-    		), old('condition'), ['placeholder' => '-- Please Select --']) !!}
-    	{!! $errors->first('condition', '<div class="errorMessage">:message</div>') !!}
     </div>
     
     <div class="row">

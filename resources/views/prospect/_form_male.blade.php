@@ -19,6 +19,8 @@
     
     {!! Form::hidden('gender', 'M') !!}
     
+    {!! Form::hidden('prospect_type', 1) !!}
+    
     <div class="row">
     	<div class="row">
     	{!! Form::label('first_name', 'First Name') !!}
