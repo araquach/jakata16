@@ -14,7 +14,7 @@ class ProspectController extends Controller
 {
     public function __construct(Prospect $prospect)
 	{
-		$this->middleware('auth', ['except' => ['freeproducts', 'create', 'store', 'consultation', 'consultationCreate', 'coansultationStore']]);
+		$this->middleware('auth', ['except' => ['freeproducts', 'create', 'store', 'taster', 'tasterCreate', 'tasterStore']]);
 		
 		$this->prospect = $prospect;
 	}
@@ -77,9 +77,9 @@ class ProspectController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    public function consultation()
+    public function taster()
     {
-        return view('prospect.consultation');
+        return view('prospect.taster');
     }
     
     /**
@@ -88,9 +88,9 @@ class ProspectController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    public function consultationCreate()
+    public function tasterCreate()
     {
-        return view('prospect.consultationCreate');
+        return view('prospect.tasterCreate');
     }
 
     /**
@@ -99,7 +99,7 @@ class ProspectController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function coansultationStore(ProspectFormRequest $request)
+    public function tasterStore(ProspectFormRequest $request)
     {
         $input = $request->all();
         

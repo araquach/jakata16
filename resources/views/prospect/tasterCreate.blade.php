@@ -3,7 +3,7 @@
 @section('head')
 
 @include('layouts.partials.pros_head', [
-	'title' => 'Free Products'
+	'title' => 'New Client Taster Package'
 	])
 	
 @stop
@@ -19,7 +19,7 @@
 <h2>Your Route to perfect hair</h2>
 
 <p>All this is <span class="red">completely FREE</span> and there is no obligation to book - 
-	but there might be some special incentives on the day <span class="red">(including FREE products and special offers)!</span></p>
+	there might even be some special incentives on the day <span class="red">(including FREE products and special offers!)</span></p>
 <p><strong>Just fill in the form below and we'll be in touch!</strong></p>
 	
 @if(Session::has('message'))
@@ -29,7 +29,7 @@
 	</div>
 @else
 
-	@include('prospect._form_consult')
+	@include('prospect._form_taster')
 
 @endif
 

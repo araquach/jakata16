@@ -1,5 +1,5 @@
 {!! Form::open(array(
-	'action' => 'ProspectController@consultationStore', 'id' => 'prospect-form'
+	'action' => 'ProspectController@tasterStore', 'id' => 'prospect-form'
 )) !!}
 
 <div class="form">
@@ -52,6 +52,16 @@
     	{!! $errors->first('mobile', '<div class="errorMessage">:message</div>') !!}
     	</div>
     </div>
+    
+    {!! Form::hidden('address1', 'NA') !!}
+    
+    {!! Form::hidden('town', 'NA') !!}
+    
+    {!! Form::hidden('postcode', 'NA') !!}
+    
+    {!! Form::hidden('texture', 'NA') !!}
+    
+    {!! Form::hidden('condition', 'NA') !!}
     
     <div class="row">
     	{!! Form::label('cut_spend', 'How much do you spend on average for a cut and blow?') !!}
