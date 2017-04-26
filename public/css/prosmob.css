@@ -64,6 +64,10 @@ header h2 {
 	background-size: 80%;
 }
 
+#address_info {
+	display: none;
+}
+
 #prospect {
 	width: auto;
 	margin: auto;
@@ -120,11 +124,12 @@ header h2 {
 	padding: 20px;
 	border-left: none;
 	min-height: 0;
+	margin-top: 0;
 }
 
 #prospect-entry h2 {
 	font: 3.3em Georgia, "Times New Roman", Times, serif;
-	margin: 40px 0;
+	margin: 10px 0;
 }
 
 #prospect-entry a {
