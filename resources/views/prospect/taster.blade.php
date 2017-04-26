@@ -41,7 +41,7 @@
 		<p>You'll get to experience the salon and meet our fantastic team. 
 			We'll discuss all your hair needs, advise you on styling, products and let you know the best route to achieving the hairstyle you've always wanted!</p>
 	
-		<a href="{{ URL::to('taster/create') }}#prospect-entry" class="link taster">Click here to arrange yours</a>
+		<a href="{{ URL::to('taster/create') }}#prospect-entry" class="link">Click here to arrange yours</a>
 
 	
 	</section>  <!--prospect-entry-->
