@@ -129,7 +129,7 @@ header h2 {
 
 #prospect-entry h2 {
 	font: 3.3em Georgia, "Times New Roman", Times, serif;
-	margin: 10px 0;
+	margin: 10px 0
 }
 
 #prospect-entry a {
@@ -142,6 +142,8 @@ header h2 {
 	color: #FFF;
 	font-size: 1.3em;
 	opacity: 1;
+	margin-top: 40px;
+	margin-bottom: 80px;
 }
 
 #prospect-entry a:hover {
