@@ -45,6 +45,18 @@ class ProspectController extends Controller
     }
     
     /**
+     * Display the specified resource.
+     *
+     * @param  \App\Prospect  $prospect
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function tasterShow(Prospect $prospect)
+    {
+        return view('prospect.admin.taster.show', compact('prospect'));
+    }
+    
+    /**
      * Display a list of free product applicants.
      *
      * @return \Illuminate\Http\Response
@@ -57,6 +69,17 @@ class ProspectController extends Controller
         return view('prospect.admin.freeproducts.index', compact('prospects'));
     }
     
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Prospect  $prospect
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function freeproductsShow(Prospect $prospect)
+    {
+        return view('prospect.admin.freeproducts.show', compact('prospect'));
+    }
     
     
     /**
