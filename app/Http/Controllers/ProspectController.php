@@ -19,11 +19,52 @@ class ProspectController extends Controller
 		$this->prospect = $prospect;
 	}
     
+    
+    /**
+     * Display the prospect admin page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function admin()
+    {
+        return view('prospect.admin.index');
+    }
+    
+    /**
+     * Display a list of taster applicants.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function tasterIndex()
+    {
+        $prospects = Prospect::where('prospect_type', '2')->get();
+        
+        return view('prospect.admin.taster.index', compact('prospects'));
+    }
+    
+    /**
+     * Display a list of free product applicants.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function freeproductsIndex()
+    {
+        $prospects = Prospect::where('prospect_type', '1')->get();
+        
+        return view('prospect.admin.freeproducts.index', compact('prospects'));
+    }
+    
+    
+    
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
         $prospects = $this->prospect->get();

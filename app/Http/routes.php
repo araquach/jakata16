@@ -37,6 +37,10 @@ Route::post('sendEmail',
 Route::resource('apprentice', 'ApprenticeController');
 Route::resource('stylist', 'StylistController');
 
+Route::get('/prospect/admin', 'ProspectController@admin');
+Route::get('/prospect/admin/taster', 'ProspectController@tasterIndex');
+Route::get('/prospect/admin/freeproducts', 'ProspectController@freeproductsIndex');
+
 Route::get('/freeproducts', 'ProspectController@freeproducts');
 Route::get('/freeproducts/man', 'ProspectController@freeproducts');
 Route::get('/freeproducts/create', 'ProspectController@create');

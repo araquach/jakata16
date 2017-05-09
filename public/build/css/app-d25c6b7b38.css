@@ -1503,6 +1503,41 @@ p.reveal {
 
 /*---- general ----*/
 
+#blank {
+	width: 850px;
+	background-color: #f5f5f5;
+	padding-top: 250px;
+	padding-bottom: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	min-height: 500px;
+}
+
+#blank h1 {
+	margin-bottom: 30px;
+}
+
+#blank .view {
+	padding-bottom: 10px;
+}
+
+#blank .view table {
+	width: 80%;
+}
+
+#blank .view table td,
+#blank .view table th {
+	padding: 5px;
+}
+
+#blank .view table,
+#blank .view table th,
+#blank .view table tr,
+#blank .view table td {
+	border: 1px solid #888;
+}
+
+
 
 #recruitment {
 	width: 950px;
