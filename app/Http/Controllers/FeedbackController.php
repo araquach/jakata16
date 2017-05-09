@@ -60,9 +60,7 @@ class FeedbackController extends Controller
 		Mail::send(['text' => 'sms.feedback'], $recipient, function($message) use ($recipient)
    		{
        		$message->from('enquiries@jakatasalon.co.uk');
-       		
        		$message->subject('JAKATA');
-
        		$message->to($recipient['mobile'] . '@smsid.textapp.net');
    		});
 	    
