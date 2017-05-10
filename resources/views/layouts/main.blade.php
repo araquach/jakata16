@@ -17,35 +17,47 @@
 			<h1>Jakata Salon</h1>
 			<h2>Hairdressers in Warrington</h2>
 
-			
-			@if(Auth::user())
-			
+			@if(Request::is('prospect/*'))
 			<nav class="group">
 				<ul>
-					<li>{!! link_to('/admin', 'Menu') !!}</li>
-					@if(Auth::user()->role == 1)
-					<li>{!! link_to('/stylist', 'Stylists') !!}</li>
-					<li>{!! link_to('/apprentice', 'Apprentices') !!}</li>
-					<li>{!! link_to('/superstylist/admin', 'SS Admin') !!}</li>
-					@endif
+					<li>{!! link_to('prospect/taster', 'Taster Package applicants') !!}</li>
+					<li>{!! link_to('prospect/freeproducts', 'Free Product applicants') !!}</li>
 					<li>{!! link_to('/logout', 'Logout') !!}</li>
 				</ul>
 			</nav>
 			
-			@else
+			@elseif(!Request::is('prospect/*'))
 			
-			<nav class="group">
-				<ul>
-					<li>{!! link_to('/', 'Home') !!}</li>
-					<!--<li>{!! link_to('offers', 'Offers') !!}</li>-->
-					<li>{!! link_to('recruitment', 'Recruitment') !!}</li>
-					<li>{!! link_to('team', 'Team') !!}</li>
-					<li>{!! link_to('prices', 'Prices') !!}</li>
-					<li>{!! link_to('news', 'News') !!}</li>
-					<li>{!! link_to('details', 'Contact') !!}</li>
-				</ul>
-			</nav>
-			
+				@if(Auth::user())
+				
+				<nav class="group">
+					<ul>
+						<li>{!! link_to('/admin', 'Menu') !!}</li>
+						@if(Auth::user()->role == 1)
+						<li>{!! link_to('/stylist', 'Stylists') !!}</li>
+						<li>{!! link_to('/apprentice', 'Apprentices') !!}</li>
+						<li>{!! link_to('/superstylist/admin', 'SS Admin') !!}</li>
+						@endif
+						<li>{!! link_to('/logout', 'Logout') !!}</li>
+					</ul>
+				</nav>
+				
+				@else
+				
+				<nav class="group">
+					<ul>
+						<li>{!! link_to('/', 'Home') !!}</li>
+						<!--<li>{!! link_to('offers', 'Offers') !!}</li>-->
+						<li>{!! link_to('recruitment', 'Recruitment') !!}</li>
+						<li>{!! link_to('team', 'Team') !!}</li>
+						<li>{!! link_to('prices', 'Prices') !!}</li>
+						<li>{!! link_to('news', 'News') !!}</li>
+						<li>{!! link_to('details', 'Contact') !!}</li>
+					</ul>
+				</nav>
+				
+				@endif
+				
 			@endif
 			
 		</header>

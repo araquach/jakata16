@@ -16,8 +16,6 @@
 	
 	<h2>Welcome {{ Auth::user()->name }}</h2>
 	
-	
-	
 	<ul>
 		@if(Auth::user()->role == 1)
 			<li>{!! link_to('stylist', 'Stylist Applicants', ['class' => 'link-button']) !!}</li>
