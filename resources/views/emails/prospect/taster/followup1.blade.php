@@ -12,7 +12,7 @@
     
 <!--Image 600px x 300px-->
 @section('hero_image')
-   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header_4.jpg
+   http://2183bb2632b00d8aa0b3-40e51394fe766397114262205a4ab22d.r37.cf5.rackcdn.com/email_header_2.jpg
 @stop
 
 @section('section1')
@@ -22,9 +22,9 @@
                                         Hi {{ $first_name }},
                                     @endif</span>
     <br><br>
-    <strong>Thanks for applying for your FREE products.</strong>
+    Thanks for your interest in our <strong>New Client Taster Package.</strong>
     <br><br>
-    We've selected a range that's ideal for your hair texture and condition. We'll let you know when they're on the way to you.
+    We think it's a great way for you to get a taste of how talented our diverse team are, especially as going to a new salon can be such a daunting prospect!
 @stop
 
 <!--Image 200px wide-->
@@ -38,8 +38,8 @@
 @stop
 
 @section('section2')
-    <strong>As you've never been to Jakata before we'd love you to experience the salon for yourself.</strong> 
-    <br><br>We have a team of ten talented, friendly staff ready to look after you.
+    <strong>As you've never been to Jakata before we'd love you to experience the salon for yourself - and it's completely FREE</strong> 
+    <br><br>Our team of ten talented, friendly staff are ready to look after you.
     We've won numerous hairdressing awards and you only have to look at our customer testimonials and Facebook reviews to see how highly rated we are.
     <br><br>
     <a href="https://www.facebook.com/JakataSalon/">Jakata Facebook page</a>
@@ -51,15 +51,23 @@
                                     @else 
                                         {!! getStylists($cut_spend, $colour_spend, $gender) !!}
                                     @endif </strong>
-    would be great for you to try. 
-    We're sending out a voucher along with your products so you can  experience a <strong>FREE Blow Dry and @if(App::isLocal())
-                                        {!! getTreatment($prospect->texture, $prospect->condition) !!} 
-                                    @else 
-                                        {!! getTreatment($texture, $condition) !!}
-                                    @endif 
-    treatment</strong> with them. 
+    would be great for you to try. <strong>Our reception team will contact you soon to arrange a suitable time for you to book in with us for your package.</strong>
     <br><br>
-    <strong>I'm sure once you've experienced Jakata you won't want to go anywhere else!</strong>
+    <strong>Here's what you can expect on the day:</strong>
+    <br>
+    <ul>
+		<li>Time out to asses your hair</li>
+		<li>Styling advice from an experienced professional</li>
+		<li>Discuss future and current fashion trends</li>
+		<li>A FREE blow dry or dry styling</li>
+		<li>Haircare tips and product information</li>
+		<li>A plan set for any hair recovery you may need</li>
+		<li>Start things moving towards achieving the look you want</li>
+		<li>Make you aware of any special offers on future appointments</li>
+	</ul>
+	You'll get to experience the salon and meet our fantastic team. 
+			We'll discuss all your hair needs, advise you on styling, products and let you know the best route to achieving the hairstyle you've always wanted!<br>
+    <strong>You'll also get to take away some FREE products too!</strong>
 @stop
 
 @section('section4')

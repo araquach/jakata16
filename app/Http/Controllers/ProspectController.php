@@ -238,7 +238,7 @@ class ProspectController extends Controller
     {
         $prospect = Prospect::where('gender', 'F')->firstOrFail();
         
-        return view('emails.prospect.new.female.followup1', compact('prospect'));
+        return view('emails.prospect.taster.followup1', compact('prospect'));
     }
     
     public function emailFemale2()
