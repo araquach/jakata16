@@ -16,7 +16,7 @@
 @stop
 
 @section('section1')
-    <span style="font-size: 20px;">@if(!App::isLocal())
+    <span style="font-size: 20px;">@if(App::isLocal())
                                         Hi {{ $prospect->first_name }}, 
                                     @else 
                                         Hi {{ $first_name }},
@@ -46,13 +46,13 @@
 @stop
 
 @section('section3')
-    Based on the information you gave, we think <strong>@if(!App::isLocal())
+    Based on the information you gave, we think <strong>@if(App::isLocal())
                                         {!! getStylists($prospect->cut_spend, $prospect->colour_spend, $prospect->gender) !!}
                                     @else 
                                         {!! getStylists($cut_spend, $colour_spend, $gender) !!}
                                     @endif </strong>
     would be great for you to try. 
-    We're sending out a voucher along with your products so you can  experience a <strong>FREE Blow Dry and @if(!App::isLocal())
+    We're sending out a voucher along with your products so you can  experience a <strong>FREE Blow Dry and @if(App::isLocal())
                                         {!! getTreatment($prospect->texture, $prospect->condition) !!} 
                                     @else 
                                         {!! getTreatment($texture, $condition) !!}
