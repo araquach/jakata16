@@ -11,14 +11,14 @@
 @section('content')
 
 <div id="admin">
-
-<h1>Applicant Name: {{ $prospect->first_name }} {{ $prospect->last_name }}</h1>
-
+	
 @if(Session::has('message'))
     <div class="message">
         {{{ Session::get('message') }}}
     </div>
 @endif
+
+<h1>Applicant Name: {{ $prospect->first_name }} {{ $prospect->last_name }}</h1>
 
 <ul>
     <li><strong>Application date:</strong> {{ $prospect->created_at->format('d/m/Y') }}</li>

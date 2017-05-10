@@ -215,15 +215,15 @@ class ProspectController extends Controller
         Mail::send('emails.prospect.taster.followup1', $recipient, function($message) use ($recipient)
    		{
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
-			$message->to('adam@jakatasalon.co.uk');
-       		$message->subject('Test');
+			$message->to($recipient->email);
+       		$message->subject('New Client Taster Package');
    		});
    		
    		Mail::send('emails.prospect.taster.to_reception', $recipient, function($message) use ($recipient)
    		{
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
-			$message->to('adam@jakatasalon.co.uk');
-       		$message->subject('Test');
+			$message->to('jimmy@jakatasalon.co.uk');
+       		$message->subject('Taster Package Applicant');
    		});
         
         return redirect()->to(app('url')->previous(). '#success')->with('message', 'Thanks for applying - you will receive your products soon!');
