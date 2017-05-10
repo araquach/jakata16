@@ -38,10 +38,16 @@ Route::resource('apprentice', 'ApprenticeController');
 Route::resource('stylist', 'StylistController');
 
 Route::get('/prospect/admin', 'ProspectController@admin');
-Route::get('/prospect/admin/taster', 'ProspectController@tasterIndex');
-Route::get('/prospect/admin/freeproducts', 'ProspectController@freeproductsIndex');
-Route::get('/prospect/admin/freeproducts/{prospect}', 'ProspectController@freeproductsShow' );
-Route::get('/prospect/admin/taster/{prospect}', 'ProspectController@tasterShow' );
+Route::patch('prospect/{prospect}', 'ProspectController@update');
+Route::get('prospect/{prospect}/note',
+  ['as' => 'prospectNoteCreate', 'uses' => 'ProspectController@createNote']);
+Route::post('prospect/note',
+  ['uses' => 'prospectController@storeNote']);
+
+Route::get('/prospect/taster', 'ProspectController@tasterIndex');
+Route::get('/prospect/freeproducts', 'ProspectController@freeproductsIndex');
+Route::get('/prospect/freeproducts/{prospect}', 'ProspectController@freeproductsShow' );
+Route::get('/prospect/taster/{prospect}', 'ProspectController@tasterShow' );
 
 Route::get('/freeproducts', 'ProspectController@freeproducts');
 Route::get('/freeproducts/man', 'ProspectController@freeproducts');

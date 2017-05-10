@@ -39,7 +39,7 @@ class ProspectController extends Controller
     
     public function tasterIndex()
     {
-        $prospects = Prospect::where('prospect_type', '2')->get();
+        $prospects = Prospect::where('prospect_type', '2')->orderBy('created_at', 'desc')->get();
         
         return view('prospect.admin.taster.index', compact('prospects'));
     }
@@ -64,7 +64,7 @@ class ProspectController extends Controller
     
     public function freeproductsIndex()
     {
-        $prospects = Prospect::where('prospect_type', '1')->get();
+        $prospects = Prospect::where('prospect_type', '1')->orderBy('created_at', 'desc')->get();
         
         return view('prospect.admin.freeproducts.index', compact('prospects'));
     }
@@ -94,6 +94,19 @@ class ProspectController extends Controller
 		
 		return view('prospect.index', compact('prospects'));
     }
+    
+    /**
+	 * Update the specified resource in storage.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function update(Request $request, Prospect $prospect)
+	{
+		$prospect->update($request->all());
+		
+		return redirect()->back()->with('message', 'Contact status updated');
+	}
 
     
     /**
@@ -155,6 +168,31 @@ class ProspectController extends Controller
     public function tasterCreate()
     {
         return view('prospect.tasterCreate');
+    }
+    
+    /**
+	 * 
+	 * Display the note form
+	 * 
+	 * @return Response
+	 */
+    public function createNote(Prospect $prospect, ProspectNote $note)
+    {
+        return view('prospect.admin.note_create', compact('prospect', 'note'));
+    }
+    
+    /**
+	 * Store a newly created note.
+	 *
+	 * @return Response
+	 */
+    public function storeNote(Request $request, Prospect $prospect, ProspectNote $note)
+    {
+        $input = $request->all();
+        
+        ProspectNote::create($input);
+        
+        return redirect()->back()->with('message', 'Note added');
     }
 
     /**

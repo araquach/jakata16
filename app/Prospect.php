@@ -14,4 +14,9 @@ class Prospect extends Model
     {
         return $this->hasMany('App\ProspectOffer');
     }
+    
+    public function notes()
+    {
+        return $this->hasMany('App\ProspectNote');
+    }
 }

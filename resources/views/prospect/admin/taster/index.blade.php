@@ -26,9 +26,9 @@
     		<tr>
     		@foreach($prospects as $prospect)
     			<td>{{ $prospect->created_at->format('d/m/Y') }}</td>
-    			<td><a href="/prospect/{{ $prospect->id }}">{{ $prospect->first_name }} {{ $prospect->last_name }}</a></td>
+    			<td><a href="/prospect/taster/{{ $prospect->id }}">{{ $prospect->first_name }} {{ $prospect->last_name }}</a></td>
     			<td>{{ getStylists($prospect->cut_spend, $prospect->colour_spend, $prospect->gender) }}</td>
-    			<td>{{-- getContactStatus($prospect->contact_status) --}}</td>
+    			<td>{{ $prospect->contact_status }}</td>
     		</tr>
     		@endforeach
 	    </table>
