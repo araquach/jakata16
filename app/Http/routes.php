@@ -45,7 +45,9 @@ Route::post('prospect/note', 'ProspectController@storeNote');
 Route::get('/prospect/taster', 'ProspectController@tasterIndex');
 Route::get('/prospect/freeproducts', 'ProspectController@freeproductsIndex');
 Route::get('/prospect/freeproducts/{prospect}', 'ProspectController@freeproductsShow' );
-Route::get('/prospect/taster/{prospect}', 'ProspectController@tasterShow' );
+// Route::get('/prospect/taster/{prospect}', 'ProspectController@tasterShow');
+
+Route::get('/prospect/taster/{prospect}', ['as' => 'prospect.show', 'uses' => 'ProspectController@tasterShow']);
 
 Route::get('/freeproducts', 'ProspectController@freeproducts');
 Route::get('/freeproducts/man', 'ProspectController@freeproducts');

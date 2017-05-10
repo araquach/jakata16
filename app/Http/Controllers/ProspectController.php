@@ -193,7 +193,9 @@ class ProspectController extends Controller
         
         ProspectNote::create($input);
         
-        return redirect()->back()->with('message', 'Note added');
+        $id = ProspectNote::orderBy('id', 'desc')->firstOrFail();
+        
+        return redirect()->route('prospect.show', ['id' => $id->prospect_id]);
     }
 
     /**

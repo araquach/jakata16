@@ -17,6 +17,6 @@ class Prospect extends Model
     
     public function notes()
     {
-        return $this->hasMany('App\ProspectNote');
+        return $this->hasMany('App\ProspectNote')->orderBy('id', 'desc');
     }
 }
