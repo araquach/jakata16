@@ -26,8 +26,6 @@
     <li><strong>Mobile Number:</strong> {{ $prospect->mobile }}</li>
 </ul>
 
-{{--
-
 @if(count($prospect->notes) > 0)
 <h2>Notes:</h2>
 @endif
@@ -38,8 +36,6 @@
     
     @endforeach
 </ul>
-
---}}
 
 {!! Form::model($prospect, [
     'method' => 'PATCH',
@@ -66,7 +62,7 @@
 
 {!! Form::close() !!}
 
-<a href="/prospect/taster/{{ $prospect->id }}/note" class="link-button">Notes</a><br>
+<a href="/prospect/{{ $prospect->id }}/note" class="link-button">Notes</a><br>
 
 {!! link_to('prospect/taster', 'Back to all the applicants', ['class' => 'link-button']) !!}
 

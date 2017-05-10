@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Prospect;
+use App\ProspectNote;
 use Illuminate\Http\Request;
 use App\Http\Requests\ProspectFormRequest;
 use Mail;

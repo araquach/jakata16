@@ -39,10 +39,8 @@ Route::resource('stylist', 'StylistController');
 
 Route::get('/prospect/admin', 'ProspectController@admin');
 Route::patch('prospect/{prospect}', 'ProspectController@update');
-Route::get('prospect/{prospect}/note',
-  ['as' => 'prospectNoteCreate', 'uses' => 'ProspectController@createNote']);
-Route::post('prospect/note',
-  ['uses' => 'prospectController@storeNote']);
+Route::get('prospect/{prospect}/note', 'ProspectController@createNote');
+Route::post('prospect/note', 'ProspectController@storeNote');
 
 Route::get('/prospect/taster', 'ProspectController@tasterIndex');
 Route::get('/prospect/freeproducts', 'ProspectController@freeproductsIndex');
