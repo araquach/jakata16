@@ -17,13 +17,11 @@
 	<section id="prospect-entry">
 	
 		<h2 class="red">Your route to hair perfection</h2>
-
-		
 		
 		<p><em>Choosing a new salon and stylist can be a daunting prospect. We can make it really easy for you!</em><br>
 		<p>Simply book in with us for our</p>
 		<h1 class="red">New Client Taster Package</h1>
-		<p class ="red">It's completely FREE</p>
+		<p class ="red"><strong>It's completely FREE</strong></p>
 		
 		<section id="prospect-offer-image"></section>
 		
