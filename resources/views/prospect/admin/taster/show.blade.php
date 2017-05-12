@@ -24,6 +24,7 @@
     <li><strong>Application date:</strong> {{ $prospect->created_at->format('d/m/Y') }}</li>
     <li><strong>Email Address:</strong> {{ $prospect->email }}</li>
     <li><strong>Mobile Number:</strong> {{ $prospect->mobile }}</li>
+    <li><strong>Stylists:</strong> {{ getStylists($prospect->cut_spend, $prospect->colour_spend, $prospect->gender) }}</li>
 </ul>
 
 @if(count($prospect->notes) > 0)
