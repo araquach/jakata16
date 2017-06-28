@@ -1234,6 +1234,71 @@ h4.price_stylist {
 
 /* @end */
 
+/* @group Blog */
+
+#blog {
+	width: 950px;
+	height: 100%;
+	background-color: #f5f5f6;
+	padding-top: 250px;
+	padding-bottom: 200px;
+}
+
+#blog article {
+	margin: 20px 0;
+	border-top: 1.5px solid rgb(55,34,24);
+	padding-top: 30px;
+	position: relative;
+	min-height: 200px;
+	float:left;
+	clear: left;
+}
+
+.blog-pic {
+	float: left;
+	width: 300px;
+}
+
+.blog-pic img {
+	float: left;
+	clear: left;
+	margin-bottom: 30px;
+}
+
+.blog-copy {
+	float: right;
+	width: 500px;
+}
+
+.blog-copy p:first-of-type {
+	font-size: 1.2em;
+}
+
+#blog a {
+	color: rgb(55,34,24);
+	font-size: 1.5em;
+	display: block;
+	width: auto;
+	margin-top: 40px;
+}
+
+#blog a:hover {
+	opacity: .7;
+}
+
+.author,
+time {
+	font-family: 'PT Sans', sans-serif;
+	font-size: .8em;
+	opacity: .8;
+}
+
+#blog article:first-of-type {
+	border: none;
+}
+
+/* @end */
+
 /* @group News */
 
 #news {
