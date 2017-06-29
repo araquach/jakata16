@@ -25,7 +25,7 @@
                 <h2>{{ $blog->title }}</h2>
                 
                 <p>{{ $blog->paras()->first()->para }}</p>
-                <p><a href="{{ URL::to('blog') }}/{{ $blog->id }}">Read more &gt;</a></p>
+                <p><a href="{{ URL::to('blog') }}/{{ $blog->slug }}">Read more &gt;</a></p>
                 <p class="author">Published by {{ $blog->author }}</p>
                 <time datetime="{{-- $blog->created_at --}}">{{ $blog->created_at->format('d/m/Y') }}</time>
             </div>
