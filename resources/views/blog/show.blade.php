@@ -26,7 +26,7 @@
         
             
             @if(starts_with($para->para, '*H1*'))
-            <h2>{{ $para->para }}</h2>
+            <h3>{{ removeTag($para->para) }}</h3>
             @else
             <p>{{ $para->para }}</p>
             @endif

@@ -236,4 +236,9 @@ function getTreatment($texture, $condition)
         default:
             return "";
     }
+    
+    function removeTag($string)
+    {
+        return substr(strstr($string," "), 1);
+    }
 }
