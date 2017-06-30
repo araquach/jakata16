@@ -16,6 +16,8 @@ class CreateBlogParasTable extends Migration
             $table->increments('id');
             $table->integer('blog_id');
             $table->text('para');
+            $table->string('para_pic')->nullable();
+            $table->string('para_pic_alt')->nullable();
             $table->timestamps();
         });
     }

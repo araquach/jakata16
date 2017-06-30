@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Blog;
-use App\BlogPic;
 use App\BlogPara;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -17,7 +16,7 @@ class BlogController extends Controller
     
     public function index()
     {
-        $blogs = Blog::where('publish', 1)->with('pics')->with('paras')->get();
+        $blogs = Blog::where('publish', 1)->with('paras')->get();
         
         return view('blog.index', compact('blogs'));
     }

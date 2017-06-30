@@ -15,11 +15,6 @@ class Blog extends Model
         return 'slug';
     }
     
-    public function pics()
-    {
-        return $this->hasMany('App\BlogPic')->orderBy('id', 'asc');
-    }
-    
     public function paras()
     {
         return $this->hasMany('App\BlogPara')->orderBy('id', 'asc');

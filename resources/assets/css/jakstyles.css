@@ -731,7 +731,7 @@ h4.price_stylist {
 
 #blog article {
 	margin: 20px 0;
-	margin-left: 40px;
+	margin-left: 60px;
 	border-top: 1.5px solid rgb(55,34,24);
 	padding-top: 30px;
 	position: relative;
@@ -741,7 +741,7 @@ h4.price_stylist {
 }
 
 .blog-pic {
-	float: left;
+	float: right;
 	width: 300px;
 }
 
@@ -752,7 +752,7 @@ h4.price_stylist {
 }
 
 .blog-copy {
-	float: right;
+	float: left;
 	width: 500px;
 }
 

@@ -21,6 +21,5 @@ class DatabaseSeeder extends Seeder
         $this->call(OffersTableSeeder::class);
         $this->call(BlogsTableSeeder::class);
         $this->call(BlogParasTableSeeder::class);
-        $this->call(BlogPicsTableSeeder::class);
     }
 }

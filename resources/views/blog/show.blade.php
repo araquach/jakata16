@@ -4,11 +4,11 @@
 
 @include('layouts.partials.head', [
 	'description' => addslashes($blog->paras()->first()),
-	'keywords' => 'Paul Kemp Hairdressing news, PK news stories',
+	'keywords' => 'Jakata Salon news, Jakata news stories',
 	'ogtitle' => addslashes($blog->title),
 	'ogdescription' => addslashes($blog->paras->first()->para),
 	'ogimage' => $blog->meta_image,
-	'title' => 'Paul Kemp Hairdressing -' . addslashes($blog->title) . '- Hairdressers in Warrington'
+	'title' => 'Jakata Salon -' . addslashes($blog->title) . '- Hairdressers in Warrington'
 	])
 @stop
 
@@ -17,22 +17,18 @@
 <section id="blog">
 
     <article>
-        <div class="blog-pic">
-            @foreach($blog->pics as $pic)
-                <img src="{{ $pic->image_url }}" alt="{{ $pic->alt }}">
-            @endforeach
-        </div>
-        <div class="blog-copy">
-            <h2>{{ $blog->title }}</h2>
-            
-            @foreach($blog->paras as $para)
+        <h2>{{ $blog->title }}</h2>
+        
+        <img src="{{ $blog->image_url }}" alt="{{ $blog->image_alt }}">
+        
+        @foreach($blog->paras as $para)
             <p>{{ $para->para }}</p>
-            @endforeach
-            
-            <p><a href="{{ URL::to('blog') }}">Back to all the blogs &gt;</a></p>
-            <p class="author">Published by {{ $blog->author }}</p>
-            <time datetime="{{ $blog->created_at }}">{{ $blog->created_at->format('d/m/Y') }}</time>
-        </div>
+            <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
+        @endforeach
+        
+        <p><a href="{{ URL::to('blog') }}">Back to all the blogs &gt;</a></p>
+        <p class="author">Published by {{ $blog->author }}</p>
+        <time datetime="{{ $blog->created_at }}">{{ $blog->created_at->format('d/m/Y') }}</time>
     </article>
 
 </section>
