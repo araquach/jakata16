@@ -19,13 +19,14 @@
     <article>
         <h2>{{ $blog->title }}</h2>
         
-        <img src="{{ $blog->image_url }}" alt="{{ $blog->image_alt }}">
-        
         @foreach($blog->paras as $para)
-            <p>{{ $para->para }}</p>
-            <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
-        @endforeach
+            <div class="blog-pic">
+                <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
+            </div>
         
+            <p>{{ $para->para }}</p>
+            
+        @endforeach
         <p><a href="{{ URL::to('blog') }}">Back to all the blogs &gt;</a></p>
         <p class="author">Published by {{ $blog->author }}</p>
         <time datetime="{{ $blog->created_at }}">{{ $blog->created_at->format('d/m/Y') }}</time>

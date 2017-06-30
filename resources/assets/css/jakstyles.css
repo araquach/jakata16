@@ -740,24 +740,22 @@ h4.price_stylist {
 	clear: left;
 }
 
-.blog-pic {
-	float: right;
-	width: 300px;
-}
-
-.blog-pic img {
+.blog-pic{
 	float: left;
 	clear: left;
+	width: 300px;
 	margin-bottom: 30px;
 }
 
-.blog-copy {
-	float: left;
+#blog p {
+	margin: 0;
+	margin-bottom: 1.5em;
 	width: 500px;
+	margin-left: 300px;
 }
 
-.blog-copy p:first-of-type {
-	font-size: 1.2em;
+#blog p:first-of-type {
+	font-weight: bold;
 }
 
 #blog h2 {
