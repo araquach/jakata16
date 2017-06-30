@@ -24,7 +24,12 @@
                 <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
             </div>
         
+            
+            @if(starts_with($para->para, '*H1*'))
+            <h2>{{ $para->para }}</h2>
+            @else
             <p>{{ $para->para }}</p>
+            @endif
             
         @endforeach
         <p><a href="{{ URL::to('blog') }}">Back to all the blogs &gt;</a></p>
