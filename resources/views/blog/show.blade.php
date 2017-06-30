@@ -24,7 +24,6 @@
                 <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
             </div>
         
-            
             @if(starts_with($para->para, '*H1*'))
             <h3>{{ removeTag($para->para) }}</h3>
             @else
