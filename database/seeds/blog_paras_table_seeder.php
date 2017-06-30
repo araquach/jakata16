@@ -32,8 +32,8 @@ class BlogParasTableSeeder extends Seeder
         
         DB::table('blog_paras')->insert([
             'id' => 3,
-            'blog_id' => 2,
-            'para' => 'Paragraph one of Blog Two',
+            'blog_id' => 1,
+            'para' => '*H1 A header for blog 1',
             'para_pic' => 'http://via.placeholder.com/250x150',
             'para_pic_alt' => 'Paragraph 1 pic blog 2',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -41,8 +41,8 @@ class BlogParasTableSeeder extends Seeder
         
         DB::table('blog_paras')->insert([
             'id' => 4,
-            'blog_id' => 2,
-            'para' => 'Paragraph two of Blog Two',
+            'blog_id' => 1,
+            'para' => '*IMG http://via.placeholder.com/300x200',
             'para_pic' => 'http://via.placeholder.com/250x150',
             'para_pic_alt' => 'Paragraph 2 pic blog 2',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),

@@ -27,7 +27,7 @@
             @if(starts_with($para->para, '*H1'))
                 <h3>{{ removeTag($para->para) }}</h3>
             @elseif(starts_with($para->para, '*IMG'))
-                <p><img source="{{ removeTag($para->para) }}" img class="large-image"></p>
+                <img src="{{ removeTag($para->para) }}" img class="large-image">
             @else
                 <p>{{ $para->para }}</p>
             @endif

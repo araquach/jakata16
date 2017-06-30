@@ -1278,6 +1278,11 @@ h4.price_stylist {
 	margin-top: 0;
 }
 
+#blog img.large-image {
+	margin-left: 300px;
+	display: block;
+}
+
 #blog a {
 	color: #555b6c;
 	font-size: 1.5em;
