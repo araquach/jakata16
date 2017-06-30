@@ -24,10 +24,12 @@
                 <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
             </div>
         
-            @if(starts_with($para->para, '*H1*'))
-            <h3>{{ removeTag($para->para) }}</h3>
+            @if(starts_with($para->para, '*H1'))
+                <h3>{{ removeTag($para->para) }}</h3>
+            @elseif(starts_with($para->para, '*IMG')
+                <img source="{{ removeTag($para->para) }}" img class="large-image">
             @else
-            <p>{{ $para->para }}</p>
+                <p>{{ $para->para }}</p>
             @endif
             
         @endforeach
