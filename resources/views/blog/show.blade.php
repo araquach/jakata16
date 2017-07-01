@@ -4,7 +4,7 @@
 
 @include('layouts.partials.head', [
 	'description' => addslashes($blog->paras()->first()->para),
-	'keywords' => 'Jakata Salon news, Jakata news stories',
+	'keywords' => 'Jakata Salon blog, Jakata news stories',
 	'ogtitle' => addslashes($blog->title),
 	'ogdescription' => addslashes($blog->paras->first()->para),
 	'ogimage' => $blog->meta_image,

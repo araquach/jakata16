@@ -3,12 +3,12 @@
 @section('head')
 
 @include('layouts.partials.head', [
-	'description' => 'Keep up to date with the latest PK blog posts',
-	'keywords' => 'Paul Kemp Hairdressing news, PK news stories, blog, blogs',
+	'description' => 'Keep up to date with the latest Jakata blog posts',
+	'keywords' => 'Jakata Salon news, Jakata news stories, blog, blogs',
 	'ogtitle' => 'Blog Posts',
-	'ogdescription' => 'All the latest PK news and stories in our blog',
+	'ogdescription' => 'All the latest Jakata news and stories in our blog',
 	'ogimage' => '',
-	'title' => 'Paul Kemp Hairdressing - PK News - Hairdressers in Warrington'
+	'title' => 'Jakata Salon - Jakata Blog - Hairdressers in Warrington'
 	])
 @stop
 

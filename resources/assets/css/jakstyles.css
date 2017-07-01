@@ -747,7 +747,8 @@ h4.price_stylist {
 	margin-bottom: 30px;
 }
 
-#blog p {
+#blog p,
+#blog time {
 	margin: 0;
 	margin-bottom: 1.5em;
 	width: 500px;
