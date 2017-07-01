@@ -6,6 +6,7 @@ use App\Blog;
 use App\BlogPara;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Carbon\Carbon;
 
 class BlogController extends Controller
 {
@@ -16,7 +17,7 @@ class BlogController extends Controller
     
     public function index()
     {
-        $blogs = Blog::where('publish', 1)->with('paras')->get();
+        $blogs = Blog::where('publish', 1)->orWhere('publish', 3)->with('paras')->get();
         
         return view('blog.index', compact('blogs'));
     }
