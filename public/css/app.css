@@ -1246,6 +1246,7 @@ h4.price_stylist {
 }
 
 #blog article {
+	width: 800px;
 	margin: 20px 0;
 	margin-left: 40px;
 	border: 1px solid #999;
@@ -1267,9 +1268,9 @@ h4.price_stylist {
 #blog p,
 #blog time {
 	margin: 0;
-	margin-bottom: 1.5em;
-	width: 500px;
+	margin-bottom: 1em;
 	margin-left: 300px;
+	display: block;
 }
 
 #blog p:first-of-type {
