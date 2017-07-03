@@ -812,8 +812,8 @@ p#book_button {
 	font-size: 1.2em;
 }
 
-#blog.large-image {
-	width: 70%;
+#blog img.large-image {
+	width: 100%;
 }
 
 #blog h2 {
