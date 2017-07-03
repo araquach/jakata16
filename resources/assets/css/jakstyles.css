@@ -731,11 +731,12 @@ h4.price_stylist {
 
 #blog article {
 	margin: 20px 0;
-	margin-left: 60px;
-	border-top: 1.5px solid rgb(55,34,24);
-	padding-top: 30px;
+	margin-left: 40px;
+	border: 1px solid #999;
+	padding: 30px;
 	position: relative;
 	min-height: 200px;
+	background-color: #FFF;
 	float:left;
 	clear: left;
 }
@@ -756,11 +757,13 @@ h4.price_stylist {
 }
 
 #blog p:first-of-type {
-	font-weight: bold;
+	font-size: 1.3em;
 }
 
 #blog h2 {
 	margin-top: 0;
+	font-size: 1.8em;
+	margin-bottom: 1.3em;
 }
 
 #blog img.large-image {
@@ -786,10 +789,6 @@ time {
 	font-family: 'PT Sans', sans-serif;
 	font-size: .8em;
 	opacity: .8;
-}
-
-#blog article:first-of-type {
-	border: none;
 }
 
 /* @end */
