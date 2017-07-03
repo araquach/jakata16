@@ -761,36 +761,49 @@ p#book_button {
 	width: auto;
 	margin: auto;
 	float: none;
-	padding: 0;
+	background-color: #f5f5f6;
+	padding: 10px;
 	height: 100%;
 	padding-top: 10px;
 	padding-bottom: 50px;
 }
 
+#blog p,
+#blog h1,
+#blog h2,
+#blog h3,
+#blog a,
+#blog img,
+#blog img.large-image,
+#blog small,
+#blog time {
+	margin-left: 0;
+}
+
+
 #blog article {
 	width: auto;
 	margin: auto;
-	border-top: 1.5px solid rgb(55,34,24);
-	padding-top: 30px;
+	margin-bottom: 10px;
+	border: 1px solid #999;
+	padding: 30px;
 	position: relative;
 	min-height: 200px;
-	float:left;
-	clear: left;
+	float: none;
 }
 
 .blog-pic {
-	float: left;
+	float: none;
 	width: auto;
 }
 
 .blog-pic img {
-	float: left;
-	clear: left;
+	float: none;
 	margin-bottom: 30px;
 }
 
 .blog-copy {
-	float: left;
+	float: none;
 	width: auto;
 }
 
@@ -819,10 +832,6 @@ time {
 	font-family: 'PT Sans', sans-serif;
 	font-size: .8em;
 	opacity: .8;
-}
-
-#blog article:first-of-type {
-	border: none;
 }
 
 /* @end */
