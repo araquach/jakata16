@@ -254,7 +254,9 @@ function addTag($string)
     }
     if(starts_with($string, '*LNK'))
     {
-        return $string = str_replace('*LNK', '', $string);
+        $string = str_replace('*LNK', '', $string);
+        
+        return '<p>' . $string . '</p>';
     }
     if(starts_with($string, '*BLD'))
     {
