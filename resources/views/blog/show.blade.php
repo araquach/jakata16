@@ -20,17 +20,12 @@
         <h2>{{ $blog->title }}</h2>
         
         @foreach($blog->paras as $para)
+            
             <div class="blog-pic">
                 <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
             </div>
-        
-            @if(starts_with($para->para, '*H1'))
-                <h3>{{ removeTag($para->para) }}</h3>
-            @elseif(starts_with($para->para, '*IMG'))
-                <img src="{{ removeTag($para->para) }}" img class="large-image">
-            @else
-                <p>{{ $para->para }}</p>
-            @endif
+            
+            {!! addTag($para->para) !!}
             
         @endforeach
         <p><a href="{{ URL::to('blog') }}">Back to all the blogs &gt;</a></p>

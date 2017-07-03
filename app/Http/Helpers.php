@@ -243,3 +243,32 @@ function removeTag($string)
 {
     return $removed = substr(strstr($string," "), 1);
 }
+
+function addTag($string)
+{
+    if(starts_with($string, '*H1'))
+    {
+        $string = str_replace('*H1', '', $string);
+        
+        return '<h3>' . $string . '</h3>';
+    }
+    if(starts_with($string, '*LNK'))
+    {
+        return $string = str_replace('*LNK', '', $string);
+    }
+    if(starts_with($string, '*BLD'))
+    {
+        $string = str_replace('*BLD', '', $string);
+        
+        return '<p><strong>' . $string . '</strong></p>';
+    }
+    if(starts_with($string, '*IMG'))
+    {
+        $string = str_replace('*IMG', '', $string);
+        
+        return '<img src="' . $string . '">';
+    }
+    else {
+        return '<p>' . $string . '</p>';
+    }
+}
