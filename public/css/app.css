@@ -1263,7 +1263,8 @@ h4.price_stylist {
 	margin-bottom: 30px;
 }
 
-#blog p {
+#blog p,
+#blog time {
 	margin: 0;
 	margin-bottom: 1.5em;
 	width: 500px;
@@ -1286,7 +1287,7 @@ h4.price_stylist {
 
 #blog a {
 	color: #555b6c;
-	font-size: 1.5em;
+	font-size: 1em;
 	display: block;
 	width: auto;
 	margin-top: 40px;
@@ -1294,6 +1295,10 @@ h4.price_stylist {
 
 #blog a:hover {
 	opacity: .7;
+}
+
+#blog a.back-and-to {
+	font-size: 1.5em;
 }
 
 .author,
