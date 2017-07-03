@@ -239,11 +239,6 @@ function getTreatment($texture, $condition)
     
 }
 
-function removeTag($string)
-{
-    return $removed = substr(strstr($string," "), 1);
-}
-
 function addTag($string)
 {
     if(starts_with($string, '*H1'))
