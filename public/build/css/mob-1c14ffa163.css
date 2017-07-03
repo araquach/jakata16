@@ -799,6 +799,7 @@ p#book_button {
 
 .blog-pic img {
 	float: none;
+	width: auto;
 	margin-bottom: 30px;
 }
 
