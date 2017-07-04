@@ -1266,6 +1266,7 @@ h4.price_stylist {
 }
 
 #blog p,
+#blog h3,
 #blog time {
 	margin: 0;
 	margin-bottom: 1em;
