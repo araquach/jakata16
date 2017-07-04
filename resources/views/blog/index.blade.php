@@ -18,6 +18,7 @@
     
     @foreach($blogs as $blog)
         <article>
+            <a id="{{ $blog->slug }}" class="anchor"></a>
             <h2>{{ $blog->title }}</h2>
             <div class="blog-pic">
                 <img src="{{ $blog->paras()->first()->para_pic }}" alt="{{ $blog->paras()->first()->para_pic_alt }}">
