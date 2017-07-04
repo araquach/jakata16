@@ -1292,6 +1292,7 @@ h4.price_stylist {
 #blog a {
 	color: #555b6c;
 	font-size: 1em;
+	line-height: 1.4em;
 	display: block;
 	width: auto;
 	margin-top: 40px;
