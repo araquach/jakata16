@@ -21,9 +21,11 @@
         
         @foreach($blog->paras as $para)
             
-            <div class="blog-pic">
-                <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
-            </div>
+            @if($para->para_pic !== NULL)
+                <div class="blog-pic">
+                    <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
+                </div>
+            @endif
             
             {!! addTag($para->para) !!}
             
