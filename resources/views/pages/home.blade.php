@@ -43,7 +43,6 @@
 					<div class="home_news_copy">
 						<h3 class="newsheader">{{ $blog->title }}</h3>
 						<p class="newspara">{{ limit_words($blog->paras()->first()->para) }}&hellip;</p>
-						<p class="newscenter"><strong>Find out more &gt;</strong></p>
 					</div>
 				</aside>
 			</a>

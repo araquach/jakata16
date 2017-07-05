@@ -775,6 +775,7 @@ nav li a:hover {
 .newscenter {
 	position: absolute;
 	top: 140px;
+	right: 200px;
 }
 
 .home_news h3 {
