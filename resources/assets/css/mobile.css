@@ -232,7 +232,7 @@ li.active a {
 	width: auto;
 	margin: auto;
 	max-width: 320px;
-	height: 450px;
+	height: 460px;
 	background-color: rgba(248, 247, 247);
 	margin-bottom: 20px;
 	border: 1px solid #999;
@@ -244,13 +244,15 @@ li.active a {
 .home_news_pic {
 	width: auto;
 	height: 260px;
-	float: left;
+	float: none;
+	position: relative;
 }
 
 .home_news_copy {
 	width: auto;
-	float: left;
-	clear: left;
+	float: none;
+	position: relative;
+	padding: 30px;
 }
 
 .home_news h3.newsheader {
