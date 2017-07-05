@@ -269,3 +269,9 @@ function addTag($string)
         return '<p>' . $string . '</p>';
     }
 }
+
+function limit_words($string)
+{
+    $words = explode(" ",$string);
+    return implode(" ",array_splice($words,0,20));
+}
