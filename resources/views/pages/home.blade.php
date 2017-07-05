@@ -38,10 +38,13 @@
 	<div id="home_news">
 		@foreach($blogs	as $blog)
 			<a href="{{ URL::to('blog') }}/{{ $blog->slug }}">
-				<aside class="home_news" style="background: url('{{ $blog->paras()->first()->para_pic }}') no-repeat left top rgba(249, 249, 250, 0.8); background-size: contain;">
-					<h3 class="newsheader">{{ $blog->title }}</h3>
-					<p class="newspara">{{ limit_words($blog->paras()->first()->para) }}&hellip;</p>
-					<p class="newscenter"><strong>Find out more &gt;</strong></p>
+				<aside class="home_news">
+					<div class="home_news_pic" style="background: url('{{ $blog->paras()->first()->para_pic }}') no-repeat left top rgba(249, 249, 250, 0.8); background-size: contain;"></div>
+					<div class="home_news_copy">
+						<h3 class="newsheader">{{ $blog->title }}</h3>
+						<p class="newspara">{{ limit_words($blog->paras()->first()->para) }}&hellip;</p>
+						<p class="newscenter"><strong>Find out more &gt;</strong></p>
+					</div>
 				</aside>
 			</a>
 		@endforeach

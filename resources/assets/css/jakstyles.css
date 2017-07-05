@@ -232,15 +232,28 @@ nav li a:hover {
 }
 
 .home_news {
-	width: 280px;
-	height: 120px;
-	padding: 30px;
-	padding-left: 200px;
-	background-color: rgba(248, 247, 247);
+	width: 480px;
+	height: 180px;
+	background-color: rgb(248, 247, 247);
 	margin-bottom: 20px;
 	border: 1px solid #999;
 	border-radius: 5px;
 	position: relative;
+}
+
+.home_news_pic {
+	width: 140px;
+	height: 180px;
+	position: relative;
+	float: left;
+}
+
+.home_news_copy {
+	width: 280px;
+	height: 120px;
+	padding: 30px;
+	position: relative;
+	float: right;
 }
 
 .newscenter {
@@ -263,34 +276,6 @@ nav li a:hover {
 
 #home_news a {
 	text-decoration: none;
-}
-
-#news1 {
-	background: url('/images/home/blushes.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
-	background-size: contain;
-}
-.no-rgba #news1 {
-	background: url('/images/home/blushes_small.jpg') no-repeat left top rgb(249, 249, 250);
-	
-}
-
-
-#news2 {
-	background: url('/images/home/el_2017.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
-	background-size: contain;
-}
-.no-rgba #news2 {
-	background: url('/images/home/el_2017_small.jpg') no-repeat left top rgb(249, 249, 250);
-}
-
-
-#news3 {
-	background: url('/images/home/vlada.jpg') no-repeat left top rgba(249, 249, 250, 0.8);
-	background-size: contain;
-}
-.no-rgba #news3 {
-	background: url('/images/home/vlada_small.jpg') no-repeat left top rgb(249, 249, 250);
-	background-size: contain;
 }
 
 #feedback_feed {
