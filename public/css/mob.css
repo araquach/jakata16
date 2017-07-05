@@ -232,7 +232,7 @@ li.active a {
 	width: auto;
 	margin: auto;
 	max-width: 320px;
-	height: 460px;
+	height: 480px;
 	background-color: rgba(248, 247, 247);
 	margin-bottom: 20px;
 	border: 1px solid #999;
@@ -260,7 +260,7 @@ li.active a {
 	font-size: 1.4em;
 	color: #2f2f69;
 	margin: 0;
-	margin-bottom: 7px;
+	margin-bottom: 10px;
 }
 
 .home_news p {
