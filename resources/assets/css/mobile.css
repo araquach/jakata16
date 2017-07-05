@@ -231,10 +231,8 @@ li.active a {
 .home_news {
 	width: auto;
 	margin: auto;
-	max-width: 270px;
-	height: 300px;
-	padding: 25px;
-	padding-top: 300px;
+	max-width: 320px;
+	height: 450px;
 	background-color: rgba(248, 247, 247);
 	margin-bottom: 20px;
 	border: 1px solid #999;
@@ -243,17 +241,23 @@ li.active a {
 	float: none;
 }
 
-p.newscenter {
-	position: absolute;
-	top: 575px;
+.home_news_pic {
+	width: auto;
+	height: 260px;
+	float: left;
 }
 
-.home_news h3 {
+.home_news_copy {
+	width: auto;
+	float: left;
+	clear: left;
+}
+
+.home_news h3.newsheader {
 	font-family: NotethisRegular;
 	font-size: 1.4em;
 	color: #2f2f69;
 	margin: 0;
-	padding-top: 100px;
 	margin-bottom: 7px;
 }
 

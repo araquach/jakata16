@@ -772,12 +772,6 @@ nav li a:hover {
 	float: right;
 }
 
-.newscenter {
-	position: absolute;
-	top: 140px;
-	right: 200px;
-}
-
 .home_news h3 {
 	font-size: 1.3em;
 	color: #2f2f69;
