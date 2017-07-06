@@ -12,6 +12,6 @@ class BlogPara extends Model
     
     public function blog()
     {
-        return $this->belongsTo('App\Blog');
+        return $this->belongsTo('App\Blog')->orderBy('created_at', 'asc');;
     }
 }
