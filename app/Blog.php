@@ -17,6 +17,6 @@ class Blog extends Model
     
     public function paras()
     {
-        return $this->hasMany('App\BlogPara')->orderBy('created_at', 'asc');
+        return $this->hasMany('App\BlogPara')->orderBy('id', 'asc');
     }
 }
