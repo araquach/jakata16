@@ -17,7 +17,7 @@ class BlogController extends Controller
     
     public function index()
     {
-        $blogs = Blog::where('publish', 1)->orWhere('publish', 3)->with('paras')->orderBy('created_at', 'asc')->get();
+        $blogs = Blog::where('publish', 1)->orWhere('publish', 3)->with('paras')->orderBy('created_at', 'desc')->get();
         
         return view('blog.index', compact('blogs'));
     }
