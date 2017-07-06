@@ -14,6 +14,8 @@
 
 @section('content')
 
+@include('layouts.partials.fb_like')
+
 <section id="blog">
 
     <article>
@@ -35,7 +37,7 @@
         <time datetime="{{ $blog->created_at }}">{{ $blog->created_at->format('d F Y') }}</time>
         
         <div id="fb-like">
-			<div class="fb-like" data-href="{{ URL::to('blog') }}/{{ $blog->slug }}" data-width="250" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+			<div class="fb-like" data-href="{{ URL::to('blog') }}/{{ $blog->slug }}" data-width="250" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
 		</div>
 		
     </article>
