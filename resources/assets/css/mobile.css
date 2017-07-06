@@ -834,6 +834,11 @@ time {
 	opacity: .8;
 }
 
+#blog #fb-like {
+	margin-left: 0;
+	height: 0;
+}
+
 /* @end */
 
 /* @group News */

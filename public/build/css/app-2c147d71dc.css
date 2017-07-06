@@ -1294,6 +1294,11 @@ time {
 	opacity: .8;
 }
 
+#blog #fb-like {
+	margin-left: 300px;
+	height: 100px;
+}
+
 /* @end */
 
 /* @group News */
