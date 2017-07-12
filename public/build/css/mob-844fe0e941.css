@@ -478,6 +478,19 @@ p#book_button {
 
 /* @end */
 
+/* bookings */
+
+#bookings {
+	width: auto;
+	margin: auto;
+	float: left;
+	height: 100%;
+	padding: 0;
+	padding-bottom: 50px;
+}
+
+/* @end */
+
 /* Team */
 
 #team {
