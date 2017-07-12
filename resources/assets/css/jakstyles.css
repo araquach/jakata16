@@ -1619,6 +1619,8 @@ span.big {
 }
 
 .iframe-container {
+background-color: #f5f5f5;
+margin-top: 40px;
 position: relative;
 height: 800px;
 overflow: hidden;

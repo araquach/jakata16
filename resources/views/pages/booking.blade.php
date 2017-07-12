@@ -18,7 +18,7 @@
 
     <section>
         <div class="iframe-container">
-            <iframe src="INSERTURL" width="900" height="800" frameborder="0"></iframe>
+            <iframe src="https://jakatasalon.phorest.me/book#/" width="850" height="800" frameborder="0"></iframe>
         </div>
     </section>
 
