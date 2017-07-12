@@ -484,7 +484,7 @@ p#book_button {
 	width: auto;
 	margin: auto;
 	float: none;
-	height: 700px;
+	height: 100%;
 	padding: 0;
 	padding-bottom: 50px;
 }
