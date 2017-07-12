@@ -80,6 +80,11 @@ class PagesController extends Controller {
 		return view('pages.trainee');
 	}
 	
+	public function booking()
+	{
+		return view('pages.booking');
+	}
+	
 	public function jimmy()
 	{
 		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Jimi Sharpe')
