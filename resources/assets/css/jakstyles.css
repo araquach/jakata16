@@ -1613,13 +1613,12 @@ span.big {
 #bookings {
 	width: 950px;
 	height: auto;
-	background-color: #f5f5f5;
+	background-color: #fff;
 	padding-top: 210px;
 	padding-bottom: 200px;
 }
 
 .iframe-container {
-background-color: #f5f5f5;
 margin-top: 40px;
 position: relative;
 height: 800px;
