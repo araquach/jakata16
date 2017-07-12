@@ -483,8 +483,8 @@ p#book_button {
 #bookings {
 	width: auto;
 	margin: auto;
-	float: left;
-	height: 100%;
+	float: none;
+	height: 700px;
 	padding: 0;
 	padding-bottom: 50px;
 }

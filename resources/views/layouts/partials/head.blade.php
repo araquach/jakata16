@@ -28,6 +28,21 @@
 
 	<script type="text/javascript" src="{{ URL::asset('scripts/mootools.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('scripts/modernizr.js') }}"></script>
+	
+	<style>
+      .iframe-container {
+        position: relative;
+        height: 800px;
+        overflow: hidden;
+      }
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
 
 	<title>{{ $title or 'Jakata Salon - Hairdressers in Warrington' }}</title>
 
