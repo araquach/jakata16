@@ -2137,14 +2137,16 @@ span.big {
 a.book-now {
 	font-size: 1em;
 	font-weight: bolder;
+	width: 80px;
+	height: 17px;
 	color: #FFF;
 	position: absolute;
-	left: 800px;
+	left: 790px;
 	top: 20px;
 	background-color: #424259;
 	border: 2px solid #FFF;
 	border-radius: 30px;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 	line-height: 1.1em;
 }
