@@ -29,6 +29,7 @@
 	<script type="text/javascript" src="{{ URL::asset('scripts/mootools.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('scripts/modernizr.js') }}"></script>
 	
+	{{-- Phorest online booking styling --}}
 	<style>
       .iframe-container {
         position: relative;
