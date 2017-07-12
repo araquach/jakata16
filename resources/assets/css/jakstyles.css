@@ -1618,6 +1618,25 @@ span.big {
 	padding-bottom: 200px;
 }
 
+a.book-now {
+	font-size: 1em;
+	font-weight: bolder;
+	color: #FFF;
+	position: absolute;
+	left: 800px;
+	top: 20px;
+	background-color: #424259;
+	border: 2px solid #FFF;
+	border-radius: 30px;
+	padding: 20px;
+	text-align: center;
+	line-height: 1.1em;
+}
+
+a.book-now:hover {
+	opacity: .7;
+}
+
 /* @end */
 
 

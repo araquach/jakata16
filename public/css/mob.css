@@ -489,6 +489,23 @@ p#book_button {
 	padding-bottom: 50px;
 }
 
+a.book-now {
+	font-size: .7em;
+	font-weight: bolder;
+	float: right;
+	color: #FFF;
+	position: relative;
+	background-color: #424259;
+	border: 2px solid #FFF;
+	border-radius: 30px;
+	padding: 10px;
+	text-align: center;
+	line-height: 1.1em;
+	left: 0;
+	right: 0;
+	margin-top: -30px;
+}
+
 /* @end */
 
 /* Team */
