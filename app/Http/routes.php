@@ -14,12 +14,11 @@ Route::get('/jimmy', 'PagesController@jimmy');
 Route::get('/maisie', 'PagesController@maisie');
 Route::get('/natalie', 'PagesController@natalie');
 Route::get('/vikki', 'PagesController@vikki');
-Route::get('/matt', 'PagesController@matt');
 Route::get('/lauraC', 'PagesController@lauraC');
 Route::get('/lauraM', 'PagesController@lauraM');
 Route::get('/caleb', 'PagesController@caleb');
 Route::get('/kebelo', 'PagesController@kebelo');
-Route::get('/leaver', 'PagesController@leaver');
+Route::get('/matt', 'PagesController@leaver');
 
 Route::get('/prospect/emailmale', 'ProspectController@emailMale');
 Route::get('/prospect/emailmale2', 'ProspectController@emailMale2');

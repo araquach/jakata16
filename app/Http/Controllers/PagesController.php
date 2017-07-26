@@ -162,18 +162,6 @@ class PagesController extends Controller {
 		return view('pages.team.lauraM', compact('feedbacks'));
 	}
 	
-	public function matt()
-	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Matthew Lane')
-			->whereHas('feedback', function($query)
-			{
-				$query->where('publish', '=', '1');
-			}
-			)->orderByRaw("RAND()")->get();
-		
-		return view('pages.team.matt', compact('feedbacks'));
-	}
-	
 	public function caleb()
 	{
 		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Caleb Barrie')
