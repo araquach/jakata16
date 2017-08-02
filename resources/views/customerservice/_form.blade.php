@@ -1,5 +1,5 @@
 {!! Form::open(array(
-	'action' => 'SuperstylistController@store', 'id' => 'feedback-form'
+	'action' => 'CustomerServiceController@store', 'id' => 'feedback-form'
 )) !!}
 
 @if (count($errors) > 0)
@@ -22,164 +22,121 @@
 {{ Form::hidden('salon_id', $user->salon_id) }}
 
 	
-<div class="row question">
-        <p>1. Customer care with <strong>own</strong> clients</p>
-        
-        <p class="scale_label">Very Poor</p>
-        {!! Form::radio('client_care_own', '1') !!}
-        <p class="scale_label">Poor</p>
-        {!! Form::radio('client_care_own', '2') !!}
-        <p class="scale_label">Average</p>
-        {!! Form::radio('client_care_own', '3') !!}
-        <p class="scale_label">Good</p>
-        {!! Form::radio('client_care_own', '4') !!}
-        <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('client_care_own', '5') !!}
-	{!! $errors->first('client_care_own', '<div class="errorMessage">:message</div>') !!}
+<div class="row">
+        {!! Form::label('client_name', 'Client Name') !!}
+        {!! Form::text('client_name') !!}
+	{!! $errors->first('client_name', '<div class="errorMessage">:message</div>') !!}
 </div>
 
 <div class="row question">
-        <p>2. Customer care with <strong>other stylists</strong> clients</p>
+        <p>1. Meet and Greet</p>
         
         <p class="scale_label">Very Poor</p>
-        {!! Form::radio('client_care_others', '1') !!}
+        {!! Form::radio('meet_greet', '1') !!}
         <p class="scale_label">Poor</p>
-        {!! Form::radio('client_care_others', '2') !!}
+        {!! Form::radio('meet_greet', '2') !!}
         <p class="scale_label">Average</p>
-        {!! Form::radio('client_care_others', '3') !!}
+        {!! Form::radio('meet_greet', '3') !!}
         <p class="scale_label">Good</p>
-        {!! Form::radio('client_care_others', '4') !!}
+        {!! Form::radio('meet_greet', '4') !!}
         <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('client_care_others', '5') !!}
-	{!! $errors->first('client_care_others', '<div class="errorMessage">:message</div>') !!}
+        {!! Form::radio('meet_greet', '5') !!}
+	{!! $errors->first('meet_greet', '<div class="errorMessage">:message</div>') !!}
 </div>
 
 <div class="row question">
-        <p>3. Helping other staff members and availability to others <br><span class="small">not being in the back plus being positive towards helping others</span></p>
+        <p>2. Consultation</p>
         
         <p class="scale_label">Very Poor</p>
-        {!! Form::radio('help_availability', '1') !!}
+        {!! Form::radio('consultation', '1') !!}
         <p class="scale_label">Poor</p>
-        {!! Form::radio('help_availability', '2') !!}
+        {!! Form::radio('consultation', '2') !!}
         <p class="scale_label">Average</p>
-        {!! Form::radio('help_availability', '3') !!}
+        {!! Form::radio('consultation', '3') !!}
         <p class="scale_label">Good</p>
-        {!! Form::radio('help_availability', '4') !!}
+        {!! Form::radio('consultation', '4') !!}
         <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('help_availability', '5') !!}
-	{!! $errors->first('help_availability', '<div class="errorMessage">:message</div>') !!}
+        {!! Form::radio('consultation', '5') !!}
+	{!! $errors->first('consultation', '<div class="errorMessage">:message</div>') !!}
 </div>
 
 <div class="row question">
-        <p>4. Having a <strong>positive mental attitude</strong> all the time</p>
+        <p>3. Main Service</p>
         
         <p class="scale_label">Very Poor</p>
-        {!! Form::radio('pos_mentality', '1') !!}
+        {!! Form::radio('main_service', '1') !!}
         <p class="scale_label">Poor</p>
-        {!! Form::radio('pos_mentality', '2') !!}
+        {!! Form::radio('main_service', '2') !!}
         <p class="scale_label">Average</p>
-        {!! Form::radio('pos_mentality', '3') !!}
+        {!! Form::radio('main_service', '3') !!}
         <p class="scale_label">Good</p>
-        {!! Form::radio('pos_mentality', '4') !!}
+        {!! Form::radio('main_service', '4') !!}
         <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('pos_mentality', '5') !!}
-	{!! $errors->first('pos_mentality', '<div class="errorMessage">:message</div>') !!}
+        {!! Form::radio('main_service', '5') !!}
+	{!! $errors->first('main_service', '<div class="errorMessage">:message</div>') !!}
 </div>
 
 <div class="row question">
-        <p>5. Being <strong>Pro-active</strong> and showing initiative</p>
+        <p>4. Retail</p>
         
         <p class="scale_label">Very Poor</p>
-        {!! Form::radio('proactive', '1') !!}
+        {!! Form::radio('retail', '1') !!}
         <p class="scale_label">Poor</p>
-        {!! Form::radio('proactive', '2') !!}
+        {!! Form::radio('retail', '2') !!}
         <p class="scale_label">Average</p>
-        {!! Form::radio('proactive', '3') !!}
+        {!! Form::radio('retail', '3') !!}
         <p class="scale_label">Good</p>
-        {!! Form::radio('proactive', '4') !!}
+        {!! Form::radio('retail', '4') !!}
         <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('proactive', '5') !!}
-	{!! $errors->first('proactive', '<div class="errorMessage">:message</div>') !!}
+        {!! Form::radio('retail', '5') !!}
+	{!! $errors->first('retail', '<div class="errorMessage">:message</div>') !!}
 </div>
 
 <div class="row question">
-        <p>6. Demonstrating <strong>passion</strong> for their job</p>
+        <p>5. Cleanliness</p>
         
         <p class="scale_label">Very Poor</p>
-        {!! Form::radio('passion', '1') !!}
+        {!! Form::radio('cleanliness', '1') !!}
         <p class="scale_label">Poor</p>
-        {!! Form::radio('passion', '2') !!}
+        {!! Form::radio('cleanliness', '2') !!}
         <p class="scale_label">Average</p>
-        {!! Form::radio('passion', '3') !!}
+        {!! Form::radio('cleanliness', '3') !!}
         <p class="scale_label">Good</p>
-        {!! Form::radio('passion', '4') !!}
+        {!! Form::radio('cleanliness', '4') !!}
         <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('passion', '5') !!}
-	{!! $errors->first('passion', '<div class="errorMessage">:message</div>') !!}
+        {!! Form::radio('cleanliness', '5') !!}
+	{!! $errors->first('cleanliness', '<div class="errorMessage">:message</div>') !!}
 </div>
 
 <div class="row question">
-        <p>7. Quality of work carried out</p>
+        <p>6. Educating client</p>
         
         <p class="scale_label">Very Poor</p>
-        {!! Form::radio('work_quality', '1') !!}
+        {!! Form::radio('education', '1') !!}
         <p class="scale_label">Poor</p>
-        {!! Form::radio('work_quality', '2') !!}
+        {!! Form::radio('education', '2') !!}
         <p class="scale_label">Average</p>
-        {!! Form::radio('work_quality', '3') !!}
+        {!! Form::radio('education', '3') !!}
         <p class="scale_label">Good</p>
-        {!! Form::radio('work_quality', '4') !!}
+        {!! Form::radio('education', '4') !!}
         <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('work_quality', '5') !!}
-	{!! $errors->first('work_quality', '<div class="errorMessage">:message</div>') !!}
+        {!! Form::radio('education', '5') !!}
+	{!! $errors->first('education', '<div class="errorMessage">:message</div>') !!}
 </div>
 
 <div class="row question">
-        <p>8. Take time to <strong>educate clients</strong> on aftercare, styling tips and products</p>
-        
+        <p>7. Closing the sale
         <p class="scale_label">Very Poor</p>
-        {!! Form::radio('educate_clients', '1') !!}
+        {!! Form::radio('closing_sale', '1') !!}
         <p class="scale_label">Poor</p>
-        {!! Form::radio('educate_clients', '2') !!}
+        {!! Form::radio('closing_sale', '2') !!}
         <p class="scale_label">Average</p>
-        {!! Form::radio('educate_clients', '3') !!}
+        {!! Form::radio('closing_sale', '3') !!}
         <p class="scale_label">Good</p>
-        {!! Form::radio('educate_clients', '4') !!}
+        {!! Form::radio('closing_sale', '4') !!}
         <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('educate_clients', '5') !!}
-	{!! $errors->first('educate_clients', '<div class="errorMessage">:message</div>') !!}
-</div>
-
-<div class="row question">
-        <p>9. Conversation always <strong>focused on clients</strong> - and not themselves</p>
-        
-        <p class="scale_label">Very Poor</p>
-        {!! Form::radio('convers_on_client', '1') !!}
-        <p class="scale_label">Poor</p>
-        {!! Form::radio('convers_on_client', '2') !!}
-        <p class="scale_label">Average</p>
-        {!! Form::radio('convers_on_client', '3') !!}
-        <p class="scale_label">Good</p>
-        {!! Form::radio('convers_on_client', '4') !!}
-        <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('convers_on_client', '5') !!}
-	{!! $errors->first('convers_on_client', '<div class="errorMessage">:message</div>') !!}
-</div>
-
-<div class="row question">
-        <p>10. Overall Super Stylist Rating</p>
-        
-        <p class="scale_label">Very Poor</p>
-        {!! Form::radio('overall_rating', '1') !!}
-        <p class="scale_label">Poor</p>
-        {!! Form::radio('overall_rating', '2') !!}
-        <p class="scale_label">Average</p>
-        {!! Form::radio('overall_rating', '3') !!}
-        <p class="scale_label">Good</p>
-        {!! Form::radio('overall_rating', '4') !!}
-        <p class="scale_label">Super Stylist</p>
-        {!! Form::radio('overall_rating', '5') !!}
-	{!! $errors->first('overall_rating', '<div class="errorMessage">:message</div>') !!}
+        {!! Form::radio('closing_sale', '5') !!}
+	{!! $errors->first('closing_sale', '<div class="errorMessage">:message</div>') !!}
 </div>
 
 <div class="row question">

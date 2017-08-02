@@ -11,7 +11,7 @@
 <div id="admin">
     
 	<h1>Hey {{ explode(' ',trim(Auth::user()->name))[0] }}</h1>
-	<h2>Vote for your Super Stylist of the month!</h2>
+	<h2>Please complete your customer service votes!</h2>
 	
 	
 	<p>Select a stylist below to fill in their questionaire</p>

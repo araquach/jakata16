@@ -54,13 +54,13 @@ class CustomerServiceController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(SuperstylistFormRequest $request)
+	public function store(CustomerServiceFormRequest $request)
 	{
 		$input = $request->all();
 		
-		Superstylist::create($input);
+		CustomerService::create($input);
 
-    	return redirect('/customerservice');
+    	return redirect('/superstylist');
 	}
 
 	/**
@@ -69,7 +69,7 @@ class CustomerServiceController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show(Superstylist $superstylist)
+	public function show(CustomerService $customerService)
 	{
 		return view('customerservice.show', compact('customerService'));
 	}

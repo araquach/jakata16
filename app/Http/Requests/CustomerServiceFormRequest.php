@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class SuperstylistFormRequest extends Request
+class CustomerServiceFormRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -30,9 +30,8 @@ class SuperstylistFormRequest extends Request
             'main_service' => 'required | integer',
             'retail' => 'required | integer',
             'cleanliness' => 'required | integer',
-            'eduational' => 'required | integer',
+            'education' => 'required | integer',
             'closing_sale' => 'required | integer',
-            'convers_on_client' => 'required | integer',
             'extra' => ''
         ];
     }
