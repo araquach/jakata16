@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;
 use App\User;
-use App\Superstylist;
+use App\CustomerService;
 use DB;
 use Carbon\Carbon;
 use Mail;
@@ -35,18 +35,18 @@ class VoteReminder extends Command
     {
         Mail::send('emails.superstylist.reminder', compact('users'), function($message)
    		{
-       		$jakRecipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(superstylists.id) as votes'))
+       		$jakRecipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(customerservices.id) as votes'))
 					->where('users.salon_id', '=', '1')
-					->leftJoin('superstylists', function($join) {
-						$join->on('users.id', '=', 'superstylists.voter_id')
-						->where('superstylists.created_at', '>', Carbon::now()->startOfWeek());
+					->leftJoin('customerservices', function($join) {
+						$join->on('users.id', '=', 'customerservices.voter_id')
+						->where('customerservices.created_at', '>', Carbon::now()->startOfWeek());
 					})->groupBy('users.id')->get();
 					
-			$pkRecipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(superstylists.id) as votes'))
+			$pkRecipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(customerservices.id) as votes'))
 					->where('users.salon_id', '=', '2')
-					->leftJoin('superstylists', function($join) {
-						$join->on('users.id', '=', 'superstylists.voter_id')
-						->where('superstylists.created_at', '>', Carbon::now()->startOfWeek());
+					->leftJoin('customerservices', function($join) {
+						$join->on('users.id', '=', 'customerservices.voter_id')
+						->where('customerservices.created_at', '>', Carbon::now()->startOfWeek());
 					})->groupBy('users.id')->get();
        		
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
@@ -65,7 +65,7 @@ class VoteReminder extends Command
 				}
 			}
        		
-       		$message->subject('Super Stylist Vote Reminder');
+       		$message->subject('Customer Service Vote Reminder');
    		});
         
         $this->info('Emails have been successfully sent');
