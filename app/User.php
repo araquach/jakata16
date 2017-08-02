@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Superstylist');
     }
+    
+    public function customerservices()
+    {
+        return $this->hasMany('App\CustomerService');
+    }
 }
