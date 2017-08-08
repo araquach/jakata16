@@ -35,34 +35,12 @@ class VoteStart extends Command
     {
         Mail::send('emails.superstylist.start', compact('users'), function($message)
    		{
-       		$jakRecipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(customerservices.id) as votes'))
-					->where('users.salon_id', '=', '1')
-					->leftJoin('customerservices', function($join) {
-						$join->on('users.id', '=', 'customerservices.voter_id')
-						->where('customerservices.created_at', '>', Carbon::now()->startOfWeek());
-					})->groupBy('users.id')->get();
+       		$recipients = DB::table('users')->get();
 					
-			$pkRecipients = DB::table('users')->select('users.email', 'users.salon_id', DB::raw('count(customerservices.id) as votes'))
-					->where('users.salon_id', '=', '2')
-					->leftJoin('customerservices', function($join) {
-						$join->on('users.id', '=', 'customerservices.voter_id')
-						->where('customerservices.created_at', '>', Carbon::now()->startOfWeek());
-					})->groupBy('users.id')->get();
-       		
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
 			
-			foreach($jakRecipients as $jakRecipient) {
-				if($jakRecipient->votes < count($jakRecipients) -1) {
-				    
-				    $message->to($jakRecipient->email);
-				}
-			}
-			
-			foreach($pkRecipients as $pkRecipient) {
-				if($pkRecipient->votes < count($pkRecipients) -1) {
-				    
-				    $message->to($pkRecipient->email);
-				}
+			foreach($recipients as $recipient) {
+				$message->to($recipient->email);
 			}
        		
        		$message->subject('Customer Service - time to vote!');
