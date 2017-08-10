@@ -22,11 +22,11 @@
 
                         <input type="hidden" name="token" value="{{ $token }}">
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">E-Mail Address</label>
+                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                            <label class="col-md-4 control-label">Name:</label>
 
                             <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" value="{{ $email or old('email') }}">
+                                <input type="name" class="form-control" name="name" value="{{ $name or old('name') }}">
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
