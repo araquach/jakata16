@@ -1,7 +1,16 @@
 @extends('layouts.main')
 
+@section('head')
+
+@include('layouts.partials.head', [
+	'title' => 'Jakata Salon - Admin'
+	])
+	
+@stop
+
 @section('content')
-<div class="container">
+
+<div id="admin" class="form">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
