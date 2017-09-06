@@ -21,7 +21,7 @@
             <a id="{{ $blog->slug }}" class="anchor"></a>
             <h2>{{ $blog->title }}</h2>
             <div class="blog-pic">
-                <img src="{{ $blog->paras()->first()->para_pic }}" alt="{{ $blog->paras()->first()->para_pic_alt }}">
+                <img src="{{ $blog->paras()->first()->para_pic }}" alt="{{ $blog->paras()->first()->para_pic_alt }}" style="height: 70%; width: 70%;">
             </div>
             
                 <p>{{ $blog->paras()->first()->para }}</p>

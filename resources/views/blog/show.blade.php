@@ -25,7 +25,7 @@
             
             @if($para->para_pic !== NULL)
                 <div class="blog-pic">
-                    <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}">
+                    <img src="{{ $para->para_pic }}" alt="{{ $para->para_pic_alt }}" style="height: 70%; width: 70%;">
                 </div>
             @endif
             
