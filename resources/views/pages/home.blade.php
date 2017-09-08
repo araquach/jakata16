@@ -22,8 +22,8 @@
 	<div id="feedback-container">
 		<div id="feedback_feed">
 		  	<ul>
-		  	@foreach($feedbacks as $feed)
-		  	    <li>&quot;{{ $feed->extra_edit }}&quot;<br><span class="client">{{ $feed->client->first_name }} {{ $feed->client->last_name }} - hair by {{ $feed->client->stylist }} </span></li>
+		  	@foreach($reviews as $review)
+		  	    <li>&quot;{{ limit_words($review->review) }}&quot;<br><span class="client">{{ remove_client($review->client) }} - hair by {{ remove_staff($review->staff) }} </span></li>
 		  	@endforeach
 		  	</ul>
 		</div> <!--#feedback_feed-->

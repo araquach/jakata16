@@ -1,5 +1,5 @@
 <?php namespace App\Http\Controllers;
-use App\Feedback;
+use App\Review;
 use App\FeedbackClient;
 use App\Blog;
 use App\BlogPara;
@@ -32,12 +32,12 @@ class PagesController extends Controller {
 	 */
 	public function index()
 	{
-		$feedbacks = Feedback::where('publish', '1')->orderByRaw("RAND()")->get();
+		$reviews = Review::where('salon', '1')->orderByRaw("RAND()")->get();
 		
 		$blogs = Blog::take(3)->where('publish', 1)->orWhere('publish', 3)
 			->with('paras')->orderBy('created_at', 'desc')->get();
 	
-		return view('pages.home', compact('feedbacks', 'blogs'));
+		return view('pages.home', compact('reviews', 'blogs'));
 	}
 	
 	public function details()
@@ -92,86 +92,51 @@ class PagesController extends Controller {
 	
 	public function jimmy()
 	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Jimi Sharpe')
-			->whereHas('feedback', function($query)
-			{
-				$query->where('publish', '=', '1');
-			}
-			)->orderByRaw("RAND()")->get();
+		$reviews = Review::where('staff', '=', 'Staff: Jimmy Sharpe')->orderByRaw("RAND()")->get();
 		
-		return view('pages.team.jimmy', compact('feedbacks'));
+		return view('pages.team.jimmy', compact('reviews'));
 	}
 	
 	public function maisie()
 	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Maisie Thompson')
-			->whereHas('feedback', function($query)
-			{
-				$query->where('publish', '=', '1');
-			}
-			)->orderByRaw("RAND()")->get();
+		$reviews = Review::where('staff', '=', 'Staff: Maisie Thompson')->orderByRaw("RAND()")->get();
 		
-		return view('pages.team.maisie', compact('feedbacks'));
+		return view('pages.team.maisie', compact('reviews'));
 	}
 	
 	public function natalie()
 	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Natalie Doxey')
-			->whereHas('feedback', function($query)
-			{
-				$query->where('publish', '=', '1');
-			}
-			)->orderByRaw("RAND()")->get();
+		$reviews = Review::where('staff', '=', 'Staff: Natalie Doxey')->orderByRaw("RAND()")->get();
 		
-		return view('pages.team.natalie', compact('feedbacks'));
+		return view('pages.team.natalie', compact('reviews'));
 	}
 	
 	public function vikki()
 	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Vicky Rowland')
-			->whereHas('feedback', function($query)
-			{
-				$query->where('publish', '=', '1');
-			}
-			)->orderByRaw("RAND()")->get();
+		$reviews = Review::where('staff', '=', 'Staff: Vikki Rowland')->orderByRaw("RAND()")->get();
 		
-		return view('pages.team.vikki', compact('feedbacks'));
+		return view('pages.team.vikki', compact('reviews'));
 	}
 	
 	public function lauraC()
 	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Laura Hall')
-			->whereHas('feedback', function($query)
-			{
-				$query->where('publish', '=', '1');
-			}
-			)->orderByRaw("RAND()")->get();
+		$reviews = Review::where('staff', '=', 'Staff: Laura Hall')->orderByRaw("RAND()")->get();
 		
-		return view('pages.team.lauraC', compact('feedbacks'));
+		return view('pages.team.lauraC', compact('reviews'));
 	}
 	
 	public function lauraM()
 	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Laura Minett')
-			->whereHas('feedback', function($query)
-			{
-				$query->where('publish', '=', '1');
-			}
-			)->orderByRaw("RAND()")->get();
+		$reviews = Review::where('staff', '=', 'Staff: Laura Minett')->orderByRaw("RAND()")->get();
 		
-		return view('pages.team.lauraM', compact('feedbacks'));
+		return view('pages.team.lauraM', compact('reviews'));
 	}
 	
 	public function caleb()
 	{
-		$feedbacks = FeedbackClient::with('feedback')->where('stylist', '=', 'Caleb Barrie')
-			->whereHas('feedback', function($query)
-			{
-				$query->where('publish', '=', '1');
-			}
-			)->orderByRaw("RAND()")->get();
+		$reviews = Review::where('staff', '=', 'Staff: Caleb Barrie')->orderByRaw("RAND()")->get();
 		
-		return view('pages.team.caleb', compact('feedbacks'));
+		return view('pages.team.caleb', compact('reviews'));
 	}
 	
 	public function kebelo()

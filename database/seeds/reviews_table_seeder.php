@@ -25,7 +25,7 @@ class ReviewsTableSeeder extends Seeder
             'review' => 'Good service as always. Thanks Jimmy.',
             'client' => 'Client: Cruella Peterson',
             'staff' => 'Staff: Adam Carter',
-            'salon' => '2'
+            'salon' => '1'
         ]);
     }
 }
