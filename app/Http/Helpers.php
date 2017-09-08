@@ -273,6 +273,12 @@ function addTag($string)
 function limit_words($string)
 {
     $words = explode(" ",$string);
+    return implode(" ",array_splice($words,0,40));
+}
+
+function limit_news_words($string)
+{
+    $words = explode(" ",$string);
     return implode(" ",array_splice($words,0,20));
 }
 

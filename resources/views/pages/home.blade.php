@@ -42,7 +42,7 @@
 					<div class="home_news_pic" style="background: url('{{ $blog->paras()->first()->para_pic }}') no-repeat top left rgba(249, 249, 250, 0.8); background-size: cover;"></div>
 					<div class="home_news_copy">
 						<h3 class="newsheader">{{ $blog->title }}</h3>
-						<p class="newspara">{{ limit_words($blog->paras()->first()->para) }}&hellip;</p>
+						<p class="newspara">{{ limit_news_words($blog->paras()->first()->para) }}&hellip;</p>
 					</div>
 				</aside>
 			</a>
