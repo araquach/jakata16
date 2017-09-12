@@ -20,7 +20,7 @@
 		<div class="review">
 			<p>"{{ $review->review }}"</p>
 			<small>{{ remove_client($review->client) }}</small><br>
-			<small>hair by: {{ remove_staff($review->staff) }}</small>
+			<small>Hair by: {{ remove_staff($review->staff) }}</small>
 		</div>
 	@endforeach
 </section>
