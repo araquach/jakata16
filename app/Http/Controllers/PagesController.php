@@ -90,6 +90,13 @@ class PagesController extends Controller {
 		return view('pages.leaver');
 	}
 	
+	public function reviews()
+	{
+		$reviews = Review::where('salon', '1')->orderByRaw("RAND()")->get();
+		
+		return view('pages.reviews', compact('reviews'));
+	}
+	
 	public function jimmy()
 	{
 		$reviews = Review::where('staff', '=', 'Staff: Jimmy Sharpe')->orderByRaw("RAND()")->get();

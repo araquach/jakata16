@@ -19,6 +19,7 @@ Route::get('/lauraM', 'PagesController@lauraM');
 Route::get('/caleb', 'PagesController@caleb');
 Route::get('/kebelo', 'PagesController@kebelo');
 Route::get('/matt', 'PagesController@leaver');
+Route::get('/reviews', 'PagesController@reviews');
 
 Route::get('/prospect/emailmale', 'ProspectController@emailMale');
 Route::get('/prospect/emailmale2', 'ProspectController@emailMale2');
