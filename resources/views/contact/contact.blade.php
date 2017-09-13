@@ -26,7 +26,8 @@
 
 <h1>Contact Us</h1>
 
-<p>Please fill in as much information as possible in the form below. If you wish to make an appointment state the preferred date and time plus the service you require</p>
+<p>Please fill in as much information as possible in the form below, we will get back to you as soon as we can</p>
+<p><a href="{{ URL::to('booking') }}">Alternatively, make an online booking here ></a></p>
 
 
 
