@@ -70,6 +70,12 @@
 				<h2>Laura Minett</h2>
 			</section> <!--team member laura_m -->
 		</a>
+		
+		<a href="{{ URL::to('layla') }}" >
+			<section class="team_member" id="layla">
+				<h2>Layla Relf</h2>
+			</section> <!--team member layla -->
+		</a>
 	</div>
 	<!--team_members-->
 </section>
