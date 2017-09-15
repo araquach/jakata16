@@ -146,6 +146,14 @@ class PagesController extends Controller {
 		return view('pages.team.caleb', compact('reviews'));
 	}
 	
+	public function layla()
+	{
+		$reviews = Review::where('staff', '=', 'Staff: Layla Relf')->orderByRaw("RAND()")->get();
+		
+		return view('pages.team.layla', compact('reviews'));
+	}
+	
+	
 	public function kebelo()
 	{
 		return view('pages.kebelo');

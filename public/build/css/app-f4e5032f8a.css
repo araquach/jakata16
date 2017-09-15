@@ -961,6 +961,10 @@ nav li a:hover {
 	background: url('/images/team/caleb.jpg') no-repeat top left #f5f5f5;
 }
 
+.layla {
+	background: url('/images/team/layla.jpg') no-repeat top left #f5f5f5;
+}
+
 .team_member {
 	width: 300px;
 	height: 310px;
@@ -1106,8 +1110,8 @@ nav li a:hover {
 	
 }
 
-#matt {
-	background: #FFF url('/images/team/matt.jpg') no-repeat left top;
+#layla {
+	background: #FFF url('/images/team/layla.jpg') no-repeat left top;
 	transform:rotate(-2deg);
 	-ms-transform:rotate(-2deg); /* IE 9 */
 	-moz-transform:rotate(-2deg); /* Firefox */
