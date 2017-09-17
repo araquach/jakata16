@@ -92,7 +92,7 @@ class PagesController extends Controller {
 	
 	public function reviews()
 	{
-		$reviews = Review::where('salon', '1')->orderByRaw("RAND()")->limit(10)->get();
+		$reviews = Review::where('salon', '1')->orderByRaw("RAND()")->limit(9)->get();
 		
 		return view('pages.reviews', compact('reviews'));
 	}
