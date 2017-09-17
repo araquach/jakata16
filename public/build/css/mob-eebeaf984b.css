@@ -2656,4 +2656,29 @@ ul.tinytext {
 
 /* @end */
 
+#reviews {
+	background: rgb(193,208,219) url('/images/reviews/') no-repeat right top;
+	width: auto;
+	float: left;
+	height: 100%;
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.review {
+	float:left;
+	clear: left;
+	display: block;
+	width: auto;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 20px;
+	padding-top: 10px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	max-width: 450px;
+	background-color: #FFF;
+	background-color: rgba(255,255,255,.7);
+}
+
 /*# sourceMappingURL=mob.css.map */
