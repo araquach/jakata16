@@ -3152,6 +3152,10 @@ ul.tinytext {
 	padding-right:50px;
 }
 
+#reviews h1 {
+	margin: 20px 20px;
+}
+
 .review {
 	float:left;
 	clear: left;

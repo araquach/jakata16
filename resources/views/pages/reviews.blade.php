@@ -16,6 +16,8 @@
 
 <section id="reviews">
 	
+	<h1>Some of our recent client reviews</h1>
+	
 	@foreach($reviews as $review)
 		<div class="review">
 			<p>"{{ $review->review }}"</p>
