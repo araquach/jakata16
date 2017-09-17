@@ -5,8 +5,9 @@
 @include('layouts.partials.head', [
 	'description' => 'Check out this selection of recent client reviews',
 	'keywords' => 'hairdressing reviews, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers, hairdressing feedback',
-	'ogtitle' => 'Our most recent reviews',
-	'ogdescription' => 'Check out this selection of recent client reviews.',
+	'ogtitle' => 'See what some of our recent clients said about us',
+	'ogdescription' => $review->first()->review,
+	'ogimage' => url('/') . '/images/reviews/reviews-meta.jpg',
 	'title' => 'Jakata Salon - Reviews - Hairdressers in Warrington'
 	])
 	
