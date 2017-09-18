@@ -90,9 +90,19 @@ class PagesController extends Controller {
 		return view('pages.leaver');
 	}
 	
-	public function reviews()
+	public function reviews($stylist = 'all')
 	{
-		$reviews = Review::where('salon', '1')->orderByRaw("RAND()")->limit(9)->get();
+		if($stylist == 'all')
+		{
+			$reviews = Review::where('salon', '1')
+			->orderByRaw("RAND()")->limit(9)->get();
+		}
+		else
+		{
+			$reviews = Review::where('salon', '1')
+			->where('staff', 'LIKE', '%'.$stylist.'%')
+			->orderByRaw("RAND()")->limit(9)->get();
+		}
 		
 		return view('pages.reviews', compact('reviews'));
 	}
