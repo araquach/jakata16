@@ -33,6 +33,7 @@
 		  	    	<li>&quot;{{ limit_words($review->review) }}&quot;<br><span class="client">{{ remove_client($review->client) }} - hair by {{ remove_staff($review->staff) }} </span></li>
 		  		@endforeach
 		  	</ul>
+		  	<a href="{{ URL::to('reviews/hall') }}">More of Laura's reviews here</a>
 		</div> <!--#feedback_feed-->
 	</div> <!--#feedback_container-->
 	

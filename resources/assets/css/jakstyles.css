@@ -297,9 +297,7 @@ nav li a:hover {
 	text-shadow: 0 0 20px #0a0436;
 }
 
-#feedback_feed ul li .client {
-	font: .7em Georgia, "Times New Roman", Times, serif;
-}
+
 
 #feedback_feed a {
 	color: #FFF;
@@ -421,6 +419,10 @@ nav li a:hover {
 
 #feedback_feed_ind ul li .client {
 	font: .8em Georgia, "Times New Roman", Times, serif;
+}
+
+#feedback_feed_ind a {
+	margin-left: 10px;
 }
 
 .jimmy {
