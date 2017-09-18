@@ -3658,7 +3658,7 @@ ul.tinytext {
 /* @end */
 
 #reviews {
-	background: rgb(141,191,211) url('/images/reviews/KEA_T3_CW_HS_01_037.jpg') no-repeat right -100px;
+	background: rgb(141,191,211) url('/images/reviews/KEA_T3_CW_HS_01_037.jpg') no-repeat right top;
 	width: 850px;
 	height: 100%;
 	float: left;
