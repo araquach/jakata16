@@ -19,16 +19,17 @@
 	
 	<h1>Some of our recent client reviews</h1>
 	
+	<h3>Filter by stylist</h3>
+	
 	<ul class="stylist-filter">
-		<li class="review-adam"><a href="{{ URL::to('reviews/adam') }}">Adam</a></li>
-		<li class="review-jimmy"><a href="{{ URL::to('reviews/jimmy') }}">Jimmy</a></li>
-		<li class="review-laurah"><a href="{{ URL::to('reviews/hall') }}">Laura H</a></li>
-		<li class="review-natalie"><a href="{{ URL::to('reviews/natalie') }}">Natalie</a></li>
-		<li class="review-maisie"><a href="{{ URL::to('reviews/maisie') }}">Maisie</a></li>
-		<li class="review-caleb"><a href="{{ URL::to('reviews/caleb') }}">Caleb</a></li>
-		<li class="review-lauram"><a href="{{ URL::to('reviews/minett') }}">Laura M</a></li>
-		<li class="review-vikki"><a href="{{ URL::to('reviews/vikki') }}">Vikki</a></li>
-		<li class="review-layla"><a href="{{ URL::to('reviews/layla') }}">Layla</a></li>
+		<a href="{{ URL::to('reviews/jimmy') }}"><li class="review-jimmy">Jimmy</li></a>
+		<a href="{{ URL::to('reviews/hall') }}"><li class="review-laurah">Laura H</li></a>
+		<a href="{{ URL::to('reviews/natalie') }}"><li class="review-natalie">Natalie</li></a>
+		<a href="{{ URL::to('reviews/maisie') }}"><li class="review-maisie">Maisie</li></a>
+		<a href="{{ URL::to('reviews/caleb') }}"><li class="review-caleb">Caleb</li></a>
+		<a href="{{ URL::to('reviews/minett') }}"><li class="review-lauram">Laura M</li></a>
+		<a href="{{ URL::to('reviews/vikki') }}"><li class="review-vikki">Vikki</li></a>
+		<a href="{{ URL::to('reviews/layla') }}"><li class="review-layla">Layla</li></a>
 	</ul>
 	
 	@foreach($reviews as $review)

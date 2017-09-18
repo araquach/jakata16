@@ -3672,23 +3672,75 @@ ul.tinytext {
 	margin: 20px 20px;
 }
 
+#reviews h3 {
+	margin: 0;
+	margin-left: 20px;
+}
+
 ul.stylist-filter {
-	width: 400px;
+	width: 350px;
 	float: left;
+	margin-left: -20px;
 }
 
 ul.stylist-filter li {
 	width: 70px;
-	height: 70px;
+	height: 20px;
 	float: left;
-	background-color: red;
 	margin-right: 10px;
 	margin-bottom: 10px;
 	list-style-type: none;
+	text-align: center;
+	color: #FFF;
+	padding-top: 70px;
+	opacity: 1;
+	font-size: .7em;
+	line-height: 1.7em;
+	border-radius: 10px;
+}
+
+ul.stylist-filter li:hover {
+	opacity: .6;
 }
 
 ul.stylist-filter li.review-jimmy {
-	background-color: blue;
+	background: #424259 url('/images/reviews/jimmy.jpg') no-repeat center top;
+	background-size: contain;
+}
+
+ul.stylist-filter li.review-laurah {
+	background: #424259 url('/images/reviews/laura.jpg') no-repeat center top;
+	background-size: contain;contain
+}
+
+ul.stylist-filter li.review-natalie {
+	background: #424259 url('/images/reviews/nat.jpg') no-repeat center top;
+	background-size: contain;
+}
+
+ul.stylist-filter li.review-maisie {
+	background: #424259 url('/images/reviews/maisie.jpg') no-repeat center top;
+	background-size: contain;
+}
+
+ul.stylist-filter li.review-caleb {
+	background: #424259 url('/images/reviews/caleb.jpg') no-repeat center top;
+	background-size: contain;
+}
+
+ul.stylist-filter li.review-lauram {
+	background: #424259 url('/images/reviews/laura_m.jpg') no-repeat center top;
+	background-size: contain;
+}
+
+ul.stylist-filter li.review-vikki {
+	background: #424259 url('/images/reviews/vicky.jpg') no-repeat center top;
+	background-size: contain;
+}
+
+ul.stylist-filter li.review-layla {
+	background: #424259 url('/images/reviews/layla.jpg') no-repeat center top;
+	background-size: contain;
 }
 
 .review {

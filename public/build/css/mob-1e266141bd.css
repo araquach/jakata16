@@ -2671,6 +2671,13 @@ ul.tinytext {
 	padding-bottom: 50px;
 }
 
+ul.stylist-filter {
+	width: auto;
+	float: left;
+	margin-left: 0;
+	padding: 0;
+}
+
 .review {
 	float:left;
 	clear: left;
