@@ -3672,6 +3672,25 @@ ul.tinytext {
 	margin: 20px 20px;
 }
 
+ul.stylist-filter {
+	width: 400px;
+	float: left;
+}
+
+ul.stylist-filter li {
+	width: 70px;
+	height: 70px;
+	float: left;
+	background-color: red;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	list-style-type: none;
+}
+
+ul.stylist-filter li.review-jimmy {
+	background-color: blue;
+}
+
 .review {
 	float:left;
 	clear: left;
