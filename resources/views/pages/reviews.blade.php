@@ -40,6 +40,5 @@
 		</div>
 	@endforeach
 </section>
-<!--team-->
 
 @stop

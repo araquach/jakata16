@@ -417,8 +417,9 @@ nav li a:hover {
 	font-style: italic;
 }
 
-#feedback_feed_ind ul li .client {
+.client {
 	font: .8em Georgia, "Times New Roman", Times, serif;
+	line-height: 1.5em;
 }
 
 #feedback_feed_ind a {
@@ -3196,7 +3197,7 @@ ul.stylist-filter li.review-jimmy {
 
 ul.stylist-filter li.review-laurah {
 	background: #424259 url('/images/reviews/laura.jpg') no-repeat center top;
-	background-size: contain;contain
+	background-size: contain;
 }
 
 ul.stylist-filter li.review-natalie {
