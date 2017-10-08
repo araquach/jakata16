@@ -946,10 +946,6 @@ nav li a:hover {
 	background: url('/images/team/jimmy.jpg') no-repeat top left #f5f5f5;
 }
 
-.maisie {
-	background: url('/images/team/maisie.jpg') no-repeat top left #f5f5f5;
-}
-
 .laura_c {
 	background: url('/images/team/laura.jpg') no-repeat top left #f5f5f5;
 }
@@ -1065,17 +1061,6 @@ nav li a:hover {
 	-o-transform:rotate(-4deg); /* Opera */
 	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
 	
-	
-}
-
-#maisie {
-	background: #FFF url('/images/team/maisie.jpg') no-repeat left top;
-	transform:rotate(-4deg);
-	-ms-transform:rotate(-4deg); /* IE 9 */
-	-moz-transform:rotate(-4deg); /* Firefox */
-	-webkit-transform:rotate(-4deg); /* Safari and Chrome */
-	-o-transform:rotate(-4deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
 	
 }
 
@@ -3718,11 +3703,6 @@ ul.stylist-filter li.review-laurah {
 
 ul.stylist-filter li.review-natalie {
 	background: #424259 url('/images/reviews/nat.jpg') no-repeat center top;
-	background-size: contain;
-}
-
-ul.stylist-filter li.review-maisie {
-	background: #424259 url('/images/reviews/maisie.jpg') no-repeat center top;
 	background-size: contain;
 }
 

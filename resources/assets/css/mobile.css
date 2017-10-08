@@ -595,11 +595,6 @@ a.book-now {
 	background-size: cover;
 }
 
-.maisie {
-	background: url('/images/team/maisie.jpg') no-repeat top left #f5f5f5;
-	background-size: cover;
-}
-
 .laura_c {
 	background: url('/images/team/laura.jpg') no-repeat top left #f5f5f5;
 	background-size: cover;
@@ -720,28 +715,6 @@ a.book-now {
 	-o-transform:rotate(-4deg); /* Opera */
 	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
 	
-	
-}
-
-#michelle {
-	background: #FFF url('/images/team/michelle.jpg') no-repeat left top;
-	transform:rotate(3deg);
-	-ms-transform:rotate(3deg); /* IE 9 */
-	-moz-transform:rotate(3deg); /* Firefox */
-	-webkit-transform:rotate(3deg); /* Safari and Chrome */
-	-o-transform:rotate(3deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-}
-
-#maisie {
-	background: #FFF url('/images/team/maisie.jpg') no-repeat left top;
-	transform:rotate(-4deg);
-	-ms-transform:rotate(-4deg); /* IE 9 */
-	-moz-transform:rotate(-4deg); /* Firefox */
-	-webkit-transform:rotate(-4deg); /* Safari and Chrome */
-	-o-transform:rotate(-4deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
 	
 }
 

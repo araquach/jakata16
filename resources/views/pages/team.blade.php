@@ -41,12 +41,6 @@
 			</section><!--team member laura-->
 		</a>
 		
-		<a href="{{ URL::to('maisie') }}" >
-			<section class="team_member" id="maisie">
-				<h2>Maisie Thompson</h2>
-			</section> <!--team member maisie-->
-		</a>
-		
 		<a href="{{ URL::to('natalie') }}" >
 			<section class="team_member" id="nat">
 				<h2>Natalie Doxey</h2>
