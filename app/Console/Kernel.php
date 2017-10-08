@@ -28,11 +28,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('voteStart')
-                  ->weekly()->tuesdays()->at('16:00');
+        // $schedule->command('voteStart')
+               //   ->weekly()->tuesdays()->at('16:00');
         
-        $schedule->command('voteReminder')
-                  ->weekly()->fridays()->at('13:00');
+        // $schedule->command('voteReminder')
+               //   ->weekly()->fridays()->at('13:00');
                  
         // $schedule->command('followUp1')
                 //  ->weekly()->wednesdays()->at('16:30');
