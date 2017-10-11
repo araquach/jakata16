@@ -80,6 +80,11 @@ Route::get('offer2/{client}',
   ['uses' => 'OfferController@show2']);
 Route::patch('offer/{client}',
   ['as' => 'offerUpdate', 'uses' => 'OfferController@update']);
+  
+Route::get('/joinus', 'PotentialEmployeeController@create');
+Route::post('joinus/store',
+  ['uses' => 'PotentailEmployeeController@store']);
+
 
 Route::get('/superstylist', 'CustomerServiceController@index');
 Route::get('/superstylist/{user}/create', 'CustomerServiceController@create');
