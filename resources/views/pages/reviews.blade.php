@@ -25,9 +25,7 @@
 		<a href="{{ URL::to('reviews/jimmy') }}"><li class="review-jimmy">Jimmy</li></a>
 		<a href="{{ URL::to('reviews/hall') }}"><li class="review-laurah">Laura H</li></a>
 		<a href="{{ URL::to('reviews/natalie') }}"><li class="review-natalie">Natalie</li></a>
-		<a href="{{ URL::to('reviews/maisie') }}"><li class="review-maisie">Maisie</li></a>
 		<a href="{{ URL::to('reviews/caleb') }}"><li class="review-caleb">Caleb</li></a>
-		<a href="{{ URL::to('reviews/minett') }}"><li class="review-lauram">Laura M</li></a>
 		<a href="{{ URL::to('reviews/vikki') }}"><li class="review-vikki">Vikki</li></a>
 		<a href="{{ URL::to('reviews/layla') }}"><li class="review-layla">Layla</li></a>
 	</ul>
