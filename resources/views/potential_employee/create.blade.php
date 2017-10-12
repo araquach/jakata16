@@ -35,19 +35,19 @@
 
 	<div class="row">
 	{!! Form::label('full_name', 'Full Name') !!}
-	{!! Form::text('full_name')) !!}
+	{!! Form::text('full_name') !!}
 	{!! $errors->first('full_name', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row">
 	{!! Form::label('position', 'Current Position') !!}
-	{!! Form::text('position')) !!}
+	{!! Form::text('position') !!}
 	{!! $errors->first('position', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	
 	<div class="row">
 	{!! Form::label('mobile', 'Mobile Number') !!}
-	{!! Form::text('mobile')) !!}
+	{!! Form::text('mobile') !!}
 	{!! $errors->first('mobile', '<div class="errorMessage">:message</div>') !!}
 	</div>
 	

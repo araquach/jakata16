@@ -14,7 +14,7 @@ Route::get('/jimmy', 'PagesController@jimmy');
 Route::get('/natalie', 'PagesController@natalie');
 Route::get('/vikki', 'PagesController@vikki');
 Route::get('/lauraC', 'PagesController@lauraC');
-Route::get('/lauraM', 'PagesController@lauraM');
+// Route::get('/lauraM', 'PagesController@lauraM');
 Route::get('/caleb', 'PagesController@caleb');
 Route::get('/layla', 'PagesController@layla');
 Route::get('/kebelo', 'PagesController@kebelo');
@@ -83,7 +83,7 @@ Route::patch('offer/{client}',
   
 Route::get('/joinus', 'PotentialEmployeeController@create');
 Route::post('joinus/store',
-  ['uses' => 'PotentailEmployeeController@store']);
+  ['uses' => 'PotentialEmployeeController@store']);
 
 
 Route::get('/superstylist', 'CustomerServiceController@index');
