@@ -2993,19 +2993,9 @@ span.kebelo_italic {
 
 
 #exit_copy {
-	width: 400px;
+	width: 550px;
 	margin-left: 60px;
 	float: left;
-}
-
-#exit_pic {
-	position: relative;
-	width: 430px;
-	margin-top: 0;
-	height: 560px;
-	float: right;
-	background: url('/images/exit/matt.jpg') no-repeat left top red;
-	float: right;
 }
 
 #exit_pic p {
@@ -3018,6 +3008,18 @@ span.kebelo_italic {
 
 p.exit-offer {
 	font-size: 1.5em;
+}
+
+#exit_copy p.big {
+	font-size: 2.6em;
+	line-height: 1.7em;
+	margin: 0;
+}
+
+#exit_copy p.medium {
+	font-size: 1.7em;
+	line-height: 1em;
+	margin: 0;
 }
 
 /* @end */

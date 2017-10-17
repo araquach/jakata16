@@ -135,25 +135,28 @@ class PagesController extends Controller {
 		return view('pages.team.lauraC', compact('reviews'));
 	}
 	
-	public function lauraM()
-	{
-		$reviews = Review::where('staff', '=', 'Staff: Laura Minett')->orderByRaw("RAND()")->get();
-		
-		return view('pages.team.lauraM', compact('reviews'));
-	}
-	
-	public function caleb()
-	{
-		$reviews = Review::where('staff', '=', 'Staff: Caleb Barrie')->orderByRaw("RAND()")->get();
-		
-		return view('pages.team.caleb', compact('reviews'));
-	}
-	
 	public function layla()
 	{
 		$reviews = Review::where('staff', '=', 'Staff: Layla Relf')->orderByRaw("RAND()")->get();
 		
 		return view('pages.team.layla', compact('reviews'));
+	}
+	
+	// leaver pages
+	
+	public function lauraM()
+	{
+		return view('pages.leaver.laura');
+	}
+	
+	public function caleb()
+	{
+		return view('pages.leaver.caleb');
+	}
+	
+	public function maisie()
+	{
+		return view('pages.leaver.maisie');
 	}
 	
 	
