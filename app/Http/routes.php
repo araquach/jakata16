@@ -97,4 +97,6 @@ Route::get('/superstylist/test', 'CustomerServiceAdminController@test');
 Route::get('/blog', 'BlogController@index');
 Route::get('/blog/{blog}', 'BlogController@show');
 
+Route::get('/newsletter', 'PagesController@newsletter');
+
 Route::auth();

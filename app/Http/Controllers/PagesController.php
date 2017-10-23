@@ -169,5 +169,12 @@ class PagesController extends Controller {
 	{
 		return view('pages.test');
 	}
-
+	
+	public function newsletter()
+	{
+		$blogs = Blog::take(5)->where('publish', 1)->orWhere('publish', 3)
+			->with('paras')->orderBy('created_at', 'desc')->get();
+		
+		return view('emails.newsletter.newsletter', compact('blogs'));
+	}
 }
