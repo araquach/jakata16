@@ -8,7 +8,7 @@
 	'ogtitle' => $blog->title,
 	'ogdescription' => $blog->paras->first()->para,
 	'ogimage' => $blog->meta_image,
-	'title' => 'Jakata Salon -' . $blog->title . '- Hairdressers in Warrington'
+	'title' => 'Jakata Salon - ' . $blog->title . '- Hairdressers in Warrington'
 	])
 @stop
 

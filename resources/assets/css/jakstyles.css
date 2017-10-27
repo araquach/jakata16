@@ -3227,3 +3227,60 @@ ul.stylist-filter li.review-layla {
 	background-color: rgba(255,255,255,.7);
 }
 
+#potential {
+	width: 950px;
+	background-color: #f5f5f5;
+	padding-top: 270px;
+	padding-bottom: 200px;
+	float: left;
+}
+
+#potential-copy {
+	width: 500px;
+	padding-left: 60px;
+}
+
+
+.testimonial {
+	display: block;
+	width: 500px;
+	background-color: red;
+	clear: both;
+	margin-bottom: 30px;
+}
+.testimonial-img {
+	float: left;
+	clear: left;
+	width: 150px;
+	height: 150px;
+	background-color: red;
+}
+
+.testimonial-copy {
+	float: right;
+	clear: right;
+	width: 350px;
+	background-color: yellow;
+}
+
+.excitement {
+	float: left;
+	clear: both;
+}
+
+.excitement p {
+	font-size: 1.2em
+}
+
+#potential-copy #form {
+	float: left;
+	clear: both;
+}
+
+#form.potential {
+	padding-left: 60px;
+	float: left;
+	clear: left;
+	width: 660px;
+	margin-bottom: 50px;
+}
