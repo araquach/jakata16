@@ -5,11 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\PotentialEmployee;
-use App\PotentialEmployeeFormRequest;
+use App\Http\Requests\PotentialEmployeeFormRequest;
+use Mail;
 
 
 class PotentialEmployeeController extends Controller
 {
+    public function index()
+    {
+        $potentials = PotentialEmployee::get();
+        
+        return view('potential_employee.index', compact('potentials'));
+    }
+    
     public function create()
     {
         return view('potential_employee.create');
@@ -21,13 +29,13 @@ class PotentialEmployeeController extends Controller
         
         PotentialEmployee::create($input);
         
-        $applicant = $this->stylist->get()->last();
+        $applicant = PotentialEmployee::get()->last();
 		
-		Mail::send('emails.recruitment.stylist', compact('applicant'), function($message)
+		Mail::send('emails.potential_employee', compact('applicant'), function($message)
    		{
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
 			$message->to('adam@jakatasalon.co.uk');
-       		$message->to('jimmy@jakatasalon.co.uk');
+       		// $message->to('jimmy@jakatasalon.co.uk');
        		$message->subject('New Potential Employee');
    		});
     

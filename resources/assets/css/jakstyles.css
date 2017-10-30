@@ -3235,32 +3235,72 @@ ul.stylist-filter li.review-layla {
 	float: left;
 }
 
+#potential .alert.alert-info {
+	background-color: red;
+}
+
 #potential-copy {
 	width: 500px;
 	padding-left: 60px;
 }
 
+#photographic {
+	float: left;
+	clear: both;
+	width: 830px;
+	margin-bottom: 30px;
+}
+
+.photographic-copy {
+	width: 500px;
+	float: left;
+	clear: left;
+}
+
+.photographic-image {
+	float: right;
+	width: 300px;
+	height: 320px;
+	background: url('/images/potential/girls_flattened.jpg') no-repeat center -30px;
+	background-size: cover;
+}
+
+.photographic-image p {
+	font-size: .7em;
+	text-align: center;
+	margin-top: 350px;
+	padding: 3px;
+}
 
 .testimonial {
 	display: block;
 	width: 500px;
 	background-color: red;
 	clear: both;
-	margin-bottom: 30px;
+	margin-bottom: 70px;
 }
+
 .testimonial-img {
 	float: left;
 	clear: left;
-	width: 150px;
+	width: 120px;
 	height: 150px;
-	background-color: red;
+	margin-bottom: 20px;
 }
 
 .testimonial-copy {
 	float: right;
 	clear: right;
 	width: 350px;
-	background-color: yellow;
+}
+
+.testimonial-copy h3 {
+	margin: 0;
+}
+
+.testimonial-copy p {
+	margin-top: .5em;
+	font-size: .9em;
 }
 
 .excitement {
@@ -3269,7 +3309,7 @@ ul.stylist-filter li.review-layla {
 }
 
 .excitement p {
-	font-size: 1.2em
+	font-size: 1.2em;
 }
 
 #potential-copy #form {
