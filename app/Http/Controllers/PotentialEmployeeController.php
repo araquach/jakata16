@@ -13,7 +13,7 @@ class PotentialEmployeeController extends Controller
 {
     public function index()
     {
-        $potentials = PotentialEmployee::get();
+        $potentials = PotentialEmployee::where('salon', 1)->get();
         
         return view('potential_employee.index', compact('potentials'));
     }
@@ -29,7 +29,7 @@ class PotentialEmployeeController extends Controller
         
         PotentialEmployee::create($input);
         
-        $applicant = PotentialEmployee::get()->last();
+        $applicant = PotentialEmployee::where('salon', 1)->get()->last();
 		
 		Mail::send('emails.potential_employee', compact('applicant'), function($message)
    		{

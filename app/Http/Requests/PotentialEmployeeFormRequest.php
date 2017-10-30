@@ -15,6 +15,12 @@ class PotentialEmployeeFormRequest extends Request
     {
         return true;
     }
+    
+    protected function getRedirectUrl()
+    {
+        $url = $this->redirector->getUrlGenerator();
+        return $url->previous() . '#form';
+    }
 
     /**
      * Get the validation rules that apply to the request.

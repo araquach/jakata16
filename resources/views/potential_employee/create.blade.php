@@ -76,7 +76,7 @@
 		</div>
 		<div class="excitement">
 			<p>The exciting news is we're getting ready to move into a brand new, kick-ass salon, 
-			a space designed to give the perfect working environment for dynamic stylists. We designed it with the ability to turn it into a photo studio so we can do more frequent shoots - we think you'll love it.</p>
+			a space designed to give the perfect working environment for dynamic stylists. We designed it with the ability to turn it into a photo studio on demand so we can do more frequent shoots - we think you'll love it.</p>
 			<p><strong>If you're interested in joining our team just leave your details here and we'll be in touch!</strong></p>
 		</div>
 		
@@ -95,15 +95,17 @@
 	
 		<h2>Your details</h2>
 		
+		{{ Form::hidden('salon', '1') }}
+		
 		<div class="row">
 		{!! Form::label('full_name', 'Full Name') !!}
-		{!! Form::text('full_name') !!}
+		{!! Form::text('full_name', old('full_name')) !!}
 		{!! $errors->first('full_name', '<div class="errorMessage">:message</div>') !!}
 		</div>
 		
 		<div class="row">
 		{!! Form::label('mobile', 'Mobile Number') !!}
-		{!! Form::text('mobile') !!}
+		{!! Form::text('mobile', old('mobile')) !!}
 		{!! $errors->first('mobile', '<div class="errorMessage">:message</div>') !!}
 		</div>
 		
