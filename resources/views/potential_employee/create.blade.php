@@ -33,7 +33,7 @@
 		<p>We've built up our team gradually over the years, with ongoing training and development. Regular external and internal training and access to the best products on the market.</p>
 			<div id="photographic">
 				<div class="photographic-copy">
-					<p>We've entered numerous hairdressing competions over the years and we're heavily into photographic work - <em>check out this image from a shoot we did a few months back.</em></p>
+					<p>We've entered numerous hairdressing competions and we're heavily into photographic work - <em>check out this image from a shoot we did a few months back.</em></p>
 					<div class="photographic-copy-img-1"></div>
 					<div class="photographic-copy-img-2"></div>
 					<div class="photographic-copy-img-3"></div>
