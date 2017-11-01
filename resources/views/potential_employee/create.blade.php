@@ -8,7 +8,7 @@
 	'ogtitle' => 'We\'re looking for talented, dynamic hairdressers to join our team',
 	'ogdescription' => 'In the 15 years we\'ve been around we\'ve built up a strong reputation, winning numerous awards and creating some incredible, cutting edge styles.
 	We also pride ourselves in giving the best customer experience. We\'ve built up our team gradually over the years, with ongoing training and development. Regular external and internal training and access to the best products on the market.',
-	'ogimage' => url('/') . '/images/potential_fb.jpg',
+	'ogimage' => url('/') . '/images/potential/potential_fb.jpg',
 	'title' => 'Jakata Salon - Join Our Hairdressing Team - Hairdressers in Warrington'
 	])
 	
