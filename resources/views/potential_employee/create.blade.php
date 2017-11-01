@@ -4,10 +4,11 @@
 
 @include('layouts.partials.head', [
 	'description' => 'Are you looking to join a dynamic hairdressing team?',
-	'keywords' => 'hair recruitment warrington, hairdressing jobs warrington, stylist jobs warrington, ',
-	'ogtitle' => 'Are you looking to join a dynamic hairdressing team?',
-	'ogdescription' => 'Join Our Team',
-	'ogimage' => url('/') . '/images/',
+	'keywords' => 'hair recruitment warrington, hairdressing jobs warrington, stylist jobs warrington',
+	'ogtitle' => 'We\'re looking for talented, dynamic hairdressers to join our team',
+	'ogdescription' => 'In the 15 years we\'ve been around we\'ve built up a strong reputation, winning numerous awards and creating some incredible, cutting edge styles.
+	We also pride ourselves in giving the best customer experience. We\'ve built up our team gradually over the years, with ongoing training and development. Regular external and internal training and access to the best products on the market.',
+	'ogimage' => url('/') . '/images/potential_fb.jpg',
 	'title' => 'Jakata Salon - Join Our Hairdressing Team - Hairdressers in Warrington'
 	])
 	
@@ -48,8 +49,8 @@
 			</div>
 			<div class="testimonial-copy">
 				<h3>Laura Hall (Senior Stylist)</h3>
-				<p>&quot;I joined JAKATA over 10 years ago and have seen the salon devolop over the years. 
-				We have ongoing training so we are always up to date with the latest trends. The atmosphere is relaxed and friendly whilst being extremely proffessional.
+				<p>&quot;I joined JAKATA over 10 years ago and have seen the salon go from strength to strength over the years. 
+				We have ongoing training so we're always up to date with the latest trends. The atmosphere is really relaxed and friendly, whilst being extremely professional.
 				&quot;</p>
 			</div>
 		</div>
@@ -59,9 +60,9 @@
 			</div>
 			<div class="testimonial-copy">
 				<h3>Jimmy Sharpe (Salon Manager)</h3>
-				<p>&quot;I joined JAKATA as a junior and I've built up to being manager of both salons! 
+				<p>&quot;I joined JAKATA as a junior 9 years ago and I've progressed to being manager of both salons! 
 				I have had the opportunity to be a member of the Schwarzkopf L.E.A.P team, testament to the fantastic training we get. 
-				Can't wait to get stuck into more photoshoots!&quot;</p>
+				I Can't wait to get stuck into more photoshoots!&quot;</p>
 			</div>
 		</div>
 		<div class="testimonial">
@@ -71,7 +72,7 @@
 			<div class="testimonial-copy">
 				<h3>Layla Relf (Graduate Stylist)</h3>
 				<p>&quot;In just over a year I've been trained from scratch to becoming a Graduate stylist. I have continual one on one training and support from the other team members.
-				I always get help and support when I need it as I move up the ranks. I'm now focused on becomiong a Senior Stylist!&quot;</p>
+				I always get help and support when I need it as I move up the ranks. I'm now focused on becoming a Senior Stylist!&quot;</p>
 			</div>
 		</div>
 		<div class="excitement">

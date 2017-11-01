@@ -15,26 +15,28 @@
 
 @section('content')
 
-<div id="admin">
+<div id="recruitBlank">
     <h1>Potential Employees</h1>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Employment</th>
-            <th>Mobile</th>
-            <th>Date</th>
-            <th>Contact Status</th>
-        </tr>
-         @foreach($potentials as $potential)
-        <tr>
-            <td>{{ $potential->full_name }}</td>
-            <td>{{ $potential->position }}</td>
-            <td>{{ $potential->mobile }}</td>
-            <td>{{ $potential->created_at->format('d/m/Y') }}</td>
-            <td>{{ $potential->status }}</td>
-        </tr>
-        @endforeach
-    </table>
+    <div class="view">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Employment</th>
+                <th>Mobile</th>
+                <th>Date</th>
+                <th>Contact Status</th>
+            </tr>
+             @foreach($potentials as $potential)
+            <tr>
+                <td><a href="/potential/{{ $potential->id }}">{{ $potential->full_name }}</a></td>
+                <td>{{ $potential->position }}</td>
+                <td>{{ $potential->mobile }}</td>
+                <td>{{ $potential->created_at->format('d/m/Y') }}</td>
+                <td>{{ $potential->status }}</td>
+            </tr>
+            @endforeach
+        </table>
+    </div>
 </div>
 
 @stop

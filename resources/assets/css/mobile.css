@@ -2676,3 +2676,116 @@ ul.stylist-filter {
 	background-color: #FFF;
 	background-color: rgba(255,255,255,.7);
 }
+
+/* Potential */
+
+#potential {
+	background: #f5f5f5 url('/images/potential/schwarzkopf.jpg') no-repeat top center; 
+	background-size: contain;
+	width: auto;
+	background-color: #f5f5f5;
+	padding: 0;
+	padding-top: 370px;
+	padding-bottom: 200px;
+	float: left;
+}
+
+#potential .alert.alert-info {
+	background-color: #4f516a;
+    color: #FFF;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+#potential-copy {
+	background-color: #f5f5f5;
+	width: auto;
+	padding: 30px;
+}
+
+#photographic {
+	float: left;
+	clear: left;
+	width: auto;
+}
+
+.photographic-copy {
+	width: auto;
+	float: left;
+	clear: left;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.photographic-copy img {
+	margin-top: 30px;
+}
+
+.photographic-image {
+	float: left;
+	clear: left;
+	width: auto;
+	background: url('/images/potential/girls_flattened.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.photographic-image p {
+	font-size: .7em;
+	text-align: center;
+	margin-top: 350px;
+	padding: 3px;
+}
+
+.testimonial {
+	display: block;
+	width: auto;
+	height: 100px;
+	clear: left;
+	margin-bottom: 70px;
+}
+
+.testimonial-img {
+	float: left;
+	clear: left;
+	width: auto;
+	height: 150px;
+	margin-bottom: 0;
+}
+
+.testimonial-copy {
+	float: left;
+	clear: left;
+	width: auto;
+}
+
+.testimonial-copy h3 {
+	margin: 0;
+}
+
+.testimonial-copy p {
+	margin-top: .5em;
+	font-size: .9em;
+}
+
+.excitement {
+	float: left;
+	clear: left;
+}
+
+.excitement p {
+	font-size: 1.2em;
+}
+
+#potential-copy #form {
+	float: left;
+	clear: left;
+}
+
+#form.potential {
+	padding-left: 0;
+	float: left;
+	clear: left;
+	width: auto;
+	margin-bottom: 50px;
+}

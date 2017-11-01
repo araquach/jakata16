@@ -82,7 +82,9 @@ Route::get('offer2/{client}',
 Route::patch('offer/{client}',
   ['as' => 'offerUpdate', 'uses' => 'OfferController@update']);
   
-Route::get('/potentials', 'PotentialEmployeeController@index');
+Route::get('/potential', 'PotentialEmployeeController@index');
+Route::get('/potential/{potential}', 'PotentialEmployeeController@edit');
+Route::patch('potential/{potential}', 'PotentialEmployeeController@update');
 Route::get('/joinus', 'PotentialEmployeeController@create');
 Route::post('joinus/store',
   ['uses' => 'PotentialEmployeeController@store']);
