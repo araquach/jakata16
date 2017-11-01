@@ -46,7 +46,7 @@
 				'Not Contacted' => 'Not Contacted',
 				'Left Message' => 'Left Message',
 				'Seem Good' => 'Seem Good',
-				'Seem Bad' => 'Seem Bad',
+				'Discard' => 'Discard',
 				)) !!}
 			{!! $errors->first('status', '<div class="errorMessage">:message</div>') !!}
 		</div>

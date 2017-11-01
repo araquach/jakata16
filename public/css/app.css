@@ -3788,6 +3788,30 @@ ul.stylist-filter li.review-layla {
 	margin-bottom: 40px;
 }
 
+.photographic-copy-img-1,
+.photographic-copy-img-2, 
+.photographic-copy-img-3 {
+	width: 155px;
+	height: 155px;
+	float: left;
+	margin-right: 10px;
+}
+
+.photographic-copy-img-1 {
+	background: url('/images/potential/shoot3.jpg') no-repeat center top;
+	background-size: cover;
+}
+
+.photographic-copy-img-2 {
+	background: url('/images/potential/shoot2.jpg') no-repeat center top;
+	background-size: cover;
+}
+
+.photographic-copy-img-3 {
+	background: url('/images/potential/shoot1.jpg') no-repeat center top;
+	background-size: cover;
+}
+
 .photographic-copy img {
 	margin-top: 30px;
 }
@@ -3807,6 +3831,12 @@ ul.stylist-filter li.review-layla {
 	padding: 3px;
 }
 
+#testimonials {
+	float: left;
+	clear: both;
+	margin-top: 50px;
+}
+
 .testimonial {
 	display: block;
 	width: 500px;
@@ -3815,12 +3845,29 @@ ul.stylist-filter li.review-layla {
 	margin-bottom: 70px;
 }
 
-.testimonial-img {
+.testimonial-img-1,
+.testimonial-img-2,
+.testimonial-img-3 {
 	float: left;
 	clear: left;
 	width: 120px;
 	height: 150px;
 	margin-bottom: 0;
+}
+
+.testimonial-img-1 {
+	background: url('/images/potential/laura_h.jpg') no-repeat center top;
+	background-size: cover;
+}
+
+.testimonial-img-2 {
+	background: url('/images/potential/jimmy.jpg') no-repeat center top;
+	background-size: cover;
+}
+
+.testimonial-img-3 {
+	background: url('/images/potential/layla.jpg') no-repeat center top;
+	background-size: cover;
 }
 
 .testimonial-copy {

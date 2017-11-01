@@ -34,45 +34,41 @@
 			<div id="photographic">
 				<div class="photographic-copy">
 					<p>We've entered numerous hairdressing competions over the years and we're heavily into photographic work - <em>check out this image from a shoot we did a few months back.</em></p>
-					{{ Html::image('images/potential/shoot3.jpg', 'Behind the scenes', array( 'width' => 160, 'height' => 160 )) }}
-					{{ Html::image('images/potential/shoot2.jpg', 'Behind the scenes', array( 'width' => 160, 'height' => 160 )) }}
-					{{ Html::image('images/potential/shoot1.jpg', 'Behind the scenes', array( 'width' => 160, 'height' => 160 )) }}
+					<div class="photographic-copy-img-1"></div>
+					<div class="photographic-copy-img-2"></div>
+					<div class="photographic-copy-img-3"></div>
 				</div>
 				<div class="photographic-image">
 					<p>Our take on the Schwarzkopf 'Colorama' colection. <br>Hair by Nat &amp; Laura</p>
 				</div>
 			</div>
-		<h2>See what some of our current team members have to say&hellip;</h2>
-		<div class="testimonial">
-			<div class="testimonial-img">
-				{{ Html::image('images/potential/laura_h.jpg', 'Laura Hall', ['width' => '120', 'class' => 'potential-image']) }}
+		<div id="testimonials">	
+			<h2>See what some of our current team members have to say&hellip;</h2>
+			<div class="testimonial">
+				<div class="testimonial-img-1"></div>
+				<div class="testimonial-copy">
+					<h3>Laura Hall (Senior Stylist)</h3>
+					<p>&quot;I joined JAKATA over 10 years ago and have seen the salon go from strength to strength over the years. 
+					We have ongoing training so we're always up to date with the latest trends. The atmosphere is really relaxed and friendly, whilst being extremely professional.
+					&quot;</p>
+				</div>
+				</div>
+			<div class="testimonial">
+				<div class="testimonial-img-2"></div>
+				<div class="testimonial-copy">
+					<h3>Jimmy Sharpe (Salon Manager)</h3>
+					<p>&quot;I joined JAKATA as a junior 9 years ago and I've progressed to being manager of both salons! 
+					I have had the opportunity to be a member of the Schwarzkopf L.E.A.P team, testament to the fantastic training we get. 
+					I Can't wait to get stuck into more photoshoots!&quot;</p>
+				</div>
 			</div>
-			<div class="testimonial-copy">
-				<h3>Laura Hall (Senior Stylist)</h3>
-				<p>&quot;I joined JAKATA over 10 years ago and have seen the salon go from strength to strength over the years. 
-				We have ongoing training so we're always up to date with the latest trends. The atmosphere is really relaxed and friendly, whilst being extremely professional.
-				&quot;</p>
-			</div>
-		</div>
-		<div class="testimonial">
-			<div class="testimonial-img">
-				{{ Html::image('images/potential/jimmy.jpg', 'Laura Hall', ['width' => '120', 'class' => 'potential-image']) }}
-			</div>
-			<div class="testimonial-copy">
-				<h3>Jimmy Sharpe (Salon Manager)</h3>
-				<p>&quot;I joined JAKATA as a junior 9 years ago and I've progressed to being manager of both salons! 
-				I have had the opportunity to be a member of the Schwarzkopf L.E.A.P team, testament to the fantastic training we get. 
-				I Can't wait to get stuck into more photoshoots!&quot;</p>
-			</div>
-		</div>
-		<div class="testimonial">
-			<div class="testimonial-img">
-				{{ Html::image('images/potential/layla.jpg', 'Laura Hall', ['width' => '120', 'class' => 'potential-image']) }}
-			</div>
-			<div class="testimonial-copy">
-				<h3>Layla Relf (Graduate Stylist)</h3>
-				<p>&quot;In just over a year I've been trained from scratch to becoming a Graduate stylist. I have continual one on one training and support from the other team members.
-				I always get help and support when I need it as I move up the ranks. I'm now focused on becoming a Senior Stylist!&quot;</p>
+			<div class="testimonial">
+				<div class="testimonial-img-3"></div>
+				<div class="testimonial-copy">
+					<h3>Layla Relf (Graduate Stylist)</h3>
+					<p>&quot;In just over a year I've been trained from scratch to becoming a Graduate stylist. I have continual one on one training and support from the other team members.
+					I always get help and support when I need it as I move up the ranks. I'm now focused on becoming a Senior Stylist!&quot;</p>
+				</div>
 			</div>
 		</div>
 		<div class="excitement">
