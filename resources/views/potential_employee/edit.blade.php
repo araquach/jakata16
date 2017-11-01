@@ -51,6 +51,12 @@
 			{!! $errors->first('status', '<div class="errorMessage">:message</div>') !!}
 		</div>
 		
+		<div class="row">
+			{!! Form::label('comment', 'Comment') !!}
+			{!! Form::textArea('comment') !!}
+			{!! $errors->first('comment', '<div class="errorMessage">:message</div>') !!}
+		</div>
+		
 		<div class="row buttons">
 		{!! Form::submit('Submit') !!}
 		</div>

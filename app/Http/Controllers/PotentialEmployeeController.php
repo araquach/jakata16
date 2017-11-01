@@ -18,6 +18,8 @@ class PotentialEmployeeController extends Controller
 		$this->potential = $potential;
 	}
     
+    
+    
     public function index()
     {
         $potentials = PotentialEmployee::where('salon', 1)->orderBy('id', 'desc')->get();
@@ -25,15 +27,21 @@ class PotentialEmployeeController extends Controller
         return view('potential_employee.index', compact('potentials'));
     }
     
+    
+    
     public function create()
     {
         return view('potential_employee.create');
     }
     
+    
+    
     public function edit(PotentialEmployee $potential)
     {
         return view('potential_employee.edit', compact('potential'));
     }
+    
+    
     
     public function update(Request $request, PotentialEmployee $potential)
 	{
@@ -41,6 +49,7 @@ class PotentialEmployeeController extends Controller
 		
 		return redirect()->back()->with('message', 'Contact status updated');
 	}
+    
     
     public function store(PotentialEmployeeFormRequest $request)
     {
