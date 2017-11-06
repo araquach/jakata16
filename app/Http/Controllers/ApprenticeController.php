@@ -30,7 +30,7 @@ class ApprenticeController extends Controller {
 	 */
 	public function index()
 	{
-		$apprentices = $this->apprentice->where('quality', '!=', '4')->orderBy('quality')->get();
+		$apprentices = $this->apprentice->where('quality', '!=', '4')->orderBy('id', 'desc')->get();
 		
 		return view('recruit.apprentice.index', compact('apprentices'));
 	}

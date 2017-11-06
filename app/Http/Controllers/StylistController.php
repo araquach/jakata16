@@ -29,7 +29,7 @@ class StylistController extends Controller {
 	 */
     public function index()
 	{
-		$stylists = $this->stylist->where('quality', '!=', '4')->orderBy('quality')->get();
+		$stylists = $this->stylist->where('quality', '!=', '4')->orderBy('id', 'desc')->get();
 		
 		return view('recruit.stylist.index', compact('stylists'));
 		
