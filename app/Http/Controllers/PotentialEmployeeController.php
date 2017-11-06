@@ -13,11 +13,10 @@ class PotentialEmployeeController extends Controller
 {
     public function __construct(PotentialEmployee $potential)
 	{
-		// $this->middleware('auth', ['except' => []]);
+        $this->middleware('auth', ['except' => 'joinus']);
 		
 		$this->potential = $potential;
 	}
-    
     
     
     public function index()
