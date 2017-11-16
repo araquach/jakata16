@@ -26,7 +26,7 @@
 		<p>It's just round the corner from our current premises (see map) - it's the white building on the corner of Rylands Street and Cairo Street</p>
 		<p>We don't have our signage yet so just look for one of our familiar faces through the window! </p>
 		<p>Our contact number is the same: 01925 242960</p>
-		<p><strong>We look forward to seeing you in our new home!</strong></p>
+		<p><strong>We look forward to seeing you in our new salon!</strong></p>
 		
 	</div>
 	
