@@ -165,6 +165,11 @@ class PagesController extends Controller {
 		return view('pages.kebelo');
 	}
 	
+	public function relocation()
+	{
+		return view('pages.relocation');
+	}
+	
 	public function test()
 	{
 		return view('pages.test');

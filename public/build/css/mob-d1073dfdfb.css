@@ -2836,4 +2836,29 @@ ul.stylist-filter {
 	padding-left: 20px;
 }
 
+/* relocation */
+
+#relocation {
+	width: auto;
+	padding-top: 40px;
+	padding-bottom: 200px;
+	float: left;
+}
+
+#relocation_copy {
+	width: auto;
+	margin-left: 0;
+	padding: 20px;
+}
+
+#relocation_map {
+	width: auto;
+	float: left;
+	clear: left;
+	margin-top: 10px;
+	margin-right: 0;
+	padding: 20px;
+	padding-top: 0;
+}
+
 /*# sourceMappingURL=mob.css.map */
