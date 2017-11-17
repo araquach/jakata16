@@ -62,7 +62,7 @@ class PotentialEmployeeController extends Controller
    		{
        		$message->from('booking@jakatasalon.co.uk', 'Jakata');
 			$message->to('adam@jakatasalon.co.uk');
-       		// $message->to('jimmy@jakatasalon.co.uk');
+       		$message->to('jimmy@jakatasalon.co.uk');
        		$message->subject('New Potential Employee');
    		});
     
