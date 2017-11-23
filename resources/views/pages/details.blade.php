@@ -24,9 +24,9 @@
 <p>If you're visiting the salon after 6.30 pm you are able to park right outside the salon.</p>
 
 <h2>Address</h2>
-<p class="details_text">90/92 Bridge Street<br>
+<p class="details_text">27 Rylands Street<br>
 Warrington, Cheshire<br>
-WA1 2RF</p>
+WA1 1EJ</p>
 
 <h2>Telephone</h2>
 <p class="details_text"><strong>01925 242960</strong></p>
