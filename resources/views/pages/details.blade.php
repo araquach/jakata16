@@ -20,8 +20,7 @@
 
 <h1>Contact Us</h1>
 
-<p>Jakata is located in the centre of Warrington on Bridge Street. We're extremely close to the <em>Warrington Market multi-storey car park</em> and only a short walk from <em>Golden Square shopping centre.</em></p>
-<p>If you're visiting the salon after 6.30 pm you are able to park right outside the salon.</p>
+<p>Jakata is located in the centre of Warrington on Rylands Street. We're extremely close to the <em>Warrington Market multi-storey car park</em> and only a short walk from <em>Golden Square shopping centre.</em></p>
 
 <h2>Address</h2>
 <p class="details_text">27 Rylands Street<br>
