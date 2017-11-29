@@ -20,7 +20,7 @@
 	
 		<h1>We've moved to new premises!</h1>
 		
-		<p>After months of planning and preperation we've finally made the move to our brand new premises! Although not quite complete, we're at a point where we just needed to get ourselves over there!</p>
+		<p>After months of planning and preperation we've finally made the move to our brand new premises! Although not quite complete we decided we just needed to get ourselves over there!</p>
 		<p>We're still waiting on a few items of furniture, imagary and the all important signage, but everything else is ready to go, so we just decided we'd move in and wait for the final pieces to arrive!</p>
 		<p>The new address is <strong>27 Rylands Street, Warrington, WA1 1EJ</strong></p>
 		<p>It's just round the corner from our old premises (see map) - it's the white building on the corner of Rylands Street and Cairo Street</p>
