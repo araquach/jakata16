@@ -170,6 +170,11 @@ class PagesController extends Controller {
 		return view('pages.relocation');
 	}
 	
+	public function mattsback()
+	{
+		return view('pages.mattsback');
+	}
+	
 	public function test()
 	{
 		return view('pages.test');

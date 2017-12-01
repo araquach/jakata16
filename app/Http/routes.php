@@ -21,6 +21,7 @@ Route::get('/layla', 'PagesController@layla');
 Route::get('/kebelo', 'PagesController@kebelo');
 Route::get('/reviews/{stylist?}', 'PagesController@reviews');
 Route::get('/relocation', 'PagesController@relocation');
+Route::get('/mattsback', 'PagesController@mattsback');
 
 Route::get('/prospect/emailmale', 'ProspectController@emailMale');
 Route::get('/prospect/emailmale2', 'ProspectController@emailMale2');
