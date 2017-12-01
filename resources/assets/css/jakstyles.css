@@ -3412,3 +3412,25 @@ ul.stylist-filter li.review-layla {
 	margin-top: 40px;
 	margin-right: 40px;
 }
+
+/* mattsback */
+
+#mattsback {
+	width: 950px;
+	background-color: #f5f5f5;
+	padding-top: 270px;
+	padding-bottom: 200px;
+	float: left;
+}
+
+#mattsback_copy {
+	width: 500px;
+	margin-left: 50px;
+	float: left;
+}
+
+#mattsback_map {
+	float: right;
+	margin-top: 40px;
+	margin-right: 40px;
+}

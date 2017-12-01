@@ -2861,4 +2861,29 @@ ul.stylist-filter {
 	padding-top: 0;
 }
 
+/* mattsback */
+
+#mattsback {
+	width: auto;
+	padding-top: 40px;
+	padding-bottom: 200px;
+	float: left;
+}
+
+#mattsback_copy {
+	width: auto;
+	margin-left: 0;
+	padding: 20px;
+}
+
+#mattsback_map {
+	width: auto;
+	float: left;
+	clear: left;
+	margin-top: 10px;
+	margin-right: 0;
+	padding: 20px;
+	padding-top: 0;
+}
+
 /*# sourceMappingURL=mob.css.map */
