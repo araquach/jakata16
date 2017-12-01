@@ -18,7 +18,7 @@
 	
 	<div id="mattsback_copy">
 	
-		<h1>Matt's returning to Jakata!</h1>
+		<h1>Matt Lane is returning to Jakata!</h1>
 		
 		<p>After spending a few months over at our sister salon Paul Kemp Hairdressing, Matt Lane has made the decision to return to Jakata!</p>
 		<p>He moved over there to fill a gap at stylist level that we needed at the time, but with the relocation to our new premises it made sense for him to come back over.</p>
@@ -27,13 +27,13 @@
 		<p><strong>27 Rylands Street<br>Warrington<br>WA1 1EJ</strong></p>
 		<p>We're the white building on the corner of Rylands Street and Cairo Street<Street></Street></p>
 		<p>(please refer to the map)</p>
-		<p>Our contact number is the same: 01925 242960</p>
+		<p>Our contact number is the same: <strong>01925 242960</strong></p>
 		
-		<p>you can also call Paul Kemp Hairdressing on 01925 444488 if you need to ask any questions</p>
+		<p>You can also call Paul Kemp Hairdressing on <strong>01925 444488</strong> if you need to ask any questions</p>
 		
-		<p>All of Matt's appointments have been transferred to the new site</p>
+		<p><strong>All of Matt's appointments from Tuesday 5th December have been transferred to the new site - you just need to turn up at our new premises</strong></p>
 
-		<p><strong>We look forward to seeing you in our new salon!</strong></p>
+		<p><em>We hope this hasn't caused you any inconvenience and we look forward to seeing you in our new salon!</em></p>
 		
 	</div>
 	
