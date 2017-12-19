@@ -6,7 +6,9 @@
 	'description' => 'Meet the Team - Matt Lane',
 	'keywords' => 'Matt Lane, hairdressing team, hairdressers, stylists, Jakata team, Jakata stylists, Jakata hairdressers',
 	'ogtitle' => 'Matt Lane',
-	'ogdescription' => 'Matt ',
+	'ogdescription' => 'Matt is a super-talented stylist that has built up a strong following over the years he\'s been with us.
+	He loves getting stuck into creative fashion colouring, he\'s not afraid to push the boundaries.
+	After a short spell at our sister salon PK her has made the move back to rejoin the Jakata team',
 	'ogimage' => url('/') . '/images/team/matt.jpg',
 	'title' => 'Jakata Salon - Matt Lane - Hairdressers in Warrington'
 	])
