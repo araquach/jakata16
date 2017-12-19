@@ -610,18 +610,13 @@ a.book-now {
 	background-size: cover;
 }
 
-.caleb {
-	background: url('/images/team/caleb.jpg') no-repeat top left #f5f5f5;
+.matt {
+	background: url('/images/team/matt.jpg') no-repeat top left #f5f5f5;
 	background-size: cover;
 }
 
 .layla {
 	background: url('/images/team/layla.jpg') no-repeat top left #f5f5f5;
-	background-size: cover;
-}
-
-.laura_m {
-	background: url('/images/team/laura_m.jpg') no-repeat top left #f5f5f5;
 	background-size: cover;
 }
 
@@ -688,77 +683,6 @@ a.book-now {
 	position: absolute;
 	bottom: -45px;
 	left: 10px;
-}
-
-#jimmy {
-	position: relative;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: url('/images/team/jimmy.jpg') no-repeat left top #FFF;
-	transform:rotate(2deg);
-	-ms-transform:rotate(2deg); /* IE 9 */
-	-moz-transform:rotate(2deg); /* Firefox */
-	-webkit-transform:rotate(2deg); /* Safari and Chrome */
-	-o-transform:rotate(2deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-
-}
-
-#vicky {
-	background: #FFF url('/images/team/vicky.jpg') no-repeat left top;
-	transform:rotate(-4deg);
-	-ms-transform:rotate(-4deg); /* IE 9 */
-	-moz-transform:rotate(-4deg); /* Firefox */
-	-webkit-transform:rotate(-4deg); /* Safari and Chrome */
-	-o-transform:rotate(-4deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-	
-}
-
-#nat {
-	background: #FFF url('/images/team/nat.jpg') no-repeat left top;
-	transform:rotate(3deg);
-	-ms-transform:rotate(3deg); /* IE 9 */
-	-moz-transform:rotate(3deg); /* Firefox */
-	-webkit-transform:rotate(3deg); /* Safari and Chrome */
-	-o-transform:rotate(3deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-}
-
-#shelly {
-	background: #FFF url('/images/team/shelly.jpg') no-repeat left top;
-	transform:rotate(-3deg);
-	-ms-transform:rotate(-3deg); /* IE 9 */
-	-moz-transform:rotate(-3deg); /* Firefox */
-	-webkit-transform:rotate(-3deg); /* Safari and Chrome */
-	-o-transform:rotate(-3deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-}
-
-#layla {
-	background: #FFF url('/images/team/layla.jpg') no-repeat left top;
-	transform:rotate(2deg);
-	-ms-transform:rotate(2deg); /* IE 9 */
-	-moz-transform:rotate(2deg); /* Firefox */
-	-webkit-transform:rotate(2deg); /* Safari and Chrome */
-	-o-transform:rotate(2deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-}
-
-#laura {
-	background: #FFF url('/images/team/laura.jpg') no-repeat left top;
-	transform:rotate(-2deg);
-	-ms-transform:rotate(-2deg); /* IE 9 */
-	-moz-transform:rotate(-2deg); /* Firefox */
-	-webkit-transform:rotate(-2deg); /* Safari and Chrome */
-	-o-transform:rotate(-2deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
 }
 
 /* @end */
