@@ -1086,24 +1086,13 @@ nav li a:hover {
 	
 }
 
-#caleb {
-	background: #FFF url('/images/team/caleb.jpg') no-repeat left top;
+#matt {
+	background: #FFF url('/images/team/matt.jpg') no-repeat left top;
 	transform:rotate(-3deg);
 	-ms-transform:rotate(-3deg); /* IE 9 */
 	-moz-transform:rotate(-3deg); /* Firefox */
 	-webkit-transform:rotate(-3deg); /* Safari and Chrome */
 	-o-transform:rotate(-3deg); /* Opera */
-	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
-	
-}
-
-#laura_m {
-	background: #FFF url('/images/team/laura_m.jpg') no-repeat left top;
-	transform:rotate(1deg);
-	-ms-transform:rotate(1deg); /* IE 9 */
-	-moz-transform:rotate(1deg); /* Firefox */
-	-webkit-transform:rotate(1deg); /* Safari and Chrome */
-	-o-transform:rotate(1deg); /* Opera */
 	-webkit-backface-visibility: hidden; /* Fixes jagged edges */
 	
 }

@@ -53,6 +53,12 @@
 			</section> <!--team member vicky-->
 		</a>
 		
+		<a href="{{ URL::to('matt') }}" >
+			<section class="team_member" id="matt">
+				<h2>Matt Lane</h2>
+			</section> <!--team member vicky-->
+		</a>
+		
 		<a href="{{ URL::to('layla') }}" >
 			<section class="team_member" id="layla">
 				<h2>Layla Relf</h2>
