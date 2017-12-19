@@ -42,7 +42,7 @@
 		
 		<p><strong>Matt is a super-talented stylist that has built up a strong following over the years he's been with us.</strong></p>
 		<p>He loves getting stuck into creative fashion colouring, he's not afraid to push the boundaries.</p>
-		<p>After a short spell ar our sister salon PK her has made the move back to rejoin the Jakata team</p>
+		<p>After a short spell at our sister salon PK he has made the move back to rejoin the Jakata team</p>
 		<p><strong>Favourite Style: </strong>Creative colour and wavy, textured looks</p>
 		<p><strong>Favourite Product: </strong>Kevin Murphy Doo.Over</p>
 		<p class="price">Average Cut &amp; Colour <br>with Matt: &pound;90</p>
