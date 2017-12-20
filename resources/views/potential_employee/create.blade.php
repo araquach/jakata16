@@ -72,7 +72,7 @@
 			</div>
 		</div>
 		<div class="excitement">
-			<p>The exciting news is we're getting ready to move into a brand new, kick-ass salon, 
+			<p>The exciting news is we've recently moved into a brand new, kick-ass salon, 
 			a space designed to give the perfect working environment for dynamic stylists. We designed it with the ability to turn it into a photo studio on demand so we can do more frequent shoots - we think you'll love it.</p>
 			<p><strong>If you're interested in joining our team just leave your details here and we'll be in touch!</strong></p>
 		</div>
