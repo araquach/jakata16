@@ -31,37 +31,37 @@
 	<div id="team_members">
 		<a href="{{ URL::to('jimmy') }}" >
 			<section class="team_member" id="jimmy">
-				<h2>Jimmy Sharpe</h2>
+				<h2>Jimmy Sharpe - Director</h2>
 			</section> <!--team member jimmy-->
 		</a>
 		
 		<a href="{{ URL::to('lauraC') }}" >
 			<section class="team_member" id="laura">
-				<h2>Laura Hall</h2>
+				<h2>Laura Hall - Senior Stylist</h2>
 			</section><!--team member laura-->
 		</a>
 		
 		<a href="{{ URL::to('natalie') }}" >
 			<section class="team_member" id="nat">
-				<h2>Natalie Doxey</h2>
+				<h2>Natalie Doxey - Senior Stylist</h2>
 			</section> <!--team member nat-->
 		</a>
 		
 		<a href="{{ URL::to('vikki') }}" >
 			<section class="team_member" id="vikki">
-				<h2>Vickki Rowland</h2>
+				<h2>Vickki Rowland - Stylist</h2>
 			</section> <!--team member vicky-->
 		</a>
 		
 		<a href="{{ URL::to('matt') }}" >
 			<section class="team_member" id="matt">
-				<h2>Matt Lane</h2>
+				<h2>Matt Lane - Stylist</h2>
 			</section> <!--team member vicky-->
 		</a>
 		
 		<a href="{{ URL::to('layla') }}" >
 			<section class="team_member" id="layla">
-				<h2>Layla Relf</h2>
+				<h2>Layla Relf - Graduate Stylist</h2>
 			</section> <!--team member layla -->
 		</a>
 	</div>

@@ -37,14 +37,14 @@
 		</div> <!--#feedback_feed-->
 	</div> <!--#feedback_container-->
 	<section class="team_member_copy">
-		<h2>Layla Relf</h2>
+		<h2>Layla Relf - Graduate Stylist</h2>
 		
 		<p><strong>Layla is a talented Graduate stylist who displays some great hairdressing skills.</strong></p>
 		<p>She excelled in her apprentiship and picked up lots of advanced techniques along the way.</p> 
 		<p>She has developed a passion for session styling and Photoshoots.</p>
 		<p><strong>Favourite Style: Shorter cuts and bright bold colours using bespoke colouring techniques</strong> </p>
 		<p><strong>Favourite Product: Kevin Murphy Hair Resort Spray</strong> </p>
-		<p class="price">Average Cut &amp; Colour <br>with Layla: &pound;50</p>
+		<p class="price">Average Cut &amp; Colour <br>with Layla: &pound;65</p>
 		
 		<a href="{{ URL::to('team') }}#layla" >Back to the full team</a>
 		

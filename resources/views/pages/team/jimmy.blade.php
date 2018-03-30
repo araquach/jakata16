@@ -41,13 +41,13 @@
 	
 	<section class="team_member_copy">
     	
-		<h2>Jimmy Sharpe</h2>
-		<p><strong>Salon manager Jimmy joined Jakata in October 2007 as an apprentice and quickly worked his way up through the ranks.</strong></p>
+		<h2>Jimmy Sharpe - Director</h2>
+		<p><strong>Salon manager Jimmy joined Jakata in October 2007 as an apprentice and quickly worked his way up through the ranks to Style Director</strong></p>
 	    <p>His passion for hairdressing is infectious. His experimental approach ensures he's always pushing the boundaries in cutting, colouring &amp; styling hair.</p>
 	    <p>Jimmy was member of the Schwarzkopf L.E.A.P Team</p>
 	    <p><strong>Favourite Style: </strong>Short hair cuts</p>
 	    <p><strong>Favourite Product: </strong>Schwarzkopf Flex Wax</p>
-	    <p class="price">Average Cut &amp; Colour <br>with Jimmy: &pound;110</p>
+	    <p class="price">Average Cut &amp; Colour <br>with Jimmy: &pound;139</p>
 	    
 	    <a href="{{ URL::to('team') }}#jimmy" >Back to the full team</a>
 	    

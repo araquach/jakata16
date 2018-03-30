@@ -26,9 +26,9 @@
 <h3>Cutting &amp; Styling</h3>
 <p>Prices depend on level of stylist</p>
 <table>
-	<tr><td>Cut, Dry &amp; Style</td> <td>&pound;21.95 - &pound;65.95</td></tr>
-	<tr><td>Dry &amp; Style</td> <td>&pound;14.95 - &pound;37.80</td></tr>
-	<tr><td>Curly Blowdry</td> <td>&pound;19.95 - &pound;43.60</td></tr>
+	<tr><td>Cut, Dry &amp; Style</td> <td>&pound;24.95 - &pound;58.95</td></tr>
+	<tr><td>Dry &amp; Style</td> <td>&pound;14.95 - &pound;39.25</td></tr>
+	<tr><td>Curly Blowdry</td> <td>&pound;19.95 - &pound;45.25</td></tr>
 	<tr><td><strong>Hair Up Styling</strong></td></tr>
 	<tr><td>Express Hair Up</td> <td>&pound;9.95 - &pound;16.95</td></tr>
 	<tr><td>Regular Hair Up</td> <td>&pound;16.95 - &pound;38.95</td></tr>
@@ -72,9 +72,9 @@
 <table>
 	<tr><th class="s_type">Cutting &amp; Styling</th> <th>&nbsp;</th> <th>&nbsp;</th></tr>
 	<tr><th>&nbsp;</th> <th>Stylists</th> <th>Director</th></tr>
-	<tr><td>Cut, Dry &amp; Style</td> <td>&pound;24.95 - &pound;48.95</td> <td>&pound;56.95</td></tr>
-	<tr><td>Dry &amp; Style</td> <td>&pound;16.95 - &pound;32.95</td> <td>&pound;37.80</td></tr>
-	<tr><td>Curly Blowdry</td> <td>&pound;19.95 - &pound;38.95</td> <td>&pound;43.60</td></tr>
+	<tr><td>Cut, Dry &amp; Style</td> <td>&pound;24.95 - &pound;48.95</td> <td>&pound;58.95</td></tr>
+	<tr><td>Dry &amp; Style</td> <td>&pound;16.95 - &pound;32.95</td> <td>&pound;39.25</td></tr>
+	<tr><td>Curly Blowdry</td> <td>&pound;19.95 - &pound;38.95</td> <td>&pound;45.25</td></tr>
 	<tr><td><strong>Hair Up Styling</strong></td></tr>
 	<tr><td>Express Hair Up</td> <td>&pound;9.95 - &pound;16.95</td></tr>
 	<tr><td>Regular Hair Up</td> <td>&pound;16.95 - &pound;38.95</td></tr>
